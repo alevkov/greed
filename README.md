@@ -1,3 +1,2 @@
-# greed
-
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/alevkov/greed)
+# 'gree[D]
+### Towards agreed-upon Dosing Tiers for recreational drugs
