@@ -1,5 +1,5 @@
 {
-  "name": "harm-reduction-dashboard",
+  "name": "greed",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,14 +7,17 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "heroku-postbuild": "vite build",
+    "start": "serve -s dist"
   },
   "dependencies": {
+    "chart.js": "^4.4.1",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
-    "chart.js": "^4.4.1"
+    "react-dom": "^18.3.1",
+    "serve": "^14.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
