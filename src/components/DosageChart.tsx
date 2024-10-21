@@ -1,82 +1,64 @@
 import React from 'react';
-import { Bar } from 'react-chartjs-2';
 import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
+  ResponsiveContainer,
+  RadarChart,
+  PolarGrid,
+  PolarAngleAxis,
+  PolarRadiusAxis,
+  Radar,
   Legend,
-} from 'chart.js';
-import { ChartData, SubstanceData } from '../types';
-
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
   Tooltip,
-  Legend
-);
+} from 'recharts';
+import { SubstanceData } from '../types';
 
 interface DosageChartProps {
   data: SubstanceData;
 }
 
 const DosageChart: React.FC<DosageChartProps> = ({ data }) => {
-  const chartData: ChartData = {
-    labels: Object.keys(data.tiers),
-    datasets: [
-      {
-        label: 'Dosage',
-        data: Object.values(data.tiers).map((tier) => tier.value),
-        backgroundColor: 'rgba(75, 192, 192, 0.6)',
-        borderColor: 'rgba(75, 192, 192, 1)',
-        borderWidth: 1,
-      },
-      {
-        label: 'CI Lower',
-        data: Object.values(data.tiers).map((tier) => tier['CI Lower']),
-        backgroundColor: 'rgba(255, 99, 132, 0.6)',
-        borderColor: 'rgba(255, 99, 132, 1)',
-        borderWidth: 1,
-      },
-      {
-        label: 'CI Upper',
-        data: Object.values(data.tiers).map((tier) => tier['CI Upper']),
-        backgroundColor: 'rgba(54, 162, 235, 0.6)',
-        borderColor: 'rgba(54, 162, 235, 1)',
-        borderWidth: 1,
-      },
-    ],
-  };
-
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'top' as const,
-      },
-      title: {
-        display: true,
-        text: `${data.substance} - ${data.method} (${data.unit})`,
-      },
-    },
-    scales: {
-      y: {
-        beginAtZero: true,
-        title: {
-          display: true,
-          text: data.unit,
-        },
-      },
-    },
-  };
+  const tiers = ['Threshold', 'Light', 'Common', 'Strong', 'Heavy'];
+  const chartData = tiers.map((tier) => (data.tiers[tier].value ? {
+    tier,
+    value: data.tiers[tier].value,
+    ciLower: data.tiers[tier]['CI Lower'],
+    ciUpper: data.tiers[tier]['CI Upper'],
+  } : undefined));
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg">
-      <Bar data={chartData} options={options} />
+      <div className="mr-8">
+        <h3 className="font-bold mb-4 text-lg">Dosage Ranges</h3>
+        <table className="table-auto border-collapse border border-gray-400 w-full">
+          <thead>
+            <tr>
+              <th className="border border-gray-300 px-4 py-2">Tier</th>
+              <th className="border border-gray-300 px-4 py-2">Dose Range ({data.unit})</th>
+            </tr>
+          </thead>
+          <tbody>
+            {tiers.map((tier, index) => (
+              <tr key={`tier-row-${index}`}>
+                <td className="border border-gray-300 px-4 py-2 text-center">{tier}</td>
+                <td className="border border-gray-300 px-4 py-2 text-center">
+                  {data.tiers[tier]['CI Lower']} - {data.tiers[tier]['CI Upper']}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <ResponsiveContainer width="100%" height={800}>
+        <RadarChart cx="50%" cy="50%" outerRadius="80%" data={chartData}>
+          <PolarGrid />
+          <PolarAngleAxis dataKey="tier" tick={{ fontSize: 14 }} />
+          <PolarRadiusAxis angle={30} domain={[0, Math.max(...chartData.map(d => d.ciUpper)) * 1.1]} tick={{ fontSize: 12 }} />
+          <Radar name="Dosage Value" dataKey="value" stroke="#ff7300" fill="#ff7300" fillOpacity={0.6} />
+          <Radar name="CI Lower" dataKey="ciLower" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.1} />
+          <Radar name="CI Upper" dataKey="ciUpper" stroke="#8884d8" fill="#8884d8" fillOpacity={0.1} />
+          <Legend />
+          <Tooltip formatter={(value: number, name: string) => [`${value} ${data.unit}`, name]} />
+        </RadarChart>
+      </ResponsiveContainer>
       <div className="mt-4 text-sm text-gray-600">
         Reliability Score: {(data.reliability_score * 100).toFixed(2)}%
       </div>

@@ -85,7 +85,7 @@ def compute_dose_tiers_cy(np.ndarray[DTYPE_t, ndim=1] amounts):
     cdef int i
     cdef DTYPE_t ci_lower, ci_upper
     
-    if n < 3:
+    if n < 10:
         return np.array([np.nan] * 15)
 
     amounts.sort()

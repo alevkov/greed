@@ -6805,16 +6805,16 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4compute_dose_tiers
   /* "dose_analysis/dose_analysis_cy.pyx":88
  *     cdef DTYPE_t ci_lower, ci_upper
  * 
- *     if n < 3:             # <<<<<<<<<<<<<<
+ *     if n < 10:             # <<<<<<<<<<<<<<
  *         return np.array([np.nan] * 15)
  * 
  */
-  __pyx_t_8 = (__pyx_v_n < 3);
+  __pyx_t_8 = (__pyx_v_n < 10);
   if (__pyx_t_8) {
 
     /* "dose_analysis/dose_analysis_cy.pyx":89
  * 
- *     if n < 3:
+ *     if n < 10:
  *         return np.array([np.nan] * 15)             # <<<<<<<<<<<<<<
  * 
  *     amounts.sort()
@@ -6870,7 +6870,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4compute_dose_tiers
     /* "dose_analysis/dose_analysis_cy.pyx":88
  *     cdef DTYPE_t ci_lower, ci_upper
  * 
- *     if n < 3:             # <<<<<<<<<<<<<<
+ *     if n < 10:             # <<<<<<<<<<<<<<
  *         return np.array([np.nan] * 15)
  * 
  */
