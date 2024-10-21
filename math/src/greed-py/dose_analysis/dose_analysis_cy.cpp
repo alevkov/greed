@@ -5422,18 +5422,18 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
  *     cdef np.ndarray[DTYPE_t, ndim=1] filtered = np.zeros(n, dtype=np.float64)
  *     cdef int filtered_count = 0             # <<<<<<<<<<<<<<
  *     cdef DTYPE_t median, mad, modified_z_score
- *     cdef DTYPE_t threshold = 3.5
+ *     cdef DTYPE_t threshold = 3.0
  */
   __pyx_v_filtered_count = 0;
 
   /* "dose_analysis/dose_analysis_cy.pyx":19
  *     cdef int filtered_count = 0
  *     cdef DTYPE_t median, mad, modified_z_score
- *     cdef DTYPE_t threshold = 3.5             # <<<<<<<<<<<<<<
+ *     cdef DTYPE_t threshold = 3.0             # <<<<<<<<<<<<<<
  *     cdef int i
  * 
  */
-  __pyx_v_threshold = 3.5;
+  __pyx_v_threshold = 3.0;
 
   /* "dose_analysis/dose_analysis_cy.pyx":24
  *     # Remove non-positive values

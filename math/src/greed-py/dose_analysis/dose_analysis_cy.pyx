@@ -16,7 +16,7 @@ def detect_outliers_modified_zscore_cy(np.ndarray[DTYPE_t, ndim=1] amounts):
     cdef np.ndarray[DTYPE_t, ndim=1] filtered = np.zeros(n, dtype=np.float64)
     cdef int filtered_count = 0
     cdef DTYPE_t median, mad, modified_z_score
-    cdef DTYPE_t threshold = 3.5
+    cdef DTYPE_t threshold = 3.0
     cdef int i
 
     # Remove non-positive values
