@@ -36,14 +36,27 @@ const DosageChart: React.FC<DosageChartProps> = ({ data }) => {
             </tr>
           </thead>
           <tbody>
-            {tiers.map((tier, index) => (
-              <tr key={`tier-row-${index}`}>
-                <td className="border border-gray-300 px-4 py-2 text-center">{tier}</td>
-                <td className="border border-gray-300 px-4 py-2 text-center">
-                  {data.tiers[tier]['CI Lower']} - {data.tiers[tier]['CI Upper']}
-                </td>
-              </tr>
-            ))}
+            {tiers.map((tier, index) => {
+              // Define custom range display for "Heavy" and "Threshold"
+              let doseRange;
+              if (tier === 'Heavy') {
+                doseRange = `${data.tiers[tier]['CI Lower']}+`;
+              } else if (tier === 'Threshold') {
+                doseRange = `<${data.tiers[tier]['CI Lower']}`;
+              } else {
+                doseRange = `${data.tiers[tier]['CI Lower']} - ${data.tiers[tier]['CI Upper']}`;
+              }
+
+              // Conditionally apply red background color to the "Heavy" row
+              const rowClass = tier === 'Heavy' ? 'bg-red-100' : '';
+
+              return (
+                <tr key={`tier-row-${index}`} className={rowClass}>
+                  <td className="border border-gray-300 px-4 py-2 text-center">{tier}</td>
+                  <td className="border border-gray-300 px-4 py-2 text-center">{doseRange}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
