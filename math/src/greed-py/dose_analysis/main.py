@@ -31,7 +31,7 @@ def detect_outliers_modified_zscore(group):
 
 def compute_dose_tiers(group):
     amounts = group['amount_standard'].dropna().values
-    if len(amounts) < 10:
+    if len(amounts) < 3:
         return pd.Series(dtype='float64')
     
     results = compute_dose_tiers_cy(amounts)

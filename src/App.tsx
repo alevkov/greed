@@ -62,9 +62,10 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="mb-8">
-        <h1 className="text-2xl font-bold text-center">'gree[D]</h1>
+        <h1 className="text-2xl font-bold text-center">drug · dose · tips</h1>
+        <br />
         <h2 className="text-lg text-center">
-          Towards agreed-upon Dosing Tiers for recreational drugs
+          Repo source: <a href={"https://github.com/alevkov/greed"}>greed</a> ("Towards A[gree]d-upon [D]osing Tiers for Recreational Drugs")
         </h2>
       </header>
       <main className="flex-grow">

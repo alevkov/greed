@@ -40,11 +40,11 @@ const DosageChart: React.FC<DosageChartProps> = ({ data }) => {
               // Define custom range display for "Heavy" and "Threshold"
               let doseRange;
               if (tier === 'Heavy') {
-                doseRange = `${data.tiers[tier]['CI Lower']}+`;
+                doseRange = `${Math.ceil(Number.parseFloat(data.tiers[tier]['CI Lower']))}+`;
               } else if (tier === 'Threshold') {
-                doseRange = `<${data.tiers[tier]['CI Lower']}`;
+                doseRange = `< ${Math.ceil(Number.parseFloat(data.tiers[tier]['CI Lower']))}`;
               } else {
-                doseRange = `${data.tiers[tier]['CI Lower']} - ${data.tiers[tier]['CI Upper']}`;
+                doseRange = `${Math.ceil(Number.parseFloat(data.tiers[tier]['CI Lower']))} - ${Math.ceil(Number.parseFloat(data.tiers[tier]['CI Upper']))}`;
               }
 
               // Conditionally apply red background color to the "Heavy" row
