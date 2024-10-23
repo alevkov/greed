@@ -8,13 +8,13 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 1.0,
-                "CI Lower": 0.8,
+                "CI Lower": 0.5,
                 "CI Upper": 1.5
             },
             "Light": {
                 "value": 1.5,
                 "CI Lower": 1.5,
-                "CI Upper": 2.0
+                "CI Upper": 2.25
             },
             "Common": {
                 "value": 2.5,
@@ -23,13 +23,13 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 3.0,
-                "CI Lower": 3.0,
+                "CI Lower": 2.5,
                 "CI Upper": 5.0
             },
             "Heavy": {
                 "value": 6.399999999999999,
                 "CI Lower": 5.0,
-                "CI Upper": 7.199999999999999
+                "CI Upper": 7.5
             }
         },
         "reliability_score": 0.8240246718869355
@@ -41,7 +41,7 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 38.300000000000004,
-                "CI Lower": 6.25,
+                "CI Lower": 4.0,
                 "CI Upper": 50.0
             },
             "Light": {
@@ -57,12 +57,12 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 200.0,
                 "CI Lower": 150.0,
-                "CI Upper": 200.0
+                "CI Upper": 250.0
             },
             "Heavy": {
                 "value": 300.0,
-                "CI Lower": 244.99999999999994,
-                "CI Upper": 300.0
+                "CI Lower": 200.0,
+                "CI Upper": 330.0
             }
         },
         "reliability_score": 0.80601304792116
@@ -108,7 +108,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 1.0,
                 "CI Lower": 1.0,
-                "CI Upper": 5.0
+                "CI Upper": 6.2
             },
             "Light": {
                 "value": 5.0,
@@ -127,7 +127,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 30.0,
-                "CI Lower": 19.754999999999985,
+                "CI Lower": 17.974999999999973,
                 "CI Upper": 30.0
             }
         },
@@ -141,16 +141,16 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 9.5,
                 "CI Lower": 5.0,
-                "CI Upper": 25.0
+                "CI Upper": 26.125
             },
             "Light": {
                 "value": 25.0,
-                "CI Lower": 7.4375000000000036,
+                "CI Lower": 7.5,
                 "CI Upper": 30.0
             },
             "Common": {
                 "value": 28.75,
-                "CI Lower": 21.25,
+                "CI Lower": 21.21875,
                 "CI Upper": 32.5
             },
             "Strong": {
@@ -174,12 +174,12 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 14.25
+                "CI Upper": 14.625
             },
             "Light": {
                 "value": 15.0,
                 "CI Lower": 10.0,
-                "CI Upper": 22.0
+                "CI Upper": 21.0
             },
             "Common": {
                 "value": 23.0,
@@ -188,12 +188,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 43.5,
-                "CI Lower": 23.99375,
-                "CI Upper": 57.5
+                "CI Lower": 24.0,
+                "CI Upper": 54.06874999999994
             },
             "Heavy": {
                 "value": 60.449999999999996,
-                "CI Lower": 45.85125000000001,
+                "CI Lower": 46.15,
                 "CI Upper": 63.0
             }
         },
@@ -212,16 +212,16 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 20.0,
                 "CI Lower": 10.0,
-                "CI Upper": 25.124999999999886
+                "CI Upper": 25.0
             },
             "Common": {
                 "value": 25.0,
-                "CI Lower": 20.0,
+                "CI Lower": 10.0,
                 "CI Upper": 30.0
             },
             "Strong": {
                 "value": 30.0,
-                "CI Lower": 25.0,
+                "CI Lower": 20.0,
                 "CI Upper": 40.0
             },
             "Heavy": {
@@ -240,7 +240,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 15.0,
                 "CI Lower": 15.0,
-                "CI Upper": 17.5
+                "CI Upper": 17.562499999999943
             },
             "Light": {
                 "value": 17.5,
@@ -278,7 +278,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "CI Upper": 15.0
             },
             "Common": {
                 "value": 20.0,
@@ -288,11 +288,11 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 20.0,
                 "CI Lower": 20.0,
-                "CI Upper": 21.0
+                "CI Upper": 23.0
             },
             "Heavy": {
                 "value": 45.0,
-                "CI Lower": 45.0,
+                "CI Lower": 40.0,
                 "CI Upper": 45.0
             }
         },
@@ -325,7 +325,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 35.0,
-                "CI Lower": 33.0,
+                "CI Lower": 30.0,
                 "CI Upper": 35.0
             }
         },
@@ -343,7 +343,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 15.0,
-                "CI Lower": 9.375,
+                "CI Lower": 7.5,
                 "CI Upper": 15.0
             },
             "Common": {
@@ -354,11 +354,11 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 15.0,
                 "CI Lower": 15.0,
-                "CI Upper": 30.0
+                "CI Upper": 50.0
             },
             "Heavy": {
                 "value": 50.0,
-                "CI Lower": 23.249999999999957,
+                "CI Lower": 15.0,
                 "CI Upper": 50.0
             }
         },
@@ -372,7 +372,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 15.0,
                 "CI Lower": 15.0,
-                "CI Upper": 15.75
+                "CI Upper": 20.0
             },
             "Light": {
                 "value": 20.0,
@@ -381,7 +381,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 25.0,
-                "CI Lower": 22.5,
+                "CI Lower": 20.0,
                 "CI Upper": 30.0
             },
             "Strong": {
@@ -419,12 +419,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 3.5,
-                "CI Lower": 1.75,
+                "CI Lower": 1.675,
                 "CI Upper": 4.75
             },
             "Heavy": {
                 "value": 4.549999999999999,
-                "CI Lower": 2.0,
+                "CI Lower": 2.633749999999998,
                 "CI Upper": 5.0
             }
         },
@@ -438,7 +438,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 136.66,
                 "CI Lower": 83.3,
-                "CI Upper": 240.0
+                "CI Upper": 233.32
             },
             "Light": {
                 "value": 250.0,
@@ -471,26 +471,26 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 150.0,
                 "CI Lower": 150.0,
-                "CI Upper": 292.5
+                "CI Upper": 250.0
             },
             "Light": {
                 "value": 300.0,
-                "CI Lower": 250.0,
+                "CI Lower": 150.0,
                 "CI Upper": 400.0
             },
             "Common": {
                 "value": 500.0,
-                "CI Lower": 400.0,
+                "CI Lower": 300.0,
                 "CI Upper": 600.0
             },
             "Strong": {
                 "value": 750.0,
-                "CI Lower": 543.75,
-                "CI Upper": 825.0
+                "CI Lower": 500.0,
+                "CI Upper": 1000.0
             },
             "Heavy": {
                 "value": 1009.9999999999994,
-                "CI Lower": 809.9999999999994,
+                "CI Lower": 800.0,
                 "CI Upper": 1500.0
             }
         },
@@ -504,7 +504,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 125.0,
                 "CI Lower": 60.0,
-                "CI Upper": 125.04999999999995
+                "CI Upper": 127.0
             },
             "Light": {
                 "value": 127.0,
@@ -513,7 +513,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 400.0,
-                "CI Lower": 127.0,
+                "CI Lower": 211.0,
                 "CI Upper": 500.0
             },
             "Strong": {
@@ -523,7 +523,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 1200.0,
-                "CI Lower": 500.0,
+                "CI Lower": 570.0,
                 "CI Upper": 1400.0
             }
         },
@@ -551,12 +551,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 1275.0,
-                "CI Lower": 812.5,
+                "CI Lower": 849.0625,
                 "CI Upper": 1662.5
             },
             "Heavy": {
                 "value": 1712.4999999999998,
-                "CI Lower": 1224.3749999999995,
+                "CI Lower": 1200.0,
                 "CI Upper": 1850.0
             }
         },
@@ -589,7 +589,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 2.4,
-                "CI Lower": 2.0,
+                "CI Lower": 1.6,
                 "CI Upper": 2.5
             }
         },
@@ -612,17 +612,17 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 600.0,
-                "CI Lower": 550.0,
-                "CI Upper": 750.0
+                "CI Lower": 500.0,
+                "CI Upper": 800.0
             },
             "Strong": {
                 "value": 800.0,
-                "CI Lower": 750.0,
-                "CI Upper": 1200.0
+                "CI Lower": 634.0,
+                "CI Upper": 1500.0
             },
             "Heavy": {
                 "value": 1559.9999999999998,
-                "CI Lower": 1079.9999999999998,
+                "CI Lower": 1000.0,
                 "CI Upper": 2000.0
             }
         },
@@ -635,12 +635,12 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 5.0,
-                "CI Lower": 2.8000000000000003,
-                "CI Upper": 6.6
+                "CI Lower": 2.5,
+                "CI Upper": 7.0
             },
             "Light": {
                 "value": 10.0,
-                "CI Lower": 7.5,
+                "CI Lower": 7.0,
                 "CI Upper": 10.0
             },
             "Common": {
@@ -651,7 +651,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 25.0,
                 "CI Lower": 20.0,
-                "CI Upper": 25.0
+                "CI Upper": 27.0
             },
             "Heavy": {
                 "value": 46.99999999999996,
@@ -673,23 +673,23 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 15.0,
-                "CI Lower": 15.0,
-                "CI Upper": 18.0
+                "CI Lower": 13.5,
+                "CI Upper": 19.0
             },
             "Common": {
                 "value": 20.0,
                 "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "CI Upper": 22.5
             },
             "Strong": {
                 "value": 25.0,
                 "CI Lower": 25.0,
-                "CI Upper": 25.0
+                "CI Upper": 28.0
             },
             "Heavy": {
                 "value": 35.0,
-                "CI Lower": 33.0,
-                "CI Upper": 38.0
+                "CI Lower": 31.0,
+                "CI Upper": 40.0
             }
         },
         "reliability_score": 0.8816351091205827
@@ -702,7 +702,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 8.5,
                 "CI Lower": 7.0,
-                "CI Upper": 13.012499999999989
+                "CI Upper": 15.0
             },
             "Light": {
                 "value": 12.5,
@@ -717,7 +717,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 20.0,
                 "CI Lower": 15.5,
-                "CI Upper": 26.562499999999943
+                "CI Upper": 29.0
             },
             "Heavy": {
                 "value": 29.0,
@@ -735,7 +735,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 5.0,
                 "CI Lower": 2.5,
-                "CI Upper": 8.0
+                "CI Upper": 7.000000000000001
             },
             "Light": {
                 "value": 10.0,
@@ -782,12 +782,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 15.0,
-                "CI Lower": 9.5,
+                "CI Lower": 9.481250000000001,
                 "CI Upper": 25.0
             },
             "Heavy": {
                 "value": 25.749999999999993,
-                "CI Lower": 15.749999999999993,
+                "CI Lower": 16.499999999999986,
                 "CI Upper": 30.0
             }
         },
@@ -806,22 +806,22 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 25.0,
                 "CI Lower": 20.0,
-                "CI Upper": 27.0
+                "CI Upper": 30.0
             },
             "Common": {
                 "value": 30.0,
                 "CI Lower": 30.0,
-                "CI Upper": 35.0
+                "CI Upper": 39.0
             },
             "Strong": {
                 "value": 40.0,
-                "CI Lower": 40.0,
+                "CI Lower": 39.0,
                 "CI Upper": 50.0
             },
             "Heavy": {
                 "value": 60.0,
                 "CI Lower": 50.0,
-                "CI Upper": 60.449999999999974
+                "CI Upper": 63.0
             }
         },
         "reliability_score": 0.8728605356990566
@@ -833,8 +833,8 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 7.8,
-                "CI Lower": 7.0,
-                "CI Upper": 11.2
+                "CI Lower": 5.0,
+                "CI Upper": 12.0
             },
             "Light": {
                 "value": 15.0,
@@ -849,11 +849,11 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 50.0,
                 "CI Lower": 40.0,
-                "CI Upper": 50.0
+                "CI Upper": 55.0
             },
             "Heavy": {
                 "value": 80.0,
-                "CI Lower": 61.94999999999996,
+                "CI Lower": 55.0,
                 "CI Upper": 100.0
             }
         },
@@ -866,17 +866,17 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 1.5500000000000003,
-                "CI Lower": 1.5,
+                "CI Lower": 1.0,
                 "CI Upper": 5.0
             },
             "Light": {
                 "value": 5.0,
                 "CI Lower": 5.0,
-                "CI Upper": 7.0
+                "CI Upper": 8.0
             },
             "Common": {
                 "value": 10.0,
-                "CI Lower": 7.0,
+                "CI Lower": 6.0,
                 "CI Upper": 10.0
             },
             "Strong": {
@@ -887,7 +887,7 @@ export const substanceData: SubstanceData[] = [
             "Heavy": {
                 "value": 25.0,
                 "CI Lower": 15.0,
-                "CI Upper": 30.0
+                "CI Upper": 35.0
             }
         },
         "reliability_score": 0.791733997548606
@@ -900,11 +900,11 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 5.0,
                 "CI Lower": 4.0,
-                "CI Upper": 5.6
+                "CI Upper": 6.0
             },
             "Light": {
                 "value": 12.0,
-                "CI Lower": 11.0,
+                "CI Lower": 10.0,
                 "CI Upper": 14.0
             },
             "Common": {
@@ -915,11 +915,11 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 20.0,
                 "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "CI Upper": 21.0
             },
             "Heavy": {
                 "value": 30.0,
-                "CI Lower": 30.0,
+                "CI Lower": 28.0,
                 "CI Upper": 30.0
             }
         },
@@ -942,13 +942,13 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 12.0,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "CI Lower": 5.0,
+                "CI Upper": 20.0
             },
             "Strong": {
                 "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "CI Lower": 12.0,
+                "CI Upper": 25.0
             },
             "Heavy": {
                 "value": 35.0,
@@ -985,8 +985,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 30.0,
-                "CI Lower": 27.0,
-                "CI Upper": 30.0
+                "CI Lower": 26.0,
+                "CI Upper": 35.0
             }
         },
         "reliability_score": 0.8818291781567953
@@ -999,7 +999,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 2.6,
                 "CI Lower": 2.0,
-                "CI Upper": 5.0
+                "CI Upper": 5.6000000000000005
             },
             "Light": {
                 "value": 5.0,
@@ -1018,7 +1018,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 14.399999999999999,
-                "CI Lower": 9.789999999999997,
+                "CI Lower": 9.799999999999997,
                 "CI Upper": 15.0
             }
         },
@@ -1041,13 +1041,13 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 10.0,
-                "CI Lower": 10.0,
+                "CI Lower": 9.0,
                 "CI Upper": 10.0
             },
             "Strong": {
                 "value": 10.5,
                 "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "CI Upper": 16.0
             },
             "Heavy": {
                 "value": 16.5,
@@ -1069,18 +1069,18 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 5.0,
-                "CI Lower": 2.75,
-                "CI Upper": 9.0
+                "CI Lower": 2.5,
+                "CI Upper": 10.0
             },
             "Common": {
                 "value": 10.0,
                 "CI Lower": 5.0,
-                "CI Upper": 15.0
+                "CI Upper": 20.0
             },
             "Strong": {
                 "value": 20.0,
-                "CI Lower": 13.5,
-                "CI Upper": 23.0
+                "CI Lower": 10.0,
+                "CI Upper": 35.0
             },
             "Heavy": {
                 "value": 37.5,
@@ -1102,12 +1102,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 9.0,
-                "CI Lower": 8.0,
-                "CI Upper": 10.0
+                "CI Lower": 7.0,
+                "CI Upper": 12.0
             },
             "Common": {
                 "value": 20.0,
-                "CI Lower": 16.0,
+                "CI Lower": 15.0,
                 "CI Upper": 20.0
             },
             "Strong": {
@@ -1150,7 +1150,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 15.099999999999998,
-                "CI Lower": 12.049999999999999,
+                "CI Lower": 12.0,
                 "CI Upper": 16.0
             }
         },
@@ -1169,7 +1169,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 8.0,
                 "CI Lower": 5.0,
-                "CI Upper": 10.124999999999886
+                "CI Upper": 10.0
             },
             "Common": {
                 "value": 15.0,
@@ -1196,22 +1196,22 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 3.0,
-                "CI Lower": 2.5,
+                "CI Lower": 2.0,
                 "CI Upper": 4.0
             },
             "Light": {
                 "value": 5.5,
                 "CI Lower": 5.0,
-                "CI Upper": 7.0
+                "CI Upper": 8.0
             },
             "Common": {
                 "value": 10.0,
-                "CI Lower": 8.0,
-                "CI Upper": 10.0
+                "CI Lower": 7.0,
+                "CI Upper": 11.0
             },
             "Strong": {
                 "value": 15.0,
-                "CI Lower": 11.0,
+                "CI Lower": 10.0,
                 "CI Upper": 25.0
             },
             "Heavy": {
@@ -1229,7 +1229,7 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 7.5,
-                "CI Lower": 5.0,
+                "CI Lower": 4.0,
                 "CI Upper": 10.0
             },
             "Light": {
@@ -1239,13 +1239,13 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 25.0,
-                "CI Lower": 25.0,
+                "CI Lower": 22.0,
                 "CI Upper": 30.0
             },
             "Strong": {
                 "value": 35.0,
                 "CI Lower": 30.0,
-                "CI Upper": 38.0
+                "CI Upper": 40.0
             },
             "Heavy": {
                 "value": 50.0,
@@ -1282,7 +1282,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 40.0,
-                "CI Lower": 22.249999999999996,
+                "CI Lower": 24.499999999999993,
                 "CI Upper": 40.0
             }
         },
@@ -1334,7 +1334,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "CI Upper": 13.0
             },
             "Common": {
                 "value": 20.0,
@@ -1348,7 +1348,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 35.0,
-                "CI Lower": 30.49999999999999,
+                "CI Lower": 20.0,
                 "CI Upper": 35.0
             }
         },
@@ -1362,7 +1362,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 15.0,
                 "CI Lower": 15.0,
-                "CI Upper": 15.08749999999992
+                "CI Upper": 18.5
             },
             "Light": {
                 "value": 15.0,
@@ -1427,12 +1427,12 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 2.5,
-                "CI Lower": 2.0,
-                "CI Upper": 7.0
+                "CI Lower": 1.0,
+                "CI Upper": 10.0
             },
             "Light": {
                 "value": 10.0,
-                "CI Lower": 10.0,
+                "CI Lower": 8.0,
                 "CI Upper": 10.0
             },
             "Common": {
@@ -1461,16 +1461,16 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 5.0,
                 "CI Lower": 5.0,
-                "CI Upper": 8.8
+                "CI Upper": 10.0
             },
             "Light": {
                 "value": 11.0,
-                "CI Lower": 10.0,
+                "CI Lower": 8.0,
                 "CI Upper": 14.0
             },
             "Common": {
                 "value": 15.0,
-                "CI Lower": 14.0,
+                "CI Lower": 13.0,
                 "CI Upper": 15.0
             },
             "Strong": {
@@ -1536,7 +1536,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 20.0,
-                "CI Lower": 20.0,
+                "CI Lower": 12.5,
                 "CI Upper": 27.0
             },
             "Strong": {
@@ -1569,7 +1569,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 15.0,
-                "CI Lower": 12.5,
+                "CI Lower": 11.25,
                 "CI Upper": 15.0
             },
             "Strong": {
@@ -1579,7 +1579,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 28.75,
-                "CI Lower": 20.0,
+                "CI Lower": 19.0,
                 "CI Upper": 30.0
             }
         },
@@ -1603,7 +1603,7 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 15.5,
                 "CI Lower": 7.0,
-                "CI Upper": 16.0
+                "CI Upper": 18.0
             },
             "Strong": {
                 "value": 17.0,
@@ -1626,7 +1626,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 8.0,
                 "CI Lower": 8.0,
-                "CI Upper": 12.0
+                "CI Upper": 10.8
             },
             "Light": {
                 "value": 15.0,
@@ -1636,7 +1636,7 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 15.0,
                 "CI Lower": 15.0,
-                "CI Upper": 15.049999999999955
+                "CI Upper": 15.0
             },
             "Strong": {
                 "value": 17.0,
@@ -1664,7 +1664,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 7.0,
                 "CI Lower": 5.0,
-                "CI Upper": 10.0
+                "CI Upper": 12.0
             },
             "Common": {
                 "value": 14.5,
@@ -1674,11 +1674,11 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 19.75,
                 "CI Lower": 15.0,
-                "CI Upper": 23.0
+                "CI Upper": 25.0
             },
             "Heavy": {
                 "value": 25.749999999999993,
-                "CI Lower": 21.599999999999994,
+                "CI Lower": 21.0,
                 "CI Upper": 30.0
             }
         },
@@ -1706,7 +1706,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 10.0,
-                "CI Lower": 7.975000000000001,
+                "CI Lower": 6.5,
                 "CI Upper": 10.0
             },
             "Heavy": {
@@ -1744,7 +1744,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 185.99999999999997,
-                "CI Lower": 153.0,
+                "CI Lower": 155.99999999999997,
                 "CI Upper": 200.0
             }
         },
@@ -1758,22 +1758,22 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 7.0,
                 "CI Lower": 6.0,
-                "CI Upper": 15.0
+                "CI Upper": 20.0
             },
             "Light": {
                 "value": 20.0,
-                "CI Lower": 13.75,
-                "CI Upper": 28.75
+                "CI Lower": 7.0,
+                "CI Upper": 30.0
             },
             "Common": {
                 "value": 32.5,
-                "CI Lower": 22.5,
-                "CI Upper": 37.5
+                "CI Lower": 20.0,
+                "CI Upper": 40.0
             },
             "Strong": {
                 "value": 42.5,
                 "CI Lower": 35.0,
-                "CI Upper": 55.0
+                "CI Upper": 70.0
             },
             "Heavy": {
                 "value": 80.0,
@@ -1791,21 +1791,21 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 20.0,
                 "CI Lower": 5.0,
-                "CI Upper": 29.0
+                "CI Upper": 25.0
             },
             "Light": {
                 "value": 29.0,
                 "CI Lower": 21.0,
-                "CI Upper": 40.0
+                "CI Upper": 47.0
             },
             "Common": {
                 "value": 47.0,
                 "CI Lower": 29.0,
-                "CI Upper": 50.0
+                "CI Upper": 60.0
             },
             "Strong": {
                 "value": 60.0,
-                "CI Lower": 47.0,
+                "CI Lower": 48.0,
                 "CI Upper": 75.0
             },
             "Heavy": {
@@ -1823,22 +1823,22 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 5.0,
-                "CI Lower": 4.95,
-                "CI Upper": 7.475
+                "CI Lower": 4.0,
+                "CI Upper": 8.0
             },
             "Light": {
                 "value": 10.0,
-                "CI Lower": 8.0,
+                "CI Lower": 7.5,
                 "CI Upper": 15.0
             },
             "Common": {
                 "value": 16.0,
-                "CI Lower": 15.0,
+                "CI Lower": 14.0,
                 "CI Upper": 20.0
             },
             "Strong": {
                 "value": 20.0,
-                "CI Lower": 20.0,
+                "CI Lower": 18.0,
                 "CI Upper": 25.0
             },
             "Heavy": {
@@ -1862,7 +1862,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 5.0,
                 "CI Lower": 5.0,
-                "CI Upper": 16.312499999999943
+                "CI Upper": 15.0
             },
             "Common": {
                 "value": 10.0,
@@ -1876,7 +1876,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 50.99999999999998,
-                "CI Lower": 17.749999999999993,
+                "CI Lower": 20.0,
                 "CI Upper": 60.0
             }
         },
@@ -1890,7 +1890,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 3.95,
                 "CI Lower": 3.0,
-                "CI Upper": 8.700000000000001
+                "CI Upper": 6.9
             },
             "Light": {
                 "value": 8.5,
@@ -1899,7 +1899,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 16.0,
-                "CI Lower": 10.0,
+                "CI Lower": 9.5,
                 "CI Upper": 20.0
             },
             "Strong": {
@@ -1909,7 +1909,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 30.0,
-                "CI Lower": 20.1,
+                "CI Lower": 20.250000000000004,
                 "CI Upper": 30.0
             }
         },
@@ -1928,7 +1928,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 15.0,
                 "CI Lower": 15.0,
-                "CI Upper": 15.0
+                "CI Upper": 16.0
             },
             "Common": {
                 "value": 20.0,
@@ -1942,7 +1942,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 40.0,
-                "CI Lower": 35.0,
+                "CI Lower": 30.0,
                 "CI Upper": 40.0
             }
         },
@@ -1955,12 +1955,12 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 10.0,
-                "CI Lower": 8.0,
-                "CI Upper": 10.8
+                "CI Lower": 4.0,
+                "CI Upper": 12.0
             },
             "Light": {
                 "value": 17.0,
-                "CI Lower": 14.0,
+                "CI Lower": 12.0,
                 "CI Upper": 20.0
             },
             "Common": {
@@ -1975,8 +1975,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 40.0,
-                "CI Lower": 36.194999999999986,
-                "CI Upper": 45.0
+                "CI Lower": 35.0,
+                "CI Upper": 50.0
             }
         },
         "reliability_score": 0.8706853726609658
@@ -1989,7 +1989,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 10.0,
                 "CI Lower": 5.0,
-                "CI Upper": 11.6
+                "CI Upper": 12.0
             },
             "Light": {
                 "value": 13.0,
@@ -1998,7 +1998,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 20.0,
-                "CI Lower": 20.0,
+                "CI Lower": 16.0,
                 "CI Upper": 30.0
             },
             "Strong": {
@@ -2022,12 +2022,12 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 6.175,
                 "CI Lower": 2.0,
-                "CI Upper": 6.775
+                "CI Upper": 7.0
             },
             "Light": {
                 "value": 8.5,
                 "CI Lower": 6.25,
-                "CI Upper": 12.5
+                "CI Upper": 15.0
             },
             "Common": {
                 "value": 16.0,
@@ -2036,8 +2036,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 23.0
+                "CI Lower": 18.0,
+                "CI Upper": 25.0
             },
             "Heavy": {
                 "value": 30.0,
@@ -2054,28 +2054,28 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 40.0,
-                "CI Lower": 25.0,
+                "CI Lower": 20.0,
                 "CI Upper": 50.0
             },
             "Light": {
                 "value": 75.0,
-                "CI Lower": 60.0,
+                "CI Lower": 50.0,
                 "CI Upper": 100.0
             },
             "Common": {
                 "value": 100.0,
                 "CI Lower": 100.0,
-                "CI Upper": 115.0
+                "CI Upper": 120.0
             },
             "Strong": {
                 "value": 135.0,
-                "CI Lower": 120.0,
-                "CI Upper": 150.0
+                "CI Lower": 115.0,
+                "CI Upper": 160.0
             },
             "Heavy": {
                 "value": 200.0,
-                "CI Lower": 175.0,
-                "CI Upper": 240.0
+                "CI Lower": 160.0,
+                "CI Upper": 250.0
             }
         },
         "reliability_score": 0.8627989999344674
@@ -2125,12 +2125,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 10.0,
-                "CI Lower": 8.125,
+                "CI Lower": 7.5,
                 "CI Upper": 15.0
             },
             "Common": {
                 "value": 15.0,
-                "CI Lower": 12.0,
+                "CI Lower": 10.0,
                 "CI Upper": 15.0
             },
             "Strong": {
@@ -2187,11 +2187,11 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 14.5,
                 "CI Lower": 10.0,
-                "CI Upper": 25.0
+                "CI Upper": 24.5
             },
             "Light": {
                 "value": 25.0,
-                "CI Lower": 17.5,
+                "CI Lower": 19.937500000000004,
                 "CI Upper": 25.0
             },
             "Common": {
@@ -2201,8 +2201,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 30.0,
-                "CI Lower": 26.25,
-                "CI Upper": 39.0
+                "CI Lower": 26.21875,
+                "CI Upper": 38.0
             },
             "Heavy": {
                 "value": 40.99999999999998,
@@ -2219,18 +2219,18 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 7.000000000000001,
-                "CI Lower": 4.7,
-                "CI Upper": 9.8
+                "CI Lower": 3.5,
+                "CI Upper": 10.0
             },
             "Light": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 18.0
+                "CI Upper": 20.0
             },
             "Common": {
                 "value": 20.0,
-                "CI Lower": 17.0,
-                "CI Upper": 24.0
+                "CI Lower": 16.0,
+                "CI Upper": 25.0
             },
             "Strong": {
                 "value": 25.0,
@@ -2253,16 +2253,16 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 20.5,
                 "CI Lower": 10.0,
-                "CI Upper": 28.514999999999986
+                "CI Upper": 30.0
             },
             "Light": {
                 "value": 28.5,
                 "CI Lower": 25.0,
-                "CI Upper": 45.0
+                "CI Upper": 43.537499999999966
             },
             "Common": {
                 "value": 45.0,
-                "CI Lower": 29.925000000000004,
+                "CI Lower": 27.0,
                 "CI Upper": 45.0
             },
             "Strong": {
@@ -2285,12 +2285,12 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 7.0,
-                "CI Lower": 5.0,
+                "CI Lower": 3.0,
                 "CI Upper": 8.0
             },
             "Light": {
                 "value": 10.0,
-                "CI Lower": 10.0,
+                "CI Lower": 8.0,
                 "CI Upper": 15.0
             },
             "Common": {
@@ -2300,7 +2300,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 25.0,
-                "CI Lower": 22.0,
+                "CI Lower": 20.0,
                 "CI Upper": 30.0
             },
             "Heavy": {
@@ -2357,22 +2357,22 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 15.0,
                 "CI Lower": 12.0,
-                "CI Upper": 18.75
+                "CI Upper": 20.0
             },
             "Common": {
                 "value": 20.0,
                 "CI Lower": 20.0,
-                "CI Upper": 21.5
+                "CI Upper": 24.0
             },
             "Strong": {
                 "value": 27.25,
-                "CI Lower": 25.0,
+                "CI Lower": 24.0,
                 "CI Upper": 30.0
             },
             "Heavy": {
                 "value": 40.0,
-                "CI Lower": 30.25,
-                "CI Upper": 41.25
+                "CI Lower": 30.0,
+                "CI Upper": 45.0
             }
         },
         "reliability_score": 0.8686032655934575
@@ -2385,7 +2385,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 4.65,
                 "CI Lower": 4.0,
-                "CI Upper": 9.0
+                "CI Upper": 9.65
             },
             "Light": {
                 "value": 9.25,
@@ -2394,7 +2394,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 19.0,
-                "CI Lower": 9.0,
+                "CI Lower": 9.5,
                 "CI Upper": 25.0
             },
             "Strong": {
@@ -2404,7 +2404,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 43.5,
-                "CI Lower": 28.4125,
+                "CI Lower": 25.0,
                 "CI Upper": 50.0
             }
         },
@@ -2418,21 +2418,21 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 61.25,
                 "CI Lower": 50.0,
-                "CI Upper": 86.25
+                "CI Upper": 89.0
             },
             "Light": {
                 "value": 80.0,
                 "CI Lower": 56.25,
-                "CI Upper": 125.0
+                "CI Upper": 125.15624999999986
             },
             "Common": {
                 "value": 112.5,
                 "CI Lower": 80.0,
-                "CI Upper": 225.0
+                "CI Upper": 212.81249999999972
             },
             "Strong": {
                 "value": 168.75,
-                "CI Lower": 95.0,
+                "CI Lower": 100.0,
                 "CI Upper": 318.75
             },
             "Heavy": {
@@ -2460,17 +2460,17 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 50.0,
-                "CI Lower": 39.87500000000001,
+                "CI Lower": 35.0,
                 "CI Upper": 50.0
             },
             "Strong": {
                 "value": 50.0,
                 "CI Lower": 50.0,
-                "CI Upper": 70.0
+                "CI Upper": 60.0
             },
             "Heavy": {
                 "value": 93.99999999999991,
-                "CI Lower": 55.0,
+                "CI Lower": 54.79999999999998,
                 "CI Upper": 100.0
             }
         },
@@ -2483,13 +2483,13 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 15.500000000000004,
-                "CI Lower": 10.0,
-                "CI Upper": 30.0
+                "CI Lower": 6.0,
+                "CI Upper": 40.0
             },
             "Light": {
                 "value": 50.0,
                 "CI Lower": 50.0,
-                "CI Upper": 70.0
+                "CI Upper": 86.0
             },
             "Common": {
                 "value": 100.0,
@@ -2498,7 +2498,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 125.0,
-                "CI Lower": 120.0,
+                "CI Lower": 100.0,
                 "CI Upper": 150.0
             },
             "Heavy": {
@@ -2517,16 +2517,16 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 50.0,
                 "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "CI Upper": 60.0
             },
             "Light": {
                 "value": 100.0,
-                "CI Lower": 74.90625,
-                "CI Upper": 100.0
+                "CI Lower": 50.0,
+                "CI Upper": 125.0
             },
             "Common": {
                 "value": 160.0,
-                "CI Lower": 125.0,
+                "CI Lower": 100.0,
                 "CI Upper": 200.0
             },
             "Strong": {
@@ -2536,8 +2536,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 300.0,
-                "CI Lower": 260.0,
-                "CI Upper": 390.00000000000057
+                "CI Lower": 250.0,
+                "CI Upper": 500.0
             }
         },
         "reliability_score": 0.8366392874319861
@@ -2583,7 +2583,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 45.0,
                 "CI Lower": 40.0,
-                "CI Upper": 77.5
+                "CI Upper": 72.5
             },
             "Light": {
                 "value": 65.0,
@@ -2602,7 +2602,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 140.0,
-                "CI Lower": 102.4375,
+                "CI Lower": 100.0,
                 "CI Upper": 140.0
             }
         },
@@ -2616,7 +2616,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 28.75,
                 "CI Lower": 20.0,
-                "CI Upper": 30.093749999999915
+                "CI Upper": 30.0
             },
             "Light": {
                 "value": 40.0,
@@ -2630,7 +2630,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 81.25,
-                "CI Lower": 70.0,
+                "CI Lower": 60.0,
                 "CI Upper": 100.0
             },
             "Heavy": {
@@ -2654,12 +2654,12 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 3.0,
                 "CI Lower": 3.0,
-                "CI Upper": 5.0
+                "CI Upper": 6.0
             },
             "Common": {
                 "value": 6.0,
                 "CI Lower": 4.0,
-                "CI Upper": 15.0
+                "CI Upper": 15.124999999999886
             },
             "Strong": {
                 "value": 20.0,
@@ -2686,18 +2686,18 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 5.0,
-                "CI Lower": 4.0,
+                "CI Lower": 3.5,
                 "CI Upper": 5.0
             },
             "Common": {
                 "value": 6.0,
                 "CI Lower": 5.0,
-                "CI Upper": 6.25
+                "CI Upper": 7.0
             },
             "Strong": {
                 "value": 10.0,
                 "CI Lower": 7.5,
-                "CI Upper": 12.5
+                "CI Upper": 13.0
             },
             "Heavy": {
                 "value": 17.699999999999996,
@@ -2714,13 +2714,13 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 10.0,
-                "CI Lower": 9.365000000000002,
-                "CI Upper": 18.5
+                "CI Lower": 8.0,
+                "CI Upper": 20.0
             },
             "Light": {
                 "value": 20.5,
-                "CI Lower": 20.0,
-                "CI Upper": 27.5
+                "CI Lower": 15.0,
+                "CI Upper": 30.0
             },
             "Common": {
                 "value": 30.0,
@@ -2729,13 +2729,13 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 50.0,
-                "CI Lower": 37.5,
-                "CI Upper": 62.0
+                "CI Lower": 32.0,
+                "CI Upper": 75.0
             },
             "Heavy": {
                 "value": 80.0,
-                "CI Lower": 64.0,
-                "CI Upper": 89.49999999999996
+                "CI Lower": 60.0,
+                "CI Upper": 100.0
             }
         },
         "reliability_score": 0.8233970174617153
@@ -2747,8 +2747,8 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 5.0,
-                "CI Lower": 4.5,
-                "CI Upper": 7.4
+                "CI Lower": 4.0,
+                "CI Upper": 8.0
             },
             "Light": {
                 "value": 10.0,
@@ -2763,11 +2763,11 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 20.0,
                 "CI Lower": 15.0,
-                "CI Upper": 22.0
+                "CI Upper": 23.0
             },
             "Heavy": {
                 "value": 26.89999999999999,
-                "CI Lower": 22.99999999999997,
+                "CI Lower": 22.0,
                 "CI Upper": 30.0
             }
         },
@@ -2785,13 +2785,13 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 8.0,
-                "CI Lower": 7.0,
-                "CI Upper": 9.0
+                "CI Lower": 6.0,
+                "CI Upper": 10.0
             },
             "Common": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 12.0
+                "CI Upper": 13.0
             },
             "Strong": {
                 "value": 17.0,
@@ -2800,7 +2800,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 25.0,
-                "CI Lower": 25.0,
+                "CI Lower": 22.5,
                 "CI Upper": 30.0
             }
         },
@@ -2814,26 +2814,26 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 1.0,
                 "CI Lower": 1.0,
-                "CI Upper": 2.9000000000000004
+                "CI Upper": 3.0
             },
             "Light": {
                 "value": 3.0,
-                "CI Lower": 2.0,
-                "CI Upper": 5.0
+                "CI Lower": 1.0,
+                "CI Upper": 6.0
             },
             "Common": {
                 "value": 7.5,
-                "CI Lower": 5.0,
+                "CI Lower": 3.0,
                 "CI Upper": 10.0
             },
             "Strong": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 13.5
+                "CI Upper": 15.0
             },
             "Heavy": {
                 "value": 20.0,
-                "CI Lower": 13.0,
+                "CI Lower": 10.0,
                 "CI Upper": 35.0
             }
         },
@@ -2846,7 +2846,7 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 5.0,
-                "CI Lower": 3.5,
+                "CI Lower": 3.0,
                 "CI Upper": 5.0
             },
             "Light": {
@@ -2862,12 +2862,12 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 15.0,
                 "CI Lower": 15.0,
-                "CI Upper": 17.0
+                "CI Upper": 18.0
             },
             "Heavy": {
                 "value": 25.0,
-                "CI Lower": 22.5,
-                "CI Upper": 25.0
+                "CI Lower": 22.0,
+                "CI Upper": 26.0
             }
         },
         "reliability_score": 0.8570786309228187
@@ -2884,22 +2884,22 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 5.0,
-                "CI Lower": 4.0,
-                "CI Upper": 5.75
+                "CI Lower": 3.0,
+                "CI Upper": 6.0
             },
             "Common": {
                 "value": 7.1,
                 "CI Lower": 6.0,
-                "CI Upper": 8.756249999999994
+                "CI Upper": 10.0
             },
             "Strong": {
                 "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 12.0
+                "CI Lower": 9.0,
+                "CI Upper": 14.0
             },
             "Heavy": {
                 "value": 19.69999999999999,
-                "CI Lower": 14.849999999999994,
+                "CI Lower": 14.0,
                 "CI Upper": 20.0
             }
         },
@@ -2913,7 +2913,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 17.8,
                 "CI Lower": 9.0,
-                "CI Upper": 25.0
+                "CI Upper": 25.31999999999971
             },
             "Light": {
                 "value": 25.0,
@@ -2945,27 +2945,27 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 30.0,
-                "CI Lower": 21.25,
+                "CI Lower": 20.0,
                 "CI Upper": 50.0
             },
             "Light": {
                 "value": 70.0,
                 "CI Lower": 50.0,
-                "CI Upper": 90.0
+                "CI Upper": 100.0
             },
             "Common": {
                 "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 100.0
+                "CI Lower": 90.0,
+                "CI Upper": 110.0
             },
             "Strong": {
                 "value": 133.75,
-                "CI Lower": 115.0,
+                "CI Lower": 100.0,
                 "CI Upper": 150.0
             },
             "Heavy": {
                 "value": 200.0,
-                "CI Lower": 159.9375,
+                "CI Lower": 150.0,
                 "CI Upper": 200.0
             }
         },
@@ -2989,7 +2989,7 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 150.0,
                 "CI Lower": 150.0,
-                "CI Upper": 151.8749999999983
+                "CI Upper": 300.0
             },
             "Strong": {
                 "value": 300.0,
@@ -3031,7 +3031,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 450.0,
-                "CI Lower": 300.0,
+                "CI Lower": 298.1250000000001,
                 "CI Upper": 450.0
             }
         },
@@ -3050,12 +3050,12 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 106.25,
                 "CI Lower": 100.0,
-                "CI Upper": 148.75
+                "CI Upper": 142.5
             },
             "Common": {
                 "value": 145.0,
                 "CI Lower": 112.5,
-                "CI Upper": 212.5
+                "CI Upper": 215.24999999999977
             },
             "Strong": {
                 "value": 237.5,
@@ -3097,7 +3097,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 434.9999999999998,
-                "CI Lower": 237.57874999999993,
+                "CI Lower": 226.99999999999994,
                 "CI Upper": 600.0
             }
         },
@@ -3111,26 +3111,26 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 5.0,
                 "CI Lower": 5.0,
-                "CI Upper": 8.25
+                "CI Upper": 10.0
             },
             "Light": {
                 "value": 6.25,
                 "CI Lower": 5.0,
-                "CI Upper": 15.268749999999983
+                "CI Upper": 16.006249999999994
             },
             "Common": {
                 "value": 15.5,
                 "CI Lower": 7.5,
-                "CI Upper": 25.0
+                "CI Upper": 22.5
             },
             "Strong": {
                 "value": 23.75,
-                "CI Lower": 15.24375,
+                "CI Lower": 15.0,
                 "CI Upper": 50.0
             },
             "Heavy": {
                 "value": 53.5,
-                "CI Lower": 26.999999999999993,
+                "CI Lower": 25.0,
                 "CI Upper": 60.0
             }
         },
@@ -3144,7 +3144,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 12.775,
                 "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "CI Upper": 17.5
             },
             "Light": {
                 "value": 26.5,
@@ -3153,12 +3153,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 40.0,
-                "CI Lower": 35.0,
+                "CI Lower": 30.0,
                 "CI Upper": 40.0
             },
             "Strong": {
                 "value": 50.0,
-                "CI Lower": 50.0,
+                "CI Lower": 45.0,
                 "CI Upper": 50.0
             },
             "Heavy": {
@@ -3182,11 +3182,11 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 5.75,
                 "CI Lower": 5.0,
-                "CI Upper": 11.281249999999972
+                "CI Upper": 12.5
             },
             "Common": {
                 "value": 11.25,
-                "CI Lower": 6.5,
+                "CI Lower": 5.0,
                 "CI Upper": 20.0
             },
             "Strong": {
@@ -3196,7 +3196,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 30.0,
-                "CI Lower": 18.584374999999994,
+                "CI Lower": 19.965625000000003,
                 "CI Upper": 30.0
             }
         },
@@ -3243,17 +3243,17 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 1.25,
                 "CI Lower": 1.0,
-                "CI Upper": 2.501249999999999
+                "CI Upper": 2.9000000000000004
             },
             "Light": {
                 "value": 4.5,
-                "CI Lower": 1.5,
-                "CI Upper": 6.006249999999994
+                "CI Lower": 1.6218750000000002,
+                "CI Upper": 6.25
             },
             "Common": {
                 "value": 7.0,
                 "CI Lower": 5.0,
-                "CI Upper": 9.0
+                "CI Upper": 9.024999999999977
             },
             "Strong": {
                 "value": 10.0,
@@ -3281,7 +3281,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 300.0,
                 "CI Lower": 156.0,
-                "CI Upper": 731.25
+                "CI Upper": 812.5
             },
             "Common": {
                 "value": 650.0,
@@ -3314,12 +3314,12 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 1.0,
                 "CI Lower": 1.0,
-                "CI Upper": 1.5
+                "CI Upper": 1.8
             },
             "Common": {
                 "value": 2.0,
-                "CI Lower": 1.2,
-                "CI Upper": 2.0
+                "CI Lower": 1.0,
+                "CI Upper": 2.6
             },
             "Strong": {
                 "value": 2.6,
@@ -3357,11 +3357,11 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 1300.0,
                 "CI Lower": 1000.0,
-                "CI Upper": 1400.0
+                "CI Upper": 1500.0
             },
             "Heavy": {
                 "value": 2272.4999999999995,
-                "CI Lower": 2000.0,
+                "CI Lower": 1950.0,
                 "CI Upper": 2600.0
             }
         },
@@ -3390,7 +3390,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 300.0,
                 "CI Lower": 300.0,
-                "CI Upper": 362.5
+                "CI Upper": 400.0
             },
             "Heavy": {
                 "value": 400.0,
@@ -3407,23 +3407,23 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 10.8,
-                "CI Lower": 8.0,
+                "CI Lower": 0.5,
                 "CI Upper": 100.0
             },
             "Light": {
                 "value": 307.5,
-                "CI Lower": 131.25,
-                "CI Upper": 375.0
+                "CI Lower": 100.0,
+                "CI Upper": 500.0
             },
             "Common": {
                 "value": 500.0,
-                "CI Lower": 437.5,
-                "CI Upper": 680.4999999999995
+                "CI Lower": 375.0,
+                "CI Upper": 700.0
             },
             "Strong": {
                 "value": 750.0,
-                "CI Lower": 700.0,
-                "CI Upper": 750.0
+                "CI Lower": 660.0,
+                "CI Upper": 1000.0
             },
             "Heavy": {
                 "value": 1500.0,
@@ -3440,27 +3440,27 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 30.0,
-                "CI Lower": 11.0,
-                "CI Upper": 52.0
+                "CI Lower": 2.4,
+                "CI Upper": 60.0
             },
             "Light": {
                 "value": 100.0,
-                "CI Lower": 60.0,
-                "CI Upper": 150.0
+                "CI Lower": 50.0,
+                "CI Upper": 175.0
             },
             "Common": {
                 "value": 250.0,
-                "CI Lower": 175.0,
+                "CI Lower": 125.0,
                 "CI Upper": 350.0
             },
             "Strong": {
                 "value": 500.0,
                 "CI Lower": 350.0,
-                "CI Upper": 700.0
+                "CI Upper": 750.0
             },
             "Heavy": {
                 "value": 750.0,
-                "CI Lower": 739.9999999999999,
+                "CI Lower": 700.0,
                 "CI Upper": 1000.0
             }
         },
@@ -3493,7 +3493,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 30.75,
-                "CI Lower": 23.75,
+                "CI Lower": 25.0,
                 "CI Upper": 40.0
             }
         },
@@ -3511,8 +3511,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 1.0,
-                "CI Lower": 0.90625,
-                "CI Upper": 1.25
+                "CI Lower": 0.5,
+                "CI Upper": 1.5
             },
             "Common": {
                 "value": 1.75,
@@ -3526,7 +3526,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 3.0,
-                "CI Lower": 3.0,
+                "CI Lower": 2.5,
                 "CI Upper": 6.0
             }
         },
@@ -3549,7 +3549,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 1.5,
-                "CI Lower": 1.5,
+                "CI Lower": 1.0,
                 "CI Upper": 2.0
             },
             "Strong": {
@@ -3573,26 +3573,26 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 0.875,
                 "CI Lower": 0.5,
-                "CI Upper": 3.375
+                "CI Upper": 3.5
             },
             "Light": {
                 "value": 4.75,
-                "CI Lower": 2.9375,
-                "CI Upper": 7.75
+                "CI Lower": 2.75,
+                "CI Upper": 8.0
             },
             "Common": {
                 "value": 8.75,
-                "CI Lower": 6.75,
-                "CI Upper": 12.25
+                "CI Lower": 5.0,
+                "CI Upper": 12.5
             },
             "Strong": {
                 "value": 14.25,
-                "CI Lower": 10.625,
+                "CI Lower": 9.0,
                 "CI Upper": 20.0
             },
             "Heavy": {
                 "value": 21.25,
-                "CI Lower": 15.75,
+                "CI Lower": 15.0,
                 "CI Upper": 28.0
             }
         },
@@ -3606,12 +3606,12 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 1.1,
                 "CI Lower": 0.5,
-                "CI Upper": 2.5
+                "CI Upper": 3.0
             },
             "Light": {
                 "value": 5.0,
                 "CI Lower": 4.0,
-                "CI Upper": 5.02
+                "CI Upper": 5.5
             },
             "Common": {
                 "value": 8.0,
@@ -3620,12 +3620,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 12.0,
-                "CI Lower": 10.5,
+                "CI Lower": 10.0,
                 "CI Upper": 14.0
             },
             "Heavy": {
                 "value": 22.0,
-                "CI Lower": 16.0,
+                "CI Lower": 15.0,
                 "CI Upper": 25.0
             }
         },
@@ -3671,22 +3671,22 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 10.0,
-                "CI Lower": 8.875,
-                "CI Upper": 20.0
+                "CI Lower": 7.5,
+                "CI Upper": 25.0
             },
             "Light": {
                 "value": 25.0,
                 "CI Lower": 25.0,
-                "CI Upper": 28.78124999999997
+                "CI Upper": 30.0
             },
             "Common": {
                 "value": 50.0,
-                "CI Lower": 39.87500000000001,
+                "CI Lower": 30.0,
                 "CI Upper": 75.0
             },
             "Strong": {
                 "value": 100.0,
-                "CI Lower": 100.0,
+                "CI Lower": 75.0,
                 "CI Upper": 100.0
             },
             "Heavy": {
@@ -3705,7 +3705,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 5.0,
                 "CI Lower": 5.0,
-                "CI Upper": 6.831249999999926
+                "CI Upper": 6.75
             },
             "Light": {
                 "value": 10.0,
@@ -3752,7 +3752,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 10.0,
-                "CI Lower": 7.75,
+                "CI Lower": 7.0,
                 "CI Upper": 13.0
             },
             "Heavy": {
@@ -3786,7 +3786,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 30.0,
                 "CI Lower": 25.0,
-                "CI Upper": 30.0
+                "CI Upper": 37.0
             },
             "Heavy": {
                 "value": 45.0,
@@ -3808,7 +3808,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 15.0,
-                "CI Lower": 15.0,
+                "CI Lower": 12.5,
                 "CI Upper": 20.0
             },
             "Common": {
@@ -3824,7 +3824,7 @@ export const substanceData: SubstanceData[] = [
             "Heavy": {
                 "value": 60.0,
                 "CI Lower": 60.0,
-                "CI Upper": 70.0
+                "CI Upper": 75.0
             }
         },
         "reliability_score": 0.8082147600683776
@@ -3837,7 +3837,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 385.0,
                 "CI Lower": 350.0,
-                "CI Upper": 645.3749999999997
+                "CI Upper": 700.0
             },
             "Light": {
                 "value": 700.0,
@@ -3847,7 +3847,7 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 750.0,
                 "CI Lower": 700.0,
-                "CI Upper": 1260.0
+                "CI Upper": 1500.0
             },
             "Strong": {
                 "value": 1380.0,
@@ -3879,8 +3879,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "CI Lower": 5.0,
+                "CI Upper": 15.0
             },
             "Strong": {
                 "value": 15.0,
@@ -3918,7 +3918,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 200.0,
                 "CI Lower": 150.0,
-                "CI Upper": 251.24999999999886
+                "CI Upper": 300.0
             },
             "Heavy": {
                 "value": 379.9999999999997,
@@ -3969,11 +3969,11 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 16.5,
                 "CI Lower": 10.0,
-                "CI Upper": 29.0
+                "CI Upper": 40.0
             },
             "Light": {
                 "value": 40.0,
-                "CI Lower": 21.5,
+                "CI Lower": 18.0,
                 "CI Upper": 40.0
             },
             "Common": {
@@ -3984,11 +3984,11 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 70.0,
                 "CI Lower": 40.0,
-                "CI Upper": 100.0
+                "CI Upper": 120.0
             },
             "Heavy": {
                 "value": 120.0,
-                "CI Lower": 90.0,
+                "CI Lower": 80.0,
                 "CI Upper": 140.0
             }
         },
@@ -4001,28 +4001,28 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 40.0,
-                "CI Lower": 33.1,
+                "CI Lower": 33.0,
                 "CI Upper": 50.0
             },
             "Light": {
                 "value": 50.0,
-                "CI Lower": 46.25,
-                "CI Upper": 61.343749999999915
+                "CI Lower": 40.0,
+                "CI Upper": 80.0
             },
             "Common": {
                 "value": 85.0,
-                "CI Lower": 60.0,
+                "CI Lower": 50.0,
                 "CI Upper": 100.0
             },
             "Strong": {
                 "value": 100.0,
                 "CI Lower": 100.0,
-                "CI Upper": 125.0
+                "CI Upper": 150.0
             },
             "Heavy": {
                 "value": 197.49999999999977,
-                "CI Lower": 124.74999999999997,
-                "CI Upper": 294.99999999999955
+                "CI Lower": 120.0,
+                "CI Upper": 300.0
             }
         },
         "reliability_score": 0.8257831250778269
@@ -4039,22 +4039,22 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 55.0,
-                "CI Lower": 47.5,
+                "CI Lower": 25.0,
                 "CI Upper": 100.0
             },
             "Common": {
                 "value": 107.5,
-                "CI Lower": 77.5,
-                "CI Upper": 140.0
+                "CI Lower": 55.0,
+                "CI Upper": 150.0
             },
             "Strong": {
                 "value": 162.5,
-                "CI Lower": 126.0,
-                "CI Upper": 250.0
+                "CI Lower": 115.0,
+                "CI Upper": 300.0
             },
             "Heavy": {
                 "value": 344.99999999999994,
-                "CI Lower": 220.0,
+                "CI Lower": 200.0,
                 "CI Upper": 400.0
             }
         },
@@ -4068,12 +4068,12 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 7.8,
                 "CI Lower": 6.0,
-                "CI Upper": 16.98
+                "CI Upper": 15.0
             },
             "Light": {
                 "value": 15.0,
                 "CI Lower": 7.0,
-                "CI Upper": 23.125
+                "CI Upper": 22.5
             },
             "Common": {
                 "value": 20.95,
@@ -4082,12 +4082,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 28.75,
-                "CI Lower": 19.4,
+                "CI Lower": 18.299999999999997,
                 "CI Upper": 30.75
             },
             "Heavy": {
                 "value": 30.549999999999997,
-                "CI Lower": 26.624999999999993,
+                "CI Lower": 25.22424999999999,
                 "CI Upper": 31.0
             }
         },
@@ -4101,7 +4101,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 16.0
+                "CI Upper": 20.0
             },
             "Light": {
                 "value": 20.0,
@@ -4110,12 +4110,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 40.0,
-                "CI Lower": 30.0,
+                "CI Lower": 25.0,
                 "CI Upper": 50.0
             },
             "Strong": {
                 "value": 60.0,
-                "CI Lower": 50.0,
+                "CI Lower": 40.0,
                 "CI Upper": 80.0
             },
             "Heavy": {
@@ -4134,26 +4134,26 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 2.5500000000000003,
                 "CI Lower": 1.0,
-                "CI Upper": 6.0
+                "CI Upper": 10.0
             },
             "Light": {
                 "value": 18.75,
-                "CI Lower": 10.0,
+                "CI Lower": 6.0,
                 "CI Upper": 25.0
             },
             "Common": {
                 "value": 33.5,
                 "CI Lower": 25.0,
-                "CI Upper": 47.5
+                "CI Upper": 50.0
             },
             "Strong": {
                 "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 56.0
+                "CI Lower": 45.0,
+                "CI Upper": 60.0
             },
             "Heavy": {
                 "value": 96.70000000000002,
-                "CI Lower": 66.75000000000004,
+                "CI Lower": 60.0,
                 "CI Upper": 100.0
             }
         },
@@ -4167,7 +4167,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 41.75
+                "CI Upper": 28.1099999999999
             },
             "Light": {
                 "value": 22.25,
@@ -4176,8 +4176,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 75.0,
-                "CI Lower": 14.0,
-                "CI Upper": 125.0
+                "CI Lower": 17.900000000000006,
+                "CI Upper": 100.62499999999943
             },
             "Strong": {
                 "value": 100.0,
@@ -4252,7 +4252,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 320.0,
-                "CI Lower": 315.99999999999994,
+                "CI Lower": 300.0,
                 "CI Upper": 320.0
             }
         },
@@ -4266,7 +4266,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 3.0,
                 "CI Lower": 1.5,
-                "CI Upper": 4.5
+                "CI Upper": 6.0
             },
             "Light": {
                 "value": 6.0,
@@ -4299,12 +4299,12 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 95.0,
                 "CI Lower": 50.0,
-                "CI Upper": 190.0
+                "CI Upper": 190.24999999999977
             },
             "Light": {
                 "value": 225.0,
                 "CI Lower": 100.0,
-                "CI Upper": 340.0
+                "CI Upper": 380.0
             },
             "Common": {
                 "value": 380.0,
@@ -4318,7 +4318,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 1094.999999999999,
-                "CI Lower": 674.25,
+                "CI Lower": 682.4999999999999,
                 "CI Upper": 1500.0
             }
         },
@@ -4332,7 +4332,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 0.5750000000000001,
                 "CI Lower": 0.3,
-                "CI Upper": 1.0
+                "CI Upper": 0.912249999999998
             },
             "Light": {
                 "value": 0.95,
@@ -4417,7 +4417,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 22.39999999999999,
-                "CI Lower": 15.599999999999987,
+                "CI Lower": 16.0,
                 "CI Upper": 24.0
             }
         },
@@ -4430,7 +4430,7 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 0.8020000000000002,
-                "CI Lower": 0.5,
+                "CI Lower": 0.4,
                 "CI Upper": 1.0
             },
             "Light": {
@@ -4450,7 +4450,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 14.399999999999977,
-                "CI Lower": 12.0,
+                "CI Lower": 8.0,
                 "CI Upper": 16.0
             }
         },
@@ -4469,17 +4469,17 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 75.0,
                 "CI Lower": 75.0,
-                "CI Upper": 127.5
+                "CI Upper": 150.0
             },
             "Common": {
                 "value": 150.0,
-                "CI Lower": 100.0,
+                "CI Lower": 75.0,
                 "CI Upper": 150.0
             },
             "Strong": {
                 "value": 150.0,
                 "CI Lower": 150.0,
-                "CI Upper": 218.75
+                "CI Upper": 225.0
             },
             "Heavy": {
                 "value": 300.0,
@@ -4502,7 +4502,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 150.0,
                 "CI Lower": 150.0,
-                "CI Upper": 150.0
+                "CI Upper": 200.0
             },
             "Common": {
                 "value": 300.0,
@@ -4516,7 +4516,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 600.0,
-                "CI Lower": 600.0,
+                "CI Lower": 500.0,
                 "CI Upper": 900.0
             }
         },
@@ -4568,11 +4568,11 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 50.0,
                 "CI Lower": 50.0,
-                "CI Upper": 87.5
+                "CI Upper": 100.0
             },
             "Common": {
                 "value": 100.0,
-                "CI Lower": 75.0,
+                "CI Lower": 50.0,
                 "CI Upper": 100.0
             },
             "Strong": {
@@ -4582,7 +4582,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 244.99999999999994,
-                "CI Lower": 200.0,
+                "CI Lower": 150.0,
                 "CI Upper": 300.0
             }
         },
@@ -4629,26 +4629,26 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 1.1500000000000001,
                 "CI Lower": 1.0,
-                "CI Upper": 9.0
+                "CI Upper": 10.0
             },
             "Light": {
                 "value": 11.75,
-                "CI Lower": 9.0,
-                "CI Upper": 15.062499999999943
+                "CI Lower": 6.0,
+                "CI Upper": 25.0
             },
             "Common": {
                 "value": 28.0,
                 "CI Lower": 15.0,
-                "CI Upper": 35.0
+                "CI Upper": 42.5
             },
             "Strong": {
                 "value": 50.0,
-                "CI Lower": 32.5,
-                "CI Upper": 65.0
+                "CI Lower": 30.0,
+                "CI Upper": 75.0
             },
             "Heavy": {
                 "value": 96.99999999999996,
-                "CI Lower": 64.985,
+                "CI Lower": 63.0,
                 "CI Upper": 112.5
             }
         },
@@ -4662,7 +4662,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 81.25,
                 "CI Lower": 25.0,
-                "CI Upper": 295.8749999999992
+                "CI Upper": 295.0
             },
             "Light": {
                 "value": 270.0,
@@ -4681,7 +4681,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 859.9999999999998,
-                "CI Lower": 500.0,
+                "CI Lower": 487.4999999999997,
                 "CI Upper": 950.0
             }
         },
@@ -4694,22 +4694,22 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 9.25,
-                "CI Lower": 6.0,
-                "CI Upper": 14.0
+                "CI Lower": 5.0,
+                "CI Upper": 15.0
             },
             "Light": {
                 "value": 20.0,
-                "CI Lower": 17.125,
+                "CI Lower": 15.0,
                 "CI Upper": 25.0
             },
             "Common": {
                 "value": 30.0,
                 "CI Lower": 25.0,
-                "CI Upper": 30.0
+                "CI Upper": 33.0
             },
             "Strong": {
                 "value": 40.5,
-                "CI Lower": 33.0,
+                "CI Lower": 30.0,
                 "CI Upper": 50.0
             },
             "Heavy": {
@@ -4728,11 +4728,11 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 10.5,
                 "CI Lower": 9.0,
-                "CI Upper": 20.0
+                "CI Upper": 22.5
             },
             "Light": {
                 "value": 20.0,
-                "CI Lower": 10.5,
+                "CI Lower": 10.462500000000002,
                 "CI Upper": 30.0
             },
             "Common": {
@@ -4747,7 +4747,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 57.5,
-                "CI Lower": 35.0,
+                "CI Lower": 40.0,
                 "CI Upper": 75.0
             }
         },
@@ -4766,7 +4766,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 100.0,
                 "CI Lower": 25.0,
-                "CI Upper": 187.5
+                "CI Upper": 175.0
             },
             "Common": {
                 "value": 175.0,
@@ -4775,7 +4775,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 200.0,
-                "CI Lower": 199.06250000000006,
+                "CI Lower": 162.5,
                 "CI Upper": 400.0
             },
             "Heavy": {
@@ -4808,7 +4808,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 1.75,
-                "CI Lower": 1.2,
+                "CI Lower": 1.4500000000000002,
                 "CI Upper": 2.0
             },
             "Heavy": {
@@ -4827,12 +4827,12 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 50.0,
                 "CI Lower": 40.0,
-                "CI Upper": 60.0
+                "CI Upper": 65.0
             },
             "Light": {
                 "value": 151.0,
                 "CI Lower": 150.0,
-                "CI Upper": 166.0
+                "CI Upper": 200.0
             },
             "Common": {
                 "value": 200.0,
@@ -4860,7 +4860,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 2.3,
                 "CI Lower": 2.0,
-                "CI Upper": 5.0
+                "CI Upper": 4.6
             },
             "Light": {
                 "value": 5.0,
@@ -4869,17 +4869,17 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 8.0,
-                "CI Lower": 5.0,
+                "CI Lower": 4.975000000000001,
                 "CI Upper": 14.0
             },
             "Strong": {
                 "value": 14.0,
-                "CI Lower": 7.950000000000003,
+                "CI Lower": 6.0,
                 "CI Upper": 25.0
             },
             "Heavy": {
                 "value": 25.0,
-                "CI Lower": 11.599999999999994,
+                "CI Lower": 14.0,
                 "CI Upper": 25.0
             }
         },
@@ -4964,21 +4964,21 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 1.0,
                 "CI Lower": 1.0,
-                "CI Upper": 1.5
+                "CI Upper": 2.0
             },
             "Common": {
                 "value": 2.3,
-                "CI Lower": 1.5,
-                "CI Upper": 3.0
+                "CI Lower": 1.0,
+                "CI Upper": 3.4
             },
             "Strong": {
                 "value": 3.4,
-                "CI Lower": 3.0,
-                "CI Upper": 5.0
+                "CI Lower": 2.5,
+                "CI Upper": 6.0
             },
             "Heavy": {
                 "value": 8.499999999999996,
-                "CI Lower": 4.399999999999999,
+                "CI Lower": 4.0,
                 "CI Upper": 10.0
             }
         },
@@ -5002,7 +5002,7 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 1.0,
                 "CI Lower": 0.5,
-                "CI Upper": 1.0093749999999915
+                "CI Upper": 1.375
             },
             "Strong": {
                 "value": 1.0,
@@ -5024,28 +5024,28 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 0.5,
-                "CI Lower": 0.25,
+                "CI Lower": 0.1,
                 "CI Upper": 0.5
             },
             "Light": {
                 "value": 1.0,
                 "CI Lower": 0.5,
-                "CI Upper": 1.0
+                "CI Upper": 1.25
             },
             "Common": {
                 "value": 1.5,
                 "CI Lower": 1.0,
-                "CI Upper": 1.75
+                "CI Upper": 2.0
             },
             "Strong": {
                 "value": 3.0,
-                "CI Lower": 1.9375,
-                "CI Upper": 4.375
+                "CI Lower": 1.75,
+                "CI Upper": 4.5
             },
             "Heavy": {
                 "value": 5.0,
-                "CI Lower": 4.5,
-                "CI Upper": 6.0
+                "CI Lower": 4.0,
+                "CI Upper": 6.5
             }
         },
         "reliability_score": 0.7595439396464245
@@ -5063,7 +5063,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 17.515624999999986
+                "CI Upper": 12.5
             },
             "Common": {
                 "value": 20.0,
@@ -5090,17 +5090,17 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 0.2,
-                "CI Lower": 0.2,
+                "CI Lower": 0.15,
                 "CI Upper": 0.25
             },
             "Light": {
                 "value": 0.5,
-                "CI Lower": 0.5,
+                "CI Lower": 0.4,
                 "CI Upper": 0.5
             },
             "Common": {
                 "value": 1.0,
-                "CI Lower": 0.75,
+                "CI Lower": 0.7,
                 "CI Upper": 1.0
             },
             "Strong": {
@@ -5110,7 +5110,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 3.0,
-                "CI Lower": 2.5,
+                "CI Lower": 2.0,
                 "CI Upper": 3.0
             }
         },
@@ -5124,27 +5124,27 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 49.4,
                 "CI Lower": 30.0,
-                "CI Upper": 91.68749999999997
+                "CI Upper": 100.0
             },
             "Light": {
                 "value": 125.25,
                 "CI Lower": 100.0,
-                "CI Upper": 150.0
+                "CI Upper": 151.0
             },
             "Common": {
                 "value": 200.0,
-                "CI Lower": 152.95,
+                "CI Lower": 150.0,
                 "CI Upper": 250.0
             },
             "Strong": {
                 "value": 300.0,
                 "CI Lower": 250.0,
-                "CI Upper": 345.75
+                "CI Upper": 350.0
             },
             "Heavy": {
                 "value": 500.0,
                 "CI Lower": 350.0,
-                "CI Upper": 500.0
+                "CI Upper": 650.0
             }
         },
         "reliability_score": 0.8245627369873978
@@ -5189,7 +5189,7 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 350.0,
-                "CI Lower": 175.0,
+                "CI Lower": 87.5,
                 "CI Upper": 350.0
             },
             "Light": {
@@ -5205,7 +5205,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 1050.0,
                 "CI Lower": 700.0,
-                "CI Upper": 1050.0
+                "CI Upper": 1400.0
             },
             "Heavy": {
                 "value": 1739.9999999999998,
@@ -5266,16 +5266,16 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 137.0,
                 "CI Lower": 100.0,
-                "CI Upper": 200.9999999999991
+                "CI Upper": 240.0
             },
             "Strong": {
                 "value": 220.0,
-                "CI Lower": 118.5,
+                "CI Lower": 119.0,
                 "CI Upper": 300.0
             },
             "Heavy": {
                 "value": 329.9999999999999,
-                "CI Lower": 214.99999999999994,
+                "CI Lower": 211.99999999999994,
                 "CI Upper": 400.0
             }
         },
@@ -5298,8 +5298,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 25.0,
-                "CI Lower": 10.0,
-                "CI Upper": 50.0
+                "CI Lower": 15.0,
+                "CI Upper": 40.0
             },
             "Strong": {
                 "value": 45.0,
@@ -5308,7 +5308,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 83.74999999999999,
-                "CI Lower": 45.66874999999999,
+                "CI Lower": 42.499999999999986,
                 "CI Upper": 100.0
             }
         },
@@ -5322,12 +5322,12 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 10.8,
                 "CI Lower": 2.0,
-                "CI Upper": 24.400000000000002
+                "CI Upper": 28.0
             },
             "Light": {
                 "value": 32.0,
                 "CI Lower": 16.0,
-                "CI Upper": 32.0
+                "CI Upper": 34.0
             },
             "Common": {
                 "value": 44.0,
@@ -5337,11 +5337,11 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 64.0,
                 "CI Lower": 64.0,
-                "CI Upper": 80.0
+                "CI Upper": 112.0
             },
             "Heavy": {
                 "value": 192.0,
-                "CI Lower": 78.39999999999986,
+                "CI Lower": 64.0,
                 "CI Upper": 192.0
             }
         },
@@ -5355,7 +5355,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 12.5
+                "CI Upper": 20.0
             },
             "Light": {
                 "value": 20.0,
@@ -5365,7 +5365,7 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 20.0,
                 "CI Lower": 20.0,
-                "CI Upper": 30.0
+                "CI Upper": 40.0
             },
             "Strong": {
                 "value": 40.0,
@@ -5393,7 +5393,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 0.5,
                 "CI Lower": 0.5,
-                "CI Upper": 0.625
+                "CI Upper": 1.0
             },
             "Common": {
                 "value": 1.0,
@@ -5407,7 +5407,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 2.5,
-                "CI Lower": 1.674999999999999,
+                "CI Lower": 1.5,
                 "CI Upper": 2.5
             }
         },
@@ -5520,7 +5520,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 125.0,
                 "CI Lower": 125.0,
-                "CI Upper": 193.75
+                "CI Upper": 200.0
             },
             "Light": {
                 "value": 181.25,
@@ -5534,12 +5534,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 312.5,
-                "CI Lower": 249.06250000000006,
+                "CI Lower": 212.5,
                 "CI Upper": 562.5
             },
             "Heavy": {
                 "value": 612.4999999999998,
-                "CI Lower": 359.6875,
+                "CI Lower": 362.49999999999983,
                 "CI Upper": 750.0
             }
         },
@@ -5558,7 +5558,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 0.1,
                 "CI Lower": 0.1,
-                "CI Upper": 0.225
+                "CI Upper": 0.2
             },
             "Common": {
                 "value": 0.25,
@@ -5568,11 +5568,11 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 0.44999999999999996,
                 "CI Lower": 0.275,
-                "CI Upper": 1.05
+                "CI Upper": 1.2
             },
             "Heavy": {
                 "value": 1.2,
-                "CI Lower": 0.7499999999999993,
+                "CI Lower": 0.7792499999999999,
                 "CI Upper": 1.2
             }
         },
@@ -5619,12 +5619,12 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 25.0,
                 "CI Lower": 25.0,
-                "CI Upper": 100.0
+                "CI Upper": 116.25
             },
             "Light": {
                 "value": 106.25,
                 "CI Lower": 25.0,
-                "CI Upper": 162.5
+                "CI Upper": 200.0
             },
             "Common": {
                 "value": 175.0,
@@ -5633,8 +5633,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 237.5,
-                "CI Lower": 187.5,
-                "CI Upper": 250.62499999999943
+                "CI Lower": 150.0,
+                "CI Upper": 250.0
             },
             "Heavy": {
                 "value": 267.5,
@@ -5652,16 +5652,16 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 0.29000000000000004,
                 "CI Lower": 0.25,
-                "CI Upper": 0.41650374999999995
+                "CI Upper": 0.5
             },
             "Light": {
                 "value": 0.5,
                 "CI Lower": 0.5,
-                "CI Upper": 0.5
+                "CI Upper": 0.75
             },
             "Common": {
                 "value": 1.0,
-                "CI Lower": 0.7987500000000001,
+                "CI Lower": 0.7,
                 "CI Upper": 1.0
             },
             "Strong": {
@@ -5684,17 +5684,17 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 16.5,
-                "CI Lower": 1.0062499999999994,
+                "CI Lower": 0.125,
                 "CI Upper": 40.0
             },
             "Light": {
                 "value": 40.0,
-                "CI Lower": 36.25,
-                "CI Upper": 100.0
+                "CI Lower": 25.0,
+                "CI Upper": 120.0
             },
             "Common": {
                 "value": 200.0,
-                "CI Lower": 100.0,
+                "CI Lower": 75.0,
                 "CI Upper": 250.0
             },
             "Strong": {
@@ -5705,7 +5705,7 @@ export const substanceData: SubstanceData[] = [
             "Heavy": {
                 "value": 727.5000000000002,
                 "CI Lower": 500.0,
-                "CI Upper": 856.2500000000002
+                "CI Upper": 875.0
             }
         },
         "reliability_score": 0.7188366609191621
@@ -5717,7 +5717,7 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 16.0,
-                "CI Lower": 15.0,
+                "CI Lower": 12.0,
                 "CI Upper": 24.0
             },
             "Light": {
@@ -5727,17 +5727,17 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 90.0,
-                "CI Lower": 64.0,
-                "CI Upper": 100.0
+                "CI Lower": 60.0,
+                "CI Upper": 120.0
             },
             "Strong": {
                 "value": 152.5,
-                "CI Lower": 140.0,
+                "CI Lower": 120.0,
                 "CI Upper": 180.0
             },
             "Heavy": {
                 "value": 300.0,
-                "CI Lower": 256.0,
+                "CI Lower": 240.0,
                 "CI Upper": 320.0
             }
         },
@@ -5750,7 +5750,7 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 5.0,
-                "CI Lower": 5.0,
+                "CI Lower": 2.0,
                 "CI Upper": 10.0
             },
             "Light": {
@@ -5770,7 +5770,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 50.0,
-                "CI Lower": 30.49999999999997,
+                "CI Lower": 30.0,
                 "CI Upper": 60.0
             }
         },
@@ -5788,7 +5788,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 25.0,
-                "CI Lower": 10.0,
+                "CI Lower": 6.75,
                 "CI Upper": 50.0
             },
             "Common": {
@@ -5821,17 +5821,17 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 200.0,
-                "CI Lower": 130.0,
+                "CI Lower": 100.0,
                 "CI Upper": 300.0
             },
             "Common": {
                 "value": 345.0,
-                "CI Lower": 250.0,
+                "CI Lower": 200.0,
                 "CI Upper": 500.0
             },
             "Strong": {
                 "value": 500.0,
-                "CI Lower": 500.0,
+                "CI Lower": 350.0,
                 "CI Upper": 700.0
             },
             "Heavy": {
@@ -5850,12 +5850,12 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 16.5,
                 "CI Lower": 10.0,
-                "CI Upper": 45.0
+                "CI Upper": 48.25
             },
             "Light": {
                 "value": 46.25,
                 "CI Lower": 20.0,
-                "CI Upper": 58.75
+                "CI Upper": 60.0
             },
             "Common": {
                 "value": 57.5,
@@ -5864,12 +5864,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 83.75,
-                "CI Lower": 57.5,
+                "CI Lower": 55.0,
                 "CI Upper": 100.0
             },
             "Heavy": {
                 "value": 110.49999999999999,
-                "CI Lower": 83.45625,
+                "CI Lower": 81.75,
                 "CI Upper": 130.0
             }
         },
@@ -5882,22 +5882,22 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 32.45,
-                "CI Lower": 16.75,
-                "CI Upper": 46.75
+                "CI Lower": 15.0,
+                "CI Upper": 50.0
             },
             "Light": {
                 "value": 50.0,
-                "CI Lower": 47.681250000000006,
-                "CI Upper": 69.5
+                "CI Lower": 41.0,
+                "CI Upper": 70.0
             },
             "Common": {
                 "value": 77.5,
-                "CI Lower": 68.975,
-                "CI Upper": 100.0
+                "CI Lower": 50.0,
+                "CI Upper": 125.0
             },
             "Strong": {
                 "value": 150.0,
-                "CI Lower": 100.0,
+                "CI Lower": 80.0,
                 "CI Upper": 200.0
             },
             "Heavy": {
@@ -5935,7 +5935,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 100.0,
-                "CI Lower": 90.0,
+                "CI Lower": 80.0,
                 "CI Upper": 100.0
             }
         },
@@ -5954,7 +5954,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 22.5,
                 "CI Lower": 20.0,
-                "CI Upper": 57.56249999999994
+                "CI Upper": 57.5
             },
             "Common": {
                 "value": 55.0,
@@ -5968,7 +5968,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 95.0,
-                "CI Lower": 62.5,
+                "CI Lower": 65.0,
                 "CI Upper": 120.0
             }
         },
@@ -5996,12 +5996,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 2.5,
-                "CI Lower": 1.8718750000000002,
+                "CI Lower": 1.75,
                 "CI Upper": 2.75
             },
             "Heavy": {
                 "value": 3.0,
-                "CI Lower": 2.675,
+                "CI Lower": 2.59925,
                 "CI Upper": 3.0
             }
         },
@@ -6015,11 +6015,11 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 1.0,
                 "CI Lower": 1.0,
-                "CI Upper": 1.305
+                "CI Upper": 1.5
             },
             "Light": {
                 "value": 2.0,
-                "CI Lower": 1.5,
+                "CI Lower": 1.2,
                 "CI Upper": 2.0
             },
             "Common": {
@@ -6035,7 +6035,7 @@ export const substanceData: SubstanceData[] = [
             "Heavy": {
                 "value": 5.26,
                 "CI Lower": 4.0,
-                "CI Upper": 7.5
+                "CI Upper": 8.0
             }
         },
         "reliability_score": 0.8418305898892717
@@ -6052,13 +6052,13 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 2.0,
-                "CI Lower": 1.125,
-                "CI Upper": 2.625
+                "CI Lower": 1.5,
+                "CI Upper": 2.5
             },
             "Common": {
                 "value": 3.0,
                 "CI Lower": 2.0,
-                "CI Upper": 3.6
+                "CI Upper": 3.2
             },
             "Strong": {
                 "value": 4.0,
@@ -6081,7 +6081,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 2.4125,
                 "CI Lower": 1.2,
-                "CI Upper": 3.475
+                "CI Upper": 2.5
             },
             "Light": {
                 "value": 5.0,
@@ -6096,11 +6096,11 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 10.0,
                 "CI Lower": 7.0,
-                "CI Upper": 12.0
+                "CI Upper": 15.0
             },
             "Heavy": {
                 "value": 15.0,
-                "CI Lower": 11.3,
+                "CI Lower": 10.0,
                 "CI Upper": 15.0
             }
         },
@@ -6166,7 +6166,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 100.0,
-                "CI Lower": 90.0,
+                "CI Lower": 93.99999999999999,
                 "CI Upper": 110.0
             }
         },
@@ -6184,22 +6184,22 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 30.0,
-                "CI Lower": 30.0,
-                "CI Upper": 35.0
+                "CI Lower": 25.0,
+                "CI Upper": 43.0
             },
             "Common": {
                 "value": 50.0,
                 "CI Lower": 50.0,
-                "CI Upper": 50.0
+                "CI Upper": 60.0
             },
             "Strong": {
                 "value": 100.0,
-                "CI Lower": 75.0,
+                "CI Lower": 65.0,
                 "CI Upper": 100.0
             },
             "Heavy": {
                 "value": 150.0,
-                "CI Lower": 120.0,
+                "CI Lower": 115.0,
                 "CI Upper": 150.0
             }
         },
@@ -6213,12 +6213,12 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 50.0,
                 "CI Lower": 50.0,
-                "CI Upper": 78.75
+                "CI Upper": 85.0
             },
             "Light": {
                 "value": 82.5,
                 "CI Lower": 50.0,
-                "CI Upper": 126.25
+                "CI Upper": 110.0
             },
             "Common": {
                 "value": 122.5,
@@ -6227,7 +6227,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 200.0,
-                "CI Lower": 117.5,
+                "CI Lower": 117.46875,
                 "CI Upper": 250.0
             },
             "Heavy": {
@@ -6246,16 +6246,16 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 25.0,
                 "CI Lower": 25.0,
-                "CI Upper": 41.25
+                "CI Upper": 36.5
             },
             "Light": {
                 "value": 32.5,
                 "CI Lower": 25.0,
-                "CI Upper": 75.0
+                "CI Upper": 70.0
             },
             "Common": {
                 "value": 67.5,
-                "CI Lower": 34.87500000000001,
+                "CI Lower": 35.0,
                 "CI Upper": 100.0
             },
             "Strong": {
@@ -6288,13 +6288,13 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 30.0,
-                "CI Lower": 25.0,
+                "CI Lower": 30.0,
                 "CI Upper": 40.0
             },
             "Strong": {
                 "value": 42.0,
                 "CI Lower": 30.0,
-                "CI Upper": 70.0
+                "CI Upper": 50.0
             },
             "Heavy": {
                 "value": 70.0,
@@ -6311,27 +6311,27 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 60.0,
-                "CI Lower": 50.0,
-                "CI Upper": 90.0
+                "CI Lower": 45.0,
+                "CI Upper": 100.0
             },
             "Light": {
                 "value": 230.0,
-                "CI Lower": 208.0,
+                "CI Lower": 200.0,
                 "CI Upper": 240.0
             },
             "Common": {
                 "value": 354.0,
-                "CI Lower": 350.0,
-                "CI Upper": 360.0
+                "CI Lower": 345.0,
+                "CI Upper": 400.0
             },
             "Strong": {
                 "value": 600.0,
-                "CI Lower": 600.0,
+                "CI Lower": 540.0,
                 "CI Upper": 600.0
             },
             "Heavy": {
                 "value": 915.0,
-                "CI Lower": 894.0,
+                "CI Lower": 888.0,
                 "CI Upper": 1000.0
             }
         },
@@ -6345,7 +6345,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 90.0,
                 "CI Lower": 75.0,
-                "CI Upper": 130.0
+                "CI Upper": 112.0
             },
             "Light": {
                 "value": 100.0,
@@ -6359,12 +6359,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 240.0,
-                "CI Lower": 179.25000000000006,
+                "CI Lower": 150.0,
                 "CI Upper": 480.0
             },
             "Heavy": {
                 "value": 647.9999999999994,
-                "CI Lower": 239.955,
+                "CI Lower": 238.2,
                 "CI Upper": 900.0
             }
         },
@@ -6383,7 +6383,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 2.75,
                 "CI Lower": 2.0,
-                "CI Upper": 4.506249999999994
+                "CI Upper": 4.0
             },
             "Common": {
                 "value": 4.0,
@@ -6430,7 +6430,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 2.549999999999999,
-                "CI Lower": 1.0,
+                "CI Lower": 1.549999999999999,
                 "CI Upper": 3.0
             }
         },
@@ -6463,7 +6463,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 12.0,
-                "CI Lower": 7.743749999999995,
+                "CI Lower": 5.0,
                 "CI Upper": 12.0
             }
         },
@@ -6482,16 +6482,16 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 15.0,
                 "CI Lower": 10.0,
-                "CI Upper": 37.5
+                "CI Upper": 35.0
             },
             "Common": {
                 "value": 30.0,
-                "CI Lower": 10.0,
+                "CI Lower": 19.750000000000014,
                 "CI Upper": 50.0
             },
             "Strong": {
                 "value": 50.0,
-                "CI Lower": 37.4875,
+                "CI Lower": 39.9375,
                 "CI Upper": 90.0
             },
             "Heavy": {
@@ -6515,7 +6515,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 20.0,
                 "CI Lower": 20.0,
-                "CI Upper": 40.0
+                "CI Upper": 32.5
             },
             "Common": {
                 "value": 35.0,
@@ -6581,7 +6581,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "CI Upper": 12.5
             },
             "Common": {
                 "value": 10.0,
@@ -6609,7 +6609,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 1.75,
                 "CI Lower": 1.0,
-                "CI Upper": 7.75
+                "CI Upper": 5.0
             },
             "Light": {
                 "value": 5.0,
@@ -6618,12 +6618,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 10.0,
-                "CI Lower": 5.0,
+                "CI Lower": 7.475000000000001,
                 "CI Upper": 20.0
             },
             "Strong": {
                 "value": 20.0,
-                "CI Lower": 11.25,
+                "CI Lower": 10.0,
                 "CI Upper": 30.0
             },
             "Heavy": {
@@ -6661,7 +6661,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 45.0,
-                "CI Lower": 30.0,
+                "CI Lower": 41.99999999999996,
                 "CI Upper": 45.0
             }
         },
@@ -6707,28 +6707,28 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 13.5,
-                "CI Lower": 5.7,
+                "CI Lower": 5.0,
                 "CI Upper": 20.0
             },
             "Light": {
                 "value": 25.0,
                 "CI Lower": 20.0,
-                "CI Upper": 32.5
+                "CI Upper": 36.0
             },
             "Common": {
                 "value": 45.0,
-                "CI Lower": 32.0,
-                "CI Upper": 50.0
+                "CI Lower": 30.0,
+                "CI Upper": 53.0
             },
             "Strong": {
                 "value": 70.0,
                 "CI Lower": 50.0,
-                "CI Upper": 75.0
+                "CI Upper": 100.0
             },
             "Heavy": {
                 "value": 101.19999999999999,
-                "CI Lower": 82.49999999999993,
-                "CI Upper": 153.1749999999998
+                "CI Lower": 75.0,
+                "CI Upper": 160.0
             }
         },
         "reliability_score": 0.8014989684606157
@@ -6760,7 +6760,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 30.0,
-                "CI Lower": 25.0,
+                "CI Lower": 20.0,
                 "CI Upper": 30.0
             }
         },
@@ -6812,7 +6812,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 8.0,
                 "CI Lower": 8.0,
-                "CI Upper": 13.25
+                "CI Upper": 15.0
             },
             "Common": {
                 "value": 30.0,
@@ -6822,11 +6822,11 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 60.0,
                 "CI Lower": 30.0,
-                "CI Upper": 97.5
+                "CI Upper": 120.0
             },
             "Heavy": {
                 "value": 120.0,
-                "CI Lower": 87.0,
+                "CI Lower": 76.0,
                 "CI Upper": 120.0
             }
         },
@@ -6882,7 +6882,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 450.0,
-                "CI Lower": 400.0,
+                "CI Lower": 350.0,
                 "CI Upper": 500.0
             },
             "Strong": {
@@ -6916,11 +6916,11 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 250.0,
                 "CI Lower": 200.0,
-                "CI Upper": 250.0
+                "CI Upper": 300.0
             },
             "Strong": {
                 "value": 406.25,
-                "CI Lower": 400.0,
+                "CI Lower": 375.0,
                 "CI Upper": 500.0
             },
             "Heavy": {
@@ -6939,16 +6939,16 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 30.0,
                 "CI Lower": 30.0,
-                "CI Upper": 63.25
+                "CI Upper": 60.0
             },
             "Light": {
                 "value": 61.25,
                 "CI Lower": 30.0,
-                "CI Upper": 80.03124999999997
+                "CI Upper": 80.0
             },
             "Common": {
                 "value": 77.5,
-                "CI Lower": 52.4375,
+                "CI Lower": 62.4375,
                 "CI Upper": 100.0
             },
             "Strong": {
@@ -6972,12 +6972,12 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 2.325,
                 "CI Lower": 2.0,
-                "CI Upper": 3.0
+                "CI Upper": 3.95
             },
             "Light": {
                 "value": 3.0,
-                "CI Lower": 2.25,
-                "CI Upper": 9.0
+                "CI Lower": 2.5,
+                "CI Upper": 9.75
             },
             "Common": {
                 "value": 8.5,
@@ -6991,7 +6991,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 40.0,
-                "CI Lower": 20.0,
+                "CI Lower": 21.349999999999994,
                 "CI Upper": 40.0
             }
         },
@@ -7009,8 +7009,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 500.0,
-                "CI Lower": 300.0,
-                "CI Upper": 750.0
+                "CI Lower": 350.0,
+                "CI Upper": 562.5
             },
             "Common": {
                 "value": 750.0,
@@ -7019,8 +7019,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 1000.0,
-                "CI Lower": 750.0,
-                "CI Upper": 1437.5
+                "CI Lower": 862.5,
+                "CI Upper": 1500.0
             },
             "Heavy": {
                 "value": 1500.0,
@@ -7086,7 +7086,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 18.78124999999997
+                "CI Upper": 20.0
             },
             "Heavy": {
                 "value": 20.0,
@@ -7104,7 +7104,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 29.0,
                 "CI Lower": 10.0,
-                "CI Upper": 59.0
+                "CI Upper": 58.5
             },
             "Light": {
                 "value": 60.0,
@@ -7119,11 +7119,11 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 60.0,
                 "CI Lower": 60.0,
-                "CI Upper": 97.5
+                "CI Upper": 90.0
             },
             "Heavy": {
                 "value": 120.0,
-                "CI Lower": 61.46250000000002,
+                "CI Lower": 60.0,
                 "CI Upper": 120.0
             }
         },
@@ -7146,8 +7146,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 175.0,
-                "CI Lower": 125.0,
-                "CI Upper": 300.0
+                "CI Lower": 150.0,
+                "CI Upper": 350.0
             },
             "Strong": {
                 "value": 287.5,
@@ -7156,7 +7156,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 427.49999999999994,
-                "CI Lower": 232.49999999999983,
+                "CI Lower": 250.0,
                 "CI Upper": 450.0
             }
         },
@@ -7169,12 +7169,12 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 12.5,
-                "CI Lower": 12.5,
-                "CI Upper": 21.8
+                "CI Lower": 12.0,
+                "CI Upper": 25.0
             },
             "Light": {
                 "value": 25.0,
-                "CI Lower": 25.0,
+                "CI Lower": 24.0,
                 "CI Upper": 25.0
             },
             "Common": {
@@ -7190,7 +7190,7 @@ export const substanceData: SubstanceData[] = [
             "Heavy": {
                 "value": 105.49999999999997,
                 "CI Lower": 75.0,
-                "CI Upper": 125.0
+                "CI Upper": 150.0
             }
         },
         "reliability_score": 0.8055604516695607
@@ -7246,11 +7246,11 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 10.124999999999886
+                "CI Upper": 20.0
             },
             "Strong": {
                 "value": 20.0,
-                "CI Lower": 20.0,
+                "CI Lower": 15.0,
                 "CI Upper": 20.0
             },
             "Heavy": {
@@ -7317,7 +7317,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 10.9
+                "CI Upper": 10.0
             },
             "Heavy": {
                 "value": 13.6,
@@ -7387,7 +7387,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 13.75,
-                "CI Lower": 7.125,
+                "CI Lower": 6.0,
                 "CI Upper": 15.0
             }
         },
@@ -7415,7 +7415,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 45.0,
-                "CI Lower": 27.437500000000004,
+                "CI Lower": 30.0,
                 "CI Upper": 50.0
             },
             "Heavy": {
@@ -7433,7 +7433,7 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 9.4,
-                "CI Lower": 6.4,
+                "CI Lower": 5.0,
                 "CI Upper": 10.0
             },
             "Light": {
@@ -7444,17 +7444,17 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 25.0,
                 "CI Lower": 20.0,
-                "CI Upper": 35.0
+                "CI Upper": 40.0
             },
             "Strong": {
                 "value": 50.0,
-                "CI Lower": 32.5,
+                "CI Lower": 30.0,
                 "CI Upper": 50.0
             },
             "Heavy": {
                 "value": 62.99999999999997,
                 "CI Lower": 50.0,
-                "CI Upper": 82.49999999999993
+                "CI Upper": 100.0
             }
         },
         "reliability_score": 0.8098419811512148
@@ -7476,13 +7476,13 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 15.0,
-                "CI Lower": 9.0,
+                "CI Lower": 7.0,
                 "CI Upper": 20.0
             },
             "Strong": {
                 "value": 20.0,
                 "CI Lower": 15.0,
-                "CI Upper": 35.0
+                "CI Upper": 50.0
             },
             "Heavy": {
                 "value": 50.0,
@@ -7537,18 +7537,18 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 1.0,
-                "CI Lower": 1.0,
+                "CI Lower": 0.6,
                 "CI Upper": 1.0
             },
             "Common": {
                 "value": 1.0,
                 "CI Lower": 1.0,
-                "CI Upper": 1.5
+                "CI Upper": 2.0
             },
             "Strong": {
                 "value": 2.0,
                 "CI Lower": 2.0,
-                "CI Upper": 2.0
+                "CI Upper": 2.5
             },
             "Heavy": {
                 "value": 4.0,
@@ -7575,7 +7575,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 2.0,
-                "CI Lower": 1.0,
+                "CI Lower": 1.5,
                 "CI Upper": 2.0
             },
             "Strong": {
@@ -7618,7 +7618,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 1750.0,
-                "CI Lower": 1682.8125000000002,
+                "CI Lower": 1500.0,
                 "CI Upper": 1750.0
             }
         },
@@ -7637,16 +7637,16 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 750.0,
                 "CI Lower": 650.0,
-                "CI Upper": 750.0
+                "CI Upper": 1000.0
             },
             "Common": {
                 "value": 1300.0,
                 "CI Lower": 1000.0,
-                "CI Upper": 1300.0
+                "CI Upper": 1400.0
             },
             "Strong": {
                 "value": 1600.0,
-                "CI Lower": 1500.0,
+                "CI Lower": 1400.0,
                 "CI Upper": 1800.0
             },
             "Heavy": {
@@ -7665,7 +7665,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 36.875,
                 "CI Lower": 12.5,
-                "CI Upper": 85.9531249999997
+                "CI Upper": 82.5
             },
             "Light": {
                 "value": 62.5,
@@ -7680,7 +7680,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 200.0,
                 "CI Lower": 125.0,
-                "CI Upper": 800.0
+                "CI Upper": 702.4999999999977
             },
             "Heavy": {
                 "value": 800.0,
@@ -7702,7 +7702,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 25.0,
-                "CI Lower": 25.0,
+                "CI Lower": 20.0,
                 "CI Upper": 50.0
             },
             "Common": {
@@ -7750,7 +7750,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 2.5,
-                "CI Lower": 1.5,
+                "CI Lower": 1.4937500000000004,
                 "CI Upper": 3.0
             }
         },
@@ -7839,8 +7839,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 200.0,
-                "CI Lower": 150.0,
-                "CI Upper": 250.62499999999943
+                "CI Lower": 100.0,
+                "CI Upper": 250.0
             },
             "Strong": {
                 "value": 237.5,
@@ -7862,7 +7862,7 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 0.56,
-                "CI Lower": 0.36000000000000004,
+                "CI Lower": 0.3,
                 "CI Upper": 1.0
             },
             "Light": {
@@ -7878,11 +7878,11 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 2.5,
                 "CI Lower": 2.0,
-                "CI Upper": 3.1
+                "CI Upper": 4.0
             },
             "Heavy": {
                 "value": 5.0,
-                "CI Lower": 3.2459999999999978,
+                "CI Lower": 2.7,
                 "CI Upper": 6.0
             }
         },
@@ -7915,7 +7915,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 4.225000000000001,
-                "CI Lower": 3.7193750000000017,
+                "CI Lower": 3.5,
                 "CI Upper": 6.0
             }
         },
@@ -7929,11 +7929,11 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 1.0,
                 "CI Lower": 0.5,
-                "CI Upper": 1.56
+                "CI Upper": 2.0
             },
             "Light": {
                 "value": 2.0,
-                "CI Lower": 1.2,
+                "CI Lower": 1.0,
                 "CI Upper": 2.0
             },
             "Common": {
@@ -7962,7 +7962,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 0.3,
                 "CI Lower": 0.3,
-                "CI Upper": 1.8
+                "CI Upper": 3.0
             },
             "Light": {
                 "value": 3.0,
@@ -8010,12 +8010,12 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 1200.0,
                 "CI Lower": 1200.0,
-                "CI Upper": 1500.0
+                "CI Upper": 1600.0
             },
             "Heavy": {
                 "value": 2400.0,
-                "CI Lower": 2400.0,
-                "CI Upper": 2700.0
+                "CI Lower": 2100.0,
+                "CI Upper": 2800.0
             }
         },
         "reliability_score": 0.796466224415926
@@ -8033,17 +8033,17 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 60.0,
                 "CI Lower": 60.0,
-                "CI Upper": 110.0
+                "CI Upper": 120.0
             },
             "Common": {
                 "value": 120.0,
-                "CI Lower": 100.0,
-                "CI Upper": 120.0
+                "CI Lower": 60.0,
+                "CI Upper": 140.0
             },
             "Strong": {
                 "value": 150.0,
                 "CI Lower": 120.0,
-                "CI Upper": 200.0
+                "CI Upper": 240.0
             },
             "Heavy": {
                 "value": 299.9999999999997,
@@ -8061,11 +8061,11 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 58.5,
                 "CI Lower": 50.0,
-                "CI Upper": 90.14999999999986
+                "CI Upper": 90.0
             },
             "Light": {
                 "value": 88.0,
-                "CI Lower": 58.5,
+                "CI Lower": 64.8375,
                 "CI Upper": 100.0
             },
             "Common": {
@@ -8080,7 +8080,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 225.0,
-                "CI Lower": 140.0,
+                "CI Lower": 130.0,
                 "CI Upper": 250.0
             }
         },
@@ -8099,7 +8099,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 112.5,
                 "CI Lower": 75.0,
-                "CI Upper": 193.75
+                "CI Upper": 181.25
             },
             "Common": {
                 "value": 162.5,
@@ -8113,7 +8113,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 250.0,
-                "CI Lower": 204.8749999999999,
+                "CI Lower": 200.0,
                 "CI Upper": 250.0
             }
         },
@@ -8127,7 +8127,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 29.0,
                 "CI Lower": 20.0,
-                "CI Upper": 156.75
+                "CI Upper": 150.0
             },
             "Light": {
                 "value": 150.0,
@@ -8136,12 +8136,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 182.5,
-                "CI Lower": 149.25000000000006,
+                "CI Lower": 95.0,
                 "CI Upper": 200.0
             },
             "Strong": {
                 "value": 200.0,
-                "CI Lower": 161.25,
+                "CI Lower": 165.0,
                 "CI Upper": 200.0
             },
             "Heavy": {
@@ -8164,22 +8164,22 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 5.0,
-                "CI Lower": 5.0,
+                "CI Lower": 4.0,
                 "CI Upper": 10.0
             },
             "Common": {
                 "value": 10.0,
-                "CI Lower": 6.0,
+                "CI Lower": 5.0,
                 "CI Upper": 10.0
             },
             "Strong": {
                 "value": 10.5,
                 "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "CI Upper": 20.0
             },
             "Heavy": {
                 "value": 22.399999999999977,
-                "CI Lower": 14.299999999999997,
+                "CI Lower": 14.0,
                 "CI Upper": 30.0
             }
         },
@@ -8193,7 +8193,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 0.028749999999999998,
                 "CI Lower": 0.025,
-                "CI Upper": 0.15756249999999994
+                "CI Upper": 0.1575
             },
             "Light": {
                 "value": 0.16625,
@@ -8203,7 +8203,7 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 0.25,
                 "CI Lower": 0.18,
-                "CI Upper": 0.4
+                "CI Upper": 0.41664999999999996
             },
             "Strong": {
                 "value": 0.42500000000000004,
@@ -8212,7 +8212,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 0.5,
-                "CI Lower": 0.4,
+                "CI Lower": 0.42500000000000004,
                 "CI Upper": 0.5
             }
         },
@@ -8241,7 +8241,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 200.0,
                 "CI Lower": 100.0,
-                "CI Upper": 202.49999999999773
+                "CI Upper": 300.0
             },
             "Heavy": {
                 "value": 500.0,
@@ -8273,7 +8273,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 20.0,
-                "CI Lower": 14.950000000000003,
+                "CI Lower": 13.0,
                 "CI Upper": 30.0
             },
             "Heavy": {
@@ -8302,11 +8302,11 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 40.0,
                 "CI Lower": 30.0,
-                "CI Upper": 50.0
+                "CI Upper": 80.0
             },
             "Strong": {
                 "value": 80.0,
-                "CI Lower": 50.0,
+                "CI Lower": 40.0,
                 "CI Upper": 80.0
             },
             "Heavy": {
@@ -8340,11 +8340,11 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 65.0,
                 "CI Lower": 15.0,
-                "CI Upper": 400.0
+                "CI Upper": 325.0
             },
             "Heavy": {
                 "value": 325.0,
-                "CI Lower": 30.0,
+                "CI Lower": 57.5,
                 "CI Upper": 400.0
             }
         },
@@ -8391,7 +8391,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 2.5,
                 "CI Lower": 2.5,
-                "CI Upper": 6.5
+                "CI Upper": 5.0
             },
             "Light": {
                 "value": 5.0,
@@ -8410,7 +8410,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 21.999999999999993,
-                "CI Lower": 13.999999999999986,
+                "CI Lower": 11.999999999999993,
                 "CI Upper": 30.0
             }
         },
@@ -8439,7 +8439,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 20.0,
                 "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "CI Upper": 22.5
             },
             "Heavy": {
                 "value": 37.5,
@@ -8462,7 +8462,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 1.375,
                 "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "CI Upper": 3.5
             },
             "Common": {
                 "value": 4.0,
@@ -8472,7 +8472,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 4.0,
                 "CI Lower": 4.0,
-                "CI Upper": 4.878124999999997
+                "CI Upper": 7.5
             },
             "Heavy": {
                 "value": 7.924999999999999,
@@ -8505,7 +8505,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 4.0,
                 "CI Lower": 4.0,
-                "CI Upper": 4.5
+                "CI Upper": 4.25
             },
             "Heavy": {
                 "value": 5.849999999999998,
@@ -8528,7 +8528,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 2.0,
                 "CI Lower": 2.0,
-                "CI Upper": 2.5124999999999886
+                "CI Upper": 2.2562499999999943
             },
             "Common": {
                 "value": 2.5,
@@ -8561,16 +8561,16 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 25.0,
                 "CI Lower": 17.5,
-                "CI Upper": 27.5
+                "CI Upper": 30.0
             },
             "Common": {
                 "value": 30.0,
                 "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "CI Upper": 75.0
             },
             "Strong": {
                 "value": 75.0,
-                "CI Lower": 50.0,
+                "CI Lower": 40.0,
                 "CI Upper": 100.0
             },
             "Heavy": {
@@ -8589,7 +8589,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 8.0,
                 "CI Lower": 2.0,
-                "CI Upper": 20.0
+                "CI Upper": 17.5
             },
             "Light": {
                 "value": 17.5,
@@ -8603,7 +8603,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 46.25,
-                "CI Lower": 32.5,
+                "CI Lower": 32.46875,
                 "CI Upper": 50.0
             },
             "Heavy": {
@@ -8655,7 +8655,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 16.0,
                 "CI Lower": 10.0,
-                "CI Upper": 100.0
+                "CI Upper": 150.0
             },
             "Light": {
                 "value": 200.0,
@@ -8664,17 +8664,17 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 320.0,
-                "CI Lower": 250.0,
-                "CI Upper": 400.0
+                "CI Lower": 220.0,
+                "CI Upper": 454.0
             },
             "Strong": {
                 "value": 550.0,
-                "CI Lower": 400.0,
-                "CI Upper": 750.0
+                "CI Lower": 350.0,
+                "CI Upper": 800.0
             },
             "Heavy": {
                 "value": 900.0,
-                "CI Lower": 657.0,
+                "CI Lower": 589.0,
                 "CI Upper": 1300.0
             }
         },
@@ -8687,12 +8687,12 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 200.0,
-                "CI Lower": 162.0,
+                "CI Lower": 102.0,
                 "CI Upper": 200.0
             },
             "Light": {
                 "value": 400.0,
-                "CI Lower": 400.0,
+                "CI Lower": 200.0,
                 "CI Upper": 400.0
             },
             "Common": {
@@ -8703,12 +8703,12 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 600.0,
                 "CI Lower": 600.0,
-                "CI Upper": 600.0
+                "CI Upper": 800.0
             },
             "Heavy": {
                 "value": 800.0,
                 "CI Lower": 800.0,
-                "CI Upper": 800.0
+                "CI Upper": 1000.0
             }
         },
         "reliability_score": 0.8722283108384439
@@ -8735,12 +8735,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 31.0,
-                "CI Lower": 26.25,
+                "CI Lower": 30.0,
                 "CI Upper": 34.0
             },
             "Heavy": {
                 "value": 34.0,
-                "CI Lower": 34.0,
+                "CI Lower": 30.200000000000003,
                 "CI Upper": 34.0
             }
         },
@@ -8759,12 +8759,12 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 2.0,
                 "CI Lower": 2.0,
-                "CI Upper": 4.5
+                "CI Upper": 4.503124999999997
             },
             "Common": {
                 "value": 5.0,
                 "CI Lower": 3.0,
-                "CI Upper": 10.0
+                "CI Upper": 8.5
             },
             "Strong": {
                 "value": 10.0,
@@ -8787,7 +8787,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 1.53,
                 "CI Lower": 1.0,
-                "CI Upper": 3.0
+                "CI Upper": 3.0614999999999988
             },
             "Light": {
                 "value": 3.3,
@@ -8806,7 +8806,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 10.0,
-                "CI Lower": 8.0,
+                "CI Lower": 7.824999999999998,
                 "CI Upper": 15.5
             }
         },
@@ -8819,28 +8819,28 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 140.4,
-                "CI Lower": 80.4,
+                "CI Lower": 21.0,
                 "CI Upper": 225.0
             },
             "Light": {
                 "value": 300.0,
-                "CI Lower": 225.0,
-                "CI Upper": 500.0
+                "CI Lower": 200.0,
+                "CI Upper": 550.0
             },
             "Common": {
                 "value": 800.0,
-                "CI Lower": 500.0,
+                "CI Lower": 450.0,
                 "CI Upper": 1000.0
             },
             "Strong": {
                 "value": 1200.0,
-                "CI Lower": 1000.0,
-                "CI Upper": 1500.0
+                "CI Lower": 900.0,
+                "CI Upper": 1750.0
             },
             "Heavy": {
                 "value": 2099.9999999999995,
-                "CI Lower": 1540.0,
-                "CI Upper": 3425.0
+                "CI Lower": 1500.0,
+                "CI Upper": 3500.0
             }
         },
         "reliability_score": 0.751039285144232
@@ -8863,7 +8863,7 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 70.0,
                 "CI Lower": 55.0,
-                "CI Upper": 90.0
+                "CI Upper": 100.0
             },
             "Strong": {
                 "value": 100.0,
@@ -8872,7 +8872,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 150.0,
-                "CI Lower": 130.0,
+                "CI Lower": 125.0,
                 "CI Upper": 180.0
             }
         },
@@ -8886,7 +8886,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 12.8,
                 "CI Lower": 8.0,
-                "CI Upper": 40.0
+                "CI Upper": 42.0
             },
             "Light": {
                 "value": 45.0,
@@ -8919,7 +8919,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 0.11125,
                 "CI Lower": 0.1,
-                "CI Upper": 0.40650000000000003
+                "CI Upper": 0.5
             },
             "Light": {
                 "value": 0.3725,
@@ -8928,7 +8928,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 0.5,
-                "CI Lower": 0.33,
+                "CI Lower": 0.32956250000000004,
                 "CI Upper": 1.0
             },
             "Strong": {
@@ -8957,17 +8957,17 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 37.0,
                 "CI Lower": 30.0,
-                "CI Upper": 40.0
+                "CI Upper": 46.0
             },
             "Common": {
                 "value": 70.0,
                 "CI Lower": 50.0,
-                "CI Upper": 96.0
+                "CI Upper": 100.0
             },
             "Strong": {
                 "value": 150.0,
-                "CI Lower": 112.5,
-                "CI Upper": 170.0
+                "CI Lower": 100.0,
+                "CI Upper": 180.0
             },
             "Heavy": {
                 "value": 250.0,
@@ -8999,12 +8999,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 362.5,
-                "CI Lower": 250.0,
+                "CI Lower": 245.0,
                 "CI Upper": 450.0
             },
             "Heavy": {
                 "value": 589.9999999999999,
-                "CI Lower": 375.0,
+                "CI Lower": 375.97499999999997,
                 "CI Upper": 720.0
             }
         },
@@ -9023,7 +9023,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 71.25,
                 "CI Lower": 35.0,
-                "CI Upper": 93.90624999999986
+                "CI Upper": 100.0
             },
             "Common": {
                 "value": 100.0,
@@ -9056,12 +9056,12 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 2.0,
                 "CI Lower": 2.0,
-                "CI Upper": 2.5
+                "CI Upper": 3.0
             },
             "Common": {
                 "value": 4.0,
-                "CI Lower": 3.75,
-                "CI Upper": 4.0
+                "CI Lower": 3.5,
+                "CI Upper": 4.5
             },
             "Strong": {
                 "value": 6.0,
@@ -9071,7 +9071,7 @@ export const substanceData: SubstanceData[] = [
             "Heavy": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 12.0
+                "CI Upper": 12.5
             }
         },
         "reliability_score": 0.7986778277993571
@@ -9083,12 +9083,12 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 15.0,
-                "CI Lower": 5.0,
-                "CI Upper": 250.0
+                "CI Lower": 2.5,
+                "CI Upper": 300.0
             },
             "Light": {
                 "value": 500.0,
-                "CI Lower": 248.75000000000006,
+                "CI Lower": 50.0,
                 "CI Upper": 750.0
             },
             "Common": {
@@ -9098,7 +9098,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 2000.0,
-                "CI Lower": 1900.0,
+                "CI Lower": 1800.0,
                 "CI Upper": 2000.0
             },
             "Heavy": {
@@ -9182,27 +9182,27 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 11.9952,
-                "CI Lower": 8.568,
-                "CI Upper": 15.0
+                "CI Lower": 7.14,
+                "CI Upper": 25.0
             },
             "Light": {
                 "value": 100.0,
-                "CI Lower": 75.0,
+                "CI Lower": 66.0,
                 "CI Upper": 100.0
             },
             "Common": {
                 "value": 150.0,
                 "CI Lower": 100.0,
-                "CI Upper": 150.0
+                "CI Upper": 160.0
             },
             "Strong": {
                 "value": 200.0,
-                "CI Lower": 180.0,
+                "CI Lower": 160.0,
                 "CI Upper": 250.0
             },
             "Heavy": {
                 "value": 311.9999999999999,
-                "CI Lower": 300.0,
+                "CI Lower": 250.0,
                 "CI Upper": 400.0
             }
         },
@@ -9216,7 +9216,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 75.0,
                 "CI Lower": 25.0,
-                "CI Upper": 100.02499999999998
+                "CI Upper": 100.0
             },
             "Light": {
                 "value": 105.0,
@@ -9263,7 +9263,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 300.0,
-                "CI Lower": 150.0,
+                "CI Lower": 225.0,
                 "CI Upper": 450.0
             },
             "Heavy": {
@@ -9282,26 +9282,26 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 25.0,
                 "CI Lower": 25.0,
-                "CI Upper": 66.25000000000001
+                "CI Upper": 75.0
             },
             "Light": {
                 "value": 100.0,
-                "CI Lower": 74.68750000000001,
-                "CI Upper": 125.0
+                "CI Lower": 50.0,
+                "CI Upper": 150.0
             },
             "Common": {
                 "value": 150.0,
-                "CI Lower": 112.5,
+                "CI Lower": 100.0,
                 "CI Upper": 200.0
             },
             "Strong": {
                 "value": 200.0,
                 "CI Lower": 200.0,
-                "CI Upper": 200.0
+                "CI Upper": 250.0
             },
             "Heavy": {
                 "value": 400.0,
-                "CI Lower": 250.0,
+                "CI Lower": 200.0,
                 "CI Upper": 400.0
             }
         },
@@ -9329,12 +9329,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 1.5,
-                "CI Lower": 0.9937500000000004,
+                "CI Lower": 1.0,
                 "CI Upper": 2.5
             },
             "Heavy": {
                 "value": 2.5,
-                "CI Lower": 1.25,
+                "CI Lower": 1.4937500000000004,
                 "CI Upper": 3.0
             }
         },
@@ -9347,12 +9347,12 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 20.0,
-                "CI Lower": 12.000000000000002,
+                "CI Lower": 10.0,
                 "CI Upper": 20.0
             },
             "Light": {
                 "value": 30.0,
-                "CI Lower": 25.0,
+                "CI Lower": 20.0,
                 "CI Upper": 40.0
             },
             "Common": {
@@ -9363,12 +9363,12 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 60.0,
                 "CI Lower": 50.0,
-                "CI Upper": 60.0
+                "CI Upper": 70.0
             },
             "Heavy": {
                 "value": 80.0,
                 "CI Lower": 70.0,
-                "CI Upper": 97.99999999999997
+                "CI Upper": 100.0
             }
         },
         "reliability_score": 0.8739638017656219
@@ -9386,7 +9386,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 487.5,
                 "CI Lower": 300.0,
-                "CI Upper": 787.5
+                "CI Upper": 900.0
             },
             "Common": {
                 "value": 900.0,
@@ -9414,26 +9414,26 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 3.8000000000000003,
                 "CI Lower": 2.0,
-                "CI Upper": 8.419999999999982
+                "CI Upper": 10.0
             },
             "Light": {
                 "value": 12.0,
-                "CI Lower": 8.0,
-                "CI Upper": 18.0
+                "CI Lower": 6.0,
+                "CI Upper": 30.0
             },
             "Common": {
                 "value": 30.0,
-                "CI Lower": 15.0,
-                "CI Upper": 32.0
+                "CI Lower": 12.0,
+                "CI Upper": 40.0
             },
             "Strong": {
                 "value": 40.0,
                 "CI Lower": 30.0,
-                "CI Upper": 60.0
+                "CI Upper": 80.0
             },
             "Heavy": {
                 "value": 84.8,
-                "CI Lower": 47.99999999999997,
+                "CI Lower": 40.0,
                 "CI Upper": 96.0
             }
         },
@@ -9489,12 +9489,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 2.0,
-                "CI Lower": 1.5,
+                "CI Lower": 1.0,
                 "CI Upper": 2.0
             },
             "Strong": {
                 "value": 3.0,
-                "CI Lower": 2.5,
+                "CI Lower": 2.0,
                 "CI Upper": 3.0
             },
             "Heavy": {
@@ -9532,7 +9532,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 2.4499999999999993,
-                "CI Lower": 1.5874999999999995,
+                "CI Lower": 1.9896875000000005,
                 "CI Upper": 3.0
             }
         },
@@ -9545,28 +9545,28 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 1.0,
-                "CI Lower": 0.5125000000000001,
-                "CI Upper": 1.5
+                "CI Lower": 0.5,
+                "CI Upper": 2.0
             },
             "Light": {
                 "value": 2.0,
                 "CI Lower": 1.0,
-                "CI Upper": 3.5
+                "CI Upper": 4.0
             },
             "Common": {
                 "value": 4.0,
-                "CI Lower": 3.0,
-                "CI Upper": 6.0
+                "CI Lower": 2.5,
+                "CI Upper": 7.0
             },
             "Strong": {
                 "value": 7.0,
                 "CI Lower": 5.0,
-                "CI Upper": 9.75
+                "CI Upper": 10.0
             },
             "Heavy": {
                 "value": 12.37499999999999,
                 "CI Lower": 9.0,
-                "CI Upper": 19.699999999999974
+                "CI Upper": 20.0
             }
         },
         "reliability_score": 0.7647049045409657
@@ -9612,21 +9612,21 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 116.4,
                 "CI Lower": 66.0,
-                "CI Upper": 174.8
+                "CI Upper": 180.0
             },
             "Light": {
                 "value": 180.0,
-                "CI Lower": 66.0,
-                "CI Upper": 200.0
+                "CI Lower": 150.0,
+                "CI Upper": 185.0
             },
             "Common": {
                 "value": 185.0,
-                "CI Lower": 167.0,
+                "CI Lower": 180.0,
                 "CI Upper": 200.0
             },
             "Strong": {
                 "value": 200.0,
-                "CI Lower": 184.875,
+                "CI Lower": 185.0,
                 "CI Upper": 250.0
             },
             "Heavy": {
@@ -9677,7 +9677,7 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 32.0,
-                "CI Lower": 18.000000000000004,
+                "CI Lower": 15.0,
                 "CI Upper": 50.0
             },
             "Light": {
@@ -9730,7 +9730,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 100.0,
-                "CI Lower": 50.0,
+                "CI Lower": 59.999999999999964,
                 "CI Upper": 100.0
             }
         },
@@ -9749,21 +9749,21 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 100.0,
                 "CI Lower": 100.0,
-                "CI Upper": 100.0
+                "CI Upper": 124.0
             },
             "Common": {
                 "value": 145.0,
                 "CI Lower": 100.0,
-                "CI Upper": 175.0
+                "CI Upper": 185.0
             },
             "Strong": {
                 "value": 200.0,
-                "CI Lower": 168.28125000000003,
-                "CI Upper": 200.0
+                "CI Lower": 150.0,
+                "CI Upper": 220.0
             },
             "Heavy": {
                 "value": 300.0,
-                "CI Lower": 206.9999999999999,
+                "CI Lower": 200.0,
                 "CI Upper": 350.0
             }
         },
@@ -9777,7 +9777,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 20.0,
                 "CI Lower": 20.0,
-                "CI Upper": 60.0
+                "CI Upper": 63.5
             },
             "Light": {
                 "value": 52.5,
@@ -9786,17 +9786,17 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 90.0,
-                "CI Lower": 49.750000000000014,
-                "CI Upper": 175.0
+                "CI Lower": 40.0,
+                "CI Upper": 187.5
             },
             "Strong": {
                 "value": 157.25,
-                "CI Lower": 80.0,
+                "CI Lower": 75.0,
                 "CI Upper": 200.0
             },
             "Heavy": {
                 "value": 200.0,
-                "CI Lower": 104.0,
+                "CI Lower": 143.00499999999994,
                 "CI Upper": 200.0
             }
         },
@@ -9809,8 +9809,8 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 20.0,
-                "CI Lower": 18.25,
-                "CI Upper": 20.65
+                "CI Lower": 15.0,
+                "CI Upper": 25.0
             },
             "Light": {
                 "value": 40.0,
@@ -9820,7 +9820,7 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 60.0,
                 "CI Lower": 50.0,
-                "CI Upper": 80.0
+                "CI Upper": 100.0
             },
             "Strong": {
                 "value": 100.0,
@@ -9829,7 +9829,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 200.0,
-                "CI Lower": 150.0,
+                "CI Lower": 125.0,
                 "CI Upper": 200.0
             }
         },
@@ -9853,7 +9853,7 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 0.25,
                 "CI Lower": 0.125,
-                "CI Upper": 1.2
+                "CI Upper": 1.0049999999999955
             },
             "Strong": {
                 "value": 1.0,
@@ -9875,13 +9875,13 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 40.0,
-                "CI Lower": 30.0,
-                "CI Upper": 49.0
+                "CI Lower": 25.0,
+                "CI Upper": 50.0
             },
             "Light": {
                 "value": 80.0,
-                "CI Lower": 70.0,
-                "CI Upper": 85.0
+                "CI Lower": 67.0,
+                "CI Upper": 90.0
             },
             "Common": {
                 "value": 100.0,
@@ -9890,13 +9890,13 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 135.0,
-                "CI Lower": 128.0,
+                "CI Lower": 125.0,
                 "CI Upper": 150.0
             },
             "Heavy": {
                 "value": 200.0,
                 "CI Lower": 200.0,
-                "CI Upper": 240.0
+                "CI Upper": 250.0
             }
         },
         "reliability_score": 0.8586508748747212
@@ -9928,7 +9928,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 250.0,
-                "CI Lower": 199.9125,
+                "CI Lower": 196.5,
                 "CI Upper": 300.0
             }
         },
@@ -9942,7 +9942,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 27.65,
                 "CI Lower": 20.0,
-                "CI Upper": 62.5
+                "CI Upper": 68.125
             },
             "Light": {
                 "value": 53.125,
@@ -9951,8 +9951,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 87.5,
-                "CI Lower": 49.59375000000001,
-                "CI Upper": 131.25
+                "CI Lower": 43.5,
+                "CI Upper": 143.75
             },
             "Strong": {
                 "value": 100.0,
@@ -9984,12 +9984,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 15.0,
-                "CI Lower": 13.5,
+                "CI Lower": 12.0,
                 "CI Upper": 20.0
             },
             "Strong": {
                 "value": 20.0,
-                "CI Lower": 20.0,
+                "CI Lower": 15.0,
                 "CI Upper": 20.0
             },
             "Heavy": {
@@ -10007,13 +10007,13 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 1.0,
-                "CI Lower": 0.8250000000000002,
-                "CI Upper": 3.6500000000000004
+                "CI Lower": 0.5,
+                "CI Upper": 4.0
             },
             "Light": {
                 "value": 4.0,
-                "CI Lower": 3.981250000000001,
-                "CI Upper": 5.0
+                "CI Lower": 3.0,
+                "CI Upper": 6.0
             },
             "Common": {
                 "value": 7.25,
@@ -10023,12 +10023,12 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "CI Upper": 12.0
             },
             "Heavy": {
                 "value": 15.0,
-                "CI Lower": 10.996875,
-                "CI Upper": 20.249999999999915
+                "CI Lower": 10.0,
+                "CI Upper": 30.0
             }
         },
         "reliability_score": 0.813667896967581
@@ -10041,12 +10041,12 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 4.75,
                 "CI Lower": 1.0,
-                "CI Upper": 9.5
+                "CI Upper": 10.0
             },
             "Light": {
                 "value": 10.0,
                 "CI Lower": 6.0,
-                "CI Upper": 14.0
+                "CI Upper": 14.75
             },
             "Common": {
                 "value": 14.5,
@@ -10060,7 +10060,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 30.75,
-                "CI Lower": 16.25,
+                "CI Lower": 18.75,
                 "CI Upper": 33.0
             }
         },
@@ -10083,12 +10083,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 25.0,
-                "CI Lower": 20.0,
+                "CI Lower": 15.0,
                 "CI Upper": 30.0
             },
             "Strong": {
                 "value": 30.0,
-                "CI Lower": 23.5,
+                "CI Lower": 24.962500000000002,
                 "CI Upper": 35.0
             },
             "Heavy": {
@@ -10112,7 +10112,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 20.0,
                 "CI Lower": 11.0,
-                "CI Upper": 25.0
+                "CI Upper": 24.5
             },
             "Common": {
                 "value": 24.0,
@@ -10126,7 +10126,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 57.5,
-                "CI Lower": 32.0,
+                "CI Lower": 37.5,
                 "CI Upper": 65.0
             }
         },
@@ -10287,7 +10287,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 6.0,
                 "CI Lower": 5.0,
-                "CI Upper": 7.0
+                "CI Upper": 9.0
             },
             "Heavy": {
                 "value": 12.0,
@@ -10319,12 +10319,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 100.0,
-                "CI Lower": 86.21875,
-                "CI Upper": 135.0
+                "CI Lower": 75.0,
+                "CI Upper": 150.0
             },
             "Heavy": {
                 "value": 150.0,
-                "CI Lower": 125.36250000000005,
+                "CI Lower": 120.0,
                 "CI Upper": 200.0
             }
         },
@@ -10338,17 +10338,17 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 33.5,
                 "CI Lower": 20.0,
-                "CI Upper": 122.5
+                "CI Upper": 122.52499999999998
             },
             "Light": {
                 "value": 112.5,
                 "CI Lower": 27.5,
-                "CI Upper": 212.5
+                "CI Upper": 200.0
             },
             "Common": {
                 "value": 175.0,
                 "CI Lower": 75.0,
-                "CI Upper": 375.0
+                "CI Upper": 250.0
             },
             "Strong": {
                 "value": 250.0,
@@ -10370,12 +10370,12 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 90.2,
-                "CI Lower": 50.0,
+                "CI Lower": 20.0,
                 "CI Upper": 100.0
             },
             "Light": {
                 "value": 200.0,
-                "CI Lower": 149.50000000000003,
+                "CI Lower": 100.0,
                 "CI Upper": 200.0
             },
             "Common": {
@@ -10385,13 +10385,13 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 400.0,
-                "CI Lower": 304.0,
-                "CI Upper": 500.0
+                "CI Lower": 300.0,
+                "CI Upper": 506.0
             },
             "Heavy": {
                 "value": 672.8000000000001,
-                "CI Lower": 560.0000000000001,
-                "CI Upper": 700.0
+                "CI Lower": 510.0,
+                "CI Upper": 750.0
             }
         },
         "reliability_score": 0.8178564539560709
@@ -10414,16 +10414,16 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 800.0,
                 "CI Lower": 800.0,
-                "CI Upper": 800.0
+                "CI Upper": 1200.0
             },
             "Strong": {
                 "value": 1500.0,
                 "CI Lower": 800.0,
-                "CI Upper": 2475.0
+                "CI Upper": 3200.0
             },
             "Heavy": {
                 "value": 3200.0,
-                "CI Lower": 2039.9999999999977,
+                "CI Lower": 1600.0,
                 "CI Upper": 3600.0
             }
         },
@@ -10469,8 +10469,8 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 5.0
+                "CI Lower": 3.0,
+                "CI Upper": 8.0
             },
             "Light": {
                 "value": 10.0,
@@ -10479,12 +10479,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 20.0,
-                "CI Lower": 15.0,
+                "CI Lower": 10.0,
                 "CI Upper": 20.0
             },
             "Strong": {
                 "value": 40.0,
-                "CI Lower": 30.0,
+                "CI Lower": 25.0,
                 "CI Upper": 60.0
             },
             "Heavy": {
@@ -10508,7 +10508,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 12.75,
                 "CI Lower": 10.0,
-                "CI Upper": 30.0
+                "CI Upper": 22.5
             },
             "Common": {
                 "value": 30.0,
@@ -10522,7 +10522,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 64.35,
-                "CI Lower": 49.75,
+                "CI Lower": 50.0,
                 "CI Upper": 65.0
             }
         },
@@ -10536,21 +10536,21 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 12.0,
                 "CI Lower": 5.0,
-                "CI Upper": 90.0
+                "CI Upper": 97.0
             },
             "Light": {
                 "value": 95.0,
                 "CI Lower": 15.0,
-                "CI Upper": 182.0
+                "CI Upper": 180.0
             },
             "Common": {
                 "value": 164.0,
-                "CI Lower": 100.0,
+                "CI Lower": 99.75000000000001,
                 "CI Upper": 250.0
             },
             "Strong": {
                 "value": 250.0,
-                "CI Lower": 182.0,
+                "CI Lower": 164.0,
                 "CI Upper": 500.0
             },
             "Heavy": {
@@ -10573,8 +10573,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 30.0,
-                "CI Lower": 30.0,
-                "CI Upper": 40.0
+                "CI Lower": 29.906250000000007,
+                "CI Upper": 41.25
             },
             "Common": {
                 "value": 55.0,
@@ -10583,7 +10583,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 187.5,
-                "CI Lower": 91.25,
+                "CI Lower": 91.125,
                 "CI Upper": 200.0
             },
             "Heavy": {
@@ -10612,12 +10612,12 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 12.5,
                 "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "CI Upper": 20.0
             },
             "Strong": {
                 "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 22.5
+                "CI Lower": 15.0,
+                "CI Upper": 30.0
             },
             "Heavy": {
                 "value": 30.900000000000006,
@@ -10649,7 +10649,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 20.0,
-                "CI Lower": 20.0,
+                "CI Lower": 15.0,
                 "CI Upper": 20.0
             },
             "Heavy": {
@@ -10682,7 +10682,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 1.125,
-                "CI Lower": 0.5990625,
+                "CI Lower": 0.6,
                 "CI Upper": 1.625
             },
             "Heavy": {
@@ -10711,7 +10711,7 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 100.0,
                 "CI Lower": 50.0,
-                "CI Upper": 200.0
+                "CI Upper": 250.0
             },
             "Strong": {
                 "value": 225.0,
@@ -10743,7 +10743,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 300.0,
-                "CI Lower": 296.4125,
+                "CI Lower": 293.0,
                 "CI Upper": 300.0
             },
             "Strong": {
@@ -10772,11 +10772,11 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 22.5,
                 "CI Lower": 15.0,
-                "CI Upper": 28.75
+                "CI Upper": 28.78124999999997
             },
             "Common": {
                 "value": 27.5,
-                "CI Lower": 20.0,
+                "CI Lower": 25.0,
                 "CI Upper": 75.0
             },
             "Strong": {
@@ -10810,7 +10810,7 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 1125.0,
                 "CI Lower": 750.0,
-                "CI Upper": 2503.1249999999973
+                "CI Upper": 2500.0
             },
             "Strong": {
                 "value": 2437.5,
@@ -10852,7 +10852,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 41.99999999999999,
-                "CI Lower": 29.999999999999982,
+                "CI Lower": 30.0,
                 "CI Upper": 50.0
             }
         },
@@ -10876,16 +10876,16 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 25.0,
                 "CI Lower": 25.0,
-                "CI Upper": 35.0
+                "CI Upper": 40.0
             },
             "Strong": {
                 "value": 50.0,
-                "CI Lower": 50.0,
+                "CI Lower": 44.0,
                 "CI Upper": 50.0
             },
             "Heavy": {
                 "value": 100.0,
-                "CI Lower": 80.0,
+                "CI Lower": 75.0,
                 "CI Upper": 100.0
             }
         },
@@ -10898,13 +10898,13 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 11.100000000000001,
-                "CI Lower": 3.200000000000001,
+                "CI Lower": 1.0,
                 "CI Upper": 20.0
             },
             "Light": {
                 "value": 20.0,
                 "CI Lower": 20.0,
-                "CI Upper": 25.0
+                "CI Upper": 30.0
             },
             "Common": {
                 "value": 35.0,
@@ -10913,13 +10913,13 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 50.0,
-                "CI Lower": 42.5,
-                "CI Upper": 50.0
+                "CI Lower": 38.0,
+                "CI Upper": 55.0
             },
             "Heavy": {
                 "value": 75.0,
-                "CI Lower": 52.24999999999998,
-                "CI Upper": 88.99999999999991
+                "CI Lower": 50.0,
+                "CI Upper": 100.0
             }
         },
         "reliability_score": 0.8400548309692453
@@ -10936,7 +10936,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 20.0,
-                "CI Lower": 20.0,
+                "CI Lower": 15.0,
                 "CI Upper": 35.0
             },
             "Common": {
@@ -10947,7 +10947,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 60.0,
                 "CI Lower": 50.0,
-                "CI Upper": 65.0
+                "CI Upper": 65.74999999999932
             },
             "Heavy": {
                 "value": 98.99999999999999,
@@ -11002,22 +11002,22 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 45.0,
-                "CI Lower": 39.0,
+                "CI Lower": 37.0,
                 "CI Upper": 80.0
             },
             "Common": {
                 "value": 85.0,
-                "CI Lower": 60.0,
+                "CI Lower": 50.0,
                 "CI Upper": 100.0
             },
             "Strong": {
                 "value": 100.0,
-                "CI Lower": 95.0,
+                "CI Lower": 90.0,
                 "CI Upper": 150.0
             },
             "Heavy": {
                 "value": 150.0,
-                "CI Lower": 125.0,
+                "CI Lower": 110.0,
                 "CI Upper": 150.0
             }
         },
@@ -11097,12 +11097,12 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 35.0,
                 "CI Lower": 20.0,
-                "CI Upper": 100.0
+                "CI Upper": 87.5
             },
             "Light": {
                 "value": 87.5,
                 "CI Lower": 35.0,
-                "CI Upper": 125.0
+                "CI Upper": 127.81249999999972
             },
             "Common": {
                 "value": 100.0,
@@ -11129,28 +11129,28 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 21.25,
-                "CI Lower": 8.75,
-                "CI Upper": 26.343749999999915
+                "CI Lower": 5.0,
+                "CI Upper": 30.0
             },
             "Light": {
                 "value": 31.875,
-                "CI Lower": 26.25,
+                "CI Lower": 25.0,
                 "CI Upper": 50.0
             },
             "Common": {
                 "value": 55.0,
                 "CI Lower": 50.0,
-                "CI Upper": 82.5
+                "CI Upper": 90.0
             },
             "Strong": {
                 "value": 100.0,
                 "CI Lower": 75.0,
-                "CI Upper": 115.0
+                "CI Upper": 125.0
             },
             "Heavy": {
                 "value": 150.0,
-                "CI Lower": 115.0,
-                "CI Upper": 187.5
+                "CI Lower": 100.0,
+                "CI Upper": 200.0
             }
         },
         "reliability_score": 0.8171030637782564
@@ -11162,12 +11162,12 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 34.050000000000004,
-                "CI Lower": 26.0,
+                "CI Lower": 25.0,
                 "CI Upper": 50.0
             },
             "Light": {
                 "value": 87.5,
-                "CI Lower": 70.0,
+                "CI Lower": 60.0,
                 "CI Upper": 100.0
             },
             "Common": {
@@ -11177,7 +11177,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 200.0,
-                "CI Lower": 180.0,
+                "CI Lower": 175.0,
                 "CI Upper": 200.0
             },
             "Heavy": {
@@ -11210,8 +11210,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 40.0,
-                "CI Lower": 36.0,
-                "CI Upper": 50.0
+                "CI Lower": 30.0,
+                "CI Upper": 54.0
             },
             "Heavy": {
                 "value": 73.99999999999991,
@@ -11228,13 +11228,13 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 10.0,
-                "CI Lower": 10.0,
+                "CI Lower": 5.0,
                 "CI Upper": 10.0
             },
             "Light": {
                 "value": 20.0,
                 "CI Lower": 18.0,
-                "CI Upper": 20.0
+                "CI Upper": 27.0
             },
             "Common": {
                 "value": 40.0,
@@ -11248,8 +11248,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 108.0,
-                "CI Lower": 95.0,
-                "CI Upper": 110.0
+                "CI Lower": 90.0,
+                "CI Upper": 120.0
             }
         },
         "reliability_score": 0.7918499211029248
@@ -11261,8 +11261,8 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 3.0,
-                "CI Lower": 2.5,
-                "CI Upper": 4.0
+                "CI Lower": 2.0,
+                "CI Upper": 5.0
             },
             "Light": {
                 "value": 7.0,
@@ -11271,18 +11271,18 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 11.0
+                "CI Lower": 9.0,
+                "CI Upper": 11.5
             },
             "Strong": {
                 "value": 15.0,
-                "CI Lower": 12.5,
-                "CI Upper": 17.0
+                "CI Lower": 12.0,
+                "CI Upper": 18.0
             },
             "Heavy": {
                 "value": 24.19999999999999,
                 "CI Lower": 20.0,
-                "CI Upper": 25.0
+                "CI Upper": 30.0
             }
         },
         "reliability_score": 0.8333290525008674
@@ -11294,7 +11294,7 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 7.5,
-                "CI Lower": 3.825,
+                "CI Lower": 3.75,
                 "CI Upper": 15.0
             },
             "Light": {
@@ -11304,7 +11304,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 30.0,
-                "CI Lower": 20.0,
+                "CI Lower": 15.0,
                 "CI Upper": 30.0
             },
             "Strong": {
@@ -11347,7 +11347,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 300.0,
-                "CI Lower": 300.0,
+                "CI Lower": 200.0,
                 "CI Upper": 300.0
             }
         },
@@ -11361,7 +11361,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 39.0,
                 "CI Lower": 30.0,
-                "CI Upper": 200.0
+                "CI Upper": 146.37499999999875
             },
             "Light": {
                 "value": 125.0,
@@ -11403,7 +11403,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 200.0,
-                "CI Lower": 200.0,
+                "CI Lower": 125.0,
                 "CI Upper": 200.0
             },
             "Strong": {
@@ -11414,7 +11414,7 @@ export const substanceData: SubstanceData[] = [
             "Heavy": {
                 "value": 400.0,
                 "CI Lower": 400.0,
-                "CI Upper": 400.0
+                "CI Upper": 500.0
             }
         },
         "reliability_score": 0.8250123160967826
@@ -11426,28 +11426,28 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 2.0,
-                "CI Lower": 1.5,
+                "CI Lower": 1.0,
                 "CI Upper": 3.0
             },
             "Light": {
                 "value": 6.0,
-                "CI Lower": 5.4,
+                "CI Lower": 5.0,
                 "CI Upper": 6.0
             },
             "Common": {
                 "value": 7.5,
                 "CI Lower": 7.0,
-                "CI Upper": 8.0
+                "CI Upper": 9.0
             },
             "Strong": {
                 "value": 10.0,
-                "CI Lower": 9.9,
-                "CI Upper": 11.0
+                "CI Lower": 9.0,
+                "CI Upper": 12.0
             },
             "Heavy": {
                 "value": 15.0,
                 "CI Lower": 14.0,
-                "CI Upper": 16.2
+                "CI Upper": 16.5
             }
         },
         "reliability_score": 0.8598870166407733
@@ -11469,7 +11469,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 150.0,
-                "CI Lower": 100.0,
+                "CI Lower": 80.0,
                 "CI Upper": 350.0
             },
             "Strong": {
@@ -11507,7 +11507,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 30.0,
-                "CI Lower": 20.0,
+                "CI Lower": 16.0,
                 "CI Upper": 30.0
             },
             "Heavy": {
@@ -11525,7 +11525,7 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 9.0,
-                "CI Lower": 6.25,
+                "CI Lower": 5.0,
                 "CI Upper": 12.5
             },
             "Light": {
@@ -11535,13 +11535,13 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 30.0,
-                "CI Lower": 30.0,
-                "CI Upper": 30.0
+                "CI Lower": 20.0,
+                "CI Upper": 45.0
             },
             "Strong": {
                 "value": 50.0,
                 "CI Lower": 30.0,
-                "CI Upper": 60.0
+                "CI Upper": 90.0
             },
             "Heavy": {
                 "value": 100.0,
@@ -11558,27 +11558,27 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 10.0,
-                "CI Lower": 10.0,
+                "CI Lower": 7.5,
                 "CI Upper": 15.0
             },
             "Light": {
                 "value": 30.0,
-                "CI Lower": 22.5,
+                "CI Lower": 15.0,
                 "CI Upper": 30.0
             },
             "Common": {
                 "value": 60.0,
-                "CI Lower": 40.0,
+                "CI Lower": 30.0,
                 "CI Upper": 60.0
             },
             "Strong": {
                 "value": 82.5,
                 "CI Lower": 60.0,
-                "CI Upper": 100.0
+                "CI Upper": 110.0
             },
             "Heavy": {
                 "value": 180.0,
-                "CI Lower": 110.99999999999994,
+                "CI Lower": 110.0,
                 "CI Upper": 200.0
             }
         },
@@ -11611,7 +11611,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 7.0,
-                "CI Lower": 2.7249999999999996,
+                "CI Lower": 2.5,
                 "CI Upper": 7.0
             }
         },
@@ -11624,23 +11624,23 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 1.0,
-                "CI Lower": 1.0,
+                "CI Lower": 0.9,
                 "CI Upper": 1.0
             },
             "Light": {
                 "value": 1.75,
                 "CI Lower": 1.75,
-                "CI Upper": 1.8
+                "CI Upper": 2.0
             },
             "Common": {
                 "value": 3.0,
-                "CI Lower": 2.75,
+                "CI Lower": 2.5,
                 "CI Upper": 3.0
             },
             "Strong": {
                 "value": 3.5,
                 "CI Lower": 3.5,
-                "CI Upper": 3.6
+                "CI Upper": 3.75
             },
             "Heavy": {
                 "value": 6.5,
@@ -11662,12 +11662,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 0.5,
-                "CI Lower": 0.5,
+                "CI Lower": 0.3333,
                 "CI Upper": 1.0
             },
             "Common": {
                 "value": 1.0,
-                "CI Lower": 0.75,
+                "CI Lower": 0.5,
                 "CI Upper": 1.0
             },
             "Strong": {
@@ -11691,7 +11691,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 1.0825,
                 "CI Lower": 1.0,
-                "CI Upper": 2.415
+                "CI Upper": 2.1675
             },
             "Light": {
                 "value": 1.925,
@@ -11761,22 +11761,22 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 1.15,
-                "CI Lower": 1.0,
+                "CI Lower": 0.95,
                 "CI Upper": 2.0
             },
             "Common": {
                 "value": 2.45,
-                "CI Lower": 1.5,
+                "CI Lower": 1.45,
                 "CI Upper": 3.5
             },
             "Strong": {
                 "value": 4.0,
-                "CI Lower": 3.5,
-                "CI Upper": 4.625
+                "CI Lower": 2.5,
+                "CI Upper": 5.0
             },
             "Heavy": {
                 "value": 6.0,
-                "CI Lower": 4.25,
+                "CI Lower": 4.0,
                 "CI Upper": 10.0
             }
         },
@@ -11794,18 +11794,18 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 3.0,
-                "CI Lower": 2.0,
-                "CI Upper": 3.875
+                "CI Lower": 1.5,
+                "CI Upper": 5.0
             },
             "Common": {
                 "value": 5.0,
                 "CI Lower": 3.3,
-                "CI Upper": 6.5
+                "CI Upper": 7.0
             },
             "Strong": {
                 "value": 9.5,
-                "CI Lower": 5.75,
-                "CI Upper": 10.0
+                "CI Lower": 5.0,
+                "CI Upper": 13.6
             },
             "Heavy": {
                 "value": 15.0,
@@ -11822,27 +11822,27 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 0.8300000000000001,
-                "CI Lower": 0.345,
+                "CI Lower": 0.3,
                 "CI Upper": 1.0
             },
             "Light": {
                 "value": 1.475,
                 "CI Lower": 1.0,
-                "CI Upper": 1.9375
+                "CI Upper": 2.0
             },
             "Common": {
                 "value": 2.0,
-                "CI Lower": 1.75,
+                "CI Lower": 1.5,
                 "CI Upper": 3.0
             },
             "Strong": {
                 "value": 3.5,
                 "CI Lower": 2.5,
-                "CI Upper": 4.25
+                "CI Upper": 5.0
             },
             "Heavy": {
                 "value": 5.850000000000001,
-                "CI Lower": 3.9250000000000007,
+                "CI Lower": 3.5,
                 "CI Upper": 7.0
             }
         },
@@ -11856,12 +11856,12 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 0.4,
                 "CI Lower": 0.4,
-                "CI Upper": 1.3634999999999968
+                "CI Upper": 1.5
             },
             "Light": {
                 "value": 1.5,
                 "CI Lower": 0.4,
-                "CI Upper": 2.8049999999999953
+                "CI Upper": 2.8
             },
             "Common": {
                 "value": 2.8,
@@ -11870,7 +11870,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 3.5,
-                "CI Lower": 2.8,
+                "CI Lower": 2.780000000000001,
                 "CI Upper": 4.0
             },
             "Heavy": {
@@ -11893,12 +11893,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 8.0,
-                "CI Lower": 4.0,
+                "CI Lower": 4.975000000000001,
                 "CI Upper": 10.0
             },
             "Common": {
                 "value": 10.0,
-                "CI Lower": 9.0,
+                "CI Lower": 9.975000000000001,
                 "CI Upper": 15.0
             },
             "Strong": {
@@ -11922,7 +11922,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 0.6000000000000001,
                 "CI Lower": 0.07,
-                "CI Upper": 1.0429999999999973
+                "CI Upper": 1.168
             },
             "Light": {
                 "value": 1.2,
@@ -11932,12 +11932,12 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 2.1,
                 "CI Lower": 2.0,
-                "CI Upper": 3.0124999999999886
+                "CI Upper": 3.5
             },
             "Strong": {
                 "value": 3.5,
                 "CI Lower": 2.5,
-                "CI Upper": 5.024999999999977
+                "CI Upper": 6.0
             },
             "Heavy": {
                 "value": 6.0,
@@ -12007,7 +12007,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 27.599999999999998,
-                "CI Lower": 22.0,
+                "CI Lower": 22.999999999999996,
                 "CI Upper": 30.0
             }
         },
@@ -12059,7 +12059,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 1.25,
                 "CI Lower": 0.625,
-                "CI Upper": 6.0
+                "CI Upper": 6.5
             },
             "Common": {
                 "value": 4.0,
@@ -12073,7 +12073,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 12.399999999999991,
-                "CI Lower": 7.977500000000001,
+                "CI Lower": 7.099999999999998,
                 "CI Upper": 16.0
             }
         },
@@ -12086,13 +12086,13 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 0.25,
-                "CI Lower": 0.17,
+                "CI Lower": 0.125,
                 "CI Upper": 0.5
             },
             "Light": {
                 "value": 1.0,
                 "CI Lower": 0.5,
-                "CI Upper": 1.0
+                "CI Upper": 2.0
             },
             "Common": {
                 "value": 2.0,
@@ -12120,11 +12120,11 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 3.66,
                 "CI Lower": 2.4,
-                "CI Upper": 16.800000000000004
+                "CI Upper": 13.0
             },
             "Light": {
                 "value": 10.0,
-                "CI Lower": 4.5,
+                "CI Lower": 4.447500000000003,
                 "CI Upper": 50.0
             },
             "Common": {
@@ -12134,7 +12134,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 50.0,
-                "CI Lower": 50.0,
+                "CI Lower": 25.0,
                 "CI Upper": 50.0
             },
             "Heavy": {
@@ -12219,22 +12219,22 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 5.0,
                 "CI Lower": 2.0,
-                "CI Upper": 7.0
+                "CI Upper": 8.0
             },
             "Light": {
                 "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 14.0
+                "CI Lower": 9.5,
+                "CI Upper": 15.0
             },
             "Common": {
                 "value": 16.0,
                 "CI Lower": 15.0,
-                "CI Upper": 18.0
+                "CI Upper": 20.0
             },
             "Strong": {
                 "value": 22.0,
                 "CI Lower": 20.0,
-                "CI Upper": 25.0
+                "CI Upper": 28.0
             },
             "Heavy": {
                 "value": 35.0,
@@ -12267,7 +12267,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 27.5,
                 "CI Lower": 20.0,
-                "CI Upper": 40.0
+                "CI Upper": 50.0
             },
             "Heavy": {
                 "value": 72.5,
@@ -12290,11 +12290,11 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 30.0,
                 "CI Lower": 30.0,
-                "CI Upper": 40.0
+                "CI Upper": 42.0
             },
             "Common": {
                 "value": 50.0,
-                "CI Lower": 45.0,
+                "CI Lower": 42.0,
                 "CI Upper": 50.0
             },
             "Strong": {
@@ -12360,7 +12360,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 10.0,
-                "CI Lower": 10.0,
+                "CI Lower": 7.5,
                 "CI Upper": 10.0
             },
             "Strong": {
@@ -12371,7 +12371,7 @@ export const substanceData: SubstanceData[] = [
             "Heavy": {
                 "value": 20.0,
                 "CI Lower": 20.0,
-                "CI Upper": 25.0
+                "CI Upper": 30.0
             }
         },
         "reliability_score": 0.8333380298198294
@@ -12455,7 +12455,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 20.0,
                 "CI Lower": 17.5,
-                "CI Upper": 21.25
+                "CI Upper": 22.5
             },
             "Common": {
                 "value": 20.0,
@@ -12498,7 +12498,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 30.0,
                 "CI Lower": 20.0,
-                "CI Upper": 35.0
+                "CI Upper": 40.0
             },
             "Heavy": {
                 "value": 40.0,
@@ -12520,12 +12520,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 10.0,
-                "CI Lower": 10.0,
+                "CI Lower": 7.5,
                 "CI Upper": 10.0
             },
             "Common": {
                 "value": 15.0,
-                "CI Lower": 15.0,
+                "CI Lower": 11.25,
                 "CI Upper": 20.0
             },
             "Strong": {
@@ -12549,11 +12549,11 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 4.625,
                 "CI Lower": 2.5,
-                "CI Upper": 6.7
+                "CI Upper": 7.0
             },
             "Light": {
                 "value": 10.0,
-                "CI Lower": 7.0,
+                "CI Lower": 6.0,
                 "CI Upper": 10.0
             },
             "Common": {
@@ -12596,12 +12596,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 30.0,
-                "CI Lower": 20.0,
-                "CI Upper": 30.18749999999983
+                "CI Lower": 18.125,
+                "CI Upper": 30.0
             },
             "Heavy": {
                 "value": 33.5,
-                "CI Lower": 30.0,
+                "CI Lower": 26.912499999999998,
                 "CI Upper": 40.0
             }
         },
@@ -12624,7 +12624,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 600.0,
-                "CI Lower": 600.0,
+                "CI Lower": 500.0,
                 "CI Upper": 900.0
             },
             "Strong": {
@@ -12634,7 +12634,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 1000.0,
-                "CI Lower": 979.9999999999998,
+                "CI Lower": 900.0,
                 "CI Upper": 1000.0
             }
         },
@@ -12652,7 +12652,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 20.0,
-                "CI Lower": 15.0,
+                "CI Lower": 10.0,
                 "CI Upper": 20.0
             },
             "Common": {
@@ -12662,12 +12662,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 30.0,
-                "CI Lower": 30.0,
+                "CI Lower": 25.0,
                 "CI Upper": 40.0
             },
             "Heavy": {
                 "value": 60.0,
-                "CI Lower": 50.0,
+                "CI Lower": 40.0,
                 "CI Upper": 60.0
             }
         },
@@ -12719,7 +12719,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 9.0,
                 "CI Lower": 2.375,
-                "CI Upper": 10.0
+                "CI Upper": 10.018749999999983
             },
             "Common": {
                 "value": 10.0,
@@ -12733,7 +12733,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 20.0,
-                "CI Lower": 12.5,
+                "CI Lower": 11.75,
                 "CI Upper": 25.0
             }
         },
@@ -12779,13 +12779,13 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 1.0,
-                "CI Lower": 1.0,
+                "CI Lower": 0.5,
                 "CI Upper": 1.0
             },
             "Light": {
                 "value": 1.0,
                 "CI Lower": 1.0,
-                "CI Upper": 1.25
+                "CI Upper": 1.5
             },
             "Common": {
                 "value": 2.0,
@@ -12800,7 +12800,7 @@ export const substanceData: SubstanceData[] = [
             "Heavy": {
                 "value": 4.0,
                 "CI Lower": 3.0,
-                "CI Upper": 4.2
+                "CI Upper": 5.0
             }
         },
         "reliability_score": 0.8420190113134798
@@ -12828,7 +12828,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 500.0,
                 "CI Lower": 500.0,
-                "CI Upper": 600.9374999999991
+                "CI Upper": 650.0
             },
             "Heavy": {
                 "value": 750.0,
@@ -12855,8 +12855,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 37.5,
-                "CI Lower": 37.5,
-                "CI Upper": 56.25
+                "CI Lower": 37.40625000000001,
+                "CI Upper": 57.5
             },
             "Strong": {
                 "value": 48.75,
@@ -12865,7 +12865,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 75.0,
-                "CI Lower": 48.703125,
+                "CI Lower": 48.75,
                 "CI Upper": 75.0
             }
         },
@@ -12916,18 +12916,18 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 100.0,
-                "CI Lower": 90.0,
-                "CI Upper": 100.0
+                "CI Lower": 85.0,
+                "CI Upper": 110.0
             },
             "Common": {
                 "value": 125.0,
                 "CI Lower": 100.0,
-                "CI Upper": 150.0
+                "CI Upper": 200.0
             },
             "Strong": {
                 "value": 200.0,
-                "CI Lower": 150.0,
-                "CI Upper": 200.0
+                "CI Lower": 140.0,
+                "CI Upper": 225.0
             },
             "Heavy": {
                 "value": 300.0,
@@ -12997,7 +12997,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 4.949999999999996,
-                "CI Lower": 3.18525,
+                "CI Lower": 3.0,
                 "CI Upper": 5.0
             }
         },
@@ -13020,7 +13020,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 1550.0,
-                "CI Lower": 925.0,
+                "CI Lower": 800.0,
                 "CI Upper": 1600.0
             },
             "Strong": {
@@ -13030,8 +13030,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 4694.999999999997,
-                "CI Lower": 2954.124999999994,
-                "CI Upper": 5146.449999999995
+                "CI Lower": 2500.0,
+                "CI Upper": 5333.0
             }
         },
         "reliability_score": 0.7839936089202246
@@ -13044,16 +13044,16 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 2.35,
                 "CI Lower": 2.0,
-                "CI Upper": 8.05
+                "CI Upper": 7.119374999999983
             },
             "Light": {
                 "value": 9.875,
-                "CI Lower": 5.0,
+                "CI Lower": 4.5,
                 "CI Upper": 107.5
             },
             "Common": {
                 "value": 125.0,
-                "CI Lower": 13.468750000000002,
+                "CI Lower": 11.5,
                 "CI Upper": 300.0
             },
             "Strong": {
@@ -13063,7 +13063,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 532.4999999999999,
-                "CI Lower": 390.0,
+                "CI Lower": 389.8125,
                 "CI Upper": 700.0
             }
         },
@@ -13086,7 +13086,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 40.0,
-                "CI Lower": 25.0,
+                "CI Lower": 20.0,
                 "CI Upper": 60.0
             },
             "Strong": {
@@ -13119,17 +13119,17 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 300.0,
-                "CI Lower": 225.0,
+                "CI Lower": 200.0,
                 "CI Upper": 300.0
             },
             "Strong": {
                 "value": 600.0,
-                "CI Lower": 450.0,
+                "CI Lower": 400.0,
                 "CI Upper": 600.0
             },
             "Heavy": {
                 "value": 839.9999999999991,
-                "CI Lower": 800.0,
+                "CI Lower": 750.0,
                 "CI Upper": 975.0
             }
         },
@@ -13152,18 +13152,18 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 75.0
+                "CI Lower": 35.0,
+                "CI Upper": 80.0
             },
             "Strong": {
                 "value": 100.0,
-                "CI Lower": 56.25,
+                "CI Lower": 50.0,
                 "CI Upper": 100.0
             },
             "Heavy": {
                 "value": 143.37500000000003,
                 "CI Lower": 100.0,
-                "CI Upper": 149.625
+                "CI Upper": 150.0
             }
         },
         "reliability_score": 0.8151714671340875
@@ -13181,7 +13181,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 100.0,
                 "CI Lower": 75.0,
-                "CI Upper": 131.25
+                "CI Upper": 130.0
             },
             "Common": {
                 "value": 130.0,
@@ -13241,7 +13241,7 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 125.0,
-                "CI Lower": 34.25,
+                "CI Lower": 25.0,
                 "CI Upper": 125.0
             },
             "Light": {
@@ -13261,8 +13261,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 500.0,
-                "CI Lower": 437.5,
-                "CI Upper": 875.0
+                "CI Lower": 250.0,
+                "CI Upper": 1000.0
             }
         },
         "reliability_score": 0.8229292726895905
@@ -13275,11 +13275,11 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 60.0,
                 "CI Lower": 30.0,
-                "CI Upper": 79.5
+                "CI Upper": 90.0
             },
             "Light": {
                 "value": 120.0,
-                "CI Lower": 63.75,
+                "CI Lower": 60.0,
                 "CI Upper": 120.0
             },
             "Common": {
@@ -13308,7 +13308,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 10.0,
                 "CI Lower": 10.0,
-                "CI Upper": 11.6
+                "CI Upper": 11.60999999999999
             },
             "Light": {
                 "value": 11.0,
@@ -13345,17 +13345,17 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 19.25,
-                "CI Lower": 6.25,
-                "CI Upper": 25.0
+                "CI Lower": 6.0,
+                "CI Upper": 30.0
             },
             "Common": {
                 "value": 32.5,
-                "CI Lower": 25.0,
-                "CI Upper": 41.0
+                "CI Lower": 20.0,
+                "CI Upper": 45.0
             },
             "Strong": {
                 "value": 50.0,
-                "CI Lower": 40.0,
+                "CI Lower": 37.0,
                 "CI Upper": 50.0
             },
             "Heavy": {
@@ -13416,7 +13416,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 100.0,
-                "CI Lower": 75.0,
+                "CI Lower": 50.0,
                 "CI Upper": 100.0
             },
             "Strong": {
@@ -13426,7 +13426,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 300.0,
-                "CI Lower": 250.0,
+                "CI Lower": 225.0,
                 "CI Upper": 400.0
             }
         },
@@ -13455,7 +13455,7 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 3.0,
                 "CI Lower": 2.0,
-                "CI Upper": 3.0
+                "CI Upper": 4.0
             },
             "Heavy": {
                 "value": 4.0,
@@ -13477,8 +13477,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 25.0,
-                "CI Lower": 14.0,
-                "CI Upper": 33.75
+                "CI Lower": 20.75,
+                "CI Upper": 33.0
             },
             "Common": {
                 "value": 34.5,
@@ -13487,7 +13487,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 51.5,
-                "CI Lower": 36.0,
+                "CI Lower": 38.712500000000006,
                 "CI Upper": 69.25
             },
             "Heavy": {
@@ -13505,8 +13505,8 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 0.1,
-                "CI Lower": 0.0667,
-                "CI Upper": 0.1
+                "CI Lower": 0.05,
+                "CI Upper": 0.125
             },
             "Light": {
                 "value": 0.2,
@@ -13526,7 +13526,7 @@ export const substanceData: SubstanceData[] = [
             "Heavy": {
                 "value": 1.0,
                 "CI Lower": 1.0,
-                "CI Upper": 1.8
+                "CI Upper": 2.0
             }
         },
         "reliability_score": 0.75715725968114
@@ -13539,7 +13539,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 24.400000000000002,
                 "CI Lower": 12.5,
-                "CI Upper": 25.0
+                "CI Upper": 30.0
             },
             "Light": {
                 "value": 60.0,
@@ -13559,7 +13559,7 @@ export const substanceData: SubstanceData[] = [
             "Heavy": {
                 "value": 300.0,
                 "CI Lower": 250.0,
-                "CI Upper": 325.0
+                "CI Upper": 330.0
             }
         },
         "reliability_score": 0.8057452841986996
@@ -13572,22 +13572,22 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 0.515,
                 "CI Lower": 0.3,
-                "CI Upper": 2.0013499999999986
+                "CI Upper": 2.0
             },
             "Light": {
                 "value": 2.27,
-                "CI Lower": 0.6,
-                "CI Upper": 3.1214999999999966
+                "CI Lower": 0.9750000000000001,
+                "CI Upper": 3.0
             },
             "Common": {
                 "value": 3.435,
                 "CI Lower": 2.5,
-                "CI Upper": 5.0
+                "CI Upper": 4.85
             },
             "Strong": {
                 "value": 5.25,
-                "CI Lower": 4.0365625,
-                "CI Upper": 10.0
+                "CI Lower": 4.0375,
+                "CI Upper": 7.0
             },
             "Heavy": {
                 "value": 10.0,
@@ -13615,7 +13615,7 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 1.5,
                 "CI Lower": 1.0,
-                "CI Upper": 2.625
+                "CI Upper": 3.0
             },
             "Strong": {
                 "value": 3.0,
@@ -13676,7 +13676,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 43.75,
                 "CI Lower": 13.75,
-                "CI Upper": 250.93749999999915
+                "CI Upper": 250.0
             },
             "Common": {
                 "value": 275.0,
@@ -13685,7 +13685,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 500.0,
-                "CI Lower": 325.0,
+                "CI Lower": 312.1875,
                 "CI Upper": 500.0
             },
             "Heavy": {
@@ -13704,7 +13704,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 21.25,
                 "CI Lower": 15.0,
-                "CI Upper": 120.12499999999989
+                "CI Upper": 135.0
             },
             "Light": {
                 "value": 110.0,
@@ -13718,7 +13718,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 200.0,
-                "CI Lower": 160.0,
+                "CI Lower": 174.62500000000003,
                 "CI Upper": 250.0
             },
             "Heavy": {
@@ -13741,12 +13741,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 2.625,
-                "CI Lower": 1.75,
+                "CI Lower": 1.9375,
                 "CI Upper": 5.0
             },
             "Common": {
                 "value": 5.0,
-                "CI Lower": 3.5,
+                "CI Lower": 3.4937500000000004,
                 "CI Upper": 5.0
             },
             "Strong": {
@@ -13769,7 +13769,7 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 25.0,
-                "CI Lower": 12.5,
+                "CI Lower": 12.0,
                 "CI Upper": 50.0
             },
             "Light": {
@@ -13784,7 +13784,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 150.0,
-                "CI Lower": 150.0,
+                "CI Lower": 100.0,
                 "CI Upper": 200.0
             },
             "Heavy": {
@@ -13807,7 +13807,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 50.0,
-                "CI Lower": 40.0,
+                "CI Lower": 49.750000000000014,
                 "CI Upper": 50.0
             },
             "Common": {
@@ -13841,7 +13841,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 0.5,
                 "CI Lower": 0.375,
-                "CI Upper": 0.5012499999999989
+                "CI Upper": 0.5
             },
             "Common": {
                 "value": 0.5,
@@ -13869,7 +13869,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 73.75,
                 "CI Lower": 50.0,
-                "CI Upper": 145.03124999999997
+                "CI Upper": 123.75
             },
             "Light": {
                 "value": 143.75,
@@ -13884,11 +13884,11 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 300.0,
                 "CI Lower": 200.0,
-                "CI Upper": 425.0
+                "CI Upper": 400.62499999999943
             },
             "Heavy": {
                 "value": 500.0,
-                "CI Lower": 300.0,
+                "CI Lower": 304.87500000000006,
                 "CI Upper": 500.0
             }
         },
@@ -13907,7 +13907,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 300.0,
                 "CI Lower": 300.0,
-                "CI Upper": 462.5
+                "CI Upper": 463.43749999999915
             },
             "Common": {
                 "value": 600.0,
@@ -13949,13 +13949,13 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 4.0,
-                "CI Lower": 3.6,
+                "CI Lower": 3.5,
                 "CI Upper": 4.0
             },
             "Heavy": {
                 "value": 6.0,
                 "CI Lower": 5.0,
-                "CI Upper": 6.5
+                "CI Upper": 6.66
             }
         },
         "reliability_score": 0.8602864272871147
@@ -13973,7 +13973,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 150.0,
                 "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "CI Upper": 201.24999999999886
             },
             "Common": {
                 "value": 250.0,
@@ -14001,22 +14001,22 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 11.875,
                 "CI Lower": 10.0,
-                "CI Upper": 21.225
+                "CI Upper": 23.3
             },
             "Light": {
                 "value": 25.0,
-                "CI Lower": 19.96875,
-                "CI Upper": 30.0
+                "CI Lower": 13.0,
+                "CI Upper": 33.0
             },
             "Common": {
                 "value": 35.0,
-                "CI Lower": 30.0,
+                "CI Lower": 25.0,
                 "CI Upper": 40.0
             },
             "Strong": {
                 "value": 41.25,
-                "CI Lower": 40.0,
-                "CI Upper": 51.25
+                "CI Lower": 35.0,
+                "CI Upper": 55.0
             },
             "Heavy": {
                 "value": 76.25,
@@ -14039,7 +14039,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 1.0,
                 "CI Lower": 1.0,
-                "CI Upper": 1.2518749999999983
+                "CI Upper": 1.4
             },
             "Common": {
                 "value": 2.0,
@@ -14054,7 +14054,7 @@ export const substanceData: SubstanceData[] = [
             "Heavy": {
                 "value": 4.299999999999997,
                 "CI Lower": 3.0,
-                "CI Upper": 5.299999999999997
+                "CI Upper": 6.0
             }
         },
         "reliability_score": 0.8103986876154166
@@ -14147,7 +14147,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 200.0,
-                "CI Lower": 148.75000000000006,
+                "CI Lower": 100.0,
                 "CI Upper": 250.0
             },
             "Heavy": {
@@ -14180,7 +14180,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 60.0,
-                "CI Lower": 45.0,
+                "CI Lower": 44.9375,
                 "CI Upper": 60.0
             },
             "Heavy": {
@@ -14213,8 +14213,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 425.0,
-                "CI Lower": 200.0,
-                "CI Upper": 525.0
+                "CI Lower": 206.25,
+                "CI Upper": 600.0
             },
             "Heavy": {
                 "value": 600.0,
@@ -14232,7 +14232,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 25.625,
                 "CI Lower": 12.5,
-                "CI Upper": 43.125
+                "CI Upper": 43.17187499999996
             },
             "Light": {
                 "value": 43.125,
@@ -14242,7 +14242,7 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 50.0,
                 "CI Lower": 43.75,
-                "CI Upper": 125.0
+                "CI Upper": 126.25
             },
             "Strong": {
                 "value": 121.875,
@@ -14251,7 +14251,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 200.0,
-                "CI Lower": 121.32812500000003,
+                "CI Lower": 98.75,
                 "CI Upper": 200.0
             }
         },
@@ -14265,7 +14265,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 25.0,
                 "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "CI Upper": 51.25
             },
             "Light": {
                 "value": 56.25,
@@ -14313,12 +14313,12 @@ export const substanceData: SubstanceData[] = [
             "Strong": {
                 "value": 200.0,
                 "CI Lower": 200.0,
-                "CI Upper": 200.0
+                "CI Upper": 225.0
             },
             "Heavy": {
                 "value": 400.0,
-                "CI Lower": 400.0,
-                "CI Upper": 450.0
+                "CI Lower": 350.0,
+                "CI Upper": 500.0
             }
         },
         "reliability_score": 0.7841101174659222
@@ -14336,16 +14336,16 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 50.0,
                 "CI Lower": 50.0,
-                "CI Upper": 75.0
+                "CI Upper": 100.0
             },
             "Common": {
                 "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 100.0
+                "CI Lower": 75.0,
+                "CI Upper": 150.0
             },
             "Strong": {
                 "value": 150.0,
-                "CI Lower": 150.0,
+                "CI Lower": 100.0,
                 "CI Upper": 200.0
             },
             "Heavy": {
@@ -14397,7 +14397,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 50.0,
                 "CI Lower": 50.0,
-                "CI Upper": 50.0
+                "CI Upper": 100.0
             },
             "Light": {
                 "value": 100.0,
@@ -14407,7 +14407,7 @@ export const substanceData: SubstanceData[] = [
             "Common": {
                 "value": 100.0,
                 "CI Lower": 100.0,
-                "CI Upper": 100.0
+                "CI Upper": 200.0
             },
             "Strong": {
                 "value": 200.0,
@@ -14416,7 +14416,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 250.0,
-                "CI Lower": 250.0,
+                "CI Lower": 200.0,
                 "CI Upper": 300.0
             }
         },
@@ -14429,7 +14429,7 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 50.0,
-                "CI Lower": 50.0,
+                "CI Lower": 25.0,
                 "CI Upper": 50.0
             },
             "Light": {
@@ -14444,7 +14444,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 200.0,
-                "CI Lower": 150.0,
+                "CI Lower": 100.0,
                 "CI Upper": 200.0
             },
             "Heavy": {
@@ -14468,7 +14468,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 500.0,
                 "CI Lower": 500.0,
-                "CI Upper": 800.0
+                "CI Upper": 800.6249999999994
             },
             "Common": {
                 "value": 950.0,
@@ -14501,21 +14501,21 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 16.5,
                 "CI Lower": 9.125,
-                "CI Upper": 51.5
+                "CI Upper": 52.0
             },
             "Common": {
                 "value": 51.0,
-                "CI Lower": 16.0,
-                "CI Upper": 200.0
+                "CI Lower": 16.975,
+                "CI Upper": 202.5
             },
             "Strong": {
                 "value": 201.25,
-                "CI Lower": 50.0,
+                "CI Lower": 50.4875,
                 "CI Upper": 281.25
             },
             "Heavy": {
                 "value": 286.25,
-                "CI Lower": 163.59999999999982,
+                "CI Lower": 181.05249999999992,
                 "CI Upper": 300.0
             }
         },
@@ -14534,7 +14534,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 1.0,
                 "CI Lower": 1.0,
-                "CI Upper": 1.0
+                "CI Upper": 1.2
             },
             "Common": {
                 "value": 1.0,
@@ -14561,28 +14561,28 @@ export const substanceData: SubstanceData[] = [
         "tiers": {
             "Threshold": {
                 "value": 240.00000000000003,
-                "CI Lower": 36.08000000000001,
+                "CI Lower": 3.6,
                 "CI Upper": 400.0
             },
             "Light": {
                 "value": 500.0,
-                "CI Lower": 425.0,
-                "CI Upper": 565.0
+                "CI Lower": 400.0,
+                "CI Upper": 625.0
             },
             "Common": {
                 "value": 840.0,
-                "CI Lower": 530.0,
-                "CI Upper": 1060.2499999999998
+                "CI Lower": 500.0,
+                "CI Upper": 1200.0
             },
             "Strong": {
                 "value": 1515.0,
                 "CI Lower": 1060.0,
-                "CI Upper": 2250.0
+                "CI Upper": 2400.0
             },
             "Heavy": {
                 "value": 2700.0,
                 "CI Lower": 2250.0,
-                "CI Upper": 2875.599999999999
+                "CI Upper": 3150.0
             }
         },
         "reliability_score": 0.7793099448791772
@@ -14600,7 +14600,7 @@ export const substanceData: SubstanceData[] = [
             "Light": {
                 "value": 75.0,
                 "CI Lower": 75.0,
-                "CI Upper": 75.0
+                "CI Upper": 100.0
             },
             "Common": {
                 "value": 150.0,
@@ -14661,11 +14661,11 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 5.200000000000001,
                 "CI Lower": 1.0,
-                "CI Upper": 26.0
+                "CI Upper": 25.024999999999977
             },
             "Light": {
                 "value": 30.0,
-                "CI Lower": 20.725000000000016,
+                "CI Lower": 21.0,
                 "CI Upper": 50.0
             },
             "Common": {
@@ -14675,8 +14675,8 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 100.0,
-                "CI Lower": 60.0,
-                "CI Upper": 151.24999999999886
+                "CI Lower": 50.0,
+                "CI Upper": 200.0
             },
             "Heavy": {
                 "value": 200.0,
@@ -14731,7 +14731,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 500.0,
-                "CI Lower": 400.0,
+                "CI Lower": 210.0,
                 "CI Upper": 500.0
             },
             "Common": {
@@ -14746,7 +14746,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 2500.0,
-                "CI Lower": 1750.0,
+                "CI Lower": 1500.0,
                 "CI Upper": 3000.0
             }
         },
@@ -14774,12 +14774,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 750.0,
-                "CI Lower": 500.0,
+                "CI Lower": 650.0,
                 "CI Upper": 840.0
             },
             "Heavy": {
                 "value": 991.9999999999999,
-                "CI Lower": 750.0,
+                "CI Lower": 835.4999999999999,
                 "CI Upper": 1000.0
             }
         },
@@ -14793,7 +14793,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 123.0,
                 "CI Lower": 60.0,
-                "CI Upper": 335.0
+                "CI Upper": 317.5
             },
             "Light": {
                 "value": 262.5,
@@ -14802,12 +14802,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Common": {
                 "value": 450.0,
-                "CI Lower": 250.0,
-                "CI Upper": 700.0
+                "CI Lower": 249.37500000000003,
+                "CI Upper": 651.2499999999989
             },
             "Strong": {
                 "value": 500.0,
-                "CI Lower": 375.0,
+                "CI Lower": 400.0,
                 "CI Upper": 1375.0
             },
             "Heavy": {
@@ -14826,7 +14826,7 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 90.0,
                 "CI Lower": 50.0,
-                "CI Upper": 185.0
+                "CI Upper": 196.0
             },
             "Light": {
                 "value": 200.0,
@@ -14845,7 +14845,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 2000.0,
-                "CI Lower": 1199.9999999999993,
+                "CI Lower": 1000.0,
                 "CI Upper": 2000.0
             }
         },
@@ -14859,12 +14859,12 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 1.0225,
                 "CI Lower": 1.0,
-                "CI Upper": 4.0
+                "CI Upper": 3.05
             },
             "Light": {
                 "value": 4.0,
-                "CI Lower": 1.5875,
-                "CI Upper": 10.0
+                "CI Lower": 1.45,
+                "CI Upper": 7.0
             },
             "Common": {
                 "value": 10.0,
@@ -15038,7 +15038,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 20.0,
-                "CI Lower": 20.0,
+                "CI Lower": 15.0,
                 "CI Upper": 20.0
             },
             "Heavy": {
@@ -15061,18 +15061,18 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 7.5,
-                "CI Lower": 7.5,
+                "CI Lower": 7.0,
                 "CI Upper": 7.5
             },
             "Common": {
                 "value": 7.5,
                 "CI Lower": 7.5,
-                "CI Upper": 13.75
+                "CI Upper": 15.0
             },
             "Strong": {
                 "value": 15.0,
-                "CI Lower": 12.5,
-                "CI Upper": 15.140624999999872
+                "CI Lower": 11.25,
+                "CI Upper": 22.5
             },
             "Heavy": {
                 "value": 28.75,
@@ -15094,12 +15094,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 300.0,
-                "CI Lower": 150.0,
+                "CI Lower": 175.0,
                 "CI Upper": 525.0
             },
             "Common": {
                 "value": 400.0,
-                "CI Lower": 300.0,
+                "CI Lower": 275.0,
                 "CI Upper": 600.0
             },
             "Strong": {
@@ -15175,7 +15175,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Heavy": {
                 "value": 240.99999999999997,
-                "CI Lower": 175.0,
+                "CI Lower": 187.99999999999997,
                 "CI Upper": 250.0
             }
         },
@@ -15189,12 +15189,12 @@ export const substanceData: SubstanceData[] = [
             "Threshold": {
                 "value": 90.8,
                 "CI Lower": 80.0,
-                "CI Upper": 172.5
+                "CI Upper": 150.0
             },
             "Light": {
                 "value": 150.0,
                 "CI Lower": 86.0,
-                "CI Upper": 218.75
+                "CI Upper": 215.09374999999991
             },
             "Common": {
                 "value": 207.5,
@@ -15203,7 +15203,7 @@ export const substanceData: SubstanceData[] = [
             },
             "Strong": {
                 "value": 357.5,
-                "CI Lower": 198.75,
+                "CI Lower": 198.46875000000003,
                 "CI Upper": 550.0
             },
             "Heavy": {
@@ -15226,12 +15226,12 @@ export const substanceData: SubstanceData[] = [
             },
             "Light": {
                 "value": 50.0,
-                "CI Lower": 33.75,
+                "CI Lower": 25.0,
                 "CI Upper": 100.0
             },
             "Common": {
                 "value": 100.0,
-                "CI Lower": 59.750000000000014,
+                "CI Lower": 50.0,
                 "CI Upper": 125.0
             },
             "Strong": {
