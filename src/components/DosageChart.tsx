@@ -14,7 +14,15 @@ import { SubstanceData } from '../types';
 interface DosageChartProps {
   data: SubstanceData;
 }
-
+export const formatDose = (dose: number): string => {
+  if (dose < 1) {
+    return dose.toFixed(2); // Two decimal places for doses < 1
+  } else if (dose < 10) {
+    return dose.toFixed(1); // One decimal place for doses < 10
+  } else {
+    return dose.toFixed(0); // No decimal places for doses >= 10
+  }
+};
 const DosageChart: React.FC<DosageChartProps> = ({ data }) => {
   const tiers = ['Threshold', 'Light', 'Common', 'Strong', 'Heavy'];
   const chartData = tiers.map((tier) => (data.tiers[tier].value ? {
@@ -40,11 +48,11 @@ const DosageChart: React.FC<DosageChartProps> = ({ data }) => {
               // Define custom range display for "Heavy" and "Threshold"
               let doseRange;
               if (tier === 'Heavy') {
-                doseRange = `${Math.ceil(Number.parseFloat(data.tiers[tier]['CI Lower']))}+`;
+                doseRange = `${formatDose(Number.parseFloat(data.tiers[tier]['CI Lower']))}+`;
               } else if (tier === 'Threshold') {
-                doseRange = `< ${Math.ceil(Number.parseFloat(data.tiers[tier]['CI Lower']))}`;
+                doseRange = `< ${formatDose(Number.parseFloat(data.tiers[tier]['CI Lower']))}`;
               } else {
-                doseRange = `${Math.ceil(Number.parseFloat(data.tiers[tier]['CI Lower']))} - ${Math.ceil(Number.parseFloat(data.tiers[tier]['CI Upper']))}`;
+                doseRange = `${formatDose(Number.parseFloat(data.tiers[tier]['CI Lower']))} - ${formatDose(Number.parseFloat(data.tiers[tier]['CI Upper']))}`;
               }
 
               // Conditionally apply red background color to the "Heavy" row

@@ -10,6 +10,16 @@ declare global {
     MathJax: any;
   }
 }
+// utils/formatDose.ts
+export const formatDose = (dose: number): string => {
+  if (dose < 1) {
+    return dose.toFixed(2); // Two decimal places for doses < 1
+  } else if (dose < 10) {
+    return dose.toFixed(1); // One decimal place for doses < 10
+  } else {
+    return dose.toFixed(0); // No decimal places for doses >= 10
+  }
+};
 
 function App() {
   const [selectedSubstance, setSelectedSubstance] =
