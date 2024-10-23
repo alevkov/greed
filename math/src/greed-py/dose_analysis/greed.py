@@ -62,7 +62,7 @@ filtered_df_no_outliers = (
 )
 
 
-def calculate_percentile_confidence_interval(data, percentile, alpha=0.01):  # 99th perc
+def calculate_percentile_confidence_interval(data, percentile, alpha=0.05):  # 99th perc
     n = len(data)
     if n == 0:
         return (np.nan, np.nan)
@@ -81,7 +81,7 @@ def calculate_percentile_confidence_interval(data, percentile, alpha=0.01):  # 9
 
 def compute_dose_tiers(group):
     amounts = group["amount_standard"].dropna().values
-    if len(amounts) < 3:
+    if len(amounts) < 10:
         return pd.Series(dtype="float64")
     percentiles = [0.05, 0.25, 0.50, 0.75, 0.95]
     labels = ["Threshold", "Light", "Common", "Strong", "Heavy"]

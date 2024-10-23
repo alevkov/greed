@@ -22,7 +22,7 @@ def detect_outliers_modified_zscore_cy(np.ndarray[DTYPE_t, ndim=1] amounts):
     cdef int n = amounts.shape[0]
     cdef int filtered_count = 0
     cdef DTYPE_t median, mad, modified_z_score
-    cdef DTYPE_t threshold = 4.0
+    cdef DTYPE_t threshold = 3.5
     cdef int i
     
     # Use a Cython vector for storing filtered values
@@ -97,24 +97,35 @@ def calculate_percentile_confidence_interval_cy(np.ndarray[DTYPE_t, ndim=1] data
 
 @cython.boundscheck(False)
 @cython.wraparound(False)
-def bootstrap_percentile(np.ndarray[DTYPE_t, ndim=1] amounts, DTYPE_t percentile):
+def bootstrap_multiple_percentiles(np.ndarray[DTYPE_t, ndim=1] amounts, np.ndarray[DTYPE_t, ndim=1] percentiles):
     """
-    Optimized bootstrapping for percentile calculation and confidence intervals.
+    Optimized bootstrapping for multiple percentile calculations and confidence intervals.
     """
     cdef int n = amounts.shape[0]
-    cdef np.ndarray[DTYPE_t, ndim=1] bootstrapped_percentiles = np.zeros(BOOTSTRAP_SAMPLES, dtype=np.float64)
-    cdef int i
+    cdef int p = percentiles.shape[0]  # Number of percentiles
+    cdef np.ndarray[DTYPE_t, ndim=2] bootstrapped_percentiles = np.zeros((BOOTSTRAP_SAMPLES, p), dtype=np.float64)
+    cdef int i, j
     
+    # Perform bootstrap resampling
     for i in range(BOOTSTRAP_SAMPLES):
         # Resample with replacement
         resampled = np.random.choice(amounts, size=n, replace=True)
-        bootstrapped_percentiles[i] = np.percentile(resampled, percentile * 100)
+        # Calculate multiple percentiles for this bootstrap sample
+        for j in range(p):
+            bootstrapped_percentiles[i, j] = np.percentile(resampled, percentiles[j] * 100)
 
-    # Compute the confidence interval (2.5th and 97.5th percentiles of the bootstrap distribution)
-    lower_ci = np.percentile(bootstrapped_percentiles, 2.5)
-    upper_ci = np.percentile(bootstrapped_percentiles, 97.5)
+    # Compute confidence intervals (2.5th and 97.5th percentiles) for each target percentile
+    cdef np.ndarray[DTYPE_t, ndim=1] ci_lower = np.zeros(p, dtype=np.float64)
+    cdef np.ndarray[DTYPE_t, ndim=1] ci_upper = np.zeros(p, dtype=np.float64)
+    for j in range(p):
+        ci_lower[j] = np.percentile(bootstrapped_percentiles[:, j], 1)
+        ci_upper[j] = np.percentile(bootstrapped_percentiles[:, j], 99)
 
-    return np.percentile(amounts, percentile * 100), lower_ci, upper_ci
+    # Calculate the original percentiles (without bootstrapping) from the original amounts
+    cdef np.ndarray[DTYPE_t, ndim=1] original_percentiles = np.percentile(amounts, percentiles * 100)
+
+    return original_percentiles, ci_lower, ci_upper
+
 
 @cython.boundscheck(False)
 @cython.wraparound(False)
@@ -127,23 +138,31 @@ def compute_dose_tiers_cy(np.ndarray[DTYPE_t, ndim=1] amounts):
     cdef np.ndarray[DTYPE_t, ndim=1] percentiles = np.array([0.05, 0.25, 0.50, 0.75, 0.95], dtype=np.float64)
     cdef np.ndarray[DTYPE_t, ndim=1] results = np.zeros(15, dtype=np.float64)
     cdef int i
-    cdef DTYPE_t ci_lower, ci_upper
-    
-    if n < 3:
+    cdef np.ndarray[DTYPE_t, ndim=1] ci_lower = np.zeros(5, dtype=np.float64)  # Initialize ci_lower for analytical block
+    cdef np.ndarray[DTYPE_t, ndim=1] ci_upper = np.zeros(5, dtype=np.float64)  # Initialize ci_upper for analytical block
+    cdef np.ndarray[DTYPE_t, ndim=1] original_percentiles
+
+    if n < 10:
         return np.array([np.nan] * 15)
     
     amounts.sort()  # Sort in-place
 
     # Use bootstrapping if the sample size is smaller than 30
     if n < 30:
+        # Call the optimized multi-percentile bootstrapping function
+        original_percentiles, ci_lower, ci_upper = bootstrap_multiple_percentiles(amounts, percentiles)
+        
+        # Populate the results array with the bootstrapped percentiles and confidence intervals
         for i in range(5):
-            results[i * 3], results[i * 3 + 1], results[i * 3 + 2] = bootstrap_percentile(amounts, percentiles[i])
+            results[i * 3] = original_percentiles[i]
+            results[i * 3 + 1] = ci_lower[i]
+            results[i * 3 + 2] = ci_upper[i]
     else:
         # Analytical approach for n >= 30
         for i in range(5):
             results[i * 3] = np.percentile(amounts, percentiles[i] * 100)
-            ci_lower, ci_upper = calculate_percentile_confidence_interval_cy(amounts, percentiles[i])
-            results[i * 3 + 1] = ci_lower
-            results[i * 3 + 2] = ci_upper
+            ci_lower[i], ci_upper[i] = calculate_percentile_confidence_interval_cy(amounts, percentiles[i])
+            results[i * 3 + 1] = ci_lower[i]
+            results[i * 3 + 2] = ci_upper[i]
     
     return results
