@@ -84,66 +84,66 @@ const DosageChart: React.FC<DosageChartProps> = ({ data }) => {
         Reliability Score: {(data.reliability_score * 100).toFixed(2)}%
       </div>
       <div className="mt-6 text-sm text-gray-800">
-        <h3 className="font-bold mb-2">
-          Confidence Interval Calculation Method
-        </h3>
-        <p>
-          The confidence intervals (CIs) for the dosage tiers are calculated
-          using an analytical method based on the properties of order statistics
-          and the beta distribution. This method provides precise CIs without
-          resampling, making it computationally efficient.
-        </p>
-        <div className="mt-4 overflow-x-auto">
-          <p>Key steps in the calculation:</p>
-          <ol className="list-decimal list-inside">
-            <li>
-              Determine the order statistic index:{' '}
-              {`\\( k = \\lceil n \\times p \\rceil \\)`}
-            </li>
-            <li>
-              Calculate beta distribution parameters: {`\\( \\alpha = k \\)`}{' '}
-              and {`\\( \\beta = n - k + 1 \\)`}
-            </li>
-            <li>
-              Compute confidence bounds:
-              <br />
-              <br />
-              {`\\( p_{\\text{lower}} = \\text{BetaInv}\\left( \\frac{\\alpha}{2}; k, n - k + 1 \\right ) \\)`}
-              <br />
-              {`\\( p_{\\text{upper}} = \\text{BetaInv}\\left( 1 - \\frac{\\alpha}{2}; k, n - k + 1 \\right ) \\)`}
-              <br />
-              <br />
-            </li>
-            <li>
-              Convert to data indices:
-              <br />
-              <br />
-              {`\\( i_{\\text{lower}} = \\left\\lfloor n \\times p_{\\text{lower}} \\right\\rfloor \\)`}
-              <br />
-              {`\\( i_{\\text{upper}} = \\left\\lceil n \\times p_{\\text{upper}} \\right\\rceil - 1 \\)`}
-              <br />
-              <br />
-            </li>
-            <li>
-              Determine CI values:
-              <br />
-              <br />
-              {`\\( \\theta_{p, \\text{lower}} = X_{(\\max(1, i_{\\text{lower}}))} \\)`}
-              <br />
-              {`\\( \\theta_{p, \\text{upper}} = X_{(\\min(n, i_{\\text{upper}}))} \\)`}
-              <br />
-              <br />
-            </li>
-          </ol>
-        </div>
-        <p className="mt-4">
-          This method assumes the data is independent and identically
-          distributed (i.i.d.) and comes from a continuous distribution. It
-          provides accurate intervals for sufficiently large sample sizes but
-          may be less robust for small samples or data with outliers.
-        </p>
-      </div>
-    </div>
+  <h3 className="font-bold mb-2">
+    Dosage Tier and Confidence Interval Calculation Method
+  </h3>
+  <p>
+    Dosage tiers are established using specific percentiles of the data collected from erowid.org (N=62018). Confidence intervals (CIs) for these percentiles are calculated to account for variability and uncertainty in the estimates, rendering statistically transparent and robust tiers.
+  </p>
+  <div className="mt-4 overflow-x-auto">
+    <p>Method breakdown:</p>
+    <ol className="list-decimal list-inside">
+      <li>
+        Sort the dosage data in ascending order to obtain an ordered dataset {`\\( X_{(1)}, X_{(2)}, \\dots, X_{(n)} \\)`}.
+      </li>
+      <li>
+        Define target percentiles: {`\\( P = \\{5\\%, 25\\%, 50\\%, 75\\%, 95\\%\\} \\)`}.
+      </li>
+      <li>
+        Calculate the percentile values:
+        <br />
+        <br />
+        {`\\( \\theta_p = X_{(k)} \\), where \\( k = \\lceil n \\times p \\rceil \\)`}.
+        <br />
+        <br />
+      </li>
+      <li>
+        Determine confidence intervals for each percentile:
+        <br />
+        <br />
+        - If sample size {`\\( n < 75 \\)`}, use bootstrapping:
+        <br />
+        &nbsp;&nbsp;Resample the data and compute percentiles to estimate CIs.
+        <br />
+        - If sample size {`\\( n \\geq 75 \\)`}, use the beta distribution method:
+        <br />
+        &nbsp;&nbsp;Compute CIs analytically based on order statistics.
+        <br />
+        <br />
+      </li>
+      <li>
+        Establish dosage tiers using the percentile values and the minimum and maximum dosages:
+        <br />
+        <br />
+        - **Threshold**: {`\\( [X_{\\text{min}}, \\theta_{5\\%}] \\)`}.
+        <br />
+        - **Light**: {`\\( (\\theta_{5\\%}, \\theta_{25\\%}] \\)`}.
+        <br />
+        - **Common**: {`\\( (\\theta_{25\\%}, \\theta_{75\\%}] \\)`}.
+        <br />
+        - **Strong**: {`\\( (\\theta_{75\\%}, \\theta_{95\\%}] \\)`}.
+        <br />
+        - **Heavy**: {`\\( (\\theta_{95\\%}, X_{\\text{max}}] \\)`}.
+        <br />
+        <br />
+      </li>
+    </ol>
+  </div>
+  <p className="mt-4">
+  This method provides a data-driven approach to nonmedical dosing suggestions for recreational drugs, with confidence intervals reflecting the uncertainty due to sample size and data variability.
+  </p>
+</div>
+</div>
   );
 };
 
