@@ -25,12 +25,12 @@ export const formatDose = (dose: number): string => {
 };
 const DosageChart: React.FC<DosageChartProps> = ({ data }) => {
   const tiers = ['Threshold', 'Light', 'Common', 'Strong', 'Heavy'];
-  const chartData = tiers.map((tier) => (data.tiers[tier].value ? {
+  const chartData = tiers.map((tier) => ({
     tier,
-    value: data.tiers[tier].value,
-    ciLower: data.tiers[tier]['CI Lower'],
-    ciUpper: data.tiers[tier]['CI Upper'],
-  } : undefined));
+    value: (data.tiers[tier]['Lower'] + data.tiers[tier]['Upper']) /2,
+    ciLower: data.tiers[tier]['Lower'],
+    ciUpper: data.tiers[tier]['Upper'],
+  }));
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -48,11 +48,11 @@ const DosageChart: React.FC<DosageChartProps> = ({ data }) => {
               // Define custom range display for "Heavy" and "Threshold"
               let doseRange;
               if (tier === 'Heavy') {
-                doseRange = `${formatDose(Number.parseFloat(data.tiers[tier]['CI Lower']))}+`;
+                doseRange = `${formatDose(Number.parseFloat(data.tiers[tier]['Upper']))}+`;
               } else if (tier === 'Threshold') {
-                doseRange = `< ${formatDose(Number.parseFloat(data.tiers[tier]['CI Lower']))}`;
+                doseRange = `< ${formatDose(Number.parseFloat(data.tiers[tier]['Lower']))}`;
               } else {
-                doseRange = `${formatDose(Number.parseFloat(data.tiers[tier]['CI Lower']))} - ${formatDose(Number.parseFloat(data.tiers[tier]['CI Upper']))}`;
+                doseRange = `${formatDose(Number.parseFloat(data.tiers[tier]['Lower']))} - ${formatDose(Number.parseFloat(data.tiers[tier]['Upper']))}`;
               }
 
               // Conditionally apply red background color to the "Heavy" row

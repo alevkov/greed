@@ -7,32 +7,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "ml",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 1.5
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.5,
-                "CI Lower": 1.5,
-                "CI Upper": 2.25
+                "Lower": 0.9999999999999999,
+                "Upper": 1.5,
+                "CI Lower": 0.7500194952556853,
+                "CI Upper": 1.5
             },
             "Common": {
-                "value": 2.5,
+                "Lower": 1.5,
+                "Upper": 2.5,
+                "CI Lower": 1.5,
+                "CI Upper": 2.0
+            },
+            "Strong": {
+                "Lower": 2.5,
+                "Upper": 3.0,
                 "CI Lower": 2.0,
                 "CI Upper": 3.0
             },
-            "Strong": {
-                "value": 3.0,
-                "CI Lower": 2.5,
-                "CI Upper": 5.0
-            },
             "Heavy": {
-                "value": 6.399999999999999,
-                "CI Lower": 5.0,
-                "CI Upper": 7.5
+                "Lower": 3.0,
+                "Upper": 7.5,
+                "CI Lower": 3.0,
+                "CI Upper": 5.0
             }
         },
-        "reliability_score": 0.8240246718869355
+        "reliability_score": 0.8826831145912903
     },
     {
         "substance": "1P-LSD",
@@ -40,32 +45,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "\u00b5g",
         "tiers": {
             "Threshold": {
-                "value": 38.300000000000004,
-                "CI Lower": 4.0,
-                "CI Upper": 50.0
+                "Lower": 4.0,
+                "Upper": 38.13103135625216,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 38.13103135625216,
+                "Upper": 49.99999999999999,
+                "CI Lower": 6.25,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 150.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 150.0,
-                "CI Upper": 250.0
+                "Lower": 99.99999999999996,
+                "Upper": 199.99999999999991,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 149.99999999999997
             },
             "Heavy": {
-                "value": 300.0,
-                "CI Lower": 200.0,
-                "CI Upper": 330.0
+                "Lower": 199.99999999999991,
+                "Upper": 330.0,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.80601304792116
+        "reliability_score": 0.8706753652807733
     },
     {
         "substance": "1P-LSD",
@@ -73,98 +83,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "\u00b5g",
         "tiers": {
             "Threshold": {
-                "value": 50.0,
+                "Lower": 37.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
                 "CI Lower": 37.0,
-                "CI Upper": 60.00000000000001
-            },
-            "Light": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "CI Upper": 57.43491775019006
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 150.0
+                "Lower": 99.99999999999996,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 150.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 149.99999999999997,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 149.99999999999997
             },
             "Heavy": {
-                "value": 200.0,
-                "CI Lower": 157.99999999999997,
-                "CI Upper": 250.0
+                "Lower": 149.99999999999997,
+                "Upper": 250.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.8535984475063914
-    },
-    {
-        "substance": "2'-Oxo-PCE",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 6.2
-            },
-            "Light": {
-                "value": 5.0,
-                "CI Lower": 1.0,
-                "CI Upper": 10.0
-            },
-            "Common": {
-                "value": 8.0,
-                "CI Lower": 5.0,
-                "CI Upper": 20.0
-            },
-            "Strong": {
-                "value": 20.0,
-                "CI Lower": 8.0,
-                "CI Upper": 30.0
-            },
-            "Heavy": {
-                "value": 30.0,
-                "CI Lower": 17.974999999999973,
-                "CI Upper": 30.0
-            }
-        },
-        "reliability_score": 0.75096499204624
-    },
-    {
-        "substance": "2-Fluoroamphetamine",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 9.5,
-                "CI Lower": 5.0,
-                "CI Upper": 26.125
-            },
-            "Light": {
-                "value": 25.0,
-                "CI Lower": 7.5,
-                "CI Upper": 30.0
-            },
-            "Common": {
-                "value": 28.75,
-                "CI Lower": 21.21875,
-                "CI Upper": 32.5
-            },
-            "Strong": {
-                "value": 30.0,
-                "CI Lower": 26.875,
-                "CI Upper": 36.875
-            },
-            "Heavy": {
-                "value": 36.375,
-                "CI Lower": 30.0,
-                "CI Upper": 37.5
-            }
-        },
-        "reliability_score": 0.8893603856642882
+        "reliability_score": 0.902398965004261
     },
     {
         "substance": "2-Fluorodeschloroketamine",
@@ -172,98 +121,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 14.625
+                "Lower": 10.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 21.0
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 14.114892347969414
             },
             "Common": {
-                "value": 23.0,
-                "CI Lower": 15.0,
-                "CI Upper": 41.0
+                "Lower": 15.0,
+                "Upper": 22.912878474817223,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 21.935597734540504
             },
             "Strong": {
-                "value": 43.5,
-                "CI Lower": 24.0,
-                "CI Upper": 54.06874999999994
+                "Lower": 22.912878474817223,
+                "Upper": 43.265726335607255,
+                "CI Lower": 15.0,
+                "CI Upper": 36.0
             },
             "Heavy": {
-                "value": 60.449999999999996,
-                "CI Lower": 46.15,
-                "CI Upper": 63.0
+                "Lower": 43.265726335607255,
+                "Upper": 63.0,
+                "CI Lower": 23.34228711900444,
+                "CI Upper": 56.446614879645374
             }
         },
-        "reliability_score": 0.813718525382588
-    },
-    {
-        "substance": "2-Fluorodeschloroketamine",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
-            },
-            "Light": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 25.0
-            },
-            "Common": {
-                "value": 25.0,
-                "CI Lower": 10.0,
-                "CI Upper": 30.0
-            },
-            "Strong": {
-                "value": 30.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
-            },
-            "Heavy": {
-                "value": 43.999999999999986,
-                "CI Lower": 30.0,
-                "CI Upper": 50.0
-            }
-        },
-        "reliability_score": 0.857171431429143
-    },
-    {
-        "substance": "2-Fluoromethamphetamine",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 15.0,
-                "CI Lower": 15.0,
-                "CI Upper": 17.562499999999943
-            },
-            "Light": {
-                "value": 17.5,
-                "CI Lower": 15.0,
-                "CI Upper": 25.0
-            },
-            "Common": {
-                "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 30.0
-            },
-            "Strong": {
-                "value": 30.0,
-                "CI Lower": 20.0,
-                "CI Upper": 35.0
-            },
-            "Heavy": {
-                "value": 35.0,
-                "CI Lower": 30.0,
-                "CI Upper": 40.0
-            }
-        },
-        "reliability_score": 0.8964909030883399
+        "reliability_score": 0.8758123502550588
     },
     {
         "substance": "2-Fluoromethamphetamine",
@@ -271,32 +159,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "Lower": 10.000000000000002,
+                "Upper": 10.000000000000002,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 23.0
+                "Lower": 19.999999999999996,
+                "Upper": 19.999999999999996,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 45.0,
-                "CI Lower": 40.0,
-                "CI Upper": 45.0
+                "Lower": 19.999999999999996,
+                "Upper": 45.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 21.000000000000004
             }
         },
-        "reliability_score": 0.8479874399007523
+        "reliability_score": 0.8986582932671683
     },
     {
         "substance": "2-Fluoromethamphetamine",
@@ -304,32 +197,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "Lower": 10.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 15.0
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 25.0
+                "Lower": 15.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
             },
             "Strong": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 25.0
+                "Lower": 19.999999999999996,
+                "Upper": 24.999999999999996,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 24.999999999999996
             },
             "Heavy": {
-                "value": 35.0,
-                "CI Lower": 30.0,
-                "CI Upper": 35.0
+                "Lower": 24.999999999999996,
+                "Upper": 35.0,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 24.999999999999996
             }
         },
-        "reliability_score": 0.9072156290774835
+        "reliability_score": 0.9381437527183223
     },
     {
         "substance": "2-Me-AP-237",
@@ -337,32 +235,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 7.5,
-                "CI Lower": 7.5,
-                "CI Upper": 15.0
+                "Lower": 7.5,
+                "Upper": 7.5,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.0,
+                "Lower": 7.5,
+                "Upper": 15.0,
                 "CI Lower": 7.5,
                 "CI Upper": 15.0
             },
             "Common": {
-                "value": 15.0,
-                "CI Lower": 15.0,
+                "Lower": 15.0,
+                "Upper": 15.0,
+                "CI Lower": 8.91905336292597,
                 "CI Upper": 15.0
             },
             "Strong": {
-                "value": 15.0,
+                "Lower": 15.0,
+                "Upper": 15.0,
                 "CI Lower": 15.0,
-                "CI Upper": 50.0
+                "CI Upper": 15.0
             },
             "Heavy": {
-                "value": 50.0,
+                "Lower": 15.0,
+                "Upper": 50.0,
                 "CI Lower": 15.0,
-                "CI Upper": 50.0
+                "CI Upper": 30.000000000000004
             }
         },
-        "reliability_score": 0.8123728819482439
+        "reliability_score": 0.8749152546321626
     },
     {
         "substance": "2-Me-AP-237",
@@ -370,65 +273,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 15.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "Lower": 15.0,
+                "Upper": 15.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.0,
+                "Lower": 15.0,
+                "Upper": 19.999999999999996,
                 "CI Lower": 15.0,
-                "CI Upper": 25.0
+                "CI Upper": 15.661453650751975
             },
             "Common": {
-                "value": 25.0,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
+                "Lower": 19.999999999999996,
+                "Upper": 24.999999999999996,
+                "CI Lower": 15.0,
+                "CI Upper": 24.999999999999996
             },
             "Strong": {
-                "value": 40.0,
-                "CI Lower": 25.0,
+                "Lower": 24.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 27.386127875299884
+            },
+            "Heavy": {
+                "Lower": 40.0,
+                "Upper": 50.0,
+                "CI Lower": 24.999999999999996,
                 "CI Upper": 40.0
-            },
-            "Heavy": {
-                "value": 48.500000000000014,
-                "CI Lower": 40.0,
-                "CI Upper": 50.0
             }
         },
-        "reliability_score": 0.8873340674357766
-    },
-    {
-        "substance": "2-Methyl-2-Butanol",
-        "method": "oral",
-        "unit": "ml",
-        "tiers": {
-            "Threshold": {
-                "value": 0.645,
-                "CI Lower": 0.6,
-                "CI Upper": 1.2850000000000001
-            },
-            "Light": {
-                "value": 0.7749999999999999,
-                "CI Lower": 0.625,
-                "CI Upper": 2.0
-            },
-            "Common": {
-                "value": 2.0,
-                "CI Lower": 0.7,
-                "CI Upper": 4.0
-            },
-            "Strong": {
-                "value": 3.5,
-                "CI Lower": 1.675,
-                "CI Upper": 4.75
-            },
-            "Heavy": {
-                "value": 4.549999999999999,
-                "CI Lower": 2.633749999999998,
-                "CI Upper": 5.0
-            }
-        },
-        "reliability_score": 0.782292181548581
+        "reliability_score": 0.9248893782905176
     },
     {
         "substance": "25C-NBOMe",
@@ -436,32 +311,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "\u00b5g",
         "tiers": {
             "Threshold": {
-                "value": 136.66,
-                "CI Lower": 83.3,
-                "CI Upper": 233.32
+                "Lower": 83.3,
+                "Upper": 133.35275963824859,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 250.0,
-                "CI Lower": 150.0,
-                "CI Upper": 300.0
+                "Lower": 133.35275963824859,
+                "Upper": 249.9999999999999,
+                "CI Lower": 83.30000000000001,
+                "CI Upper": 239.08812494755094
             },
             "Common": {
-                "value": 300.0,
-                "CI Lower": 250.0,
-                "CI Upper": 500.0
+                "Lower": 249.9999999999999,
+                "Upper": 299.99999999999994,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 299.99999999999994
             },
             "Strong": {
-                "value": 500.0,
-                "CI Lower": 300.0,
-                "CI Upper": 600.0
+                "Lower": 299.99999999999994,
+                "Upper": 499.99999999999983,
+                "CI Lower": 249.9999999999999,
+                "CI Upper": 499.99999999999983
             },
             "Heavy": {
-                "value": 639.9999999999999,
-                "CI Lower": 500.0,
-                "CI Upper": 800.0
+                "Lower": 499.99999999999983,
+                "Upper": 800.0,
+                "CI Lower": 299.99999999999994,
+                "CI Upper": 600.0
             }
         },
-        "reliability_score": 0.8398988730330064
+        "reliability_score": 0.8932659153553375
     },
     {
         "substance": "25C-NBOMe",
@@ -469,32 +349,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "\u00b5g",
         "tiers": {
             "Threshold": {
-                "value": 150.0,
-                "CI Lower": 150.0,
-                "CI Upper": 250.0
+                "Lower": 150.0,
+                "Upper": 149.99999999999997,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 300.0,
-                "CI Lower": 150.0,
-                "CI Upper": 400.0
+                "Lower": 149.99999999999997,
+                "Upper": 299.99999999999994,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 249.9999999999999
             },
             "Common": {
-                "value": 500.0,
-                "CI Lower": 300.0,
-                "CI Upper": 600.0
+                "Lower": 299.99999999999994,
+                "Upper": 499.99999999999983,
+                "CI Lower": 249.9999999999999,
+                "CI Upper": 400.00000000000006
             },
             "Strong": {
-                "value": 750.0,
-                "CI Lower": 500.0,
-                "CI Upper": 1000.0
+                "Lower": 499.99999999999983,
+                "Upper": 749.9999999999999,
+                "CI Lower": 400.00000000000006,
+                "CI Upper": 600.0
             },
             "Heavy": {
-                "value": 1009.9999999999994,
-                "CI Lower": 800.0,
-                "CI Upper": 1500.0
+                "Lower": 749.9999999999999,
+                "Upper": 1500.0,
+                "CI Lower": 542.8218116550456,
+                "CI Upper": 823.90685756286
             }
         },
-        "reliability_score": 0.8273560091582863
+        "reliability_score": 0.8849040061055242
     },
     {
         "substance": "25I-NBOMe",
@@ -502,65 +387,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "\u00b5g",
         "tiers": {
             "Threshold": {
-                "value": 125.0,
-                "CI Lower": 60.0,
-                "CI Upper": 127.0
+                "Lower": 60.0,
+                "Upper": 124.99999999999994,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 127.0,
-                "CI Lower": 125.0,
-                "CI Upper": 400.0
+                "Lower": 124.99999999999994,
+                "Upper": 127.00000000000004,
+                "CI Lower": 59.999999999999986,
+                "CI Upper": 127.00000000000004
             },
             "Common": {
-                "value": 400.0,
+                "Lower": 127.00000000000004,
+                "Upper": 400.00000000000006,
+                "CI Lower": 124.99999999999994,
+                "CI Upper": 299.99999999999994
+            },
+            "Strong": {
+                "Lower": 400.00000000000006,
+                "Upper": 499.99999999999983,
                 "CI Lower": 211.0,
-                "CI Upper": 500.0
-            },
-            "Strong": {
-                "value": 500.0,
-                "CI Lower": 400.0,
-                "CI Upper": 750.0
+                "CI Upper": 499.99999999999983
             },
             "Heavy": {
-                "value": 1200.0,
-                "CI Lower": 570.0,
-                "CI Upper": 1400.0
+                "Lower": 499.99999999999983,
+                "Upper": 1400.0,
+                "CI Lower": 400.00000000000006,
+                "CI Upper": 749.9999999999999
             }
         },
-        "reliability_score": 0.7569593432400259
-    },
-    {
-        "substance": "25I-NBOMe",
-        "method": "oral",
-        "unit": "\u00b5g",
-        "tiers": {
-            "Threshold": {
-                "value": 500.0,
-                "CI Lower": 500.0,
-                "CI Upper": 750.0
-            },
-            "Light": {
-                "value": 712.5,
-                "CI Lower": 500.0,
-                "CI Upper": 950.0
-            },
-            "Common": {
-                "value": 900.0,
-                "CI Lower": 675.0,
-                "CI Upper": 1350.0
-            },
-            "Strong": {
-                "value": 1275.0,
-                "CI Lower": 849.0625,
-                "CI Upper": 1662.5
-            },
-            "Heavy": {
-                "value": 1712.4999999999998,
-                "CI Lower": 1200.0,
-                "CI Upper": 1850.0
-            }
-        },
-        "reliability_score": 0.8664748834896614
+        "reliability_score": 0.8379728954933505
     },
     {
         "substance": "25I-NBOMe",
@@ -568,32 +425,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.0
+                "Lower": 0.9999999999999999,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.5,
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 1.2,
-                "CI Lower": 1.0,
-                "CI Upper": 1.5
+                "Lower": 0.9999999999999999,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 0.9999999999999999
             },
             "Strong": {
-                "value": 1.5,
+                "Lower": 0.9999999999999999,
+                "Upper": 1.5,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 1.2
+            },
+            "Heavy": {
+                "Lower": 1.5,
+                "Upper": 2.4,
                 "CI Lower": 1.2,
                 "CI Upper": 2.0
-            },
-            "Heavy": {
-                "value": 2.4,
-                "CI Lower": 1.6,
-                "CI Upper": 2.5
             }
         },
-        "reliability_score": 0.8919710196887831
+        "reliability_score": 0.935721656775331
     },
     {
         "substance": "25I-NBOMe",
@@ -601,32 +463,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "\u00b5g",
         "tiers": {
             "Threshold": {
-                "value": 210.0,
-                "CI Lower": 1.0,
-                "CI Upper": 250.0
+                "Lower": 1.0,
+                "Upper": 203.7982774018064,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 300.0,
-                "CI Lower": 250.0,
-                "CI Upper": 600.0
+                "Lower": 203.7982774018064,
+                "Upper": 299.99999999999994,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 249.9999999999999
             },
             "Common": {
-                "value": 600.0,
-                "CI Lower": 500.0,
-                "CI Upper": 800.0
+                "Lower": 299.99999999999994,
+                "Upper": 600.0,
+                "CI Lower": 249.9999999999999,
+                "CI Upper": 600.0
             },
             "Strong": {
-                "value": 800.0,
-                "CI Lower": 634.0,
-                "CI Upper": 1500.0
+                "Lower": 600.0,
+                "Upper": 800.0,
+                "CI Lower": 549.9999999999998,
+                "CI Upper": 749.9999999999999
             },
             "Heavy": {
-                "value": 1559.9999999999998,
-                "CI Lower": 1000.0,
-                "CI Upper": 2000.0
+                "Lower": 800.0,
+                "Upper": 2000.0,
+                "CI Lower": 749.9999999999999,
+                "CI Upper": 1199.9999999999995
             }
         },
-        "reliability_score": 0.8057436991388685
+        "reliability_score": 0.8704957994259124
     },
     {
         "substance": "2C-B",
@@ -634,32 +501,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 2.5,
-                "CI Upper": 7.0
+                "Lower": 2.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 7.0,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 2.789001554364974,
+                "CI Upper": 6.581415719466162
             },
             "Common": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 7.5,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 25.0,
-                "CI Lower": 20.0,
-                "CI Upper": 27.0
+                "Lower": 15.0,
+                "Upper": 24.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 46.99999999999996,
-                "CI Lower": 30.0,
-                "CI Upper": 50.0
+                "Lower": 24.999999999999996,
+                "Upper": 50.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 24.999999999999996
             }
         },
-        "reliability_score": 0.802259636718476
+        "reliability_score": 0.8681730911456507
     },
     {
         "substance": "2C-B",
@@ -667,65 +539,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 8.0,
+                "Lower": 2.0,
+                "Upper": 7.999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 7.999999999999999,
+                "Upper": 15.0,
                 "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
-            "Light": {
-                "value": 15.0,
-                "CI Lower": 13.5,
-                "CI Upper": 19.0
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 22.5
+                "Lower": 15.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": 15.0,
+                "CI Upper": 17.999999999999996
             },
             "Strong": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 28.0
+                "Lower": 19.999999999999996,
+                "Upper": 24.999999999999996,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 21.250000000000004
             },
             "Heavy": {
-                "value": 35.0,
-                "CI Lower": 31.0,
-                "CI Upper": 40.0
+                "Lower": 24.999999999999996,
+                "Upper": 45.0,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 25.024524967339936
             }
         },
-        "reliability_score": 0.8816351091205827
-    },
-    {
-        "substance": "2C-B",
-        "method": "rectal",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 8.5,
-                "CI Lower": 7.0,
-                "CI Upper": 15.0
-            },
-            "Light": {
-                "value": 12.5,
-                "CI Lower": 8.5,
-                "CI Upper": 18.0
-            },
-            "Common": {
-                "value": 16.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
-            },
-            "Strong": {
-                "value": 20.0,
-                "CI Lower": 15.5,
-                "CI Upper": 29.0
-            },
-            "Heavy": {
-                "value": 29.0,
-                "CI Lower": 20.0,
-                "CI Upper": 33.0
-            }
-        },
-        "reliability_score": 0.8715705632381443
+        "reliability_score": 0.9210900727470552
     },
     {
         "substance": "2C-B-Fly",
@@ -733,32 +577,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 2.5,
-                "CI Upper": 7.000000000000001
+                "Lower": 2.5,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 2.5,
+                "CI Upper": 8.435457119622624
             },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "Lower": 10.000000000000002,
+                "Upper": 10.954451150144907,
+                "CI Lower": 5.0,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 15.0,
-                "CI Lower": 12.0,
-                "CI Upper": 18.0
+                "Lower": 10.954451150144907,
+                "Upper": 15.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 15.0
             },
             "Heavy": {
-                "value": 20.0,
-                "CI Lower": 16.0,
-                "CI Upper": 25.0
+                "Lower": 15.0,
+                "Upper": 30.0,
+                "CI Lower": 13.470736414763529,
+                "CI Upper": 19.480074928516526
             }
         },
-        "reliability_score": 0.8694578308113325
+        "reliability_score": 0.9032729339316059
     },
     {
         "substance": "2C-C",
@@ -766,32 +615,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 4.4,
-                "CI Lower": 1.0,
-                "CI Upper": 5.0
+                "Lower": 1.0,
+                "Upper": 3.9275751537270636,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 8.5
+                "Lower": 3.9275751537270636,
+                "Upper": 5.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 5.0
             },
             "Common": {
-                "value": 9.0,
+                "Lower": 5.0,
+                "Upper": 8.944271910061467,
+                "CI Lower": 5.0,
+                "CI Upper": 8.458970107569538
+            },
+            "Strong": {
+                "Lower": 8.944271910061467,
+                "Upper": 15.0,
                 "CI Lower": 5.0,
                 "CI Upper": 15.0
             },
-            "Strong": {
-                "value": 15.0,
-                "CI Lower": 9.481250000000001,
-                "CI Upper": 25.0
-            },
             "Heavy": {
-                "value": 25.749999999999993,
-                "CI Lower": 16.499999999999986,
-                "CI Upper": 30.0
+                "Lower": 15.0,
+                "Upper": 30.0,
+                "CI Lower": 9.429675480093437,
+                "CI Upper": 24.999999999999996
             }
         },
-        "reliability_score": 0.7809627527337393
+        "reliability_score": 0.8539751684891594
     },
     {
         "substance": "2C-C",
@@ -799,32 +653,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 11.700000000000001,
-                "CI Lower": 5.0,
-                "CI Upper": 20.0
+                "Lower": 3.0,
+                "Upper": 11.676268122323311,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 25.0,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
+                "Lower": 11.676268122323311,
+                "Upper": 24.999999999999996,
+                "CI Lower": 5.0,
+                "CI Upper": 19.999999999999996
             },
             "Common": {
-                "value": 30.0,
-                "CI Lower": 30.0,
-                "CI Upper": 39.0
+                "Lower": 24.999999999999996,
+                "Upper": 30.000000000000004,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 26.185127644540362
             },
             "Strong": {
-                "value": 40.0,
-                "CI Lower": 39.0,
-                "CI Upper": 50.0
+                "Lower": 30.000000000000004,
+                "Upper": 40.0,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 35.0
             },
             "Heavy": {
-                "value": 60.0,
-                "CI Lower": 50.0,
-                "CI Upper": 63.0
+                "Lower": 40.0,
+                "Upper": 80.0,
+                "CI Lower": 40.0,
+                "CI Upper": 49.99999999999999
             }
         },
-        "reliability_score": 0.8728605356990566
+        "reliability_score": 0.9152403571327046
     },
     {
         "substance": "2C-D",
@@ -832,32 +691,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 7.8,
-                "CI Lower": 5.0,
-                "CI Upper": 12.0
+                "Lower": 5.0,
+                "Upper": 7.796119681837397,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.0,
-                "CI Lower": 12.0,
-                "CI Upper": 25.0
+                "Lower": 7.796119681837397,
+                "Upper": 15.0,
+                "CI Lower": 7.0,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 30.0,
-                "CI Lower": 25.0,
-                "CI Upper": 40.0
+                "Lower": 15.0,
+                "Upper": 30.000000000000004,
+                "CI Lower": 12.0,
+                "CI Upper": 24.999999999999996
             },
             "Strong": {
-                "value": 50.0,
+                "Lower": 30.000000000000004,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 40.0
+            },
+            "Heavy": {
+                "Lower": 49.99999999999999,
+                "Upper": 100.0,
                 "CI Lower": 40.0,
-                "CI Upper": 55.0
-            },
-            "Heavy": {
-                "value": 80.0,
-                "CI Lower": 55.0,
-                "CI Upper": 100.0
+                "CI Upper": 49.99999999999999
             }
         },
-        "reliability_score": 0.8072647084285363
+        "reliability_score": 0.871509805619024
     },
     {
         "substance": "2C-E",
@@ -865,32 +729,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 1.5500000000000003,
-                "CI Lower": 1.0,
-                "CI Upper": 5.0
+                "Lower": 1.0,
+                "Upper": 1.5388053818627692,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 8.0
+                "Lower": 1.5388053818627692,
+                "Upper": 5.0,
+                "CI Lower": 1.5,
+                "CI Upper": 5.0
             },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 6.0,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 7.0
             },
             "Strong": {
-                "value": 14.5,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "Lower": 10.000000000000002,
+                "Upper": 14.472857377073247,
+                "CI Lower": 7.0,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 25.0,
-                "CI Lower": 15.0,
-                "CI Upper": 35.0
+                "Lower": 14.472857377073247,
+                "Upper": 35.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 15.0
             }
         },
-        "reliability_score": 0.791733997548606
+        "reliability_score": 0.8611559983657373
     },
     {
         "substance": "2C-E",
@@ -898,32 +767,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
+                "Lower": 1.5,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 5.0,
+                "Upper": 12.0,
                 "CI Lower": 4.0,
-                "CI Upper": 6.0
-            },
-            "Light": {
-                "value": 12.0,
-                "CI Lower": 10.0,
-                "CI Upper": 14.0
+                "CI Upper": 5.877089214432296
             },
             "Common": {
-                "value": 16.0,
-                "CI Lower": 15.0,
-                "CI Upper": 18.0
+                "Lower": 12.0,
+                "Upper": 16.0,
+                "CI Lower": 10.986902653766816,
+                "CI Upper": 13.747727084869172
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 21.0
+                "Lower": 16.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": 15.0,
+                "CI Upper": 17.999999999999996
             },
             "Heavy": {
-                "value": 30.0,
-                "CI Lower": 28.0,
-                "CI Upper": 30.0
+                "Lower": 19.999999999999996,
+                "Upper": 35.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.874228289043143
+        "reliability_score": 0.9161521926954286
     },
     {
         "substance": "2C-I",
@@ -931,32 +805,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 4.0,
+                "Lower": 2.0,
+                "Upper": 4.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 4.0,
+                "Upper": 5.0,
                 "CI Lower": 2.0,
                 "CI Upper": 5.0
             },
-            "Light": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
             "Common": {
-                "value": 12.0,
+                "Lower": 5.0,
+                "Upper": 12.0,
                 "CI Lower": 5.0,
-                "CI Upper": 20.0
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 12.0,
-                "CI Upper": 25.0
+                "Lower": 12.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 15.0
             },
             "Heavy": {
-                "value": 35.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
+                "Lower": 19.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 15.0,
+                "CI Upper": 24.999999999999996
             }
         },
-        "reliability_score": 0.7914716995060112
+        "reliability_score": 0.8609811330040074
     },
     {
         "substance": "2C-I",
@@ -964,65 +843,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.05,
-                "CI Lower": 5.0,
-                "CI Upper": 8.0
+                "Lower": 2.0,
+                "Upper": 5.05917854067661,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.0,
-                "CI Lower": 12.0,
-                "CI Upper": 15.0
+                "Lower": 5.05917854067661,
+                "Upper": 15.0,
+                "CI Lower": 5.0,
+                "CI Upper": 7.999999999999999
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 18.0,
-                "CI Upper": 20.0
+                "Lower": 15.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": 12.247448713917972,
+                "CI Upper": 15.0
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 20.0,
+                "Lower": 19.999999999999996,
+                "Upper": 19.999999999999996,
+                "CI Lower": 17.999999999999996,
+                "CI Upper": 19.999999999999996
+            },
+            "Heavy": {
+                "Lower": 19.999999999999996,
+                "Upper": 45.0,
+                "CI Lower": 19.999999999999996,
                 "CI Upper": 22.0
-            },
-            "Heavy": {
-                "value": 30.0,
-                "CI Lower": 26.0,
-                "CI Upper": 35.0
             }
         },
-        "reliability_score": 0.8818291781567953
-    },
-    {
-        "substance": "2C-P",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 2.6,
-                "CI Lower": 2.0,
-                "CI Upper": 5.6000000000000005
-            },
-            "Light": {
-                "value": 5.0,
-                "CI Lower": 3.0,
-                "CI Upper": 8.0
-            },
-            "Common": {
-                "value": 8.0,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
-            "Strong": {
-                "value": 10.0,
-                "CI Lower": 8.0,
-                "CI Upper": 14.0
-            },
-            "Heavy": {
-                "value": 14.399999999999999,
-                "CI Lower": 9.799999999999997,
-                "CI Upper": 15.0
-            }
-        },
-        "reliability_score": 0.8505595316617636
+        "reliability_score": 0.9213158968182964
     },
     {
         "substance": "2C-P",
@@ -1030,32 +881,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 4.0,
-                "CI Lower": 2.0,
-                "CI Upper": 6.0
+                "Lower": 2.0,
+                "Upper": 3.8729833465353725,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 8.0,
-                "CI Lower": 6.0,
-                "CI Upper": 10.0
+                "Lower": 3.8729833465353725,
+                "Upper": 7.999999999999999,
+                "CI Lower": 2.0,
+                "CI Upper": 6.000000000000001
             },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 9.0,
-                "CI Upper": 10.0
+                "Lower": 7.999999999999999,
+                "Upper": 10.000000000000002,
+                "CI Lower": 6.000000000000001,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 10.5,
-                "CI Lower": 10.0,
-                "CI Upper": 16.0
+                "Lower": 10.000000000000002,
+                "Upper": 10.488088481712872,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 16.5,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "Lower": 10.488088481712872,
+                "Upper": 20.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 15.0
             }
         },
-        "reliability_score": 0.8803426457531269
+        "reliability_score": 0.9202284305020847
     },
     {
         "substance": "2C-T-2",
@@ -1063,32 +919,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 2.25,
+                "Lower": 2.0,
+                "Upper": 2.2360679775620955,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 2.2360679775620955,
+                "Upper": 5.0,
                 "CI Lower": 2.0,
                 "CI Upper": 3.0
             },
-            "Light": {
-                "value": 5.0,
-                "CI Lower": 2.5,
-                "CI Upper": 10.0
-            },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 5.0,
-                "CI Upper": 20.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 2.738612787567411,
+                "CI Upper": 7.999999999999999
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 35.0
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 5.0,
+                "CI Upper": 15.0
             },
             "Heavy": {
-                "value": 37.5,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
+                "Lower": 19.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 13.000000000000002,
+                "CI Upper": 22.978250586161582
             }
         },
-        "reliability_score": 0.7512700811775948
+        "reliability_score": 0.8341800541183966
     },
     {
         "substance": "2C-T-2",
@@ -1096,32 +957,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 4.0,
-                "CI Upper": 6.0
+                "Lower": 1.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 9.0,
-                "CI Lower": 7.0,
-                "CI Upper": 12.0
+                "Lower": 5.0,
+                "Upper": 8.944271910061467,
+                "CI Lower": 4.0,
+                "CI Upper": 6.000000000000001
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "Lower": 8.944271910061467,
+                "Upper": 19.999999999999996,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 22.5,
-                "CI Lower": 20.0,
-                "CI Upper": 25.0
+                "Lower": 19.999999999999996,
+                "Upper": 22.49444375840645,
+                "CI Lower": 16.0,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 32.15,
-                "CI Lower": 30.0,
-                "CI Upper": 40.0
+                "Lower": 22.49444375840645,
+                "Upper": 50.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 24.999999999999996
             }
         },
-        "reliability_score": 0.8415100167078247
+        "reliability_score": 0.8943400111385498
     },
     {
         "substance": "2C-T-21",
@@ -1129,32 +995,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 7.9
+                "Lower": 5.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 8.0,
-                "CI Lower": 5.5,
-                "CI Upper": 9.25
+                "Lower": 5.0,
+                "Upper": 7.999999999999999,
+                "CI Lower": 5.0,
+                "CI Upper": 7.776129424674662
             },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 8.0,
-                "CI Upper": 11.0
+                "Lower": 7.999999999999999,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.477225575093241,
+                "CI Upper": 8.944271910061467
             },
             "Strong": {
-                "value": 11.5,
-                "CI Lower": 10.0,
-                "CI Upper": 13.75
+                "Lower": 10.000000000000002,
+                "Upper": 11.489125293085523,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 11.000000000000002
             },
             "Heavy": {
-                "value": 15.099999999999998,
-                "CI Lower": 12.0,
-                "CI Upper": 16.0
+                "Lower": 11.489125293085523,
+                "Upper": 16.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 13.693063937670738
             }
         },
-        "reliability_score": 0.9043580518387639
+        "reliability_score": 0.9362387012258426
     },
     {
         "substance": "2C-T-4",
@@ -1162,32 +1033,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 2.2,
-                "CI Lower": 1.0,
-                "CI Upper": 7.0
+                "Lower": 1.0,
+                "Upper": 1.7411011287799565,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 8.0,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
+                "Lower": 1.7411011287799565,
+                "Upper": 7.999999999999999,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 7.0
             },
             "Common": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "Lower": 7.999999999999999,
+                "Upper": 15.0,
+                "CI Lower": 5.0,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 18.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "Lower": 15.0,
+                "Upper": 17.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 15.0
             },
             "Heavy": {
-                "value": 30.0,
-                "CI Lower": 20.0,
-                "CI Upper": 35.0
+                "Lower": 17.999999999999996,
+                "Upper": 35.0,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.8233732144888994
+        "reliability_score": 0.8822488096592662
     },
     {
         "substance": "2C-T-7",
@@ -1195,32 +1071,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 3.0,
-                "CI Lower": 2.0,
+                "Lower": 2.0,
+                "Upper": 3.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 3.0,
+                "Upper": 5.5,
+                "CI Lower": 2.5,
                 "CI Upper": 4.0
             },
-            "Light": {
-                "value": 5.5,
-                "CI Lower": 5.0,
-                "CI Upper": 8.0
-            },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 7.0,
-                "CI Upper": 11.0
+                "Lower": 5.5,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 7.0
             },
             "Strong": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 25.0
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 30.400000000000006,
-                "CI Lower": 25.0,
-                "CI Upper": 35.0
+                "Lower": 15.0,
+                "Upper": 35.0,
+                "CI Lower": 11.000000000000002,
+                "CI Upper": 24.999999999999996
             }
         },
-        "reliability_score": 0.7828775033299269
+        "reliability_score": 0.8552516688866179
     },
     {
         "substance": "2C-T-7",
@@ -1228,329 +1109,189 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 7.5,
-                "CI Lower": 4.0,
-                "CI Upper": 10.0
+                "Lower": 1.5,
+                "Upper": 7.444838872898349,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
-            },
-            "Common": {
-                "value": 25.0,
-                "CI Lower": 22.0,
-                "CI Upper": 30.0
-            },
-            "Strong": {
-                "value": 35.0,
-                "CI Lower": 30.0,
-                "CI Upper": 40.0
-            },
-            "Heavy": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 60.0
-            }
-        },
-        "reliability_score": 0.8387868707153774
-    },
-    {
-        "substance": "3-FEA",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 8.225000000000001,
-                "CI Lower": 3.0,
-                "CI Upper": 16.0
-            },
-            "Light": {
-                "value": 15.125,
-                "CI Lower": 10.125,
-                "CI Upper": 20.0
-            },
-            "Common": {
-                "value": 20.0,
-                "CI Lower": 14.25,
-                "CI Upper": 27.5
-            },
-            "Strong": {
-                "value": 26.25,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
-            },
-            "Heavy": {
-                "value": 40.0,
-                "CI Lower": 24.499999999999993,
-                "CI Upper": 40.0
-            }
-        },
-        "reliability_score": 0.8441962664205549
-    },
-    {
-        "substance": "3-Fluoroamphetamine",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 17.25,
-                "CI Lower": 15.0,
-                "CI Upper": 21.35
-            },
-            "Light": {
-                "value": 20.0,
-                "CI Lower": 16.25,
-                "CI Upper": 30.0
-            },
-            "Common": {
-                "value": 26.5,
-                "CI Lower": 20.0,
-                "CI Upper": 35.0
-            },
-            "Strong": {
-                "value": 33.75,
-                "CI Lower": 22.25,
-                "CI Upper": 43.75
-            },
-            "Heavy": {
-                "value": 42.74999999999999,
-                "CI Lower": 30.0,
-                "CI Upper": 45.0
-            }
-        },
-        "reliability_score": 0.8935592121275264
-    },
-    {
-        "substance": "3-HO-PCE",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 10.0,
-                "CI Lower": 4.0,
-                "CI Upper": 10.0
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 13.0
-            },
-            "Common": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
-            },
-            "Strong": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 35.0
-            },
-            "Heavy": {
-                "value": 35.0,
-                "CI Lower": 20.0,
-                "CI Upper": 35.0
-            }
-        },
-        "reliability_score": 0.843658671956693
-    },
-    {
-        "substance": "3-HO-PCE",
-        "method": "rectal",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 15.0,
-                "CI Lower": 15.0,
-                "CI Upper": 18.5
-            },
-            "Light": {
-                "value": 15.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
-            },
-            "Common": {
-                "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
-            },
-            "Strong": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
-            },
-            "Heavy": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
-            }
-        },
-        "reliability_score": 0.96007681519756
-    },
-    {
-        "substance": "3-HO-PCP",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 3.5,
-                "CI Lower": 1.0,
-                "CI Upper": 10.0
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 3.5,
-                "CI Upper": 11.0
-            },
-            "Common": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
-            },
-            "Strong": {
-                "value": 13.5,
-                "CI Lower": 10.0,
-                "CI Upper": 19.0
-            },
-            "Heavy": {
-                "value": 19.0,
-                "CI Lower": 12.0,
-                "CI Upper": 20.0
-            }
-        },
-        "reliability_score": 0.8601412002376405
-    },
-    {
-        "substance": "3-HO-PCP",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 2.5,
-                "CI Lower": 1.0,
-                "CI Upper": 10.0
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 8.0,
-                "CI Upper": 10.0
-            },
-            "Common": {
-                "value": 11.0,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
-            },
-            "Strong": {
-                "value": 15.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
-            },
-            "Heavy": {
-                "value": 22.5,
-                "CI Lower": 20.0,
-                "CI Upper": 25.0
-            }
-        },
-        "reliability_score": 0.8625916136524852
-    },
-    {
-        "substance": "3-HO-PCP",
-        "method": "rectal",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 5.0,
+                "Lower": 7.444838872898349,
+                "Upper": 15.0,
                 "CI Lower": 5.0,
-                "CI Upper": 10.0
+                "CI Upper": 10.000000000000002
+            },
+            "Common": {
+                "Lower": 15.0,
+                "Upper": 24.999999999999996,
+                "CI Lower": 11.46531350648455,
+                "CI Upper": 19.999999999999996
+            },
+            "Strong": {
+                "Lower": 24.999999999999996,
+                "Upper": 35.0,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 30.000000000000004
+            },
+            "Heavy": {
+                "Lower": 35.0,
+                "Upper": 75.0,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 38.10995611159996
+            }
+        },
+        "reliability_score": 0.8925245804769184
+    },
+    {
+        "substance": "3-HO-PCE",
+        "method": "oral",
+        "unit": "mg",
+        "tiers": {
+            "Threshold": {
+                "Lower": 4.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 11.0,
-                "CI Lower": 8.0,
+                "Lower": 10.000000000000002,
+                "Upper": 10.000000000000002,
+                "CI Lower": 4.0,
+                "CI Upper": 10.000000000000002
+            },
+            "Common": {
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 14.188591647832624
+            },
+            "Strong": {
+                "Lower": 19.999999999999996,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
+            },
+            "Heavy": {
+                "Lower": 19.999999999999996,
+                "Upper": 35.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 35.0
+            }
+        },
+        "reliability_score": 0.8957724479711286
+    },
+    {
+        "substance": "3-HO-PCE",
+        "method": "rectal",
+        "unit": "mg",
+        "tiers": {
+            "Threshold": {
+                "Lower": 15.0,
+                "Upper": 15.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 15.0,
+                "Upper": 15.0,
+                "CI Lower": 15.0,
+                "CI Upper": 15.0
+            },
+            "Common": {
+                "Lower": 15.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
+            },
+            "Strong": {
+                "Lower": 19.999999999999996,
+                "Upper": 19.999999999999996,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
+            },
+            "Heavy": {
+                "Lower": 19.999999999999996,
+                "Upper": 20.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
+            }
+        },
+        "reliability_score": 0.9733845434650399
+    },
+    {
+        "substance": "3-HO-PCP",
+        "method": "oral",
+        "unit": "mg",
+        "tiers": {
+            "Threshold": {
+                "Lower": 1.0,
+                "Upper": 2.449489742989385,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 2.449489742989385,
+                "Upper": 10.000000000000002,
+                "CI Lower": 2.0,
+                "CI Upper": 5.656854250098982
+            },
+            "Common": {
+                "Lower": 10.000000000000002,
+                "Upper": 11.000000000000002,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
+            },
+            "Strong": {
+                "Lower": 11.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 15.0
+            },
+            "Heavy": {
+                "Lower": 15.0,
+                "Upper": 25.0,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
+            }
+        },
+        "reliability_score": 0.9083944091016567
+    },
+    {
+        "substance": "3-HO-PCP",
+        "method": "rectal",
+        "unit": "mg",
+        "tiers": {
+            "Threshold": {
+                "Lower": 5.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 5.0,
+                "Upper": 11.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 7.999999999999999
+            },
+            "Common": {
+                "Lower": 11.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 10.000000000000002,
                 "CI Upper": 14.0
             },
-            "Common": {
-                "value": 15.0,
-                "CI Lower": 13.0,
+            "Strong": {
+                "Lower": 15.0,
+                "Upper": 15.0,
+                "CI Lower": 14.0,
                 "CI Upper": 15.0
             },
-            "Strong": {
-                "value": 15.0,
+            "Heavy": {
+                "Lower": 15.0,
+                "Upper": 25.0,
                 "CI Lower": 15.0,
-                "CI Upper": 20.0
-            },
-            "Heavy": {
-                "value": 25.0,
-                "CI Lower": 20.0,
-                "CI Upper": 25.0
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.8955883208830384
-    },
-    {
-        "substance": "3-Me-PCPy",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 8.0,
-                "CI Lower": 8.0,
-                "CI Upper": 8.0
-            },
-            "Light": {
-                "value": 8.0,
-                "CI Lower": 8.0,
-                "CI Upper": 10.0
-            },
-            "Common": {
-                "value": 10.0,
-                "CI Lower": 8.0,
-                "CI Upper": 10.0
-            },
-            "Strong": {
-                "value": 10.0,
-                "CI Lower": 9.0,
-                "CI Upper": 15.0
-            },
-            "Heavy": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
-            }
-        },
-        "reliability_score": 0.8960769515458673
-    },
-    {
-        "substance": "3-Me-PCPy",
-        "method": "rectal",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 20.0
-            },
-            "Light": {
-                "value": 20.0,
-                "CI Lower": 5.0,
-                "CI Upper": 21.75
-            },
-            "Common": {
-                "value": 20.0,
-                "CI Lower": 12.5,
-                "CI Upper": 27.0
-            },
-            "Strong": {
-                "value": 27.0,
-                "CI Lower": 20.0,
-                "CI Upper": 27.0
-            },
-            "Heavy": {
-                "value": 27.0,
-                "CI Lower": 23.849999999999994,
-                "CI Upper": 27.0
-            }
-        },
-        "reliability_score": 0.8716734346411537
+        "reliability_score": 0.9303922139220258
     },
     {
         "substance": "3-MeO-PCE",
@@ -1558,32 +1299,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 4.25,
-                "CI Lower": 2.5,
-                "CI Upper": 6.25
+                "Lower": 2.5,
+                "Upper": 4.2294850538072835,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 5.0,
-                "CI Upper": 13.125
+                "Lower": 4.2294850538072835,
+                "Upper": 10.000000000000002,
+                "CI Lower": 2.5,
+                "CI Upper": 5.9460355754191685
             },
             "Common": {
-                "value": 15.0,
-                "CI Lower": 11.25,
-                "CI Upper": 15.0
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 5.0,
+                "CI Upper": 13.082939242431577
             },
             "Strong": {
-                "value": 15.75,
-                "CI Lower": 15.0,
-                "CI Upper": 25.0
+                "Lower": 15.0,
+                "Upper": 15.743917370127388,
+                "CI Lower": 11.180339887561257,
+                "CI Upper": 15.0
             },
             "Heavy": {
-                "value": 28.75,
-                "CI Lower": 19.0,
-                "CI Upper": 30.0
+                "Lower": 15.743917370127388,
+                "Upper": 30.0,
+                "CI Lower": 15.0,
+                "CI Upper": 24.999999999999996
             }
         },
-        "reliability_score": 0.8392657829009673
+        "reliability_score": 0.8928438552673115
     },
     {
         "substance": "3-MeO-PCE",
@@ -1591,32 +1337,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 3.625,
+                "Lower": 2.5,
+                "Upper": 3.556558820302952,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 3.556558820302952,
+                "Upper": 7.0,
                 "CI Lower": 2.5,
                 "CI Upper": 7.0
             },
-            "Light": {
-                "value": 7.0,
+            "Common": {
+                "Lower": 7.0,
+                "Upper": 15.491933384834871,
                 "CI Lower": 4.0,
                 "CI Upper": 15.0
             },
-            "Common": {
-                "value": 15.5,
-                "CI Lower": 7.0,
-                "CI Upper": 18.0
-            },
             "Strong": {
-                "value": 17.0,
-                "CI Lower": 15.25,
-                "CI Upper": 20.0
+                "Lower": 15.491933384834871,
+                "Upper": 16.917940215094053,
+                "CI Lower": 7.0,
+                "CI Upper": 17.888543820060626
             },
             "Heavy": {
-                "value": 20.0,
-                "CI Lower": 17.0,
-                "CI Upper": 20.0
+                "Lower": 16.917940215094053,
+                "Upper": 20.0,
+                "CI Lower": 15.243982444642306,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.8557790326344643
+        "reliability_score": 0.9038526884229763
     },
     {
         "substance": "3-MeO-PCE",
@@ -1624,32 +1375,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 8.0,
-                "CI Lower": 8.0,
-                "CI Upper": 10.8
+                "Lower": 8.0,
+                "Upper": 7.999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.0,
-                "CI Lower": 8.0,
-                "CI Upper": 15.0
+                "Lower": 7.999999999999999,
+                "Upper": 15.0,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 11.760790225439422
             },
             "Common": {
-                "value": 15.0,
-                "CI Lower": 15.0,
+                "Lower": 15.0,
+                "Upper": 15.0,
+                "CI Lower": 7.999999999999999,
                 "CI Upper": 15.0
             },
             "Strong": {
-                "value": 17.0,
+                "Lower": 15.0,
+                "Upper": 17.0,
                 "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "CI Upper": 15.0
             },
             "Heavy": {
-                "value": 20.0,
-                "CI Lower": 17.0,
-                "CI Upper": 20.0
+                "Lower": 17.0,
+                "Upper": 20.0,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.9265588290285616
+        "reliability_score": 0.9510392193523745
     },
     {
         "substance": "3-MeO-PCP",
@@ -1657,65 +1413,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
+                "Lower": 5.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 5.0,
+                "Upper": 6.817316199030971,
                 "CI Lower": 5.0,
                 "CI Upper": 5.0
             },
-            "Light": {
-                "value": 7.0,
-                "CI Lower": 5.0,
-                "CI Upper": 12.0
-            },
             "Common": {
-                "value": 14.5,
-                "CI Lower": 10.0,
+                "Lower": 6.817316199030971,
+                "Upper": 14.491376746195392,
+                "CI Lower": 5.0,
+                "CI Upper": 10.000000000000002
+            },
+            "Strong": {
+                "Lower": 14.491376746195392,
+                "Upper": 19.74517089803116,
+                "CI Lower": 10.000000000000002,
                 "CI Upper": 15.0
             },
-            "Strong": {
-                "value": 19.75,
+            "Heavy": {
+                "Lower": 19.74517089803116,
+                "Upper": 30.0,
                 "CI Lower": 15.0,
-                "CI Upper": 25.0
-            },
-            "Heavy": {
-                "value": 25.749999999999993,
-                "CI Lower": 21.0,
-                "CI Upper": 30.0
+                "CI Upper": 23.000000000000004
             }
         },
-        "reliability_score": 0.8382239227430643
-    },
-    {
-        "substance": "3-MeO-PCP",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 6.0
-            },
-            "Light": {
-                "value": 6.0,
-                "CI Lower": 5.0,
-                "CI Upper": 8.0
-            },
-            "Common": {
-                "value": 8.0,
-                "CI Lower": 6.0,
-                "CI Upper": 10.0
-            },
-            "Strong": {
-                "value": 10.0,
-                "CI Lower": 6.5,
-                "CI Upper": 10.0
-            },
-            "Heavy": {
-                "value": 10.0,
-                "CI Lower": 8.899999999999999,
-                "CI Upper": 10.0
-            }
-        },
-        "reliability_score": 0.9211484739831797
+        "reliability_score": 0.8921492818287096
     },
     {
         "substance": "3-Methylmethcathinone",
@@ -1723,32 +1451,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 81.5
+                "Lower": 50.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 72.5,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 68.92024376097051,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 78.36055891868462
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 160.0
+                "Lower": 68.92024376097051,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 155.0,
-                "CI Lower": 100.0,
-                "CI Upper": 180.0
+                "Lower": 99.99999999999996,
+                "Upper": 154.9193338483018,
+                "CI Lower": 95.00000000000001,
+                "CI Upper": 159.99999999999997
             },
             "Heavy": {
-                "value": 185.99999999999997,
-                "CI Lower": 155.99999999999997,
-                "CI Upper": 200.0
+                "Lower": 154.9193338483018,
+                "Upper": 200.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 180.0
             }
         },
-        "reliability_score": 0.864091194626603
+        "reliability_score": 0.9093941297510686
     },
     {
         "substance": "3F-Phenmetrazine",
@@ -1756,32 +1489,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 7.0,
-                "CI Lower": 6.0,
-                "CI Upper": 20.0
+                "Lower": 6.0,
+                "Upper": 7.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.0,
-                "CI Lower": 7.0,
-                "CI Upper": 30.0
+                "Lower": 7.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": 6.000000000000001,
+                "CI Upper": 17.57144850867646
             },
             "Common": {
-                "value": 32.5,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
+                "Lower": 19.999999999999996,
+                "Upper": 32.40370349206902,
+                "CI Lower": 13.554030054313197,
+                "CI Upper": 30.000000000000004
             },
             "Strong": {
-                "value": 42.5,
-                "CI Lower": 35.0,
-                "CI Upper": 70.0
+                "Lower": 32.40370349206902,
+                "Upper": 42.29485053766759,
+                "CI Lower": 22.3606797750602,
+                "CI Upper": 35.0
             },
             "Heavy": {
-                "value": 80.0,
-                "CI Lower": 50.0,
-                "CI Upper": 90.0
+                "Lower": 42.29485053766759,
+                "Upper": 90.0,
+                "CI Lower": 35.0,
+                "CI Upper": 54.387865296964456
             }
         },
-        "reliability_score": 0.8130761103000996
+        "reliability_score": 0.8753840735333998
     },
     {
         "substance": "3F-Phenmetrazine",
@@ -1789,32 +1527,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 20.0,
-                "CI Lower": 5.0,
-                "CI Upper": 25.0
+                "Lower": 5.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 29.0,
-                "CI Lower": 21.0,
-                "CI Upper": 47.0
+                "Lower": 19.999999999999996,
+                "Upper": 28.999999999999993,
+                "CI Lower": 5.0,
+                "CI Upper": 28.999999999999993
             },
             "Common": {
-                "value": 47.0,
-                "CI Lower": 29.0,
-                "CI Upper": 60.0
+                "Lower": 28.999999999999993,
+                "Upper": 47.00000000000001,
+                "CI Lower": 21.000000000000004,
+                "CI Upper": 47.00000000000001
             },
             "Strong": {
-                "value": 60.0,
-                "CI Lower": 48.0,
-                "CI Upper": 75.0
+                "Lower": 47.00000000000001,
+                "Upper": 59.999999999999986,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 106.0,
-                "CI Lower": 60.0,
-                "CI Upper": 125.0
+                "Lower": 59.999999999999986,
+                "Upper": 125.0,
+                "CI Lower": 48.00000000000001,
+                "CI Upper": 74.99999999999999
             }
         },
-        "reliability_score": 0.8231913532152495
+        "reliability_score": 0.8821275688101664
     },
     {
         "substance": "4-AcO-DET",
@@ -1822,65 +1565,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 4.0,
-                "CI Upper": 8.0
+                "Lower": 4.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 7.5,
-                "CI Upper": 15.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 4.94452416453782,
+                "CI Upper": 7.946765353119366
             },
             "Common": {
-                "value": 16.0,
-                "CI Lower": 14.0,
-                "CI Upper": 20.0
-            },
-            "Strong": {
-                "value": 20.0,
-                "CI Lower": 18.0,
-                "CI Upper": 25.0
-            },
-            "Heavy": {
-                "value": 30.249999999999986,
-                "CI Lower": 25.0,
-                "CI Upper": 40.0
-            }
-        },
-        "reliability_score": 0.8529539268792539
-    },
-    {
-        "substance": "4-AcO-DMT",
-        "method": "IV",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 5.0
-            },
-            "Light": {
-                "value": 5.0,
-                "CI Lower": 5.0,
+                "Lower": 10.000000000000002,
+                "Upper": 16.0,
+                "CI Lower": 7.999999999999999,
                 "CI Upper": 15.0
             },
-            "Common": {
-                "value": 10.0,
-                "CI Lower": 5.0,
-                "CI Upper": 30.0
-            },
             "Strong": {
-                "value": 27.5,
-                "CI Lower": 5.0,
-                "CI Upper": 55.0
+                "Lower": 16.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 50.99999999999998,
-                "CI Lower": 20.0,
-                "CI Upper": 60.0
+                "Lower": 19.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 24.999999999999996
             }
         },
-        "reliability_score": 0.7004158006156271
+        "reliability_score": 0.9019692845861693
     },
     {
         "substance": "4-AcO-DMT",
@@ -1888,32 +1603,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 3.95,
-                "CI Lower": 3.0,
-                "CI Upper": 6.9
+                "Lower": 3.0,
+                "Upper": 3.9428754134487334,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 8.5,
-                "CI Lower": 4.75,
-                "CI Upper": 15.0
+                "Lower": 3.9428754134487334,
+                "Upper": 8.451939741845605,
+                "CI Lower": 3.0,
+                "CI Upper": 7.0
             },
             "Common": {
-                "value": 16.0,
-                "CI Lower": 9.5,
-                "CI Upper": 20.0
+                "Lower": 8.451939741845605,
+                "Upper": 15.968719422690898,
+                "CI Lower": 4.728708045064384,
+                "CI Upper": 15.0
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 17.0,
-                "CI Upper": 26.25
+                "Lower": 15.968719422690898,
+                "Upper": 19.999999999999996,
+                "CI Lower": 9.486832980519017,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 30.0,
-                "CI Lower": 20.250000000000004,
-                "CI Upper": 30.0
+                "Lower": 19.999999999999996,
+                "Upper": 30.0,
+                "CI Lower": 17.0,
+                "CI Upper": 26.165878484832888
             }
         },
-        "reliability_score": 0.8358178306471471
+        "reliability_score": 0.8905452204314313
     },
     {
         "substance": "4-AcO-DMT",
@@ -1921,32 +1641,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 6.0,
-                "CI Lower": 5.0,
-                "CI Upper": 8.0
+                "Lower": 3.0,
+                "Upper": 6.000000000000001,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.0,
+                "Lower": 6.000000000000001,
+                "Upper": 15.0,
+                "CI Lower": 5.0,
+                "CI Upper": 7.999999999999999
+            },
+            "Common": {
+                "Lower": 15.0,
+                "Upper": 19.999999999999996,
                 "CI Lower": 15.0,
                 "CI Upper": 16.0
             },
-            "Common": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
-            },
             "Strong": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 30.0
+                "Lower": 19.999999999999996,
+                "Upper": 24.999999999999996,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 40.0,
-                "CI Lower": 30.0,
-                "CI Upper": 40.0
+                "Lower": 24.999999999999996,
+                "Upper": 45.0,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 30.000000000000004
             }
         },
-        "reliability_score": 0.868046848923032
+        "reliability_score": 0.9120312326153546
     },
     {
         "substance": "4-AcO-DiPT",
@@ -1954,32 +1679,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 4.0,
-                "CI Upper": 12.0
+                "Lower": 4.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 17.0,
-                "CI Lower": 12.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 17.0,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 10.756537569365141
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 25.0
+                "Lower": 17.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": 14.0,
+                "CI Upper": 19.999999999999996
             },
             "Strong": {
-                "value": 30.0,
-                "CI Lower": 25.0,
-                "CI Upper": 35.0
+                "Lower": 19.999999999999996,
+                "Upper": 30.000000000000004,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 24.999999999999996
             },
             "Heavy": {
-                "value": 40.0,
-                "CI Lower": 35.0,
-                "CI Upper": 50.0
+                "Lower": 30.000000000000004,
+                "Upper": 50.0,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 35.0
             }
         },
-        "reliability_score": 0.8706853726609658
+        "reliability_score": 0.9137902484406439
     },
     {
         "substance": "4-AcO-MET",
@@ -1987,32 +1717,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 5.0,
-                "CI Upper": 12.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 13.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 13.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 11.570310048059131
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 16.0,
-                "CI Upper": 30.0
+                "Lower": 13.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
             },
             "Strong": {
-                "value": 30.0,
-                "CI Lower": 25.0,
-                "CI Upper": 40.0
+                "Lower": 19.999999999999996,
+                "Upper": 30.000000000000004,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 30.000000000000004
             },
             "Heavy": {
-                "value": 40.0,
-                "CI Lower": 40.0,
-                "CI Upper": 75.0
+                "Lower": 30.000000000000004,
+                "Upper": 75.0,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 40.0
             }
         },
-        "reliability_score": 0.8341866627520818
+        "reliability_score": 0.8894577751680546
     },
     {
         "substance": "4-AcO-MiPT",
@@ -2020,32 +1755,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 6.175,
-                "CI Lower": 2.0,
-                "CI Upper": 7.0
+                "Lower": 2.0,
+                "Upper": 6.173925537764724,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 8.5,
-                "CI Lower": 6.25,
-                "CI Upper": 15.0
+                "Lower": 6.173925537764724,
+                "Upper": 8.485281374255916,
+                "CI Lower": 2.0,
+                "CI Upper": 6.766009967047406
             },
             "Common": {
-                "value": 16.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 8.485281374255916,
+                "Upper": 16.0,
+                "CI Lower": 6.25,
+                "CI Upper": 12.247448714122097
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 18.0,
-                "CI Upper": 25.0
+                "Lower": 16.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 30.0,
-                "CI Lower": 22.0,
-                "CI Upper": 35.0
+                "Lower": 19.999999999999996,
+                "Upper": 35.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 22.49444375840645
             }
         },
-        "reliability_score": 0.8435259239906909
+        "reliability_score": 0.8956839493271274
     },
     {
         "substance": "4-Fluoroamphetamine",
@@ -2053,65 +1793,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 40.0,
-                "CI Lower": 20.0,
-                "CI Upper": 50.0
+                "Lower": 20.0,
+                "Upper": 40.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 75.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 40.0,
+                "Upper": 74.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 120.0
+                "Lower": 74.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 59.999999999999986,
+                "CI Upper": 97.4645342254776
             },
             "Strong": {
-                "value": 135.0,
-                "CI Lower": 115.0,
-                "CI Upper": 160.0
+                "Lower": 99.99999999999996,
+                "Upper": 127.42831836353966,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 114.89125293076998
             },
             "Heavy": {
-                "value": 200.0,
-                "CI Lower": 160.0,
-                "CI Upper": 250.0
+                "Lower": 127.42831836353966,
+                "Upper": 240.0,
+                "CI Lower": 119.99999999999999,
+                "CI Upper": 149.99999999999997
             }
         },
-        "reliability_score": 0.8627989999344674
-    },
-    {
-        "substance": "4-Fluoromethylphenidate",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 7.5,
-                "CI Lower": 7.5,
-                "CI Upper": 10.0
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 7.5,
-                "CI Upper": 10.0
-            },
-            "Common": {
-                "value": 10.0,
-                "CI Lower": 8.75,
-                "CI Upper": 15.0
-            },
-            "Strong": {
-                "value": 13.75,
-                "CI Lower": 10.0,
-                "CI Upper": 18.75
-            },
-            "Heavy": {
-                "value": 17.749999999999993,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
-            }
-        },
-        "reliability_score": 0.8971116559460937
+        "reliability_score": 0.9114550477481802
     },
     {
         "substance": "4-Fluoromethylphenidate",
@@ -2119,32 +1831,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 7.225,
-                "CI Lower": 6.0,
-                "CI Upper": 10.0
+                "Lower": 6.0,
+                "Upper": 7.220736393225274,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 7.5,
-                "CI Upper": 15.0
+                "Lower": 7.220736393225274,
+                "Upper": 10.000000000000002,
+                "CI Lower": 6.000000000000001,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 15.0,
-                "CI Lower": 10.0,
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 8.059274488750658,
                 "CI Upper": 15.0
             },
             "Strong": {
-                "value": 15.0,
-                "CI Lower": 15.0,
+                "Lower": 15.0,
+                "Upper": 15.0,
+                "CI Lower": 12.0,
                 "CI Upper": 15.0
             },
             "Heavy": {
-                "value": 17.749999999999986,
+                "Lower": 15.0,
+                "Upper": 100.0,
                 "CI Lower": 15.0,
-                "CI Upper": 100.0
+                "CI Upper": 15.0
             }
         },
-        "reliability_score": 0.7
+        "reliability_score": 0.8
     },
     {
         "substance": "4-Fluoromethylphenidate",
@@ -2152,32 +1869,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 8.0,
-                "CI Upper": 10.0
+                "Lower": 8.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "Lower": 10.000000000000002,
+                "Upper": 10.000000000000002,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 14.0
+                "Lower": 10.000000000000002,
+                "Upper": 10.000000000000002,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 15.0,
-                "CI Lower": 14.0,
-                "CI Upper": 16.0
+                "Lower": 10.000000000000002,
+                "Upper": 14.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 16.0,
-                "CI Lower": 16.0,
-                "CI Upper": 16.0
+                "Lower": 14.0,
+                "Upper": 15.0,
+                "CI Lower": 12.17467885673097,
+                "CI Upper": 15.0
             }
         },
-        "reliability_score": 0.9348460175955857
+        "reliability_score": 0.9612104065018163
     },
     {
         "substance": "4-HO-DET",
@@ -2185,32 +1907,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 14.5,
-                "CI Lower": 10.0,
-                "CI Upper": 24.5
+                "Lower": 10.0,
+                "Upper": 14.40396751196605,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 25.0,
-                "CI Lower": 19.937500000000004,
-                "CI Upper": 25.0
+                "Lower": 14.40396751196605,
+                "Upper": 24.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 24.999999999999996
             },
             "Common": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 30.0
+                "Lower": 24.999999999999996,
+                "Upper": 24.999999999999996,
+                "CI Lower": 17.3205080757924,
+                "CI Upper": 24.999999999999996
             },
             "Strong": {
-                "value": 30.0,
-                "CI Lower": 26.21875,
-                "CI Upper": 38.0
+                "Lower": 24.999999999999996,
+                "Upper": 30.000000000000004,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 30.000000000000004
             },
             "Heavy": {
-                "value": 40.99999999999998,
-                "CI Lower": 30.799999999999983,
-                "CI Upper": 50.0
+                "Lower": 30.000000000000004,
+                "Upper": 50.0,
+                "CI Lower": 26.220221204265137,
+                "CI Upper": 38.98717737923914
             }
         },
-        "reliability_score": 0.9047983411888727
+        "reliability_score": 0.9365322274592485
     },
     {
         "substance": "4-HO-DiPT",
@@ -2218,32 +1945,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 7.000000000000001,
-                "CI Lower": 3.5,
-                "CI Upper": 10.0
+                "Lower": 3.5,
+                "Upper": 6.915809336256146,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 6.915809336256146,
+                "Upper": 10.000000000000002,
+                "CI Lower": 4.655749575583816,
+                "CI Upper": 9.791483623618841
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 16.0,
-                "CI Upper": 25.0
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 17.999999999999996
             },
             "Strong": {
-                "value": 25.0,
-                "CI Lower": 24.0,
-                "CI Upper": 30.0
+                "Lower": 19.999999999999996,
+                "Upper": 24.999999999999996,
+                "CI Lower": 17.974297082371084,
+                "CI Upper": 24.999999999999996
             },
             "Heavy": {
-                "value": 40.39999999999999,
-                "CI Lower": 30.0,
-                "CI Upper": 50.0
+                "Lower": 24.999999999999996,
+                "Upper": 50.0,
+                "CI Lower": 24.000000000000004,
+                "CI Upper": 30.000000000000004
             }
         },
-        "reliability_score": 0.8485404038936459
+        "reliability_score": 0.8990269359290972
     },
     {
         "substance": "4-HO-EPT",
@@ -2251,32 +1983,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 20.5,
-                "CI Lower": 10.0,
-                "CI Upper": 30.0
+                "Lower": 10.0,
+                "Upper": 18.991444824324386,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 28.5,
-                "CI Lower": 25.0,
-                "CI Upper": 43.537499999999966
+                "Lower": 18.991444824324386,
+                "Upper": 28.460498941529302,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 28.403174430008
             },
             "Common": {
-                "value": 45.0,
-                "CI Lower": 27.0,
-                "CI Upper": 45.0
+                "Lower": 28.460498941529302,
+                "Upper": 44.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 43.47413023857427
             },
             "Strong": {
-                "value": 50.0,
-                "CI Lower": 43.5,
-                "CI Upper": 75.0
+                "Lower": 44.99999999999999,
+                "Upper": 49.749371855381376,
+                "CI Lower": 27.0,
+                "CI Upper": 44.99999999999999
             },
             "Heavy": {
-                "value": 82.49999999999997,
-                "CI Lower": 50.99999999999998,
-                "CI Upper": 100.0
+                "Lower": 49.749371855381376,
+                "Upper": 100.0,
+                "CI Lower": 43.47413023857427,
+                "CI Upper": 74.99999999999999
             }
         },
-        "reliability_score": 0.8503568471823293
+        "reliability_score": 0.9002378981215529
     },
     {
         "substance": "4-HO-MET",
@@ -2284,65 +2021,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 7.0,
-                "CI Lower": 3.0,
-                "CI Upper": 8.0
+                "Lower": 3.0,
+                "Upper": 7.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 8.0,
-                "CI Upper": 15.0
+                "Lower": 7.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 7.999999999999999
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
-            },
-            "Strong": {
-                "value": 25.0,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
-            },
-            "Heavy": {
-                "value": 43.999999999999986,
-                "CI Lower": 30.0,
-                "CI Upper": 60.0
-            }
-        },
-        "reliability_score": 0.8167605130897955
-    },
-    {
-        "substance": "4-HO-MiPT",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 3.6,
-                "CI Lower": 3.0,
-                "CI Upper": 6.0
-            },
-            "Light": {
-                "value": 6.0,
-                "CI Lower": 4.0,
-                "CI Upper": 10.0
-            },
-            "Common": {
-                "value": 10.0,
-                "CI Lower": 6.0,
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
                 "CI Upper": 15.0
             },
             "Strong": {
-                "value": 15.0,
-                "CI Lower": 9.0,
-                "CI Upper": 20.0
+                "Lower": 19.999999999999996,
+                "Upper": 24.999999999999996,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 21.999999999999993,
-                "CI Lower": 15.0,
-                "CI Upper": 25.0
+                "Lower": 24.999999999999996,
+                "Upper": 70.0,
+                "CI Lower": 21.000000000000004,
+                "CI Upper": 30.000000000000004
             }
         },
-        "reliability_score": 0.818852120025422
+        "reliability_score": 0.8778403420598637
     },
     {
         "substance": "4-HO-MiPT",
@@ -2350,98 +2059,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 9.0,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
+                "Lower": 2.0,
+                "Upper": 8.801117368201906,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.0,
+                "Lower": 8.801117368201906,
+                "Upper": 15.0,
+                "CI Lower": 5.0,
+                "CI Upper": 10.000000000000002
+            },
+            "Common": {
+                "Lower": 15.0,
+                "Upper": 19.999999999999996,
                 "CI Lower": 12.0,
-                "CI Upper": 20.0
-            },
-            "Common": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 24.0
+                "CI Upper": 18.999999999999996
             },
             "Strong": {
-                "value": 27.25,
-                "CI Lower": 24.0,
-                "CI Upper": 30.0
+                "Lower": 19.999999999999996,
+                "Upper": 27.246600936317048,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 22.0
             },
             "Heavy": {
-                "value": 40.0,
-                "CI Lower": 30.0,
-                "CI Upper": 45.0
+                "Lower": 27.246600936317048,
+                "Upper": 50.0,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 30.000000000000004
             }
         },
-        "reliability_score": 0.8686032655934575
-    },
-    {
-        "substance": "4-MeO-MiPT",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 4.65,
-                "CI Lower": 4.0,
-                "CI Upper": 9.65
-            },
-            "Light": {
-                "value": 9.25,
-                "CI Lower": 5.0,
-                "CI Upper": 23.5
-            },
-            "Common": {
-                "value": 19.0,
-                "CI Lower": 9.5,
-                "CI Upper": 25.0
-            },
-            "Strong": {
-                "value": 25.0,
-                "CI Lower": 15.0,
-                "CI Upper": 40.0
-            },
-            "Heavy": {
-                "value": 43.5,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
-            }
-        },
-        "reliability_score": 0.7899409250008986
-    },
-    {
-        "substance": "4-MeO-PCP",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 61.25,
-                "CI Lower": 50.0,
-                "CI Upper": 89.0
-            },
-            "Light": {
-                "value": 80.0,
-                "CI Lower": 56.25,
-                "CI Upper": 125.15624999999986
-            },
-            "Common": {
-                "value": 112.5,
-                "CI Lower": 80.0,
-                "CI Upper": 212.81249999999972
-            },
-            "Strong": {
-                "value": 168.75,
-                "CI Lower": 100.0,
-                "CI Upper": 318.75
-            },
-            "Heavy": {
-                "value": 313.75,
-                "CI Lower": 150.0,
-                "CI Upper": 325.0
-            }
-        },
-        "reliability_score": 0.8036981043703091
+        "reliability_score": 0.912402177062305
     },
     {
         "substance": "4-Methylethcathinone",
@@ -2449,32 +2097,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 3.2,
-                "CI Lower": 2.0,
-                "CI Upper": 6.800000000000001
+                "Lower": 2.0,
+                "Upper": 3.1776715232090633,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 4.0,
-                "CI Upper": 45.0
+                "Lower": 3.1776715232090633,
+                "Upper": 10.000000000000002,
+                "CI Lower": 2.0,
+                "CI Upper": 6.645398059679351
             },
             "Common": {
-                "value": 50.0,
-                "CI Lower": 35.0,
-                "CI Upper": 50.0
+                "Lower": 10.000000000000002,
+                "Upper": 49.99999999999999,
+                "CI Lower": 4.0,
+                "CI Upper": 44.99999999999999
             },
             "Strong": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 60.0
+                "Lower": 49.99999999999999,
+                "Upper": 49.99999999999999,
+                "CI Lower": 40.0,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 93.99999999999991,
-                "CI Lower": 54.79999999999998,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 100.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 69.99999999999999
             }
         },
-        "reliability_score": 0.7998440635166488
+        "reliability_score": 0.8665627090110992
     },
     {
         "substance": "4-Methylmethcathinone",
@@ -2482,32 +2135,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 15.500000000000004,
-                "CI Lower": 6.0,
-                "CI Upper": 40.0
+                "Lower": 5.0,
+                "Upper": 15.437790134505974,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 86.0
+                "Lower": 15.437790134505974,
+                "Upper": 49.99999999999999,
+                "CI Lower": 9.895748092045677,
+                "CI Upper": 30.000000000000004
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 69.99999999999999
             },
             "Strong": {
-                "value": 125.0,
-                "CI Lower": 100.0,
-                "CI Upper": 150.0
+                "Lower": 99.99999999999996,
+                "Upper": 124.99999999999994,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 250.0,
-                "CI Lower": 150.0,
-                "CI Upper": 300.0
+                "Lower": 124.99999999999994,
+                "Upper": 300.0,
+                "CI Lower": 119.99999999999999,
+                "CI Upper": 140.17845768878485
             }
         },
-        "reliability_score": 0.8093346845057157
+        "reliability_score": 0.872889789670477
     },
     {
         "substance": "4-Methylmethcathinone",
@@ -2515,98 +2173,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 50.0,
-                "CI Lower": 25.0,
-                "CI Upper": 60.0
+                "Lower": 25.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 125.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 160.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 159.99999999999997,
+                "CI Lower": 74.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 250.0,
-                "CI Lower": 200.0,
-                "CI Upper": 250.0
+                "Lower": 159.99999999999997,
+                "Upper": 249.9999999999999,
+                "CI Lower": 124.99999999999994,
+                "CI Upper": 199.99999999999991
             },
             "Heavy": {
-                "value": 300.0,
-                "CI Lower": 250.0,
-                "CI Upper": 500.0
+                "Lower": 249.9999999999999,
+                "Upper": 500.0,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 249.9999999999999
             }
         },
-        "reliability_score": 0.8366392874319861
-    },
-    {
-        "substance": "4-PrO-DMT",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 11.0,
-                "CI Lower": 11.0,
-                "CI Upper": 11.55
-            },
-            "Light": {
-                "value": 11.0,
-                "CI Lower": 11.0,
-                "CI Upper": 12.0
-            },
-            "Common": {
-                "value": 12.0,
-                "CI Lower": 11.0,
-                "CI Upper": 13.0
-            },
-            "Strong": {
-                "value": 13.0,
-                "CI Lower": 12.0,
-                "CI Upper": 13.0
-            },
-            "Heavy": {
-                "value": 13.0,
-                "CI Lower": 12.45,
-                "CI Upper": 13.0
-            }
-        },
-        "reliability_score": 0.978679928364439
-    },
-    {
-        "substance": "5-APB",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 45.0,
-                "CI Lower": 40.0,
-                "CI Upper": 72.5
-            },
-            "Light": {
-                "value": 65.0,
-                "CI Lower": 45.0,
-                "CI Upper": 92.5
-            },
-            "Common": {
-                "value": 85.0,
-                "CI Lower": 60.0,
-                "CI Upper": 120.0
-            },
-            "Strong": {
-                "value": 110.0,
-                "CI Lower": 85.0,
-                "CI Upper": 140.0
-            },
-            "Heavy": {
-                "value": 140.0,
-                "CI Lower": 100.0,
-                "CI Upper": 140.0
-            }
-        },
-        "reliability_score": 0.8867156968802237
+        "reliability_score": 0.8910928582879907
     },
     {
         "substance": "5-MAPB",
@@ -2614,32 +2211,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 28.75,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
+                "Lower": 20.0,
+                "Upper": 28.663283766163154,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 40.0,
-                "CI Lower": 30.0,
-                "CI Upper": 50.0
+                "Lower": 28.663283766163154,
+                "Upper": 40.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 30.000000000000004
             },
             "Common": {
-                "value": 55.0,
-                "CI Lower": 40.0,
-                "CI Upper": 70.0
+                "Lower": 40.0,
+                "Upper": 54.772255750558166,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 49.99999999999999
             },
             "Strong": {
-                "value": 81.25,
-                "CI Lower": 60.0,
-                "CI Upper": 100.0
+                "Lower": 54.772255750558166,
+                "Upper": 81.22172739476068,
+                "CI Lower": 40.0,
+                "CI Upper": 69.99999999999999
             },
             "Heavy": {
-                "value": 120.0,
-                "CI Lower": 100.0,
-                "CI Upper": 125.0
+                "Lower": 81.22172739476068,
+                "Upper": 125.0,
+                "CI Lower": 62.357392657546384,
+                "CI Upper": 99.99999999999996
             }
         },
-        "reliability_score": 0.8556005540176832
+        "reliability_score": 0.9037337026784555
     },
     {
         "substance": "5-MeO-AMT",
@@ -2647,32 +2249,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 2.5,
-                "CI Lower": 1.0,
-                "CI Upper": 3.0
+                "Lower": 1.0,
+                "Upper": 2.3880477601494157,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 3.0,
-                "CI Lower": 3.0,
-                "CI Upper": 6.0
+                "Lower": 2.3880477601494157,
+                "Upper": 3.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 3.0
             },
             "Common": {
-                "value": 6.0,
-                "CI Lower": 4.0,
-                "CI Upper": 15.124999999999886
+                "Lower": 3.0,
+                "Upper": 5.477225575093241,
+                "CI Lower": 2.8663283766452494,
+                "CI Upper": 5.0
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 5.477225575093241,
+                "Upper": 16.118548977427217,
+                "CI Lower": 3.4641016152413844,
+                "CI Upper": 13.416407865061045
             },
             "Heavy": {
-                "value": 30.0,
-                "CI Lower": 20.0,
-                "CI Upper": 45.0
+                "Lower": 16.118548977427217,
+                "Upper": 30.0,
+                "CI Lower": 6.000000000000001,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.7121374284859561
+        "reliability_score": 0.8330507888605296
     },
     {
         "substance": "5-MeO-AMT",
@@ -2680,32 +2287,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 2.3000000000000003,
-                "CI Lower": 1.0,
-                "CI Upper": 3.0
+                "Lower": 1.0,
+                "Upper": 2.2865252596973433,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 5.0,
-                "CI Lower": 3.5,
-                "CI Upper": 5.0
+                "Lower": 2.2865252596973433,
+                "Upper": 5.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 3.0
             },
             "Common": {
-                "value": 6.0,
-                "CI Lower": 5.0,
-                "CI Upper": 7.0
+                "Lower": 5.0,
+                "Upper": 6.000000000000001,
+                "CI Lower": 4.0,
+                "CI Upper": 5.0
             },
             "Strong": {
-                "value": 10.0,
-                "CI Lower": 7.5,
-                "CI Upper": 13.0
+                "Lower": 6.000000000000001,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 6.25
             },
             "Heavy": {
-                "value": 17.699999999999996,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 20.0,
+                "CI Lower": 7.5,
+                "CI Upper": 13.000000000000002
             }
         },
-        "reliability_score": 0.8103512248405114
+        "reliability_score": 0.8735674832270075
     },
     {
         "substance": "5-MeO-DALT",
@@ -2713,32 +2325,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 8.0,
-                "CI Upper": 20.0
+                "Lower": 8.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.5,
-                "CI Lower": 15.0,
-                "CI Upper": 30.0
+                "Lower": 10.000000000000002,
+                "Upper": 20.493901531922173,
+                "CI Lower": 9.352484478280134,
+                "CI Upper": 18.346295092938494
             },
             "Common": {
-                "value": 30.0,
-                "CI Lower": 25.0,
-                "CI Upper": 40.0
+                "Lower": 20.493901531922173,
+                "Upper": 30.000000000000004,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 24.999999999999996
             },
             "Strong": {
-                "value": 50.0,
-                "CI Lower": 32.0,
-                "CI Upper": 75.0
+                "Lower": 30.000000000000004,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 38.0
             },
             "Heavy": {
-                "value": 80.0,
-                "CI Lower": 60.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 100.0,
+                "CI Lower": 37.39259131525418,
+                "CI Upper": 59.999999999999986
             }
         },
-        "reliability_score": 0.8233970174617153
+        "reliability_score": 0.8822646783078103
     },
     {
         "substance": "5-MeO-DMT",
@@ -2746,32 +2363,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 4.0,
-                "CI Upper": 8.0
+                "Lower": 4.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 8.0,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 4.5,
+                "CI Upper": 7.3840532307644375
             },
             "Common": {
-                "value": 12.0,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "Lower": 10.000000000000002,
+                "Upper": 12.0,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 23.0
+                "Lower": 12.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 15.0
             },
             "Heavy": {
-                "value": 26.89999999999999,
-                "CI Lower": 22.0,
-                "CI Upper": 30.0
+                "Lower": 19.999999999999996,
+                "Upper": 30.0,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.8514218871722954
+        "reliability_score": 0.9009479247815302
     },
     {
         "substance": "5-MeO-DMT",
@@ -2779,32 +2401,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 4.0,
-                "CI Lower": 2.0,
-                "CI Upper": 5.0
+                "Lower": 1.0,
+                "Upper": 4.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 8.0,
-                "CI Lower": 6.0,
-                "CI Upper": 10.0
+                "Lower": 4.0,
+                "Upper": 7.999999999999999,
+                "CI Lower": 2.499655669285064,
+                "CI Upper": 5.0
             },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 13.0
+                "Lower": 7.999999999999999,
+                "Upper": 10.000000000000002,
+                "CI Lower": 7.0,
+                "CI Upper": 8.745287312301654
             },
             "Strong": {
-                "value": 17.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 17.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 12.0
             },
             "Heavy": {
-                "value": 25.0,
-                "CI Lower": 22.5,
-                "CI Upper": 30.0
+                "Lower": 17.0,
+                "Upper": 35.0,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.8355119743297754
+        "reliability_score": 0.8904640198545992
     },
     {
         "substance": "5-MeO-DiPT",
@@ -2812,32 +2439,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 3.0
+                "Lower": 1.0,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 3.0,
-                "CI Lower": 1.0,
-                "CI Upper": 6.0
+                "Lower": 0.9999999999999999,
+                "Upper": 3.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.880793502459431
             },
             "Common": {
-                "value": 7.5,
-                "CI Lower": 3.0,
-                "CI Upper": 10.0
+                "Lower": 3.0,
+                "Upper": 7.0,
+                "CI Lower": 2.0,
+                "CI Upper": 5.0
             },
             "Strong": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "Lower": 7.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 35.0
+                "Lower": 10.000000000000002,
+                "Upper": 20.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 13.000000000000002
             }
         },
-        "reliability_score": 0.7578655181975191
+        "reliability_score": 0.8636640237155975
     },
     {
         "substance": "5-MeO-DiPT",
@@ -2845,32 +2477,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 3.0,
-                "CI Upper": 5.0
+                "Lower": 2.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 9.0,
-                "CI Lower": 7.5,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 9.000000000000002,
+                "CI Lower": 4.0,
+                "CI Upper": 5.0
             },
             "Common": {
-                "value": 11.5,
-                "CI Lower": 10.0,
-                "CI Upper": 12.0
+                "Lower": 9.000000000000002,
+                "Upper": 11.489125293085523,
+                "CI Lower": 7.996773724671493,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 15.0,
-                "CI Lower": 15.0,
-                "CI Upper": 18.0
+                "Lower": 11.489125293085523,
+                "Upper": 15.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 12.0
             },
             "Heavy": {
-                "value": 25.0,
-                "CI Lower": 22.0,
-                "CI Upper": 26.0
+                "Lower": 15.0,
+                "Upper": 30.0,
+                "CI Lower": 15.0,
+                "CI Upper": 17.999999999999996
             }
         },
-        "reliability_score": 0.8570786309228187
+        "reliability_score": 0.9047190872818791
     },
     {
         "substance": "5-MeO-MIPT",
@@ -2878,32 +2515,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 2.0,
+                "Lower": 1.0,
+                "Upper": 2.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 2.0,
+                "Upper": 5.0,
                 "CI Lower": 2.0,
                 "CI Upper": 3.0
             },
-            "Light": {
-                "value": 5.0,
-                "CI Lower": 3.0,
-                "CI Upper": 6.0
-            },
             "Common": {
-                "value": 7.1,
-                "CI Lower": 6.0,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 7.099295739720532,
+                "CI Lower": 4.0,
+                "CI Upper": 5.73265675325835
             },
             "Strong": {
-                "value": 10.0,
-                "CI Lower": 9.0,
-                "CI Upper": 14.0
+                "Lower": 7.099295739720532,
+                "Upper": 10.000000000000002,
+                "CI Lower": 6.000000000000001,
+                "CI Upper": 8.506075251535629
             },
             "Heavy": {
-                "value": 19.69999999999999,
-                "CI Lower": 14.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 20.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 12.0
             }
         },
-        "reliability_score": 0.822815296643725
+        "reliability_score": 0.8818768644291499
     },
     {
         "substance": "6-APB",
@@ -2911,32 +2553,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 17.8,
-                "CI Lower": 9.0,
-                "CI Upper": 25.31999999999971
+                "Lower": 9.0,
+                "Upper": 17.047963168684134,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 25.0,
-                "CI Lower": 20.0,
-                "CI Upper": 57.0
+                "Lower": 17.047963168684134,
+                "Upper": 24.999999999999996,
+                "CI Lower": 9.000000000000002,
+                "CI Upper": 32.61508486854233
             },
             "Common": {
-                "value": 57.0,
-                "CI Lower": 25.0,
+                "Lower": 24.999999999999996,
+                "Upper": 56.99999999999999,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 56.99999999999999
+            },
+            "Strong": {
+                "Lower": 56.99999999999999,
+                "Upper": 78.0,
+                "CI Lower": 24.999999999999996,
                 "CI Upper": 78.0
             },
-            "Strong": {
-                "value": 78.0,
-                "CI Lower": 57.0,
-                "CI Upper": 139.0
-            },
             "Heavy": {
-                "value": 139.6,
-                "CI Lower": 82.39999999999998,
-                "CI Upper": 142.0
+                "Lower": 78.0,
+                "Upper": 142.0,
+                "CI Lower": 56.99999999999999,
+                "CI Upper": 138.99999999999994
             }
         },
-        "reliability_score": 0.8069617573783268
+        "reliability_score": 0.8713078382522179
     },
     {
         "substance": "6-APB",
@@ -2944,32 +2591,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 30.0,
-                "CI Lower": 20.0,
-                "CI Upper": 50.0
+                "Lower": 20.0,
+                "Upper": 30.000000000000004,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 70.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 30.000000000000004,
+                "Upper": 69.99999999999999,
+                "CI Lower": 21.147425268856303,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 90.0,
-                "CI Upper": 110.0
+                "Lower": 69.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 88.52464509221836
             },
             "Strong": {
-                "value": 133.75,
-                "CI Lower": 100.0,
-                "CI Upper": 150.0
+                "Lower": 99.99999999999996,
+                "Upper": 133.73225397903917,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 200.0,
-                "CI Lower": 150.0,
-                "CI Upper": 200.0
+                "Lower": 133.73225397903917,
+                "Upper": 220.0,
+                "CI Lower": 111.05123182109372,
+                "CI Upper": 149.99999999999997
             }
         },
-        "reliability_score": 0.8590264576643714
+        "reliability_score": 0.9060176384429142
     },
     {
         "substance": "AL-LAD",
@@ -2977,32 +2629,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "\u00b5g",
         "tiers": {
             "Threshold": {
-                "value": 61.50000000000001,
-                "CI Lower": 30.0,
-                "CI Upper": 75.0
+                "Lower": 30.0,
+                "Upper": 56.97433447094308,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 150.0,
-                "CI Lower": 75.0,
-                "CI Upper": 150.0
+                "Lower": 56.97433447094308,
+                "Upper": 149.99999999999997,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 75.23967920346284
             },
             "Common": {
-                "value": 150.0,
-                "CI Lower": 150.0,
-                "CI Upper": 300.0
+                "Lower": 149.99999999999997,
+                "Upper": 149.99999999999997,
+                "CI Lower": 74.99999999999999,
+                "CI Upper": 149.99999999999997
             },
             "Strong": {
-                "value": 300.0,
-                "CI Lower": 150.0,
-                "CI Upper": 300.0
+                "Lower": 149.99999999999997,
+                "Upper": 299.99999999999994,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 149.99999999999997
             },
             "Heavy": {
-                "value": 379.9999999999997,
-                "CI Lower": 300.0,
-                "CI Upper": 450.0
+                "Lower": 299.99999999999994,
+                "Upper": 450.0,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 299.99999999999994
             }
         },
-        "reliability_score": 0.8265798517338021
+        "reliability_score": 0.8843865678225349
     },
     {
         "substance": "AL-LAD",
@@ -3010,32 +2667,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "\u00b5g",
         "tiers": {
             "Threshold": {
-                "value": 23.9,
+                "Lower": 14.0,
+                "Upper": 23.5916768823466,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 23.5916768823466,
+                "Upper": 74.99999999999999,
                 "CI Lower": 14.0,
-                "CI Upper": 75.0
-            },
-            "Light": {
-                "value": 75.0,
-                "CI Lower": 50.0,
-                "CI Upper": 150.0
+                "CI Upper": 74.99999999999999
             },
             "Common": {
-                "value": 150.0,
-                "CI Lower": 75.0,
-                "CI Upper": 200.0
+                "Lower": 74.99999999999999,
+                "Upper": 149.99999999999997,
+                "CI Lower": 43.30127019076894,
+                "CI Upper": 149.99999999999997
             },
             "Strong": {
-                "value": 250.0,
-                "CI Lower": 150.0,
-                "CI Upper": 450.0
+                "Lower": 149.99999999999997,
+                "Upper": 244.94897427852393,
+                "CI Lower": 74.99999999999999,
+                "CI Upper": 199.99999999999991
             },
             "Heavy": {
-                "value": 450.0,
-                "CI Lower": 298.1250000000001,
-                "CI Upper": 450.0
+                "Lower": 244.94897427852393,
+                "Upper": 450.0,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 450.00000000000006
             }
         },
-        "reliability_score": 0.7719724968584647
+        "reliability_score": 0.8479816645723097
     },
     {
         "substance": "ALD-52",
@@ -3043,98 +2705,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "\u00b5g",
         "tiers": {
             "Threshold": {
-                "value": 92.5,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 50.0,
+                "Upper": 87.05505633005899,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 106.25,
-                "CI Lower": 100.0,
-                "CI Upper": 142.5
+                "Lower": 87.05505633005899,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Common": {
-                "value": 145.0,
-                "CI Lower": 112.5,
-                "CI Upper": 215.24999999999977
+                "Lower": 99.99999999999996,
+                "Upper": 140.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 140.0
             },
             "Strong": {
-                "value": 237.5,
-                "CI Lower": 147.5,
-                "CI Upper": 287.5
+                "Lower": 140.0,
+                "Upper": 199.99999999999991,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 199.99999999999991
             },
             "Heavy": {
-                "value": 314.9999999999999,
-                "CI Lower": 250.0,
-                "CI Upper": 400.0
+                "Lower": 199.99999999999991,
+                "Upper": 300.0,
+                "CI Lower": 140.0,
+                "CI Upper": 249.9999999999999
             }
         },
-        "reliability_score": 0.8479516811553391
-    },
-    {
-        "substance": "ALD-52",
-        "method": "sublingual",
-        "unit": "\u00b5g",
-        "tiers": {
-            "Threshold": {
-                "value": 77.5,
-                "CI Lower": 50.0,
-                "CI Upper": 127.5
-            },
-            "Light": {
-                "value": 118.75,
-                "CI Lower": 87.5,
-                "CI Upper": 177.75
-            },
-            "Common": {
-                "value": 168.5,
-                "CI Lower": 112.5,
-                "CI Upper": 280.0
-            },
-            "Strong": {
-                "value": 270.0,
-                "CI Lower": 159.25,
-                "CI Upper": 375.0
-            },
-            "Heavy": {
-                "value": 434.9999999999998,
-                "CI Lower": 226.99999999999994,
-                "CI Upper": 600.0
-            }
-        },
-        "reliability_score": 0.7910712640433659
-    },
-    {
-        "substance": "AMT",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
-            "Light": {
-                "value": 6.25,
-                "CI Lower": 5.0,
-                "CI Upper": 16.006249999999994
-            },
-            "Common": {
-                "value": 15.5,
-                "CI Lower": 7.5,
-                "CI Upper": 22.5
-            },
-            "Strong": {
-                "value": 23.75,
-                "CI Lower": 15.0,
-                "CI Upper": 50.0
-            },
-            "Heavy": {
-                "value": 53.5,
-                "CI Lower": 25.0,
-                "CI Upper": 60.0
-            }
-        },
-        "reliability_score": 0.7447831135855887
+        "reliability_score": 0.9133974596215562
     },
     {
         "substance": "AMT",
@@ -3142,65 +2743,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 12.775,
-                "CI Lower": 10.0,
-                "CI Upper": 17.5
+                "Lower": 7.0,
+                "Upper": 12.772571709102138,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 26.5,
-                "CI Lower": 25.0,
-                "CI Upper": 30.0
+                "Lower": 12.772571709102138,
+                "Upper": 26.485478607450034,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 16.06896753532607
             },
             "Common": {
-                "value": 40.0,
-                "CI Lower": 30.0,
+                "Lower": 26.485478607450034,
+                "Upper": 40.0,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 30.000000000000004
+            },
+            "Strong": {
+                "Lower": 40.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": 33.985290935937186,
                 "CI Upper": 40.0
             },
-            "Strong": {
-                "value": 50.0,
-                "CI Lower": 45.0,
-                "CI Upper": 50.0
-            },
             "Heavy": {
-                "value": 74.49999999999989,
-                "CI Lower": 60.0,
-                "CI Upper": 80.0
+                "Lower": 49.99999999999999,
+                "Upper": 90.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 49.99999999999999
             }
         },
-        "reliability_score": 0.8667024047536607
-    },
-    {
-        "substance": "AMT",
-        "method": "smoked",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 6.95
-            },
-            "Light": {
-                "value": 5.75,
-                "CI Lower": 5.0,
-                "CI Upper": 12.5
-            },
-            "Common": {
-                "value": 11.25,
-                "CI Lower": 5.0,
-                "CI Upper": 20.0
-            },
-            "Strong": {
-                "value": 18.75,
-                "CI Lower": 10.0,
-                "CI Upper": 30.0
-            },
-            "Heavy": {
-                "value": 30.0,
-                "CI Lower": 19.965625000000003,
-                "CI Upper": 30.0
-            }
-        },
-        "reliability_score": 0.7988420267181966
+        "reliability_score": 0.9111349365024404
     },
     {
         "substance": "Absinthe",
@@ -3208,32 +2781,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "ml",
         "tiers": {
             "Threshold": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 25.0
+                "Lower": 25.0,
+                "Upper": 24.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 30.0
+                "Lower": 24.999999999999996,
+                "Upper": 24.999999999999996,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 24.999999999999996
             },
             "Common": {
-                "value": 30.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 24.999999999999996,
+                "Upper": 30.000000000000004,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 30.000000000000004
             },
             "Strong": {
-                "value": 50.0,
-                "CI Lower": 30.0,
-                "CI Upper": 92.5
+                "Lower": 30.000000000000004,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 113.99999999999991,
-                "CI Lower": 52.49999999999994,
-                "CI Upper": 150.0
+                "Lower": 49.99999999999999,
+                "Upper": 150.0,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 90.82951062310869
             }
         },
-        "reliability_score": 0.7885336215292753
+        "reliability_score": 0.8590224143528502
     },
     {
         "substance": "Acacia confusa",
@@ -3241,65 +2819,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 1.25,
-                "CI Lower": 1.0,
-                "CI Upper": 2.9000000000000004
+                "Lower": 1.0,
+                "Upper": 1.25,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 4.5,
-                "CI Lower": 1.6218750000000002,
-                "CI Upper": 6.25
+                "Lower": 1.25,
+                "Upper": 4.472135955061885,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.4622888271545604
             },
             "Common": {
-                "value": 7.0,
+                "Lower": 4.472135955061885,
+                "Upper": 7.0,
+                "CI Lower": 1.581138830361592,
+                "CI Upper": 6.000000000000001
+            },
+            "Strong": {
+                "Lower": 7.0,
+                "Upper": 10.000000000000002,
                 "CI Lower": 5.0,
-                "CI Upper": 9.024999999999977
+                "CI Upper": 9.000000000000002
             },
-            "Strong": {
-                "value": 10.0,
+            "Heavy": {
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
                 "CI Lower": 7.0,
-                "CI Upper": 11.75
-            },
-            "Heavy": {
-                "value": 13.85,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "CI Upper": 10.000000000000002
             }
         },
-        "reliability_score": 0.825138249443641
-    },
-    {
-        "substance": "Acetaminophen",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 156.0,
-                "CI Lower": 150.0,
-                "CI Upper": 475.0
-            },
-            "Light": {
-                "value": 300.0,
-                "CI Lower": 156.0,
-                "CI Upper": 812.5
-            },
-            "Common": {
-                "value": 650.0,
-                "CI Lower": 300.0,
-                "CI Upper": 1300.0
-            },
-            "Strong": {
-                "value": 1300.0,
-                "CI Lower": 650.0,
-                "CI Upper": 2200.0
-            },
-            "Heavy": {
-                "value": 2200.0,
-                "CI Lower": 1056.25,
-                "CI Upper": 2450.0
-            }
-        },
-        "reliability_score": 0.7496529361471542
+        "reliability_score": 0.883425499629094
     },
     {
         "substance": "Acetaminophen",
@@ -3307,32 +2857,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.0
+                "Lower": 1.0,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.8
+                "Lower": 0.9999999999999999,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 2.0,
-                "CI Lower": 1.0,
-                "CI Upper": 2.6
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 1.625
             },
             "Strong": {
-                "value": 2.6,
-                "CI Lower": 2.0,
-                "CI Upper": 3.9
+                "Lower": 2.0,
+                "Upper": 2.6,
+                "CI Lower": 1.2,
+                "CI Upper": 2.0
             },
             "Heavy": {
-                "value": 4.199999999999999,
-                "CI Lower": 3.0,
-                "CI Upper": 7.0
+                "Lower": 2.6,
+                "Upper": 7.0,
+                "CI Lower": 2.0,
+                "CI Upper": 3.3
             }
         },
-        "reliability_score": 0.8140970703962604
+        "reliability_score": 0.8760647135975068
     },
     {
         "substance": "Acetaminophen",
@@ -3340,32 +2895,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 255.00000000000006,
-                "CI Lower": 162.5,
-                "CI Upper": 325.0
+                "Lower": 100.0,
+                "Upper": 254.5998440367702,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 500.0,
-                "CI Lower": 325.0,
-                "CI Upper": 500.0
+                "Lower": 254.5998440367702,
+                "Upper": 499.99999999999983,
+                "CI Lower": 165.909413607482,
+                "CI Upper": 324.9999999999999
             },
             "Common": {
-                "value": 650.0,
-                "CI Lower": 650.0,
-                "CI Upper": 975.0
+                "Lower": 499.99999999999983,
+                "Upper": 650.0000000000002,
+                "CI Lower": 324.9999999999999,
+                "CI Upper": 499.99999999999983
             },
             "Strong": {
-                "value": 1300.0,
-                "CI Lower": 1000.0,
-                "CI Upper": 1500.0
+                "Lower": 650.0000000000002,
+                "Upper": 1300.0000000000005,
+                "CI Lower": 650.0000000000002,
+                "CI Upper": 975.0000000000003
             },
             "Heavy": {
-                "value": 2272.4999999999995,
-                "CI Lower": 1950.0,
-                "CI Upper": 2600.0
+                "Lower": 1300.0000000000005,
+                "Upper": 2925.0,
+                "CI Lower": 999.9999999999998,
+                "CI Upper": 1399.9999999999995
             }
         },
-        "reliability_score": 0.7965583341351492
+        "reliability_score": 0.8643722227567663
     },
     {
         "substance": "Adrafinil",
@@ -3373,32 +2933,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 295.75,
-                "CI Lower": 200.0,
-                "CI Upper": 300.0
+                "Lower": 200.0,
+                "Upper": 295.7446532517438,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 300.0,
-                "CI Lower": 300.0,
-                "CI Upper": 300.0
+                "Lower": 295.7446532517438,
+                "Upper": 299.99999999999994,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 299.99999999999994
             },
             "Common": {
-                "value": 300.0,
-                "CI Lower": 300.0,
-                "CI Upper": 300.0
+                "Lower": 299.99999999999994,
+                "Upper": 299.99999999999994,
+                "CI Lower": 299.99999999999994,
+                "CI Upper": 299.99999999999994
             },
             "Strong": {
-                "value": 300.0,
-                "CI Lower": 300.0,
-                "CI Upper": 400.0
+                "Lower": 299.99999999999994,
+                "Upper": 299.99999999999994,
+                "CI Lower": 299.99999999999994,
+                "CI Upper": 299.99999999999994
             },
             "Heavy": {
-                "value": 400.0,
-                "CI Lower": 300.0,
-                "CI Upper": 450.0
+                "Lower": 299.99999999999994,
+                "Upper": 450.0,
+                "CI Lower": 299.99999999999994,
+                "CI Upper": 361.8812077700358
             }
         },
-        "reliability_score": 0.9545876370715083
+        "reliability_score": 0.9697250913810056
     },
     {
         "substance": "Alcohol - Beer/Wine",
@@ -3406,32 +2971,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "ml",
         "tiers": {
             "Threshold": {
-                "value": 10.8,
-                "CI Lower": 0.5,
-                "CI Upper": 100.0
+                "Lower": 0.5,
+                "Upper": 10.8,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 307.5,
-                "CI Lower": 100.0,
-                "CI Upper": 500.0
+                "Lower": 10.8,
+                "Upper": 307.2341067253419,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Common": {
-                "value": 500.0,
-                "CI Lower": 375.0,
-                "CI Upper": 700.0
+                "Lower": 307.2341067253419,
+                "Upper": 499.99999999999983,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 374.99999999999994
             },
             "Strong": {
-                "value": 750.0,
-                "CI Lower": 660.0,
-                "CI Upper": 1000.0
+                "Lower": 499.99999999999983,
+                "Upper": 749.9999999999999,
+                "CI Lower": 433.01270189232264,
+                "CI Upper": 679.7058187186615
             },
             "Heavy": {
-                "value": 1500.0,
-                "CI Lower": 1000.0,
-                "CI Upper": 1660.0
+                "Lower": 749.9999999999999,
+                "Upper": 1660.0,
+                "CI Lower": 700.0000000000002,
+                "CI Upper": 749.9999999999999
             }
         },
-        "reliability_score": 0.7824141166753547
+        "reliability_score": 0.8549427444502364
     },
     {
         "substance": "Alcohol - Hard",
@@ -3439,32 +3009,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "ml",
         "tiers": {
             "Threshold": {
-                "value": 30.0,
-                "CI Lower": 2.4,
-                "CI Upper": 60.0
+                "Lower": 2.4,
+                "Upper": 30.000000000000004,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 175.0
+                "Lower": 30.000000000000004,
+                "Upper": 99.99999999999996,
+                "CI Lower": 11.000000000000002,
+                "CI Upper": 51.856864466858056
             },
             "Common": {
-                "value": 250.0,
-                "CI Lower": 125.0,
-                "CI Upper": 350.0
+                "Lower": 99.99999999999996,
+                "Upper": 249.9999999999999,
+                "CI Lower": 59.999999999999986,
+                "CI Upper": 175.00000000000003
             },
             "Strong": {
-                "value": 500.0,
-                "CI Lower": 350.0,
-                "CI Upper": 750.0
+                "Lower": 249.9999999999999,
+                "Upper": 499.99999999999983,
+                "CI Lower": 175.00000000000003,
+                "CI Upper": 350.0
             },
             "Heavy": {
-                "value": 750.0,
-                "CI Lower": 700.0,
-                "CI Upper": 1000.0
+                "Lower": 499.99999999999983,
+                "Upper": 1000.0,
+                "CI Lower": 350.0,
+                "CI Upper": 749.9999999999999
             }
         },
-        "reliability_score": 0.7500417592199045
+        "reliability_score": 0.8333611728132697
     },
     {
         "substance": "Allylescaline",
@@ -3472,32 +3047,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 2.0,
-                "CI Upper": 10.0
+                "Lower": 2.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 6.25,
-                "CI Upper": 11.25
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 2.0,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 11.066819197147801
             },
             "Strong": {
-                "value": 22.25,
-                "CI Lower": 15.0,
-                "CI Upper": 27.0
+                "Lower": 15.0,
+                "Upper": 22.21024636423376,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 30.75,
-                "CI Lower": 25.0,
-                "CI Upper": 40.0
+                "Lower": 22.21024636423376,
+                "Upper": 40.0,
+                "CI Lower": 15.0,
+                "CI Upper": 27.0
             }
         },
-        "reliability_score": 0.8302736681615961
+        "reliability_score": 0.8868491121077307
     },
     {
         "substance": "Alprazolam",
@@ -3505,32 +3085,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 0.26250000000000007,
-                "CI Lower": 0.25,
-                "CI Upper": 1.0
+                "Lower": 0.25,
+                "Upper": 0.2588162310541774,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 1.5
+                "Lower": 0.2588162310541774,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.25,
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 1.75,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 0.9999999999999999,
+                "Upper": 1.732050807672507,
+                "CI Lower": 0.9047030194414033,
+                "CI Upper": 1.0573712634855912
             },
             "Strong": {
-                "value": 2.0,
-                "CI Lower": 2.0,
-                "CI Upper": 3.0
+                "Lower": 1.732050807672507,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.0
             },
             "Heavy": {
-                "value": 3.0,
-                "CI Lower": 2.5,
-                "CI Upper": 6.0
+                "Lower": 2.0,
+                "Upper": 6.0,
+                "CI Lower": 2.0,
+                "CI Upper": 3.0
             }
         },
-        "reliability_score": 0.8096362017483489
+        "reliability_score": 0.873090801165566
     },
     {
         "substance": "Alprazolam",
@@ -3538,32 +3123,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 0.25,
+                "Lower": 0.125,
+                "Upper": 0.25,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.25,
+                "Upper": 0.9999999999999999,
                 "CI Lower": 0.25,
                 "CI Upper": 0.5
             },
-            "Light": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
-            },
             "Common": {
-                "value": 1.5,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 0.9999999999999999,
+                "Upper": 1.5,
+                "CI Lower": 0.5,
+                "CI Upper": 0.9999999999999999
             },
             "Strong": {
-                "value": 2.0,
-                "CI Lower": 2.0,
-                "CI Upper": 2.5
+                "Lower": 1.5,
+                "Upper": 2.0,
+                "CI Lower": 1.5,
+                "CI Upper": 2.0
             },
             "Heavy": {
-                "value": 5.0,
-                "CI Lower": 4.0,
-                "CI Upper": 6.0
+                "Lower": 2.0,
+                "Upper": 7.0,
+                "CI Lower": 2.0,
+                "CI Upper": 2.5
             }
         },
-        "reliability_score": 0.7671027746303773
+        "reliability_score": 0.8444389103602992
     },
     {
         "substance": "Amanitas",
@@ -3571,32 +3161,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 0.875,
+                "Lower": 0.5,
+                "Upper": 0.8408964157649197,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.8408964157649197,
+                "Upper": 4.728708045064384,
                 "CI Lower": 0.5,
                 "CI Upper": 3.5
             },
-            "Light": {
-                "value": 4.75,
-                "CI Lower": 2.75,
-                "CI Upper": 8.0
-            },
             "Common": {
-                "value": 8.75,
-                "CI Lower": 5.0,
-                "CI Upper": 12.5
+                "Lower": 4.728708045064384,
+                "Upper": 8.746427842272032,
+                "CI Lower": 2.9354461279078734,
+                "CI Upper": 7.999999999999999
             },
             "Strong": {
-                "value": 14.25,
-                "CI Lower": 9.0,
-                "CI Upper": 20.0
+                "Lower": 8.746427842272032,
+                "Upper": 14.243569582333562,
+                "CI Lower": 7.0,
+                "CI Upper": 12.500000000000002
             },
             "Heavy": {
-                "value": 21.25,
-                "CI Lower": 15.0,
-                "CI Upper": 28.0
+                "Lower": 14.243569582333562,
+                "Upper": 28.0,
+                "CI Lower": 11.962099278334506,
+                "CI Upper": 18.480421729456364
             }
         },
-        "reliability_score": 0.7973066286737129
+        "reliability_score": 0.8648710857824753
     },
     {
         "substance": "Amanitas - A. muscaria",
@@ -3604,65 +3199,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 1.1,
+                "Lower": 0.05,
+                "Upper": 1.1171914770805218,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 1.1171914770805218,
+                "Upper": 5.0,
                 "CI Lower": 0.5,
-                "CI Upper": 3.0
-            },
-            "Light": {
-                "value": 5.0,
-                "CI Lower": 4.0,
-                "CI Upper": 5.5
+                "CI Upper": 2.3115014350083896
             },
             "Common": {
-                "value": 8.0,
+                "Lower": 5.0,
+                "Upper": 7.999999999999999,
+                "CI Lower": 4.0,
+                "CI Upper": 5.005367157158767
+            },
+            "Strong": {
+                "Lower": 7.999999999999999,
+                "Upper": 12.0,
                 "CI Lower": 7.0,
-                "CI Upper": 10.0
-            },
-            "Strong": {
-                "value": 12.0,
-                "CI Lower": 10.0,
-                "CI Upper": 14.0
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 22.0,
-                "CI Lower": 15.0,
-                "CI Upper": 25.0
-            }
-        },
-        "reliability_score": 0.8060677588614551
-    },
-    {
-        "substance": "Amanitas - A. pantherina",
-        "method": "oral",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 1.36,
-                "CI Lower": 1.0,
-                "CI Upper": 2.664
-            },
-            "Light": {
-                "value": 2.2,
-                "CI Lower": 1.6,
-                "CI Upper": 4.0
-            },
-            "Common": {
-                "value": 4.0,
-                "CI Lower": 2.2,
-                "CI Upper": 8.0
-            },
-            "Strong": {
-                "value": 8.0,
-                "CI Lower": 4.0,
-                "CI Upper": 8.0
-            },
-            "Heavy": {
-                "value": 10.399999999999991,
-                "CI Lower": 6.199999999999996,
+                "Lower": 12.0,
+                "Upper": 28.0,
+                "CI Lower": 10.000000000000002,
                 "CI Upper": 14.0
             }
         },
-        "reliability_score": 0.7763887682904573
+        "reliability_score": 0.8702579676550439
     },
     {
         "substance": "Amitriptyline",
@@ -3670,32 +3237,75 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 7.5,
-                "CI Upper": 25.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 30.0
+                "Lower": 10.000000000000002,
+                "Upper": 24.999999999999996,
+                "CI Lower": 8.785724254390026,
+                "CI Upper": 22.611558798203113
             },
             "Common": {
-                "value": 50.0,
-                "CI Lower": 30.0,
-                "CI Upper": 75.0
+                "Lower": 24.999999999999996,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 28.663283766163154
             },
             "Strong": {
-                "value": 100.0,
-                "CI Lower": 75.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 40.0,
+                "CI Upper": 74.99999999999999
             },
             "Heavy": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 150.0
+                "Lower": 99.99999999999996,
+                "Upper": 200.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 99.99999999999996
             }
         },
-        "reliability_score": 0.8021445985315838
+        "reliability_score": 0.8680963990210557
+    },
+    {
+        "substance": "Amphetamine",
+        "method": "insufflated",
+        "unit": "mg",
+        "tiers": {
+            "Threshold": {
+                "Lower": 0.6,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 3.0,
+                "CI Upper": 5.0
+            },
+            "Common": {
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 15.0
+            },
+            "Strong": {
+                "Lower": 19.999999999999996,
+                "Upper": 30.000000000000004,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
+            },
+            "Heavy": {
+                "Lower": 30.000000000000004,
+                "Upper": 60.0,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 30.000000000000004
+            }
+        },
+        "reliability_score": 0.8774481481430758
     },
     {
         "substance": "Amphetamine",
@@ -3703,32 +3313,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 6.75
+                "Lower": 1.25,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
+                "Lower": 5.0,
+                "Upper": 15.0,
                 "CI Lower": 5.0,
-                "CI Upper": 20.0
+                "CI Upper": 7.5
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 15.0,
+                "Upper": 24.999999999999996,
+                "CI Lower": 14.973192574998684,
+                "CI Upper": 19.999999999999996
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 50.0
+                "Lower": 24.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 30.000000000000004
             },
             "Heavy": {
-                "value": 50.0,
-                "CI Lower": 20.0,
-                "CI Upper": 50.0
+                "Lower": 40.0,
+                "Upper": 90.0,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 40.0
             }
         },
-        "reliability_score": 0.7894717121196402
+        "reliability_score": 0.8644335648894725
     },
     {
         "substance": "Amphetamine",
@@ -3736,98 +3351,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
+                "Lower": 5.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 5.0,
+                "Upper": 6.000000000000001,
                 "CI Lower": 5.0,
                 "CI Upper": 5.0
             },
-            "Light": {
-                "value": 6.0,
+            "Common": {
+                "Lower": 6.000000000000001,
+                "Upper": 7.0,
                 "CI Lower": 5.0,
                 "CI Upper": 7.0
             },
-            "Common": {
-                "value": 7.0,
+            "Strong": {
+                "Lower": 7.0,
+                "Upper": 10.000000000000002,
                 "CI Lower": 7.0,
-                "CI Upper": 8.0
-            },
-            "Strong": {
-                "value": 10.0,
-                "CI Lower": 7.0,
-                "CI Upper": 13.0
+                "CI Upper": 7.999999999999999
             },
             "Heavy": {
-                "value": 15.0,
-                "CI Lower": 13.0,
-                "CI Upper": 15.0
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 13.000000000000002
             }
         },
-        "reliability_score": 0.8833343525539243
-    },
-    {
-        "substance": "Amphetamines",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 5.0,
-                "CI Lower": 3.0,
-                "CI Upper": 5.0
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
-            },
-            "Common": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
-            },
-            "Strong": {
-                "value": 30.0,
-                "CI Lower": 25.0,
-                "CI Upper": 37.0
-            },
-            "Heavy": {
-                "value": 45.0,
-                "CI Lower": 40.0,
-                "CI Upper": 60.0
-            }
-        },
-        "reliability_score": 0.8154096470302776
-    },
-    {
-        "substance": "Amphetamines",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
-            "Light": {
-                "value": 15.0,
-                "CI Lower": 12.5,
-                "CI Upper": 20.0
-            },
-            "Common": {
-                "value": 25.0,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
-            },
-            "Strong": {
-                "value": 31.25,
-                "CI Lower": 30.0,
-                "CI Upper": 40.0
-            },
-            "Heavy": {
-                "value": 60.0,
-                "CI Lower": 60.0,
-                "CI Upper": 75.0
-            }
-        },
-        "reliability_score": 0.8082147600683776
+        "reliability_score": 0.9231000650195333
     },
     {
         "substance": "Aniracetam",
@@ -3835,32 +3389,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 385.0,
-                "CI Lower": 350.0,
-                "CI Upper": 700.0
+                "Lower": 350.0,
+                "Upper": 384.2929411463074,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 700.0,
-                "CI Lower": 400.0,
-                "CI Upper": 750.0
+                "Lower": 384.2929411463074,
+                "Upper": 700.0000000000002,
+                "CI Lower": 350.0,
+                "CI Upper": 700.0000000000002
             },
             "Common": {
-                "value": 750.0,
-                "CI Lower": 700.0,
-                "CI Upper": 1500.0
+                "Lower": 700.0000000000002,
+                "Upper": 749.9999999999999,
+                "CI Lower": 400.00000000000006,
+                "CI Upper": 749.9999999999999
             },
             "Strong": {
-                "value": 1380.0,
-                "CI Lower": 750.0,
-                "CI Upper": 1500.0
+                "Lower": 749.9999999999999,
+                "Upper": 1374.7727084867897,
+                "CI Lower": 700.0000000000002,
+                "CI Upper": 1259.9999999999995
             },
             "Heavy": {
-                "value": 1500.0,
-                "CI Lower": 1331.9999999999998,
+                "Lower": 1374.7727084867897,
+                "Upper": 1500.0,
+                "CI Lower": 749.9999999999999,
                 "CI Upper": 1500.0
             }
         },
-        "reliability_score": 0.8631317683051338
+        "reliability_score": 0.9087545122034226
     },
     {
         "substance": "Aripiprazole",
@@ -3868,32 +3427,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
+                "Lower": 2.5,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 5.0,
+                "Upper": 5.0,
                 "CI Lower": 2.5,
                 "CI Upper": 5.0
             },
-            "Light": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
             "Common": {
-                "value": 10.0,
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
                 "CI Lower": 5.0,
-                "CI Upper": 15.0
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 25.0
+                "Lower": 15.0,
+                "Upper": 25.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.8403896021537167
+        "reliability_score": 0.8935930681024777
     },
     {
         "substance": "Armodafinil",
@@ -3901,32 +3465,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 75.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 50.0,
+                "Upper": 74.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 100.0,
-                "CI Lower": 75.0,
-                "CI Upper": 150.0
+                "Lower": 74.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Common": {
-                "value": 150.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 149.99999999999997,
+                "CI Lower": 74.99999999999999,
+                "CI Upper": 149.99999999999997
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 150.0,
-                "CI Upper": 300.0
+                "Lower": 149.99999999999997,
+                "Upper": 199.99999999999991,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 199.99999999999991
             },
             "Heavy": {
-                "value": 379.9999999999997,
-                "CI Lower": 239.99999999999986,
-                "CI Upper": 400.0
+                "Lower": 199.99999999999991,
+                "Upper": 400.0,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 299.99999999999994
             }
         },
-        "reliability_score": 0.829124782817251
+        "reliability_score": 0.8860831885448341
     },
     {
         "substance": "Articaine",
@@ -3934,27 +3503,32 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 36.0,
-                "CI Lower": 36.0,
-                "CI Upper": 36.0
+                "Lower": 36.0,
+                "Upper": 36.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 36.0,
+                "Lower": 36.0,
+                "Upper": 36.0,
                 "CI Lower": 36.0,
                 "CI Upper": 36.0
             },
             "Common": {
-                "value": 36.0,
+                "Lower": 36.0,
+                "Upper": 36.0,
                 "CI Lower": 36.0,
                 "CI Upper": 36.0
             },
             "Strong": {
-                "value": 36.0,
+                "Lower": 36.0,
+                "Upper": 36.0,
                 "CI Lower": 36.0,
                 "CI Upper": 36.0
             },
             "Heavy": {
-                "value": 36.0,
+                "Lower": 36.0,
+                "Upper": 36.0,
                 "CI Lower": 36.0,
                 "CI Upper": 36.0
             }
@@ -3967,32 +3541,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 16.5,
-                "CI Lower": 10.0,
-                "CI Upper": 40.0
+                "Lower": 10.0,
+                "Upper": 16.582154008483638,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 40.0,
-                "CI Lower": 18.0,
-                "CI Upper": 40.0
+                "Lower": 16.582154008483638,
+                "Upper": 40.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 24.999999999999996
             },
             "Common": {
-                "value": 40.0,
-                "CI Lower": 40.0,
-                "CI Upper": 60.0
+                "Lower": 40.0,
+                "Upper": 40.0,
+                "CI Lower": 23.028896758091662,
+                "CI Upper": 40.0
             },
             "Strong": {
-                "value": 70.0,
+                "Lower": 40.0,
+                "Upper": 64.47419590948658,
                 "CI Lower": 40.0,
-                "CI Upper": 120.0
+                "CI Upper": 54.772255750558166
             },
             "Heavy": {
-                "value": 120.0,
-                "CI Lower": 80.0,
-                "CI Upper": 140.0
+                "Lower": 64.47419590948658,
+                "Upper": 140.0,
+                "CI Lower": 40.0,
+                "CI Upper": 99.99999999999996
             }
         },
-        "reliability_score": 0.8171525193497535
+        "reliability_score": 0.8764992650712555
     },
     {
         "substance": "Ayahuasca",
@@ -4000,32 +3579,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "ml",
         "tiers": {
             "Threshold": {
-                "value": 40.0,
-                "CI Lower": 33.0,
-                "CI Upper": 50.0
+                "Lower": 33.0,
+                "Upper": 40.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 50.0,
-                "CI Lower": 40.0,
-                "CI Upper": 80.0
+                "Lower": 40.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": 33.00000000000001,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 85.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 80.00000000000001,
+                "CI Lower": 49.868472653836776,
+                "CI Upper": 59.999999999999986
             },
             "Strong": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 150.0
+                "Lower": 80.00000000000001,
+                "Upper": 99.99999999999996,
+                "CI Lower": 59.999999999999986,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 197.49999999999977,
-                "CI Lower": 120.0,
-                "CI Upper": 300.0
+                "Lower": 99.99999999999996,
+                "Upper": 200.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 124.99999999999994
             }
         },
-        "reliability_score": 0.8257831250778269
+        "reliability_score": 0.9032930942888884
     },
     {
         "substance": "BK-2C-B",
@@ -4033,65 +3617,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 25.0,
-                "CI Lower": 20.0,
-                "CI Upper": 50.0
+                "Lower": 20.0,
+                "Upper": 24.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 55.0,
-                "CI Lower": 25.0,
-                "CI Upper": 100.0
+                "Lower": 24.999999999999996,
+                "Upper": 55.00000000000001,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 107.5,
-                "CI Lower": 55.0,
-                "CI Upper": 150.0
+                "Lower": 55.00000000000001,
+                "Upper": 107.23805294766048,
+                "CI Lower": 47.28708045020729,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 162.5,
-                "CI Lower": 115.0,
-                "CI Upper": 300.0
+                "Lower": 107.23805294766048,
+                "Upper": 161.18548977360533,
+                "CI Lower": 74.16198487140676,
+                "CI Upper": 140.0
             },
             "Heavy": {
-                "value": 344.99999999999994,
-                "CI Lower": 200.0,
-                "CI Upper": 400.0
+                "Lower": 161.18548977360533,
+                "Upper": 400.0,
+                "CI Lower": 126.96933995640953,
+                "CI Upper": 261.6587848480564
             }
         },
-        "reliability_score": 0.7734002435255216
-    },
-    {
-        "substance": "BOD",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 7.8,
-                "CI Lower": 6.0,
-                "CI Upper": 15.0
-            },
-            "Light": {
-                "value": 15.0,
-                "CI Lower": 7.0,
-                "CI Upper": 22.5
-            },
-            "Common": {
-                "value": 20.95,
-                "CI Lower": 12.5,
-                "CI Upper": 30.0
-            },
-            "Strong": {
-                "value": 28.75,
-                "CI Lower": 18.299999999999997,
-                "CI Upper": 30.75
-            },
-            "Heavy": {
-                "value": 30.549999999999997,
-                "CI Lower": 25.22424999999999,
-                "CI Upper": 31.0
-            }
-        },
-        "reliability_score": 0.8705127853419481
+        "reliability_score": 0.8489334956836809
     },
     {
         "substance": "Baclofen",
@@ -4099,32 +3655,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 40.0
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 15.157165665714
             },
             "Common": {
-                "value": 40.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 19.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 40.0
             },
             "Strong": {
-                "value": 60.0,
-                "CI Lower": 40.0,
-                "CI Upper": 80.0
+                "Lower": 40.0,
+                "Upper": 59.999999999999986,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 107.99999999999997,
-                "CI Lower": 80.0,
-                "CI Upper": 125.0
+                "Lower": 59.999999999999986,
+                "Upper": 125.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 80.00000000000001
             }
         },
-        "reliability_score": 0.800030195516138
+        "reliability_score": 0.8666867970107586
     },
     {
         "substance": "Banisteriopsis caapi",
@@ -4132,65 +3693,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 2.5500000000000003,
-                "CI Lower": 1.0,
-                "CI Upper": 10.0
+                "Lower": 1.0,
+                "Upper": 2.4996556692850636,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 18.75,
-                "CI Lower": 6.0,
-                "CI Upper": 25.0
+                "Lower": 2.4996556692850636,
+                "Upper": 18.612097182123545,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 6.000000000000001
             },
             "Common": {
-                "value": 33.5,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 18.612097182123545,
+                "Upper": 33.316662497970405,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 24.999999999999996
             },
             "Strong": {
-                "value": 50.0,
-                "CI Lower": 45.0,
-                "CI Upper": 60.0
+                "Lower": 33.316662497970405,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 96.70000000000002,
-                "CI Lower": 60.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 100.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 55.99999999999999
             }
         },
-        "reliability_score": 0.7895365146470705
-    },
-    {
-        "substance": "Bath Salts, Plant Food, etc",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 28.1099999999999
-            },
-            "Light": {
-                "value": 22.25,
-                "CI Lower": 10.0,
-                "CI Upper": 100.0
-            },
-            "Common": {
-                "value": 75.0,
-                "CI Lower": 17.900000000000006,
-                "CI Upper": 100.62499999999943
-            },
-            "Strong": {
-                "value": 100.0,
-                "CI Lower": 46.25,
-                "CI Upper": 206.25
-            },
-            "Heavy": {
-                "value": 191.24999999999991,
-                "CI Lower": 100.0,
-                "CI Upper": 225.0
-            }
-        },
-        "reliability_score": 0.7380574669583708
+        "reliability_score": 0.8596910097647137
     },
     {
         "substance": "Benzocaine",
@@ -4198,29 +3731,34 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "Lower": 20.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "Lower": 19.999999999999996,
+                "Upper": 19.999999999999996,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "Lower": 19.999999999999996,
+                "Upper": 19.999999999999996,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "Lower": 19.999999999999996,
+                "Upper": 19.999999999999996,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "Lower": 19.999999999999996,
+                "Upper": 20.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             }
         },
         "reliability_score": 1.0
@@ -4231,32 +3769,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 245.0,
-                "CI Lower": 245.0,
-                "CI Upper": 280.0
+                "Lower": 245.0,
+                "Upper": 245.00000000000009,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 280.0,
-                "CI Lower": 245.0,
-                "CI Upper": 280.0
+                "Lower": 245.00000000000009,
+                "Upper": 279.99999999999994,
+                "CI Lower": 245.00000000000009,
+                "CI Upper": 279.99999999999994
             },
             "Common": {
-                "value": 280.0,
-                "CI Lower": 280.0,
-                "CI Upper": 300.0
+                "Lower": 279.99999999999994,
+                "Upper": 279.99999999999994,
+                "CI Lower": 245.00000000000009,
+                "CI Upper": 279.99999999999994
             },
             "Strong": {
-                "value": 300.0,
-                "CI Lower": 280.0,
-                "CI Upper": 320.0
+                "Lower": 279.99999999999994,
+                "Upper": 299.99999999999994,
+                "CI Lower": 279.99999999999994,
+                "CI Upper": 299.99999999999994
             },
             "Heavy": {
-                "value": 320.0,
-                "CI Lower": 300.0,
-                "CI Upper": 320.0
+                "Lower": 299.99999999999994,
+                "Upper": 320.0,
+                "CI Lower": 279.99999999999994,
+                "CI Upper": 320.0000000000001
             }
         },
-        "reliability_score": 0.973249209329865
+        "reliability_score": 0.9821661395532433
     },
     {
         "substance": "Bromazepam",
@@ -4264,32 +3807,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 3.0,
-                "CI Lower": 1.5,
-                "CI Upper": 6.0
+                "Lower": 1.5,
+                "Upper": 3.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 6.0,
-                "CI Lower": 3.0,
-                "CI Upper": 6.0
+                "Lower": 3.0,
+                "Upper": 6.000000000000001,
+                "CI Lower": 1.5,
+                "CI Upper": 6.000000000000001
             },
             "Common": {
-                "value": 6.0,
-                "CI Lower": 6.0,
-                "CI Upper": 12.0
+                "Lower": 6.000000000000001,
+                "Upper": 6.000000000000001,
+                "CI Lower": 3.0,
+                "CI Upper": 6.000000000000001
             },
             "Strong": {
-                "value": 15.0,
-                "CI Lower": 6.0,
-                "CI Upper": 24.0
+                "Lower": 6.000000000000001,
+                "Upper": 15.0,
+                "CI Lower": 6.000000000000001,
+                "CI Upper": 12.0
             },
             "Heavy": {
-                "value": 24.0,
-                "CI Lower": 15.0,
-                "CI Upper": 24.0
+                "Lower": 15.0,
+                "Upper": 24.0,
+                "CI Lower": 6.000000000000001,
+                "CI Upper": 24.000000000000004
             }
         },
-        "reliability_score": 0.7811047216699756
+        "reliability_score": 0.8540698144466503
     },
     {
         "substance": "Bromo-Dragonfly",
@@ -4297,65 +3845,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "\u00b5g",
         "tiers": {
             "Threshold": {
-                "value": 95.0,
-                "CI Lower": 50.0,
-                "CI Upper": 190.24999999999977
+                "Lower": 50.0,
+                "Upper": 93.30329915394407,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 225.0,
-                "CI Lower": 100.0,
-                "CI Upper": 380.0
+                "Lower": 93.30329915394407,
+                "Upper": 223.60679775004118,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 199.99999999999991
             },
             "Common": {
-                "value": 380.0,
-                "CI Lower": 250.0,
+                "Lower": 223.60679775004118,
+                "Upper": 380.00000000000006,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 380.00000000000006
+            },
+            "Strong": {
+                "Lower": 380.00000000000006,
+                "Upper": 636.39610306791,
+                "CI Lower": 249.9999999999999,
                 "CI Upper": 600.0
             },
-            "Strong": {
-                "value": 637.5,
-                "CI Lower": 440.0,
-                "CI Upper": 1050.0
-            },
             "Heavy": {
-                "value": 1094.999999999999,
-                "CI Lower": 682.4999999999999,
-                "CI Upper": 1500.0
+                "Lower": 636.39610306791,
+                "Upper": 1500.0,
+                "CI Lower": 435.8898943541616,
+                "CI Upper": 1050.0000000000002
             }
         },
-        "reliability_score": 0.759142737072348
-    },
-    {
-        "substance": "Buprenorphine",
-        "method": "IV",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 0.5750000000000001,
-                "CI Lower": 0.3,
-                "CI Upper": 0.912249999999998
-            },
-            "Light": {
-                "value": 0.95,
-                "CI Lower": 0.675,
-                "CI Upper": 1.0
-            },
-            "Common": {
-                "value": 1.0,
-                "CI Lower": 0.9,
-                "CI Upper": 1.75
-            },
-            "Strong": {
-                "value": 1.625,
-                "CI Lower": 1.0,
-                "CI Upper": 2.5
-            },
-            "Heavy": {
-                "value": 2.8999999999999986,
-                "CI Lower": 1.4499999999999993,
-                "CI Upper": 4.0
-            }
-        },
-        "reliability_score": 0.7885516619741699
+        "reliability_score": 0.8394284913815655
     },
     {
         "substance": "Buprenorphine",
@@ -4363,32 +3883,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 0.8800000000000001,
-                "CI Lower": 0.2,
-                "CI Upper": 1.85
+                "Lower": 0.2,
+                "Upper": 0.7855150328000048,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 2.0,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 0.7855150328000048,
+                "Upper": 2.0,
+                "CI Lower": 0.19999999999999998,
+                "CI Upper": 1.802500925586041
             },
             "Common": {
-                "value": 2.0,
-                "CI Lower": 2.0,
-                "CI Upper": 2.5
+                "Lower": 2.0,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.0
             },
             "Strong": {
-                "value": 2.75,
+                "Lower": 2.0,
+                "Upper": 2.7108060109950567,
                 "CI Lower": 2.0,
-                "CI Upper": 3.9375
+                "CI Upper": 2.449489742989385
             },
             "Heavy": {
-                "value": 4.0,
-                "CI Lower": 2.299999999999997,
-                "CI Upper": 4.0
+                "Lower": 2.7108060109950567,
+                "Upper": 4.0,
+                "CI Lower": 2.0,
+                "CI Upper": 3.935979342534808
             }
         },
-        "reliability_score": 0.8502526150669325
+        "reliability_score": 0.9001684100446217
     },
     {
         "substance": "Buprenorphine",
@@ -4396,32 +3921,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 1.0,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 2.0,
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.0
+            },
+            "Common": {
+                "Lower": 2.0,
+                "Upper": 4.0,
                 "CI Lower": 2.0,
                 "CI Upper": 4.0
             },
-            "Common": {
-                "value": 4.0,
-                "CI Lower": 2.0,
-                "CI Upper": 8.0
-            },
             "Strong": {
-                "value": 12.0,
-                "CI Lower": 8.0,
-                "CI Upper": 20.0
+                "Lower": 4.0,
+                "Upper": 9.797958971338918,
+                "CI Lower": 2.0,
+                "CI Upper": 7.999999999999999
             },
             "Heavy": {
-                "value": 22.39999999999999,
-                "CI Lower": 16.0,
-                "CI Upper": 24.0
+                "Lower": 9.797958971338918,
+                "Upper": 20.0,
+                "CI Lower": 4.898979485772563,
+                "CI Upper": 16.0
             }
         },
-        "reliability_score": 0.7251623856061287
+        "reliability_score": 0.8222210609476799
     },
     {
         "substance": "Buprenorphine",
@@ -4429,32 +3959,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 0.8020000000000002,
-                "CI Lower": 0.4,
-                "CI Upper": 1.0
+                "Lower": 0.2,
+                "Upper": 0.802308034945582,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 2.0,
+                "Lower": 0.802308034945582,
+                "Upper": 2.2133638395452273,
+                "CI Lower": 0.5,
+                "CI Upper": 0.9999999999999999
+            },
+            "Common": {
+                "Lower": 2.2133638395452273,
+                "Upper": 4.0,
                 "CI Lower": 2.0,
                 "CI Upper": 4.0
             },
-            "Common": {
-                "value": 4.0,
-                "CI Lower": 4.0,
-                "CI Upper": 8.0
-            },
             "Strong": {
-                "value": 8.0,
-                "CI Lower": 8.0,
-                "CI Upper": 8.0
+                "Lower": 4.0,
+                "Upper": 7.999999999999999,
+                "CI Lower": 4.0,
+                "CI Upper": 7.999999999999999
             },
             "Heavy": {
-                "value": 14.399999999999977,
-                "CI Lower": 8.0,
-                "CI Upper": 16.0
+                "Lower": 7.999999999999999,
+                "Upper": 20.0,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 7.999999999999999
             }
         },
-        "reliability_score": 0.7920720484990089
+        "reliability_score": 0.8575332152728208
     },
     {
         "substance": "Bupropion",
@@ -4462,32 +3997,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 56.625,
-                "CI Lower": 25.0,
-                "CI Upper": 75.0
+                "Lower": 25.0,
+                "Upper": 55.91563393196132,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 75.0,
-                "CI Lower": 75.0,
-                "CI Upper": 150.0
+                "Lower": 55.91563393196132,
+                "Upper": 74.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 74.99999999999999
             },
             "Common": {
-                "value": 150.0,
-                "CI Lower": 75.0,
-                "CI Upper": 150.0
+                "Lower": 74.99999999999999,
+                "Upper": 149.99999999999997,
+                "CI Lower": 74.99999999999999,
+                "CI Upper": 119.99999999999999
             },
             "Strong": {
-                "value": 150.0,
-                "CI Lower": 150.0,
-                "CI Upper": 225.0
+                "Lower": 149.99999999999997,
+                "Upper": 149.99999999999997,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 149.99999999999997
             },
             "Heavy": {
-                "value": 300.0,
-                "CI Lower": 200.0,
-                "CI Upper": 300.0
+                "Lower": 149.99999999999997,
+                "Upper": 300.0,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.8471912344954253
+        "reliability_score": 0.8981274896636169
     },
     {
         "substance": "Bupropion",
@@ -4495,32 +4035,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 100.0,
-                "CI Lower": 75.0,
-                "CI Upper": 150.0
+                "Lower": 37.5,
+                "Upper": 99.99999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 150.0,
-                "CI Lower": 150.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 149.99999999999997,
+                "CI Lower": 81.76037681778509,
+                "CI Upper": 149.99999999999997
             },
             "Common": {
-                "value": 300.0,
-                "CI Lower": 300.0,
-                "CI Upper": 300.0
+                "Lower": 149.99999999999997,
+                "Upper": 299.99999999999994,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 149.99999999999997
             },
             "Strong": {
-                "value": 300.0,
-                "CI Lower": 300.0,
-                "CI Upper": 400.0
+                "Lower": 299.99999999999994,
+                "Upper": 299.99999999999994,
+                "CI Lower": 299.99999999999994,
+                "CI Upper": 299.99999999999994
             },
             "Heavy": {
-                "value": 600.0,
-                "CI Lower": 500.0,
-                "CI Upper": 900.0
+                "Lower": 299.99999999999994,
+                "Upper": 1050.0,
+                "CI Lower": 299.99999999999994,
+                "CI Upper": 400.00000000000006
             }
         },
-        "reliability_score": 0.819311076845959
+        "reliability_score": 0.879540717897306
     },
     {
         "substance": "Buspirone",
@@ -4528,32 +4073,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 8.5
+                "Lower": 5.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 8.414663590944093
+            },
+            "Common": {
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
                 "CI Lower": 7.5,
                 "CI Upper": 15.0
             },
-            "Common": {
-                "value": 15.0,
-                "CI Lower": 15.0,
-                "CI Upper": 25.0
-            },
             "Strong": {
-                "value": 30.0,
+                "Lower": 15.0,
+                "Upper": 30.000000000000004,
                 "CI Lower": 15.0,
-                "CI Upper": 30.0
+                "CI Upper": 24.999999999999996
             },
             "Heavy": {
-                "value": 35.99999999999998,
-                "CI Lower": 30.0,
-                "CI Upper": 45.0
+                "Lower": 30.000000000000004,
+                "Upper": 45.0,
+                "CI Lower": 15.0,
+                "CI Upper": 30.000000000000004
             }
         },
-        "reliability_score": 0.8292415448237307
+        "reliability_score": 0.8861610298824871
     },
     {
         "substance": "Butalbital",
@@ -4561,65 +4111,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 50.0
+                "Lower": 50.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 49.99999999999999,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 84.85281374240306
             },
             "Strong": {
-                "value": 150.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 149.99999999999997,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 244.99999999999994,
-                "CI Lower": 150.0,
-                "CI Upper": 300.0
+                "Lower": 149.99999999999997,
+                "Upper": 300.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.8153162458918171
-    },
-    {
-        "substance": "CBD",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 56.0
-            },
-            "Common": {
-                "value": 56.0,
-                "CI Lower": 10.0,
-                "CI Upper": 56.0
-            },
-            "Strong": {
-                "value": 56.0,
-                "CI Lower": 56.0,
-                "CI Upper": 56.0
-            },
-            "Heavy": {
-                "value": 56.0,
-                "CI Lower": 56.0,
-                "CI Upper": 56.0
-            }
-        },
-        "reliability_score": 0.8175848971337252
+        "reliability_score": 0.8768774972612112
     },
     {
         "substance": "Cacti - T. pachanoi",
@@ -4627,65 +4149,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 1.1500000000000001,
-                "CI Lower": 1.0,
-                "CI Upper": 10.0
+                "Lower": 1.0,
+                "Upper": 1.129346935620978,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 11.75,
-                "CI Lower": 6.0,
-                "CI Upper": 25.0
+                "Lower": 1.129346935620978,
+                "Upper": 11.726039399579012,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 9.000000000000002
             },
             "Common": {
-                "value": 28.0,
+                "Lower": 11.726039399579012,
+                "Upper": 28.000000000000007,
+                "CI Lower": 9.000000000000002,
+                "CI Upper": 19.36491673136504
+            },
+            "Strong": {
+                "Lower": 28.000000000000007,
+                "Upper": 49.99999999999999,
                 "CI Lower": 15.0,
-                "CI Upper": 42.5
-            },
-            "Strong": {
-                "value": 50.0,
-                "CI Lower": 30.0,
-                "CI Upper": 75.0
+                "CI Upper": 35.0
             },
             "Heavy": {
-                "value": 96.99999999999996,
-                "CI Lower": 63.0,
-                "CI Upper": 112.5
+                "Lower": 49.99999999999999,
+                "Upper": 112.5,
+                "CI Lower": 32.40370349206902,
+                "CI Upper": 65.00000000000003
             }
         },
-        "reliability_score": 0.7495129786413233
-    },
-    {
-        "substance": "Cacti - T. pachanoi",
-        "method": "oral",
-        "unit": "ml",
-        "tiers": {
-            "Threshold": {
-                "value": 81.25,
-                "CI Lower": 25.0,
-                "CI Upper": 295.0
-            },
-            "Light": {
-                "value": 270.0,
-                "CI Lower": 56.25,
-                "CI Upper": 387.5
-            },
-            "Common": {
-                "value": 350.0,
-                "CI Lower": 250.0,
-                "CI Upper": 625.0
-            },
-            "Strong": {
-                "value": 575.0,
-                "CI Lower": 345.0,
-                "CI Upper": 900.0
-            },
-            "Heavy": {
-                "value": 859.9999999999998,
-                "CI Lower": 487.4999999999997,
-                "CI Upper": 950.0
-            }
-        },
-        "reliability_score": 0.8028059961229959
+        "reliability_score": 0.8330086524275488
     },
     {
         "substance": "Cacti - T. peruvianus",
@@ -4693,65 +4187,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 9.25,
-                "CI Lower": 5.0,
-                "CI Upper": 15.0
+                "Lower": 5.0,
+                "Upper": 9.146912192413886,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 25.0
+                "Lower": 9.146912192413886,
+                "Upper": 19.999999999999996,
+                "CI Lower": 6.000000000000001,
+                "CI Upper": 14.0
             },
             "Common": {
-                "value": 30.0,
-                "CI Lower": 25.0,
-                "CI Upper": 33.0
+                "Lower": 19.999999999999996,
+                "Upper": 30.000000000000004,
+                "CI Lower": 16.838420518448697,
+                "CI Upper": 24.999999999999996
             },
             "Strong": {
-                "value": 40.5,
-                "CI Lower": 30.0,
-                "CI Upper": 50.0
+                "Lower": 30.000000000000004,
+                "Upper": 40.49088937716378,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 30.000000000000004
             },
             "Heavy": {
-                "value": 55.25,
-                "CI Lower": 50.0,
-                "CI Upper": 70.0
+                "Lower": 40.49088937716378,
+                "Upper": 70.0,
+                "CI Lower": 31.178696328784074,
+                "CI Upper": 49.99999999999999
             }
         },
-        "reliability_score": 0.8529886405508558
-    },
-    {
-        "substance": "Cacti - columnar",
-        "method": "oral",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 10.5,
-                "CI Lower": 9.0,
-                "CI Upper": 22.5
-            },
-            "Light": {
-                "value": 20.0,
-                "CI Lower": 10.462500000000002,
-                "CI Upper": 30.0
-            },
-            "Common": {
-                "value": 30.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
-            },
-            "Strong": {
-                "value": 40.0,
-                "CI Lower": 27.5,
-                "CI Upper": 57.5
-            },
-            "Heavy": {
-                "value": 57.5,
-                "CI Lower": 40.0,
-                "CI Upper": 75.0
-            }
-        },
-        "reliability_score": 0.8240944345677146
+        "reliability_score": 0.9019924270339039
     },
     {
         "substance": "Caffeine",
@@ -4759,65 +4225,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 100.0
+                "Lower": 25.0,
+                "Upper": 24.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 100.0,
-                "CI Lower": 25.0,
-                "CI Upper": 175.0
+                "Lower": 24.999999999999996,
+                "Upper": 99.99999999999996,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 99.99999999999996
             },
             "Common": {
-                "value": 175.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 173.2050807569913,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 168.179283051254
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 162.5,
-                "CI Upper": 400.0
+                "Lower": 173.2050807569913,
+                "Upper": 199.99999999999991,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 199.99999999999991
             },
             "Heavy": {
-                "value": 400.0,
-                "CI Lower": 200.0,
-                "CI Upper": 400.0
+                "Lower": 199.99999999999991,
+                "Upper": 400.0,
+                "CI Lower": 161.18548977360533,
+                "CI Upper": 400.00000000000006
             }
         },
-        "reliability_score": 0.8062711580648589
-    },
-    {
-        "substance": "Caffeine",
-        "method": "oral",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 0.895,
-                "CI Lower": 0.7,
-                "CI Upper": 1.0
-            },
-            "Light": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.3
-            },
-            "Common": {
-                "value": 1.4,
-                "CI Lower": 1.0,
-                "CI Upper": 1.8
-            },
-            "Strong": {
-                "value": 1.75,
-                "CI Lower": 1.4500000000000002,
-                "CI Upper": 2.0
-            },
-            "Heavy": {
-                "value": 2.175,
-                "CI Lower": 1.74,
-                "CI Upper": 2.5
-            }
-        },
-        "reliability_score": 0.8905925048271373
+        "reliability_score": 0.8708474387099059
     },
     {
         "substance": "Caffeine",
@@ -4825,98 +4263,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 50.0,
+                "Lower": 8.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 49.99999999999999,
+                "Upper": 151.0,
                 "CI Lower": 40.0,
-                "CI Upper": 65.0
-            },
-            "Light": {
-                "value": 151.0,
-                "CI Lower": 150.0,
-                "CI Upper": 200.0
+                "CI Upper": 59.999999999999986
             },
             "Common": {
-                "value": 200.0,
-                "CI Lower": 200.0,
-                "CI Upper": 200.0
+                "Lower": 151.0,
+                "Upper": 199.99999999999991,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 187.99999999999994
             },
             "Strong": {
-                "value": 400.0,
-                "CI Lower": 400.0,
-                "CI Upper": 400.0
+                "Lower": 199.99999999999991,
+                "Upper": 400.00000000000006,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 199.99999999999991
             },
             "Heavy": {
-                "value": 400.0,
-                "CI Lower": 400.0,
-                "CI Upper": 400.0
+                "Lower": 400.00000000000006,
+                "Upper": 700.0,
+                "CI Lower": 400.00000000000006,
+                "CI Upper": 400.00000000000006
             }
         },
-        "reliability_score": 0.8419320851758021
-    },
-    {
-        "substance": "Calamus",
-        "method": "oral",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 2.3,
-                "CI Lower": 2.0,
-                "CI Upper": 4.6
-            },
-            "Light": {
-                "value": 5.0,
-                "CI Lower": 2.5,
-                "CI Upper": 8.0
-            },
-            "Common": {
-                "value": 8.0,
-                "CI Lower": 4.975000000000001,
-                "CI Upper": 14.0
-            },
-            "Strong": {
-                "value": 14.0,
-                "CI Lower": 6.0,
-                "CI Upper": 25.0
-            },
-            "Heavy": {
-                "value": 25.0,
-                "CI Lower": 14.0,
-                "CI Upper": 25.0
-            }
-        },
-        "reliability_score": 0.7665244867592833
-    },
-    {
-        "substance": "Calcium Carbonate",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 337.0,
-                "CI Lower": 337.0,
-                "CI Upper": 337.0
-            },
-            "Light": {
-                "value": 337.0,
-                "CI Lower": 337.0,
-                "CI Upper": 675.0
-            },
-            "Common": {
-                "value": 506.0,
-                "CI Lower": 337.0,
-                "CI Upper": 675.0
-            },
-            "Strong": {
-                "value": 675.0,
-                "CI Lower": 337.0,
-                "CI Upper": 675.0
-            },
-            "Heavy": {
-                "value": 675.0,
-                "CI Lower": 675.0,
-                "CI Upper": 675.0
-            }
-        },
-        "reliability_score": 0.8943824259746134
+        "reliability_score": 0.8946213901172013
     },
     {
         "substance": "Calcium Phosphate",
@@ -4924,29 +4301,34 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 75.0,
-                "CI Lower": 75.0,
-                "CI Upper": 75.0
+                "Lower": 75.0,
+                "Upper": 74.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 75.0,
-                "CI Lower": 75.0,
-                "CI Upper": 75.0
+                "Lower": 74.99999999999999,
+                "Upper": 74.99999999999999,
+                "CI Lower": 74.99999999999999,
+                "CI Upper": 74.99999999999999
             },
             "Common": {
-                "value": 75.0,
-                "CI Lower": 75.0,
-                "CI Upper": 75.0
+                "Lower": 74.99999999999999,
+                "Upper": 74.99999999999999,
+                "CI Lower": 74.99999999999999,
+                "CI Upper": 74.99999999999999
             },
             "Strong": {
-                "value": 75.0,
-                "CI Lower": 75.0,
-                "CI Upper": 75.0
+                "Lower": 74.99999999999999,
+                "Upper": 74.99999999999999,
+                "CI Lower": 74.99999999999999,
+                "CI Upper": 74.99999999999999
             },
             "Heavy": {
-                "value": 75.0,
-                "CI Lower": 75.0,
-                "CI Upper": 75.0
+                "Lower": 74.99999999999999,
+                "Upper": 75.0,
+                "CI Lower": 74.99999999999999,
+                "CI Upper": 74.99999999999999
             }
         },
         "reliability_score": 1.0
@@ -4957,164 +4339,151 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.0
+                "Lower": 1.0,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 0.9999999999999999,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 2.3,
-                "CI Lower": 1.0,
-                "CI Upper": 3.4
-            },
-            "Strong": {
-                "value": 3.4,
-                "CI Lower": 2.5,
-                "CI Upper": 6.0
-            },
-            "Heavy": {
-                "value": 8.499999999999996,
-                "CI Lower": 4.0,
-                "CI Upper": 10.0
-            }
-        },
-        "reliability_score": 0.7554399469516488
-    },
-    {
-        "substance": "Calea zacatechichi",
-        "method": "smoked",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 0.5,
-                "CI Lower": 0.5,
-                "CI Upper": 0.725
-            },
-            "Light": {
-                "value": 0.55,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
-            },
-            "Common": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 1.375
-            },
-            "Strong": {
-                "value": 1.0,
-                "CI Lower": 0.925,
-                "CI Upper": 1.9375
-            },
-            "Heavy": {
-                "value": 1.8874999999999997,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
-            }
-        },
-        "reliability_score": 0.8442292107798339
-    },
-    {
-        "substance": "Cannabis",
-        "method": "oral",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 0.5,
-                "CI Lower": 0.1,
-                "CI Upper": 0.5
-            },
-            "Light": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 1.25
-            },
-            "Common": {
-                "value": 1.5,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
-            },
-            "Strong": {
-                "value": 3.0,
-                "CI Lower": 1.75,
-                "CI Upper": 4.5
-            },
-            "Heavy": {
-                "value": 5.0,
-                "CI Lower": 4.0,
-                "CI Upper": 6.5
-            }
-        },
-        "reliability_score": 0.7595439396464245
-    },
-    {
-        "substance": "Cannabis",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 10.0,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 12.5
-            },
-            "Common": {
-                "value": 20.0,
-                "CI Lower": 12.5,
-                "CI Upper": 40.0
-            },
-            "Strong": {
-                "value": 40.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
-            },
-            "Heavy": {
-                "value": 40.0,
-                "CI Lower": 40.0,
-                "CI Upper": 40.0
-            }
-        },
-        "reliability_score": 0.8197928863235817
-    },
-    {
-        "substance": "Cannabis",
-        "method": "smoked",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 0.2,
-                "CI Lower": 0.15,
-                "CI Upper": 0.25
-            },
-            "Light": {
-                "value": 0.5,
-                "CI Lower": 0.4,
-                "CI Upper": 0.5
-            },
-            "Common": {
-                "value": 1.0,
-                "CI Lower": 0.7,
-                "CI Upper": 1.0
-            },
-            "Strong": {
-                "value": 1.45,
-                "CI Lower": 1.0,
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
                 "CI Upper": 1.5
             },
-            "Heavy": {
-                "value": 3.0,
-                "CI Lower": 2.0,
+            "Strong": {
+                "Lower": 2.0,
+                "Upper": 3.4,
+                "CI Lower": 1.5,
                 "CI Upper": 3.0
+            },
+            "Heavy": {
+                "Lower": 3.4,
+                "Upper": 7.5,
+                "CI Lower": 2.738612787567411,
+                "CI Upper": 4.472135955061885
             }
         },
-        "reliability_score": 0.7647875975969378
+        "reliability_score": 0.8672997680386141
+    },
+    {
+        "substance": "Cannabis",
+        "method": "oral",
+        "unit": "g",
+        "tiers": {
+            "Threshold": {
+                "Lower": 0.1,
+                "Upper": 0.5,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.10837983907790137,
+                "CI Upper": 0.5
+            },
+            "Common": {
+                "Lower": 0.9999999999999999,
+                "Upper": 1.5,
+                "CI Lower": 0.5,
+                "CI Upper": 0.9999999999999999
+            },
+            "Strong": {
+                "Lower": 1.5,
+                "Upper": 3.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 1.75
+            },
+            "Heavy": {
+                "Lower": 3.0,
+                "Upper": 6.5,
+                "CI Lower": 1.9343364202847686,
+                "CI Upper": 4.369425945379178
+            }
+        },
+        "reliability_score": 0.839695959764283
+    },
+    {
+        "substance": "Cannabis",
+        "method": "oral",
+        "unit": "mg",
+        "tiers": {
+            "Threshold": {
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 10.000000000000002,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 10.000000000000002
+            },
+            "Common": {
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 17.782794100614336
+            },
+            "Strong": {
+                "Lower": 19.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 12.500000000000002,
+                "CI Upper": 40.0
+            },
+            "Heavy": {
+                "Lower": 40.0,
+                "Upper": 40.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 40.0
+            }
+        },
+        "reliability_score": 0.8798619242157211
+    },
+    {
+        "substance": "Cannabis",
+        "method": "smoked",
+        "unit": "g",
+        "tiers": {
+            "Threshold": {
+                "Lower": 0.1,
+                "Upper": 0.19999999999999998,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.19999999999999998,
+                "Upper": 0.5,
+                "CI Lower": 0.19999999999999998,
+                "CI Upper": 0.25
+            },
+            "Common": {
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.5,
+                "CI Upper": 0.5
+            },
+            "Strong": {
+                "Lower": 0.9999999999999999,
+                "Upper": 1.4491376746248943,
+                "CI Lower": 0.75,
+                "CI Upper": 0.9999999999999999
+            },
+            "Heavy": {
+                "Lower": 1.4491376746248943,
+                "Upper": 3.5,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 1.5
+            }
+        },
+        "reliability_score": 0.8431917317312918
     },
     {
         "substance": "Cannabis",
@@ -5122,32 +4491,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 49.4,
-                "CI Lower": 30.0,
-                "CI Upper": 100.0
+                "Lower": 30.0,
+                "Upper": 49.37853245661939,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 125.25,
-                "CI Lower": 100.0,
-                "CI Upper": 151.0
+                "Lower": 49.37853245661939,
+                "Upper": 125.2492534808648,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 94.38213340561113
             },
             "Common": {
-                "value": 200.0,
-                "CI Lower": 150.0,
-                "CI Upper": 250.0
+                "Lower": 125.2492534808648,
+                "Upper": 199.99999999999991,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 150.24937741947093
             },
             "Strong": {
-                "value": 300.0,
-                "CI Lower": 250.0,
-                "CI Upper": 350.0
+                "Lower": 199.99999999999991,
+                "Upper": 299.99999999999994,
+                "CI Lower": 151.0,
+                "CI Upper": 249.9999999999999
             },
             "Heavy": {
-                "value": 500.0,
-                "CI Lower": 350.0,
-                "CI Upper": 650.0
+                "Lower": 299.99999999999994,
+                "Upper": 650.0,
+                "CI Lower": 249.9999999999999,
+                "CI Upper": 336.9881392477575
             }
         },
-        "reliability_score": 0.8245627369873978
+        "reliability_score": 0.8830418246582652
     },
     {
         "substance": "Cannabis - Hash",
@@ -5155,32 +4529,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 0.25,
-                "CI Lower": 0.1,
-                "CI Upper": 0.5
+                "Lower": 0.1,
+                "Upper": 0.25,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 0.5,
-                "CI Lower": 0.25,
-                "CI Upper": 1.0
+                "Lower": 0.25,
+                "Upper": 0.5,
+                "CI Lower": 0.10000000000000002,
+                "CI Upper": 0.5
             },
             "Common": {
-                "value": 1.0,
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.25,
+                "CI Upper": 0.9999999999999999
+            },
+            "Strong": {
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
                 "CI Lower": 0.5,
                 "CI Upper": 2.0
             },
-            "Strong": {
-                "value": 2.0,
-                "CI Lower": 1.0,
-                "CI Upper": 3.0
-            },
             "Heavy": {
-                "value": 3.0,
-                "CI Lower": 2.0,
-                "CI Upper": 4.0
+                "Lower": 2.0,
+                "Upper": 4.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 3.0
             }
         },
-        "reliability_score": 0.7547011091406248
+        "reliability_score": 0.8364674060937498
     },
     {
         "substance": "Carisoprodol",
@@ -5188,65 +4567,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 350.0,
-                "CI Lower": 87.5,
+                "Lower": 87.5,
+                "Upper": 350.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 350.0,
+                "Upper": 600.0,
+                "CI Lower": 173.18991487273118,
                 "CI Upper": 350.0
             },
-            "Light": {
-                "value": 600.0,
+            "Common": {
+                "Lower": 600.0,
+                "Upper": 700.0000000000002,
                 "CI Lower": 350.0,
-                "CI Upper": 700.0
-            },
-            "Common": {
-                "value": 700.0,
-                "CI Lower": 700.0,
-                "CI Upper": 700.0
+                "CI Upper": 700.0000000000002
             },
             "Strong": {
-                "value": 1050.0,
-                "CI Lower": 700.0,
-                "CI Upper": 1400.0
+                "Lower": 700.0000000000002,
+                "Upper": 1050.0000000000002,
+                "CI Lower": 700.0000000000002,
+                "CI Upper": 700.0000000000002
             },
             "Heavy": {
-                "value": 1739.9999999999998,
-                "CI Lower": 1050.0,
-                "CI Upper": 2100.0
+                "Lower": 1050.0000000000002,
+                "Upper": 2100.0,
+                "CI Lower": 700.0000000000002,
+                "CI Upper": 1050.0000000000002
             }
         },
-        "reliability_score": 0.8330098368249224
-    },
-    {
-        "substance": "Catnip",
-        "method": "smoked",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 0.3625,
-                "CI Lower": 0.25,
-                "CI Upper": 0.75
-            },
-            "Light": {
-                "value": 0.5625,
-                "CI Lower": 0.3125,
-                "CI Upper": 1.0
-            },
-            "Common": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 1.75
-            },
-            "Strong": {
-                "value": 1.375,
-                "CI Lower": 0.9375,
-                "CI Upper": 2.75
-            },
-            "Heavy": {
-                "value": 2.549999999999999,
-                "CI Lower": 1.0,
-                "CI Upper": 3.0
-            }
-        },
-        "reliability_score": 0.7843548388237
+        "reliability_score": 0.8886732245499482
     },
     {
         "substance": "Changa",
@@ -5254,65 +4605,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 62.900000000000006,
-                "CI Lower": 23.0,
-                "CI Upper": 100.0
+                "Lower": 23.0,
+                "Upper": 55.04036962024886,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 100.0,
-                "CI Lower": 80.0,
-                "CI Upper": 137.0
+                "Lower": 55.04036962024886,
+                "Upper": 99.99999999999996,
+                "CI Lower": 23.000000000000004,
+                "CI Upper": 99.99999999999996
             },
             "Common": {
-                "value": 137.0,
-                "CI Lower": 100.0,
-                "CI Upper": 240.0
+                "Lower": 99.99999999999996,
+                "Upper": 136.99999999999994,
+                "CI Lower": 80.00000000000001,
+                "CI Upper": 136.99999999999994
             },
             "Strong": {
-                "value": 220.0,
-                "CI Lower": 119.0,
-                "CI Upper": 300.0
+                "Lower": 136.99999999999994,
+                "Upper": 219.089023002108,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 240.00000000000009
             },
             "Heavy": {
-                "value": 329.9999999999999,
-                "CI Lower": 211.99999999999994,
-                "CI Upper": 400.0
+                "Lower": 219.089023002108,
+                "Upper": 400.0,
+                "CI Lower": 136.99999999999994,
+                "CI Upper": 299.99999999999994
             }
         },
-        "reliability_score": 0.8184664182617225
-    },
-    {
-        "substance": "Chlordiazepoxide",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 19.75
-            },
-            "Light": {
-                "value": 12.5,
-                "CI Lower": 10.0,
-                "CI Upper": 25.0
-            },
-            "Common": {
-                "value": 25.0,
-                "CI Lower": 15.0,
-                "CI Upper": 40.0
-            },
-            "Strong": {
-                "value": 45.0,
-                "CI Lower": 25.0,
-                "CI Upper": 75.0
-            },
-            "Heavy": {
-                "value": 83.74999999999999,
-                "CI Lower": 42.499999999999986,
-                "CI Upper": 100.0
-            }
-        },
-        "reliability_score": 0.7529451341292941
+        "reliability_score": 0.8789776121744817
     },
     {
         "substance": "Chlorpheniramine Maleate",
@@ -5320,32 +4643,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.8,
-                "CI Lower": 2.0,
-                "CI Upper": 28.0
+                "Lower": 2.0,
+                "Upper": 10.62560991972955,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 32.0,
-                "CI Lower": 16.0,
-                "CI Upper": 34.0
+                "Lower": 10.62560991972955,
+                "Upper": 32.00000000000001,
+                "CI Lower": 2.0,
+                "CI Upper": 23.672635807962767
             },
             "Common": {
-                "value": 44.0,
-                "CI Lower": 32.0,
-                "CI Upper": 64.0
+                "Lower": 32.00000000000001,
+                "Upper": 44.0,
+                "CI Lower": 16.0,
+                "CI Upper": 34.00000000000001
             },
             "Strong": {
-                "value": 64.0,
-                "CI Lower": 64.0,
-                "CI Upper": 112.0
+                "Lower": 44.0,
+                "Upper": 63.99999999999998,
+                "CI Lower": 32.00000000000001,
+                "CI Upper": 63.99999999999998
             },
             "Heavy": {
-                "value": 192.0,
-                "CI Lower": 64.0,
-                "CI Upper": 192.0
+                "Lower": 63.99999999999998,
+                "Upper": 192.0,
+                "CI Lower": 63.99999999999998,
+                "CI Upper": 94.65727652973571
             }
         },
-        "reliability_score": 0.7476557508021546
+        "reliability_score": 0.8317705005347698
     },
     {
         "substance": "Citalopram",
@@ -5353,32 +4681,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
+                "Lower": 19.999999999999996,
+                "Upper": 19.999999999999996,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             },
             "Strong": {
-                "value": 40.0,
-                "CI Lower": 40.0,
-                "CI Upper": 40.0
+                "Lower": 19.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 30.000000000000004
             },
             "Heavy": {
-                "value": 57.5,
+                "Lower": 40.0,
+                "Upper": 60.0,
                 "CI Lower": 40.0,
-                "CI Upper": 60.0
+                "CI Upper": 40.0
             }
         },
-        "reliability_score": 0.8547689418045867
+        "reliability_score": 0.9031792945363912
     },
     {
         "substance": "Clonazepam",
@@ -5386,32 +4719,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 0.25,
+                "Lower": 0.25,
+                "Upper": 0.25,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.25,
+                "Upper": 0.5,
                 "CI Lower": 0.25,
                 "CI Upper": 0.5
             },
-            "Light": {
-                "value": 0.5,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
-            },
             "Common": {
-                "value": 1.0,
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
                 "CI Lower": 0.5,
-                "CI Upper": 1.0
+                "CI Upper": 0.5946035579069228
             },
             "Strong": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 0.9999999999999999,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.5,
+                "CI Upper": 0.9999999999999999
             },
             "Heavy": {
-                "value": 2.5,
-                "CI Lower": 1.5,
-                "CI Upper": 2.5
+                "Lower": 0.9999999999999999,
+                "Upper": 2.5,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.0
             }
         },
-        "reliability_score": 0.8042879353814036
+        "reliability_score": 0.8695252902542692
     },
     {
         "substance": "Clonazepam",
@@ -5419,32 +4757,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 0.5,
+                "Lower": 0.25,
+                "Upper": 0.5,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.5,
+                "Upper": 0.5,
                 "CI Lower": 0.5,
                 "CI Upper": 0.5
             },
-            "Light": {
-                "value": 0.5,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
-            },
             "Common": {
-                "value": 1.25,
-                "CI Lower": 1.0,
-                "CI Upper": 1.5
+                "Lower": 0.5,
+                "Upper": 1.1180339888122008,
+                "CI Lower": 0.5,
+                "CI Upper": 0.9999999999999999
             },
             "Strong": {
-                "value": 2.0,
-                "CI Lower": 2.0,
-                "CI Upper": 2.5
+                "Lower": 1.1180339888122008,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 1.5
             },
             "Heavy": {
-                "value": 4.0,
-                "CI Lower": 4.0,
-                "CI Upper": 5.0
+                "Lower": 2.0,
+                "Upper": 6.0,
+                "CI Lower": 2.0,
+                "CI Upper": 2.5
             }
         },
-        "reliability_score": 0.7705476901730837
+        "reliability_score": 0.8467933727805832
     },
     {
         "substance": "Clonazepam",
@@ -5452,32 +4795,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 0.475,
+                "Lower": 0.25,
+                "Upper": 0.46651649603176665,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.46651649603176665,
+                "Upper": 0.5,
                 "CI Lower": 0.25,
                 "CI Upper": 0.5
             },
-            "Light": {
-                "value": 0.5,
-                "CI Lower": 0.5,
-                "CI Upper": 0.75
-            },
             "Common": {
-                "value": 1.0,
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
                 "CI Lower": 0.5,
-                "CI Upper": 1.0
+                "CI Upper": 0.7071067817931492
             },
             "Strong": {
-                "value": 1.5,
-                "CI Lower": 1.0,
-                "CI Upper": 2.25
+                "Lower": 0.9999999999999999,
+                "Upper": 1.4142135629796968,
+                "CI Lower": 0.5,
+                "CI Upper": 0.9999999999999999
             },
             "Heavy": {
-                "value": 2.549999999999999,
-                "CI Lower": 2.0,
-                "CI Upper": 3.0
+                "Lower": 1.4142135629796968,
+                "Upper": 3.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.2360679775620955
             }
         },
-        "reliability_score": 0.7789920029375219
+        "reliability_score": 0.8526613352916812
     },
     {
         "substance": "Clonazolam",
@@ -5485,65 +4833,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 0.24,
+                "Lower": 0.15,
+                "Upper": 0.23755005426188808,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.23755005426188808,
+                "Upper": 0.25,
                 "CI Lower": 0.15,
                 "CI Upper": 0.25
             },
-            "Light": {
-                "value": 0.25,
-                "CI Lower": 0.25,
-                "CI Upper": 0.5
-            },
             "Common": {
-                "value": 0.5,
+                "Lower": 0.25,
+                "Upper": 0.5,
                 "CI Lower": 0.25,
                 "CI Upper": 0.5
             },
             "Strong": {
-                "value": 0.5,
+                "Lower": 0.5,
+                "Upper": 0.5,
+                "CI Lower": 0.25,
+                "CI Upper": 0.5
+            },
+            "Heavy": {
+                "Lower": 0.5,
+                "Upper": 1.5,
                 "CI Lower": 0.5,
-                "CI Upper": 1.25
-            },
-            "Heavy": {
-                "value": 1.5,
-                "CI Lower": 0.5499999999999989,
-                "CI Upper": 1.5
+                "CI Upper": 1.2247448715977962
             }
         },
-        "reliability_score": 0.788081467126053
-    },
-    {
-        "substance": "Clonazolam",
-        "method": "oral",
-        "unit": "\u00b5g",
-        "tiers": {
-            "Threshold": {
-                "value": 125.0,
-                "CI Lower": 125.0,
-                "CI Upper": 200.0
-            },
-            "Light": {
-                "value": 181.25,
-                "CI Lower": 125.0,
-                "CI Upper": 250.0
-            },
-            "Common": {
-                "value": 250.0,
-                "CI Lower": 162.5,
-                "CI Upper": 375.0
-            },
-            "Strong": {
-                "value": 312.5,
-                "CI Lower": 212.5,
-                "CI Upper": 562.5
-            },
-            "Heavy": {
-                "value": 612.4999999999998,
-                "CI Lower": 362.49999999999983,
-                "CI Upper": 750.0
-            }
-        },
-        "reliability_score": 0.8043015780839673
+        "reliability_score": 0.8587209780840352
     },
     {
         "substance": "Clonidine",
@@ -5551,131 +4871,75 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 0.0775,
-                "CI Lower": 0.02,
-                "CI Upper": 0.1
+                "Lower": 0.02,
+                "Upper": 0.07020365187998506,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 0.1,
-                "CI Lower": 0.1,
-                "CI Upper": 0.2
+                "Lower": 0.07020365187998506,
+                "Upper": 0.10000000000000002,
+                "CI Lower": 0.019999999999999997,
+                "CI Upper": 0.10000000000000002
             },
             "Common": {
-                "value": 0.25,
-                "CI Lower": 0.1,
+                "Lower": 0.10000000000000002,
+                "Upper": 0.19999999999999998,
+                "CI Lower": 0.09306048599176259,
+                "CI Upper": 0.19999999999999998
+            },
+            "Strong": {
+                "Lower": 0.19999999999999998,
+                "Upper": 0.3,
+                "CI Lower": 0.10000000000000002,
                 "CI Upper": 0.3
             },
-            "Strong": {
-                "value": 0.44999999999999996,
-                "CI Lower": 0.275,
-                "CI Upper": 1.2
-            },
             "Heavy": {
-                "value": 1.2,
-                "CI Lower": 0.7792499999999999,
-                "CI Upper": 1.2
+                "Lower": 0.3,
+                "Upper": 0.9,
+                "CI Lower": 0.2114742527331398,
+                "CI Upper": 0.6447419591682183
             }
         },
-        "reliability_score": 0.7
+        "reliability_score": 0.8215723371466015
     },
     {
         "substance": "Cocaine",
-        "method": "IV",
+        "method": "insufflated",
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 0.20375,
-                "CI Lower": 0.125,
+                "Lower": 0.25,
+                "Upper": 0.2872281324234055,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.2872281324234055,
+                "Upper": 0.5,
+                "CI Lower": 0.25,
                 "CI Upper": 0.4
             },
-            "Light": {
-                "value": 0.325,
-                "CI Lower": 0.16875,
+            "Common": {
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.5,
                 "CI Upper": 0.5
             },
-            "Common": {
-                "value": 0.5,
-                "CI Lower": 0.3,
-                "CI Upper": 0.75
-            },
             "Strong": {
-                "value": 0.575,
-                "CI Lower": 0.475,
-                "CI Upper": 1.0
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.8,
+                "CI Upper": 0.9999999999999999
             },
             "Heavy": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
-            }
-        },
-        "reliability_score": 0.8358565734173866
-    },
-    {
-        "substance": "Cocaine",
-        "method": "IV",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 116.25
-            },
-            "Light": {
-                "value": 106.25,
-                "CI Lower": 25.0,
-                "CI Upper": 200.0
-            },
-            "Common": {
-                "value": 175.0,
-                "CI Lower": 100.0,
-                "CI Upper": 250.0
-            },
-            "Strong": {
-                "value": 237.5,
-                "CI Lower": 150.0,
-                "CI Upper": 250.0
-            },
-            "Heavy": {
-                "value": 267.5,
-                "CI Lower": 217.49999999999997,
-                "CI Upper": 300.0
-            }
-        },
-        "reliability_score": 0.8281806601609747
-    },
-    {
-        "substance": "Cocaine",
-        "method": "insufflated",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 0.29000000000000004,
-                "CI Lower": 0.25,
-                "CI Upper": 0.5
-            },
-            "Light": {
-                "value": 0.5,
-                "CI Lower": 0.5,
-                "CI Upper": 0.75
-            },
-            "Common": {
-                "value": 1.0,
-                "CI Lower": 0.7,
-                "CI Upper": 1.0
-            },
-            "Strong": {
-                "value": 2.0,
-                "CI Lower": 1.0,
+                "Lower": 2.0,
+                "Upper": 3.55,
+                "CI Lower": 0.9999999999999999,
                 "CI Upper": 2.0
-            },
-            "Heavy": {
-                "value": 3.25,
-                "CI Lower": 2.5,
-                "CI Upper": 3.5
             }
         },
-        "reliability_score": 0.7766756980287344
+        "reliability_score": 0.8511171320191562
     },
     {
         "substance": "Cocaine",
@@ -5683,32 +4947,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 16.5,
-                "CI Lower": 0.125,
+                "Lower": 0.125,
+                "Upper": 16.19453832037898,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 16.19453832037898,
+                "Upper": 40.0,
+                "CI Lower": 0.22340670786262978,
                 "CI Upper": 40.0
             },
-            "Light": {
-                "value": 40.0,
-                "CI Lower": 25.0,
-                "CI Upper": 120.0
-            },
             "Common": {
-                "value": 200.0,
-                "CI Lower": 75.0,
-                "CI Upper": 250.0
+                "Lower": 40.0,
+                "Upper": 199.99999999999991,
+                "CI Lower": 40.0,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 406.25,
-                "CI Lower": 250.0,
-                "CI Upper": 500.0
+                "Lower": 199.99999999999991,
+                "Upper": 402.9637244339023,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 249.9999999999999
             },
             "Heavy": {
-                "value": 727.5000000000002,
-                "CI Lower": 500.0,
-                "CI Upper": 875.0
+                "Lower": 402.9637244339023,
+                "Upper": 875.0,
+                "CI Lower": 249.9999999999999,
+                "CI Upper": 499.99999999999983
             }
         },
-        "reliability_score": 0.7188366609191621
+        "reliability_score": 0.8125577739461081
     },
     {
         "substance": "Codeine",
@@ -5716,32 +4985,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 16.0,
-                "CI Lower": 12.0,
-                "CI Upper": 24.0
+                "Lower": 8.0,
+                "Upper": 16.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 36.8,
-                "CI Lower": 30.0,
-                "CI Upper": 60.0
+                "Lower": 16.0,
+                "Upper": 36.68900322067985,
+                "CI Lower": 15.0,
+                "CI Upper": 24.000000000000004
             },
             "Common": {
-                "value": 90.0,
-                "CI Lower": 60.0,
-                "CI Upper": 120.0
+                "Lower": 36.68900322067985,
+                "Upper": 90.0,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 59.999999999999986
             },
             "Strong": {
-                "value": 152.5,
-                "CI Lower": 120.0,
-                "CI Upper": 180.0
+                "Lower": 90.0,
+                "Upper": 152.4398244463882,
+                "CI Lower": 63.99999999999998,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 300.0,
-                "CI Lower": 240.0,
-                "CI Upper": 320.0
+                "Lower": 152.4398244463882,
+                "Upper": 400.0,
+                "CI Lower": 145.44000440845443,
+                "CI Upper": 180.0
             }
         },
-        "reliability_score": 0.7662623378137798
+        "reliability_score": 0.8441748918758532
     },
     {
         "substance": "Cyclobenzaprine",
@@ -5749,32 +5023,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 2.0,
-                "CI Upper": 10.0
+                "Lower": 2.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 17.5,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 17.3205080757924,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
+                "Lower": 17.3205080757924,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 50.0,
-                "CI Lower": 30.0,
-                "CI Upper": 60.0
+                "Lower": 19.999999999999996,
+                "Upper": 60.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 30.000000000000004
             }
         },
-        "reliability_score": 0.7840958091434167
+        "reliability_score": 0.8560638727622778
     },
     {
         "substance": "DHEA",
@@ -5782,32 +5061,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 25.0
+                "Lower": 5.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 25.0,
-                "CI Lower": 6.75,
-                "CI Upper": 50.0
+                "Lower": 5.0,
+                "Upper": 24.999999999999996,
+                "CI Lower": 5.0,
+                "CI Upper": 24.999999999999996
             },
             "Common": {
-                "value": 50.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 24.999999999999996,
+                "Upper": 49.99999999999999,
+                "CI Lower": 6.223329773516306,
+                "CI Upper": 49.99999999999999
             },
             "Strong": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 93.75
+                "Lower": 49.99999999999999,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 100.0,
-                "CI Lower": 53.749999999999964,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 100.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 93.06048591029146
             }
         },
-        "reliability_score": 0.8205861706934134
+        "reliability_score": 0.8803907804622755
     },
     {
         "substance": "DMAE",
@@ -5815,65 +5099,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 130.0
+                "Lower": 50.0,
+                "Upper": 99.99999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 200.0,
-                "CI Lower": 100.0,
-                "CI Upper": 300.0
-            },
-            "Common": {
-                "value": 345.0,
-                "CI Lower": 200.0,
-                "CI Upper": 500.0
-            },
-            "Strong": {
-                "value": 500.0,
-                "CI Lower": 350.0,
-                "CI Upper": 700.0
-            },
-            "Heavy": {
-                "value": 750.0,
-                "CI Lower": 700.0,
-                "CI Upper": 900.0
-            }
-        },
-        "reliability_score": 0.8219969572175558
-    },
-    {
-        "substance": "DMT",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 16.5,
-                "CI Lower": 10.0,
-                "CI Upper": 48.25
-            },
-            "Light": {
-                "value": 46.25,
-                "CI Lower": 20.0,
-                "CI Upper": 60.0
-            },
-            "Common": {
-                "value": 57.5,
-                "CI Lower": 45.0,
-                "CI Upper": 85.0
-            },
-            "Strong": {
-                "value": 83.75,
-                "CI Lower": 55.0,
-                "CI Upper": 100.0
-            },
-            "Heavy": {
-                "value": 110.49999999999999,
-                "CI Lower": 81.75,
+                "Lower": 99.99999999999996,
+                "Upper": 199.99999999999991,
+                "CI Lower": 49.99999999999999,
                 "CI Upper": 130.0
+            },
+            "Common": {
+                "Lower": 199.99999999999991,
+                "Upper": 344.9637662132078,
+                "CI Lower": 130.0,
+                "CI Upper": 299.99999999999994
+            },
+            "Strong": {
+                "Lower": 344.9637662132078,
+                "Upper": 499.99999999999983,
+                "CI Lower": 249.9999999999999,
+                "CI Upper": 499.99999999999983
+            },
+            "Heavy": {
+                "Lower": 499.99999999999983,
+                "Upper": 900.0,
+                "CI Lower": 422.94850537627076,
+                "CI Upper": 700.0000000000002
             }
         },
-        "reliability_score": 0.8371120450814267
+        "reliability_score": 0.881331304811704
     },
     {
         "substance": "DMT",
@@ -5881,32 +5137,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 32.45,
-                "CI Lower": 15.0,
-                "CI Upper": 50.0
+                "Lower": 15.0,
+                "Upper": 32.284898025695284,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 50.0,
-                "CI Lower": 41.0,
-                "CI Upper": 70.0
+                "Lower": 32.284898025695284,
+                "Upper": 49.99999999999999,
+                "CI Lower": 16.588985092396722,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 77.5,
-                "CI Lower": 50.0,
-                "CI Upper": 125.0
+                "Lower": 49.99999999999999,
+                "Upper": 77.45966692415354,
+                "CI Lower": 48.70018732127542,
+                "CI Upper": 69.99999999999999
             },
             "Strong": {
-                "value": 150.0,
-                "CI Lower": 80.0,
-                "CI Upper": 200.0
+                "Lower": 77.45966692415354,
+                "Upper": 149.99999999999997,
+                "CI Lower": 59.73468885783529,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 250.0,
-                "CI Lower": 200.0,
-                "CI Upper": 250.0
+                "Lower": 149.99999999999997,
+                "Upper": 250.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.8018421652980068
+        "reliability_score": 0.8678947768653378
     },
     {
         "substance": "DMT",
@@ -5914,65 +5175,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 14.200000000000003,
-                "CI Lower": 10.0,
+                "Lower": 1.0,
+                "Upper": 14.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 14.0,
+                "Upper": 30.000000000000004,
+                "CI Lower": 10.000000000000002,
                 "CI Upper": 15.0
             },
-            "Light": {
-                "value": 30.0,
-                "CI Lower": 25.0,
-                "CI Upper": 30.0
-            },
             "Common": {
-                "value": 40.0,
+                "Lower": 30.000000000000004,
+                "Upper": 40.0,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 30.000000000000004
+            },
+            "Strong": {
+                "Lower": 40.0,
+                "Upper": 49.99999999999999,
                 "CI Lower": 40.0,
-                "CI Upper": 50.0
-            },
-            "Strong": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 60.0
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 100.0,
-                "CI Lower": 80.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 100.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 59.999999999999986
             }
         },
-        "reliability_score": 0.8439198297563444
-    },
-    {
-        "substance": "DMXE",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 25.0
-            },
-            "Light": {
-                "value": 22.5,
-                "CI Lower": 20.0,
-                "CI Upper": 57.5
-            },
-            "Common": {
-                "value": 55.0,
-                "CI Lower": 20.0,
-                "CI Upper": 65.0
-            },
-            "Strong": {
-                "value": 65.0,
-                "CI Lower": 42.5,
-                "CI Upper": 95.0
-            },
-            "Heavy": {
-                "value": 95.0,
-                "CI Lower": 65.0,
-                "CI Upper": 120.0
-            }
-        },
-        "reliability_score": 0.814096799382044
+        "reliability_score": 0.8964210686579892
     },
     {
         "substance": "DOB",
@@ -5980,32 +5213,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.5
+                "Lower": 1.0,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.5,
-                "CI Lower": 1.5,
+                "Lower": 0.9999999999999999,
+                "Upper": 1.5,
+                "CI Lower": 0.9999999999999999,
                 "CI Upper": 1.5
             },
             "Common": {
-                "value": 1.5,
+                "Lower": 1.5,
+                "Upper": 1.6201851746316829,
+                "CI Lower": 1.3554030055802897,
+                "CI Upper": 1.5
+            },
+            "Strong": {
+                "Lower": 1.6201851746316829,
+                "Upper": 2.524633516373855,
                 "CI Lower": 1.5,
                 "CI Upper": 2.5
             },
-            "Strong": {
-                "value": 2.5,
-                "CI Lower": 1.75,
-                "CI Upper": 2.75
-            },
             "Heavy": {
-                "value": 3.0,
-                "CI Lower": 2.59925,
+                "Lower": 2.524633516373855,
+                "Upper": 3.2,
+                "CI Lower": 1.809406038866452,
                 "CI Upper": 3.0
             }
         },
-        "reliability_score": 0.8983761892770523
+        "reliability_score": 0.9304726343244552
     },
     {
         "substance": "DOC",
@@ -6013,32 +5251,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.5
+                "Lower": 1.0,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 2.0,
-                "CI Lower": 1.2,
-                "CI Upper": 2.0
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 1.2023452961482153
             },
             "Common": {
-                "value": 2.775,
+                "Lower": 2.0,
+                "Upper": 2.7748873851027267,
+                "CI Lower": 1.5,
+                "CI Upper": 2.0
+            },
+            "Strong": {
+                "Lower": 2.7748873851027267,
+                "Upper": 3.5,
                 "CI Lower": 2.0,
                 "CI Upper": 3.0
             },
-            "Strong": {
-                "value": 3.5,
+            "Heavy": {
+                "Lower": 3.5,
+                "Upper": 8.0,
                 "CI Lower": 3.0,
                 "CI Upper": 4.0
-            },
-            "Heavy": {
-                "value": 5.26,
-                "CI Lower": 4.0,
-                "CI Upper": 8.0
             }
         },
-        "reliability_score": 0.8418305898892717
+        "reliability_score": 0.8945537265928478
     },
     {
         "substance": "DOI",
@@ -6046,32 +5289,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
                 "CI Lower": 0.5,
                 "CI Upper": 2.0
             },
-            "Light": {
-                "value": 2.0,
-                "CI Lower": 1.5,
-                "CI Upper": 2.5
-            },
             "Common": {
-                "value": 3.0,
-                "CI Lower": 2.0,
-                "CI Upper": 3.2
+                "Lower": 2.0,
+                "Upper": 3.0,
+                "CI Lower": 1.5,
+                "CI Upper": 2.6165878485105174
             },
             "Strong": {
-                "value": 4.0,
-                "CI Lower": 3.0,
-                "CI Upper": 4.0
+                "Lower": 3.0,
+                "Upper": 4.0,
+                "CI Lower": 2.0,
+                "CI Upper": 3.4641016152413844
             },
             "Heavy": {
-                "value": 5.875,
-                "CI Lower": 4.0,
-                "CI Upper": 8.0
+                "Lower": 4.0,
+                "Upper": 8.0,
+                "CI Lower": 3.0,
+                "CI Upper": 4.0
             }
         },
-        "reliability_score": 0.8336470968855121
+        "reliability_score": 0.8890980645903415
     },
     {
         "substance": "DOM",
@@ -6079,65 +5327,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 2.4125,
+                "Lower": 1.2,
+                "Upper": 2.4094886616448474,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 2.4094886616448474,
+                "Upper": 5.0,
                 "CI Lower": 1.2,
                 "CI Upper": 2.5
             },
-            "Light": {
-                "value": 5.0,
+            "Common": {
+                "Lower": 5.0,
+                "Upper": 6.000000000000001,
                 "CI Lower": 2.5,
                 "CI Upper": 5.0
             },
-            "Common": {
-                "value": 6.0,
+            "Strong": {
+                "Lower": 6.000000000000001,
+                "Upper": 10.000000000000002,
                 "CI Lower": 5.0,
-                "CI Upper": 10.0
+                "CI Upper": 10.000000000000002
             },
-            "Strong": {
-                "value": 10.0,
+            "Heavy": {
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
                 "CI Lower": 7.0,
-                "CI Upper": 15.0
-            },
-            "Heavy": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "CI Upper": 11.82547754947646
             }
         },
-        "reliability_score": 0.828664426546907
-    },
-    {
-        "substance": "DPH",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 320.0
-            },
-            "Light": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 500.0
-            },
-            "Common": {
-                "value": 500.0,
-                "CI Lower": 100.0,
-                "CI Upper": 600.0
-            },
-            "Strong": {
-                "value": 600.0,
-                "CI Lower": 500.0,
-                "CI Upper": 600.0
-            },
-            "Heavy": {
-                "value": 600.0,
-                "CI Lower": 544.9999999999999,
-                "CI Upper": 600.0
-            }
-        },
-        "reliability_score": 0.8307771775546702
+        "reliability_score": 0.8857762843646046
     },
     {
         "substance": "DPT",
@@ -6145,32 +5365,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 14.75,
-                "CI Lower": 12.5,
-                "CI Upper": 25.0
+                "Lower": 12.5,
+                "Upper": 14.392823770547963,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 27.5,
-                "CI Lower": 20.0,
-                "CI Upper": 50.0
+                "Lower": 14.392823770547963,
+                "Upper": 27.386127875299884,
+                "CI Lower": 12.500000000000002,
+                "CI Upper": 24.999999999999996
             },
             "Common": {
-                "value": 50.0,
-                "CI Lower": 30.0,
-                "CI Upper": 60.0
+                "Lower": 27.386127875299884,
+                "Upper": 49.99999999999999,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Strong": {
-                "value": 77.5,
-                "CI Lower": 55.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 77.45966692415354,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 59.999999999999986
             },
             "Heavy": {
-                "value": 100.0,
-                "CI Lower": 93.99999999999999,
-                "CI Upper": 110.0
+                "Lower": 77.45966692415354,
+                "Upper": 110.0,
+                "CI Lower": 52.44044240851895,
+                "CI Upper": 99.99999999999996
             }
         },
-        "reliability_score": 0.8329074809044197
+        "reliability_score": 0.8886049872696131
     },
     {
         "substance": "DPT",
@@ -6178,32 +5403,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 12.05,
-                "CI Lower": 12.0,
-                "CI Upper": 20.0
+                "Lower": 10.0,
+                "Upper": 12.048121855464865,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 30.0,
-                "CI Lower": 25.0,
-                "CI Upper": 43.0
+                "Lower": 12.048121855464865,
+                "Upper": 30.000000000000004,
+                "CI Lower": 12.0,
+                "CI Upper": 19.999999999999996
             },
             "Common": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 60.0
+                "Lower": 30.000000000000004,
+                "Upper": 49.99999999999999,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 38.49042400924093
             },
             "Strong": {
-                "value": 100.0,
-                "CI Lower": 65.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 54.31390245603532
             },
             "Heavy": {
-                "value": 150.0,
-                "CI Lower": 115.0,
-                "CI Upper": 150.0
+                "Lower": 99.99999999999996,
+                "Upper": 175.0,
+                "CI Lower": 73.71747608146731,
+                "CI Upper": 99.99999999999996
             }
         },
-        "reliability_score": 0.8120638427949438
+        "reliability_score": 0.8747092285299625
     },
     {
         "substance": "DPT",
@@ -6211,65 +5441,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 85.0
+                "Lower": 50.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 82.5,
-                "CI Lower": 50.0,
-                "CI Upper": 110.0
+                "Lower": 49.99999999999999,
+                "Upper": 82.38146487309979,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 82.38146487309979
             },
             "Common": {
-                "value": 122.5,
-                "CI Lower": 85.0,
-                "CI Upper": 200.0
+                "Lower": 82.38146487309979,
+                "Upper": 121.86057606959189,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 125.24209576720723
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 117.46875,
-                "CI Upper": 250.0
+                "Lower": 121.86057606959189,
+                "Upper": 199.99999999999991,
+                "CI Lower": 84.99999999999996,
+                "CI Upper": 199.99999999999991
             },
             "Heavy": {
-                "value": 256.25,
-                "CI Lower": 200.0,
-                "CI Upper": 275.0
+                "Lower": 199.99999999999991,
+                "Upper": 275.0,
+                "CI Lower": 116.83595769540382,
+                "CI Upper": 249.9999999999999
             }
         },
-        "reliability_score": 0.8407824445370704
-    },
-    {
-        "substance": "DPT",
-        "method": "rectal",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 36.5
-            },
-            "Light": {
-                "value": 32.5,
-                "CI Lower": 25.0,
-                "CI Upper": 70.0
-            },
-            "Common": {
-                "value": 67.5,
-                "CI Lower": 35.0,
-                "CI Upper": 100.0
-            },
-            "Strong": {
-                "value": 100.0,
-                "CI Lower": 60.0,
-                "CI Upper": 100.0
-            },
-            "Heavy": {
-                "value": 104.55,
-                "CI Lower": 100.0,
-                "CI Upper": 113.0
-            }
-        },
-        "reliability_score": 0.8497542061232857
+        "reliability_score": 0.8938549630247137
     },
     {
         "substance": "DPT",
@@ -6277,32 +5479,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 13.0,
-                "CI Lower": 12.5,
-                "CI Upper": 20.0
+                "Lower": 12.5,
+                "Upper": 12.964216116733763,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 30.0
+                "Lower": 12.964216116733763,
+                "Upper": 19.999999999999996,
+                "CI Lower": 12.500000000000002,
+                "CI Upper": 19.999999999999996
             },
             "Common": {
-                "value": 30.0,
-                "CI Lower": 30.0,
+                "Lower": 19.999999999999996,
+                "Upper": 30.000000000000004,
+                "CI Lower": 15.0,
+                "CI Upper": 30.000000000000004
+            },
+            "Strong": {
+                "Lower": 30.000000000000004,
+                "Upper": 42.00000000000001,
+                "CI Lower": 24.999999999999996,
                 "CI Upper": 40.0
             },
-            "Strong": {
-                "value": 42.0,
-                "CI Lower": 30.0,
-                "CI Upper": 50.0
-            },
             "Heavy": {
-                "value": 70.0,
-                "CI Lower": 45.0,
-                "CI Upper": 80.0
+                "Lower": 42.00000000000001,
+                "Upper": 80.0,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 69.99999999999999
             }
         },
-        "reliability_score": 0.8447323164403302
+        "reliability_score": 0.8964882109602201
     },
     {
         "substance": "DXM",
@@ -6310,230 +5517,75 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 60.0,
-                "CI Lower": 45.0,
-                "CI Upper": 100.0
+                "Lower": 7.5,
+                "Upper": 59.999999999999986,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 230.0,
-                "CI Lower": 200.0,
-                "CI Upper": 240.0
-            },
-            "Common": {
-                "value": 354.0,
-                "CI Lower": 345.0,
-                "CI Upper": 400.0
-            },
-            "Strong": {
-                "value": 600.0,
-                "CI Lower": 540.0,
-                "CI Upper": 600.0
-            },
-            "Heavy": {
-                "value": 915.0,
-                "CI Lower": 888.0,
-                "CI Upper": 1000.0
-            }
-        },
-        "reliability_score": 0.8123496093757197
-    },
-    {
-        "substance": "DXM",
-        "method": "oral",
-        "unit": "ml",
-        "tiers": {
-            "Threshold": {
-                "value": 90.0,
-                "CI Lower": 75.0,
-                "CI Upper": 112.0
-            },
-            "Light": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 180.0
-            },
-            "Common": {
-                "value": 180.0,
-                "CI Lower": 100.0,
-                "CI Upper": 240.0
-            },
-            "Strong": {
-                "value": 240.0,
-                "CI Lower": 150.0,
-                "CI Upper": 480.0
-            },
-            "Heavy": {
-                "value": 647.9999999999994,
-                "CI Lower": 238.2,
-                "CI Upper": 900.0
-            }
-        },
-        "reliability_score": 0.7237876701843922
-    },
-    {
-        "substance": "Damiana",
-        "method": "oral",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 2.0,
-                "CI Lower": 2.0,
-                "CI Upper": 3.0
-            },
-            "Light": {
-                "value": 2.75,
-                "CI Lower": 2.0,
-                "CI Upper": 4.0
-            },
-            "Common": {
-                "value": 4.0,
-                "CI Lower": 2.5,
-                "CI Upper": 6.0
-            },
-            "Strong": {
-                "value": 5.5,
-                "CI Lower": 4.0,
-                "CI Upper": 8.5
-            },
-            "Heavy": {
-                "value": 8.899999999999999,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
-            }
-        },
-        "reliability_score": 0.831477896185457
-    },
-    {
-        "substance": "Damiana",
-        "method": "smoked",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 0.5,
-                "CI Lower": 0.5,
-                "CI Upper": 0.725
-            },
-            "Light": {
-                "value": 0.5,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
-            },
-            "Common": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 2.0
-            },
-            "Strong": {
-                "value": 1.75,
-                "CI Lower": 0.875,
-                "CI Upper": 2.75
-            },
-            "Heavy": {
-                "value": 2.549999999999999,
-                "CI Lower": 1.549999999999999,
-                "CI Upper": 3.0
-            }
-        },
-        "reliability_score": 0.7859127903555811
-    },
-    {
-        "substance": "Deschloroetizolam",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 0.725,
-                "CI Lower": 0.5,
-                "CI Upper": 2.0
-            },
-            "Light": {
-                "value": 1.25,
-                "CI Lower": 0.625,
-                "CI Upper": 5.0
-            },
-            "Common": {
-                "value": 4.0,
-                "CI Lower": 1.0,
-                "CI Upper": 10.0
-            },
-            "Strong": {
-                "value": 8.75,
-                "CI Lower": 2.75,
-                "CI Upper": 12.0
-            },
-            "Heavy": {
-                "value": 12.0,
-                "CI Lower": 5.0,
-                "CI Upper": 12.0
-            }
-        },
-        "reliability_score": 0.7337432849185779
-    },
-    {
-        "substance": "Deschloroketamine",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 8.8,
-                "CI Lower": 6.0,
-                "CI Upper": 17.0
-            },
-            "Light": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 35.0
-            },
-            "Common": {
-                "value": 30.0,
-                "CI Lower": 19.750000000000014,
-                "CI Upper": 50.0
-            },
-            "Strong": {
-                "value": 50.0,
-                "CI Lower": 39.9375,
+                "Lower": 59.999999999999986,
+                "Upper": 235.00000000000006,
+                "CI Lower": 49.99999999999999,
                 "CI Upper": 90.0
             },
+            "Common": {
+                "Lower": 235.00000000000006,
+                "Upper": 353.9999999999999,
+                "CI Lower": 210.00000000000009,
+                "CI Upper": 240.00000000000009
+            },
+            "Strong": {
+                "Lower": 353.9999999999999,
+                "Upper": 600.0,
+                "CI Lower": 350.0,
+                "CI Upper": 360.00000000000006
+            },
             "Heavy": {
-                "value": 92.99999999999999,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 600.0,
+                "Upper": 1290.0,
+                "CI Lower": 600.0,
+                "CI Upper": 600.0
             }
         },
-        "reliability_score": 0.7739096981892575
+        "reliability_score": 0.8751354103357272
     },
     {
         "substance": "Deschloroketamine",
-        "method": "oral",
+        "method": "insufflated",
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 15.45,
-                "CI Lower": 7.0,
-                "CI Upper": 20.0
+                "Lower": 6.0,
+                "Upper": 8.579172004735955,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 32.5
+                "Lower": 8.579172004735955,
+                "Upper": 14.142135624337556,
+                "CI Lower": 6.000000000000001,
+                "CI Upper": 16.245047927683988
             },
             "Common": {
-                "value": 35.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
+                "Lower": 14.142135624337556,
+                "Upper": 30.000000000000004,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 35.355339059933975
             },
             "Strong": {
-                "value": 40.0,
-                "CI Lower": 35.75,
-                "CI Upper": 50.0
+                "Lower": 30.000000000000004,
+                "Upper": 49.99999999999999,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 67.49999999999999,
-                "CI Lower": 40.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 100.0,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 90.0
             }
         },
-        "reliability_score": 0.809401504467598
+        "reliability_score": 0.8492731321261717
     },
     {
         "substance": "Deschloroketamine",
@@ -6541,65 +5593,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 8.0,
-                "CI Lower": 8.0,
-                "CI Upper": 8.6
+                "Lower": 8.0,
+                "Upper": 7.999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 8.0,
-                "CI Upper": 10.0
+                "Lower": 7.999999999999999,
+                "Upper": 10.000000000000002,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 8.587345097321922
             },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 10.000000000000002,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 20.0,
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
+            },
+            "Heavy": {
+                "Lower": 19.999999999999996,
+                "Upper": 25.0,
                 "CI Lower": 15.0,
-                "CI Upper": 25.0
-            },
-            "Heavy": {
-                "value": 25.0,
-                "CI Lower": 20.0,
-                "CI Upper": 25.0
+                "CI Upper": 24.999999999999996
             }
         },
-        "reliability_score": 0.8720562822873303
-    },
-    {
-        "substance": "Dexmethylphenidate",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 8.25,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 12.5
-            },
-            "Common": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 25.0
-            },
-            "Strong": {
-                "value": 27.5,
-                "CI Lower": 10.0,
-                "CI Upper": 30.0
-            },
-            "Heavy": {
-                "value": 30.0,
-                "CI Lower": 23.499999999999996,
-                "CI Upper": 30.0
-            }
-        },
-        "reliability_score": 0.8296992862234855
+        "reliability_score": 0.9147041881915536
     },
     {
         "substance": "Dexmethylphenidate",
@@ -6607,32 +5631,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 1.75,
-                "CI Lower": 1.0,
-                "CI Upper": 5.0
+                "Lower": 1.0,
+                "Upper": 1.6817928310186343,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 5.0,
+                "Lower": 1.6817928310186343,
+                "Upper": 5.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 5.623413260179585
+            },
+            "Common": {
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
                 "CI Lower": 2.0,
-                "CI Upper": 10.0
-            },
-            "Common": {
-                "value": 10.0,
-                "CI Lower": 7.475000000000001,
-                "CI Upper": 20.0
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 30.0
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 5.0,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 32.5,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
+                "Lower": 19.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 30.000000000000004
             }
         },
-        "reliability_score": 0.7663138829844509
+        "reliability_score": 0.8442092553229672
     },
     {
         "substance": "Dextroamphetamine",
@@ -6640,65 +5669,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 7.000000000000002
+                "Lower": 5.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.0,
+                "Lower": 5.0,
+                "Upper": 15.0,
                 "CI Lower": 5.0,
-                "CI Upper": 30.0
+                "CI Upper": 15.0
             },
             "Common": {
-                "value": 30.0,
+                "Lower": 15.0,
+                "Upper": 30.000000000000004,
+                "CI Lower": 5.0,
+                "CI Upper": 30.000000000000004
+            },
+            "Strong": {
+                "Lower": 30.000000000000004,
+                "Upper": 30.000000000000004,
                 "CI Lower": 15.0,
-                "CI Upper": 30.0
-            },
-            "Strong": {
-                "value": 30.0,
-                "CI Lower": 30.0,
-                "CI Upper": 45.0
+                "CI Upper": 30.000000000000004
             },
             "Heavy": {
-                "value": 45.0,
-                "CI Lower": 41.99999999999996,
-                "CI Upper": 45.0
+                "Lower": 30.000000000000004,
+                "Upper": 45.0,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 44.99999999999999
             }
         },
-        "reliability_score": 0.8311805698386587
-    },
-    {
-        "substance": "Dextroamphetamine",
-        "method": "sublingual",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
-            },
-            "Common": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
-            },
-            "Strong": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
-            },
-            "Heavy": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
-            }
-        },
-        "reliability_score": 0.8945907446610539
+        "reliability_score": 0.8874537132257725
     },
     {
         "substance": "DiPT",
@@ -6706,32 +5707,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 13.5,
-                "CI Lower": 5.0,
-                "CI Upper": 20.0
+                "Lower": 5.0,
+                "Upper": 13.282012399616217,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 25.0,
-                "CI Lower": 20.0,
-                "CI Upper": 36.0
+                "Lower": 13.282012399616217,
+                "Upper": 24.999999999999996,
+                "CI Lower": 5.680634886030232,
+                "CI Upper": 19.999999999999996
             },
             "Common": {
-                "value": 45.0,
-                "CI Lower": 30.0,
-                "CI Upper": 53.0
+                "Lower": 24.999999999999996,
+                "Upper": 44.99999999999999,
+                "CI Lower": 20.976176963414385,
+                "CI Upper": 32.00000000000001
             },
             "Strong": {
-                "value": 70.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 44.99999999999999,
+                "Upper": 69.99999999999999,
+                "CI Lower": 32.00000000000001,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 101.19999999999999,
-                "CI Lower": 75.0,
-                "CI Upper": 160.0
+                "Lower": 69.99999999999999,
+                "Upper": 160.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 74.99999999999999
             }
         },
-        "reliability_score": 0.8014989684606157
+        "reliability_score": 0.8676659789737438
     },
     {
         "substance": "Diazepam",
@@ -6739,65 +5745,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 2.5,
+                "Lower": 2.0,
+                "Upper": 2.5,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 2.5,
+                "Upper": 5.0,
                 "CI Lower": 2.0,
                 "CI Upper": 5.0
             },
-            "Light": {
-                "value": 5.0,
+            "Common": {
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
                 "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
-            "Common": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 20.0,
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
+            },
+            "Heavy": {
+                "Lower": 19.999999999999996,
+                "Upper": 35.0,
                 "CI Lower": 15.0,
-                "CI Upper": 20.0
-            },
-            "Heavy": {
-                "value": 30.0,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.8141530338777982
-    },
-    {
-        "substance": "Diclazepam",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
-            },
-            "Light": {
-                "value": 2.0,
-                "CI Lower": 1.0,
-                "CI Upper": 2.5
-            },
-            "Common": {
-                "value": 2.0,
-                "CI Lower": 2.0,
-                "CI Upper": 4.0
-            },
-            "Strong": {
-                "value": 4.0,
-                "CI Lower": 2.0,
-                "CI Upper": 6.5
-            },
-            "Heavy": {
-                "value": 6.5,
-                "CI Lower": 3.5,
-                "CI Upper": 9.0
-            }
-        },
-        "reliability_score": 0.7810057591883965
+        "reliability_score": 0.8761020225851988
     },
     {
         "substance": "Dihydrocodeine",
@@ -6805,32 +5783,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 8.0,
-                "CI Lower": 8.0,
-                "CI Upper": 8.0
+                "Lower": 8.0,
+                "Upper": 7.999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 8.0,
-                "CI Lower": 8.0,
-                "CI Upper": 15.0
+                "Lower": 7.999999999999999,
+                "Upper": 7.999999999999999,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 7.999999999999999
             },
             "Common": {
-                "value": 30.0,
-                "CI Lower": 8.0,
-                "CI Upper": 38.0
+                "Lower": 7.999999999999999,
+                "Upper": 30.000000000000004,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 12.818610192302145
             },
             "Strong": {
-                "value": 60.0,
-                "CI Lower": 30.0,
-                "CI Upper": 120.0
+                "Lower": 30.000000000000004,
+                "Upper": 59.999999999999986,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 38.0
             },
             "Heavy": {
-                "value": 120.0,
-                "CI Lower": 76.0,
-                "CI Upper": 120.0
+                "Lower": 59.999999999999986,
+                "Upper": 120.0,
+                "CI Lower": 31.826350418658716,
+                "CI Upper": 96.71129386419291
             }
         },
-        "reliability_score": 0.7
+        "reliability_score": 0.8
     },
     {
         "substance": "Dihydroergotamine",
@@ -6838,32 +5821,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.0
+                "Lower": 1.0,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.0
+                "Lower": 0.9999999999999999,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 0.9999999999999999,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 0.9999999999999999
             },
             "Strong": {
-                "value": 2.0,
-                "CI Lower": 1.0,
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
                 "CI Upper": 2.0
             },
             "Heavy": {
-                "value": 2.0,
-                "CI Lower": 2.0,
+                "Lower": 2.0,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
                 "CI Upper": 2.0
             }
         },
-        "reliability_score": 0.8902112417932899
+        "reliability_score": 0.92680749452886
     },
     {
         "substance": "Dimenhydrinate",
@@ -6871,32 +5859,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 50.0
+                "Lower": 25.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 150.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "Lower": 49.99999999999999,
+                "Upper": 149.99999999999997,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 450.0,
-                "CI Lower": 350.0,
-                "CI Upper": 500.0
+                "Lower": 149.99999999999997,
+                "Upper": 450.00000000000006,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 199.99999999999991
             },
             "Strong": {
-                "value": 600.0,
-                "CI Lower": 600.0,
-                "CI Upper": 750.0
+                "Lower": 450.00000000000006,
+                "Upper": 600.0,
+                "CI Lower": 400.00000000000006,
+                "CI Upper": 499.99999999999983
             },
             "Heavy": {
-                "value": 1200.0,
-                "CI Lower": 1000.0,
-                "CI Upper": 1200.0
+                "Lower": 600.0,
+                "Upper": 1600.0,
+                "CI Lower": 600.0,
+                "CI Upper": 749.9999999999999
             }
         },
-        "reliability_score": 0.7780247850493383
+        "reliability_score": 0.8520165233662254
     },
     {
         "substance": "Diphenhydramine",
@@ -6904,98 +5897,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 20.0,
+                "Upper": 24.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 75.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 24.999999999999996,
+                "Upper": 74.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 250.0,
-                "CI Lower": 200.0,
-                "CI Upper": 300.0
+                "Lower": 74.99999999999999,
+                "Upper": 249.9999999999999,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 406.25,
-                "CI Lower": 375.0,
-                "CI Upper": 500.0
+                "Lower": 249.9999999999999,
+                "Upper": 400.00000000000006,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 250.59639887765857
             },
             "Heavy": {
-                "value": 800.0,
-                "CI Lower": 750.0,
-                "CI Upper": 900.0
+                "Lower": 400.00000000000006,
+                "Upper": 1150.0,
+                "CI Lower": 400.00000000000006,
+                "CI Upper": 499.99999999999983
             }
         },
-        "reliability_score": 0.7418329835860891
-    },
-    {
-        "substance": "Diphenidine",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 30.0,
-                "CI Lower": 30.0,
-                "CI Upper": 60.0
-            },
-            "Light": {
-                "value": 61.25,
-                "CI Lower": 30.0,
-                "CI Upper": 80.0
-            },
-            "Common": {
-                "value": 77.5,
-                "CI Lower": 62.4375,
-                "CI Upper": 100.0
-            },
-            "Strong": {
-                "value": 100.0,
-                "CI Lower": 75.0,
-                "CI Upper": 125.0
-            },
-            "Heavy": {
-                "value": 133.75,
-                "CI Lower": 100.0,
-                "CI Upper": 150.0
-            }
-        },
-        "reliability_score": 0.8646959194131218
-    },
-    {
-        "substance": "Diplopterys cabrerana",
-        "method": "oral",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 2.325,
-                "CI Lower": 2.0,
-                "CI Upper": 3.95
-            },
-            "Light": {
-                "value": 3.0,
-                "CI Lower": 2.5,
-                "CI Upper": 9.75
-            },
-            "Common": {
-                "value": 8.5,
-                "CI Lower": 3.0,
-                "CI Upper": 20.0
-            },
-            "Strong": {
-                "value": 18.5,
-                "CI Lower": 8.0,
-                "CI Upper": 40.0
-            },
-            "Heavy": {
-                "value": 40.0,
-                "CI Lower": 21.349999999999994,
-                "CI Upper": 40.0
-            }
-        },
-        "reliability_score": 0.7
+        "reliability_score": 0.8278303927552366
     },
     {
         "substance": "Divalproex",
@@ -7003,65 +5935,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 252.5,
-                "CI Lower": 250.0,
-                "CI Upper": 500.0
+                "Lower": 250.0,
+                "Upper": 252.28943895691074,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 500.0,
-                "CI Lower": 350.0,
-                "CI Upper": 562.5
+                "Lower": 252.28943895691074,
+                "Upper": 499.99999999999983,
+                "CI Lower": 249.9999999999999,
+                "CI Upper": 499.99999999999983
             },
             "Common": {
-                "value": 750.0,
-                "CI Lower": 500.0,
-                "CI Upper": 1000.0
+                "Lower": 499.99999999999983,
+                "Upper": 749.9999999999999,
+                "CI Lower": 299.99999999999994,
+                "CI Upper": 553.3409598503054
             },
             "Strong": {
-                "value": 1000.0,
-                "CI Lower": 862.5,
+                "Lower": 749.9999999999999,
+                "Upper": 999.9999999999998,
+                "CI Lower": 499.99999999999983,
+                "CI Upper": 999.9999999999998
+            },
+            "Heavy": {
+                "Lower": 999.9999999999998,
+                "Upper": 2000.0,
+                "CI Lower": 749.9999999999999,
                 "CI Upper": 1500.0
-            },
-            "Heavy": {
-                "value": 1500.0,
-                "CI Lower": 1000.0,
-                "CI Upper": 2000.0
             }
         },
-        "reliability_score": 0.833291620482544
-    },
-    {
-        "substance": "Doxylamine",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 4.5,
-                "CI Lower": 2.5,
-                "CI Upper": 12.75
-            },
-            "Light": {
-                "value": 12.5,
-                "CI Lower": 4.5,
-                "CI Upper": 24.0
-            },
-            "Common": {
-                "value": 23.0,
-                "CI Lower": 12.5,
-                "CI Upper": 50.0
-            },
-            "Strong": {
-                "value": 37.5,
-                "CI Lower": 18.0,
-                "CI Upper": 87.5
-            },
-            "Heavy": {
-                "value": 87.5,
-                "CI Lower": 25.0,
-                "CI Upper": 100.0
-            }
-        },
-        "reliability_score": 0.7034235674564402
+        "reliability_score": 0.8888610803216961
     },
     {
         "substance": "Dronabinol",
@@ -7069,32 +5973,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 2.5,
+                "Lower": 2.5,
+                "Upper": 2.5,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 2.5,
+                "Upper": 5.0,
                 "CI Lower": 2.5,
                 "CI Upper": 5.0
             },
-            "Light": {
-                "value": 5.0,
-                "CI Lower": 2.625,
-                "CI Upper": 10.0
-            },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 2.5,
+                "CI Upper": 7.071067812472079
             },
             "Strong": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 20.0,
-                "CI Lower": 14.749999999999996,
-                "CI Upper": 25.0
+                "Lower": 10.000000000000002,
+                "Upper": 25.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 17.3205080757924
             }
         },
-        "reliability_score": 0.8048356920863493
+        "reliability_score": 0.8648618125602394
     },
     {
         "substance": "Duloxetine",
@@ -7102,65 +6011,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 29.0,
-                "CI Lower": 10.0,
-                "CI Upper": 58.5
+                "Lower": 10.0,
+                "Upper": 28.396524679616846,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 60.0,
-                "CI Lower": 30.0,
-                "CI Upper": 60.0
+                "Lower": 28.396524679616846,
+                "Upper": 59.999999999999986,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 57.95617973563305
             },
             "Common": {
-                "value": 60.0,
-                "CI Lower": 60.0,
-                "CI Upper": 60.0
+                "Lower": 59.999999999999986,
+                "Upper": 59.999999999999986,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 59.999999999999986
             },
             "Strong": {
-                "value": 60.0,
-                "CI Lower": 60.0,
-                "CI Upper": 90.0
+                "Lower": 59.999999999999986,
+                "Upper": 59.999999999999986,
+                "CI Lower": 59.999999999999986,
+                "CI Upper": 59.999999999999986
             },
             "Heavy": {
-                "value": 120.0,
-                "CI Lower": 60.0,
-                "CI Upper": 120.0
+                "Lower": 59.999999999999986,
+                "Upper": 120.0,
+                "CI Lower": 59.999999999999986,
+                "CI Upper": 96.71129386419291
             }
         },
-        "reliability_score": 0.8724501224125318
-    },
-    {
-        "substance": "ETH-LAD",
-        "method": "oral",
-        "unit": "\u00b5g",
-        "tiers": {
-            "Threshold": {
-                "value": 58.75,
-                "CI Lower": 25.0,
-                "CI Upper": 150.0
-            },
-            "Light": {
-                "value": 150.0,
-                "CI Lower": 43.75,
-                "CI Upper": 212.5
-            },
-            "Common": {
-                "value": 175.0,
-                "CI Lower": 150.0,
-                "CI Upper": 350.0
-            },
-            "Strong": {
-                "value": 287.5,
-                "CI Lower": 150.0,
-                "CI Upper": 437.5
-            },
-            "Heavy": {
-                "value": 427.49999999999994,
-                "CI Lower": 250.0,
-                "CI Upper": 450.0
-            }
-        },
-        "reliability_score": 0.8160560379898412
+        "reliability_score": 0.9149667482750212
     },
     {
         "substance": "Ephedrine",
@@ -7168,32 +6049,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 12.5,
-                "CI Lower": 12.0,
-                "CI Upper": 25.0
+                "Lower": 12.0,
+                "Upper": 12.500000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 25.0,
-                "CI Lower": 24.0,
-                "CI Upper": 25.0
+                "Lower": 12.500000000000002,
+                "Upper": 24.999999999999996,
+                "CI Lower": 12.500000000000002,
+                "CI Upper": 24.000000000000004
             },
             "Common": {
-                "value": 40.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 24.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 24.999999999999996
             },
             "Strong": {
-                "value": 75.0,
-                "CI Lower": 50.0,
-                "CI Upper": 75.0
+                "Lower": 40.0,
+                "Upper": 74.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 105.49999999999997,
-                "CI Lower": 75.0,
-                "CI Upper": 150.0
+                "Lower": 74.99999999999999,
+                "Upper": 150.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 74.99999999999999
             }
         },
-        "reliability_score": 0.8055604516695607
+        "reliability_score": 0.8703736344463737
     },
     {
         "substance": "Ephenidine",
@@ -7201,32 +6087,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 58.0,
-                "CI Lower": 40.0,
-                "CI Upper": 69.0
+                "Lower": 40.0,
+                "Upper": 57.61587004761586,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 70.0,
-                "CI Lower": 60.0,
-                "CI Upper": 100.0
+                "Lower": 57.61587004761586,
+                "Upper": 69.99999999999999,
+                "CI Lower": 40.0,
+                "CI Upper": 68.92921952169394
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 70.0,
-                "CI Upper": 120.0
+                "Lower": 69.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 59.999999999999986,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 120.0,
-                "CI Lower": 100.0,
-                "CI Upper": 135.0
+                "Lower": 99.99999999999996,
+                "Upper": 119.99999999999999,
+                "CI Lower": 69.99999999999999,
+                "CI Upper": 119.99999999999999
             },
             "Heavy": {
-                "value": 150.0,
-                "CI Lower": 120.0,
-                "CI Upper": 150.0
+                "Lower": 119.99999999999999,
+                "Upper": 150.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 134.16407865004965
             }
         },
-        "reliability_score": 0.9058950481325583
+        "reliability_score": 0.9372633654217055
     },
     {
         "substance": "Escitalopram",
@@ -7234,32 +6125,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 10.000000000000002,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 25.999999999999943,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
+                "Lower": 19.999999999999996,
+                "Upper": 30.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.860878610165787
+        "reliability_score": 0.9072524067771912
     },
     {
         "substance": "Esomeprazole",
@@ -7267,32 +6163,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
+                "Lower": 20.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 40.0,
-                "CI Lower": 40.0,
+                "Lower": 19.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 19.999999999999996,
                 "CI Upper": 40.0
             },
             "Common": {
-                "value": 40.0,
+                "Lower": 40.0,
+                "Upper": 40.0,
                 "CI Lower": 40.0,
                 "CI Upper": 40.0
             },
             "Strong": {
-                "value": 40.0,
+                "Lower": 40.0,
+                "Upper": 40.0,
                 "CI Lower": 40.0,
                 "CI Upper": 40.0
             },
             "Heavy": {
-                "value": 40.0,
+                "Lower": 40.0,
+                "Upper": 40.0,
                 "CI Lower": 40.0,
                 "CI Upper": 40.0
             }
         },
-        "reliability_score": 0.9495225688046451
+        "reliability_score": 0.9663483792030967
     },
     {
         "substance": "Estradiol Enanthate",
@@ -7300,32 +6201,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "Lower": 10.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "Lower": 10.000000000000002,
+                "Upper": 10.000000000000002,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "Lower": 10.000000000000002,
+                "Upper": 10.000000000000002,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "Lower": 10.000000000000002,
+                "Upper": 10.000000000000002,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 13.6,
-                "CI Lower": 10.0,
-                "CI Upper": 13.6
+                "Lower": 10.000000000000002,
+                "Upper": 13.6,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.019236271751687
             }
         },
-        "reliability_score": 0.9672465449799432
+        "reliability_score": 0.9781643633199621
     },
     {
         "substance": "Estradiol Undecylate",
@@ -7333,29 +6239,34 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "Lower": 20.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "Lower": 19.999999999999996,
+                "Upper": 19.999999999999996,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "Lower": 19.999999999999996,
+                "Upper": 19.999999999999996,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "Lower": 19.999999999999996,
+                "Upper": 19.999999999999996,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "Lower": 19.999999999999996,
+                "Upper": 20.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             }
         },
         "reliability_score": 1.0
@@ -7366,32 +6277,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 2.0,
-                "CI Lower": 1.5,
-                "CI Upper": 2.25
+                "Lower": 1.5,
+                "Upper": 2.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 3.0,
+                "Lower": 2.0,
+                "Upper": 3.0,
+                "CI Lower": 1.5,
+                "CI Upper": 2.2133638395452273
+            },
+            "Common": {
+                "Lower": 3.0,
+                "Upper": 4.472135955061885,
                 "CI Lower": 2.0,
                 "CI Upper": 4.0
             },
-            "Common": {
-                "value": 4.5,
-                "CI Lower": 3.0,
-                "CI Upper": 6.0
-            },
             "Strong": {
-                "value": 6.0,
-                "CI Lower": 5.75,
-                "CI Upper": 10.0
+                "Lower": 4.472135955061885,
+                "Upper": 6.000000000000001,
+                "CI Lower": 3.0,
+                "CI Upper": 6.000000000000001
             },
             "Heavy": {
-                "value": 13.75,
-                "CI Lower": 6.0,
-                "CI Upper": 15.0
+                "Lower": 6.000000000000001,
+                "Upper": 15.0,
+                "CI Lower": 5.73265675325835,
+                "CI Upper": 10.000000000000002
             }
         },
-        "reliability_score": 0.7932450700567313
+        "reliability_score": 0.8621633800378208
     },
     {
         "substance": "Ether",
@@ -7399,32 +6315,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "ml",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "Lower": 10.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 30.0
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 15.0
             },
             "Common": {
-                "value": 30.0,
-                "CI Lower": 15.0,
-                "CI Upper": 40.0
+                "Lower": 15.0,
+                "Upper": 30.000000000000004,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 30.000000000000004
             },
             "Strong": {
-                "value": 45.0,
-                "CI Lower": 30.0,
-                "CI Upper": 50.0
+                "Lower": 30.000000000000004,
+                "Upper": 44.7213595500581,
+                "CI Lower": 15.0,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 72.49999999999991,
-                "CI Lower": 42.999999999999986,
-                "CI Upper": 125.0
+                "Lower": 44.7213595500581,
+                "Upper": 125.0,
+                "CI Lower": 26.45751311103993,
+                "CI Upper": 49.99999999999999
             }
         },
-        "reliability_score": 0.7377785944286908
+        "reliability_score": 0.8251857296191272
     },
     {
         "substance": "Ethylphenidate",
@@ -7432,32 +6353,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 9.4,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 9.352484478280134,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 17.5,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 9.352484478280134,
+                "Upper": 17.3205080757924,
+                "CI Lower": 6.327900319745306,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 25.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
+                "Lower": 17.3205080757924,
+                "Upper": 24.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
             },
             "Strong": {
-                "value": 50.0,
-                "CI Lower": 30.0,
-                "CI Upper": 50.0
+                "Lower": 24.999999999999996,
+                "Upper": 49.99999999999999,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 35.0
             },
             "Heavy": {
-                "value": 62.99999999999997,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 100.0,
+                "CI Lower": 32.40370349206902,
+                "CI Upper": 49.99999999999999
             }
         },
-        "reliability_score": 0.8098419811512148
+        "reliability_score": 0.8732279874341431
     },
     {
         "substance": "Ethylphenidate",
@@ -7465,65 +6391,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 7.0,
+                "Lower": 7.0,
+                "Upper": 7.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 7.0,
+                "Upper": 7.0,
                 "CI Lower": 7.0,
                 "CI Upper": 7.0
             },
-            "Light": {
-                "value": 7.0,
-                "CI Lower": 7.0,
-                "CI Upper": 9.0
-            },
             "Common": {
-                "value": 15.0,
+                "Lower": 7.0,
+                "Upper": 15.0,
                 "CI Lower": 7.0,
-                "CI Upper": 20.0
+                "CI Upper": 9.000000000000002
             },
             "Strong": {
-                "value": 20.0,
+                "Lower": 15.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": 9.000000000000002,
+                "CI Upper": 19.999999999999996
+            },
+            "Heavy": {
+                "Lower": 19.999999999999996,
+                "Upper": 50.0,
                 "CI Lower": 15.0,
-                "CI Upper": 50.0
-            },
-            "Heavy": {
-                "value": 50.0,
-                "CI Lower": 20.0,
-                "CI Upper": 50.0
+                "CI Upper": 35.355339059933975
             }
         },
-        "reliability_score": 0.7580481586960945
-    },
-    {
-        "substance": "Ethylphenidate",
-        "method": "rectal",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 7.0,
-                "CI Lower": 7.0,
-                "CI Upper": 7.0
-            },
-            "Light": {
-                "value": 7.0,
-                "CI Lower": 7.0,
-                "CI Upper": 9.0
-            },
-            "Common": {
-                "value": 8.0,
-                "CI Lower": 7.0,
-                "CI Upper": 9.0
-            },
-            "Strong": {
-                "value": 9.0,
-                "CI Lower": 7.0,
-                "CI Upper": 9.0
-            },
-            "Heavy": {
-                "value": 9.0,
-                "CI Lower": 9.0,
-                "CI Upper": 9.0
-            }
-        },
-        "reliability_score": 0.9604715292478951
+        "reliability_score": 0.8386987724640631
     },
     {
         "substance": "Etizolam",
@@ -7531,32 +6429,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 0.5,
-                "CI Lower": 0.25,
+                "Lower": 0.25,
+                "Upper": 0.5,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.48296816460475434,
                 "CI Upper": 0.5
             },
-            "Light": {
-                "value": 1.0,
-                "CI Lower": 0.6,
-                "CI Upper": 1.0
-            },
             "Common": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 0.9999999999999999,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 0.9999999999999999
             },
             "Strong": {
-                "value": 2.0,
-                "CI Lower": 2.0,
-                "CI Upper": 2.5
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 1.5
             },
             "Heavy": {
-                "value": 4.0,
-                "CI Lower": 3.0,
-                "CI Upper": 4.0
+                "Lower": 2.0,
+                "Upper": 4.0,
+                "CI Lower": 2.0,
+                "CI Upper": 2.0
             }
         },
-        "reliability_score": 0.8146186386788314
+        "reliability_score": 0.8764124257858876
     },
     {
         "substance": "Etizolam",
@@ -7564,32 +6467,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 0.5,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
+                "Lower": 0.5,
+                "Upper": 0.5,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.0,
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
                 "CI Lower": 0.5,
-                "CI Upper": 2.0
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 2.0,
-                "CI Lower": 1.5,
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.5,
                 "CI Upper": 2.0
             },
             "Strong": {
-                "value": 2.0,
-                "CI Lower": 2.0,
-                "CI Upper": 3.5
+                "Lower": 2.0,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.0
             },
             "Heavy": {
-                "value": 4.149999999999999,
+                "Lower": 2.0,
+                "Upper": 5.0,
                 "CI Lower": 2.0,
-                "CI Upper": 5.0
+                "CI Upper": 3.3635856615260633
             }
         },
-        "reliability_score": 0.8149558211344243
+        "reliability_score": 0.8766372140896161
     },
     {
         "substance": "F-Phenibut",
@@ -7597,32 +6505,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 250.0,
-                "CI Lower": 125.0,
-                "CI Upper": 300.0
+                "Lower": 125.0,
+                "Upper": 249.9999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 325.0,
-                "CI Lower": 250.0,
-                "CI Upper": 500.0
+                "Lower": 249.9999999999999,
+                "Upper": 322.3709795471367,
+                "CI Lower": 124.99999999999994,
+                "CI Upper": 261.6587848480564
             },
             "Common": {
-                "value": 500.0,
-                "CI Lower": 450.0,
-                "CI Upper": 1500.0
+                "Lower": 322.3709795471367,
+                "Upper": 499.99999999999983,
+                "CI Lower": 249.9999999999999,
+                "CI Upper": 499.99999999999983
             },
             "Strong": {
-                "value": 1500.0,
-                "CI Lower": 500.0,
-                "CI Upper": 1750.0
+                "Lower": 499.99999999999983,
+                "Upper": 1500.0,
+                "CI Lower": 447.21359550002,
+                "CI Upper": 1500.0
             },
             "Heavy": {
-                "value": 1750.0,
-                "CI Lower": 1500.0,
+                "Lower": 1500.0,
+                "Upper": 1750.0,
+                "CI Lower": 499.99999999999983,
                 "CI Upper": 1750.0
             }
         },
-        "reliability_score": 0.7804881884479111
+        "reliability_score": 0.8536587922986074
     },
     {
         "substance": "F-Phenibut",
@@ -7630,65 +6543,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 600.0,
-                "CI Lower": 500.0,
+                "Lower": 500.0,
+                "Upper": 600.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 600.0,
+                "Upper": 749.9999999999999,
+                "CI Lower": 499.99999999999983,
                 "CI Upper": 600.0
             },
-            "Light": {
-                "value": 750.0,
-                "CI Lower": 650.0,
-                "CI Upper": 1000.0
-            },
             "Common": {
-                "value": 1300.0,
-                "CI Lower": 1000.0,
-                "CI Upper": 1400.0
+                "Lower": 749.9999999999999,
+                "Upper": 1300.0000000000005,
+                "CI Lower": 652.4857050074992,
+                "CI Upper": 749.9999999999999
             },
             "Strong": {
-                "value": 1600.0,
-                "CI Lower": 1400.0,
-                "CI Upper": 1800.0
+                "Lower": 1300.0000000000005,
+                "Upper": 1600.0000000000002,
+                "CI Lower": 999.9999999999998,
+                "CI Upper": 1349.073756323211
             },
             "Heavy": {
-                "value": 2000.0,
-                "CI Lower": 1850.0,
-                "CI Upper": 2000.0
+                "Lower": 1600.0000000000002,
+                "Upper": 2000.0,
+                "CI Lower": 1500.0,
+                "CI Upper": 1800.0000000000007
             }
         },
-        "reliability_score": 0.8788871671616987
-    },
-    {
-        "substance": "Fentanyl",
-        "method": "sublingual",
-        "unit": "\u00b5g",
-        "tiers": {
-            "Threshold": {
-                "value": 36.875,
-                "CI Lower": 12.5,
-                "CI Upper": 82.5
-            },
-            "Light": {
-                "value": 62.5,
-                "CI Lower": 50.0,
-                "CI Upper": 150.0
-            },
-            "Common": {
-                "value": 137.5,
-                "CI Lower": 50.0,
-                "CI Upper": 200.0
-            },
-            "Strong": {
-                "value": 200.0,
-                "CI Lower": 125.0,
-                "CI Upper": 702.4999999999977
-            },
-            "Heavy": {
-                "value": 800.0,
-                "CI Lower": 200.0,
-                "CI Upper": 800.0
-            }
-        },
-        "reliability_score": 0.7
+        "reliability_score": 0.9192581114411325
     },
     {
         "substance": "Fentanyl",
@@ -7696,65 +6581,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "\u00b5g",
         "tiers": {
             "Threshold": {
-                "value": 19.0,
-                "CI Lower": 10.0,
-                "CI Upper": 25.0
+                "Lower": 10.0,
+                "Upper": 18.959776646418906,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 25.0,
-                "CI Lower": 20.0,
-                "CI Upper": 50.0
+                "Lower": 18.959776646418906,
+                "Upper": 24.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 24.999999999999996
             },
             "Common": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 24.999999999999996,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Strong": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 75.54134825474178
             },
             "Heavy": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 150.0
+                "Lower": 99.99999999999996,
+                "Upper": 150.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             }
         },
-        "reliability_score": 0.8304353005429401
-    },
-    {
-        "substance": "Flunitrazepam",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 0.75,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
-            },
-            "Light": {
-                "value": 1.0,
-                "CI Lower": 0.75,
-                "CI Upper": 1.0
-            },
-            "Common": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
-            },
-            "Strong": {
-                "value": 1.75,
-                "CI Lower": 1.0,
-                "CI Upper": 2.5
-            },
-            "Heavy": {
-                "value": 2.5,
-                "CI Lower": 1.4937500000000004,
-                "CI Upper": 3.0
-            }
-        },
-        "reliability_score": 0.8437310011550596
+        "reliability_score": 0.8869568670286267
     },
     {
         "substance": "Fluoxetine",
@@ -7762,98 +6619,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "Lower": 10.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "Lower": 19.999999999999996,
+                "Upper": 19.999999999999996,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             },
             "Strong": {
-                "value": 40.0,
-                "CI Lower": 20.0,
+                "Lower": 19.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
+            },
+            "Heavy": {
+                "Lower": 40.0,
+                "Upper": 60.0,
+                "CI Lower": 19.999999999999996,
                 "CI Upper": 40.0
-            },
-            "Heavy": {
-                "value": 42.99999999999997,
-                "CI Lower": 40.0,
-                "CI Upper": 60.0
             }
         },
-        "reliability_score": 0.852372231022698
-    },
-    {
-        "substance": "Flurazepam",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 22.5,
-                "CI Lower": 15.0,
-                "CI Upper": 30.0
-            },
-            "Light": {
-                "value": 30.0,
-                "CI Lower": 22.5,
-                "CI Upper": 30.0
-            },
-            "Common": {
-                "value": 30.0,
-                "CI Lower": 30.0,
-                "CI Upper": 60.0
-            },
-            "Strong": {
-                "value": 45.0,
-                "CI Lower": 30.0,
-                "CI Upper": 60.0
-            },
-            "Heavy": {
-                "value": 60.0,
-                "CI Lower": 30.0,
-                "CI Upper": 60.0
-            }
-        },
-        "reliability_score": 0.8734113300566568
-    },
-    {
-        "substance": "Fluvoxamine",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 72.5,
-                "CI Lower": 50.0,
-                "CI Upper": 200.0
-            },
-            "Light": {
-                "value": 125.0,
-                "CI Lower": 62.5,
-                "CI Upper": 200.0
-            },
-            "Common": {
-                "value": 200.0,
-                "CI Lower": 100.0,
-                "CI Upper": 250.0
-            },
-            "Strong": {
-                "value": 237.5,
-                "CI Lower": 200.0,
-                "CI Upper": 300.0
-            },
-            "Heavy": {
-                "value": 300.0,
-                "CI Lower": 200.0,
-                "CI Upper": 300.0
-            }
-        },
-        "reliability_score": 0.8668514669402787
+        "reliability_score": 0.9015814873484653
     },
     {
         "substance": "GBL",
@@ -7861,32 +6657,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "ml",
         "tiers": {
             "Threshold": {
-                "value": 0.56,
-                "CI Lower": 0.3,
-                "CI Upper": 1.0
+                "Lower": 0.3,
+                "Upper": 0.5348051879474323,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.2,
-                "CI Lower": 1.0,
-                "CI Upper": 1.5
+                "Lower": 0.5348051879474323,
+                "Upper": 1.2,
+                "CI Lower": 0.3322699031640973,
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 1.5,
+                "Lower": 1.2,
+                "Upper": 1.5,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 1.5
+            },
+            "Strong": {
+                "Lower": 1.5,
+                "Upper": 2.25,
                 "CI Lower": 1.5,
                 "CI Upper": 2.0
             },
-            "Strong": {
-                "value": 2.5,
-                "CI Lower": 2.0,
-                "CI Upper": 4.0
-            },
             "Heavy": {
-                "value": 5.0,
-                "CI Lower": 2.7,
-                "CI Upper": 6.0
+                "Lower": 2.25,
+                "Upper": 5.0,
+                "CI Lower": 2.0,
+                "CI Upper": 2.7
             }
         },
-        "reliability_score": 0.7989887540420488
+        "reliability_score": 0.8807489297632634
     },
     {
         "substance": "GHB",
@@ -7894,32 +6695,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.0
+                "Lower": 0.6,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.5,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 0.9999999999999999,
+                "Upper": 1.5,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 2.0,
+                "Lower": 1.5,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.0
+            },
+            "Strong": {
+                "Lower": 2.0,
+                "Upper": 3.0,
                 "CI Lower": 2.0,
                 "CI Upper": 2.5
             },
-            "Strong": {
-                "value": 3.0,
+            "Heavy": {
+                "Lower": 3.0,
+                "Upper": 6.0,
                 "CI Lower": 2.5,
                 "CI Upper": 3.4
-            },
-            "Heavy": {
-                "value": 4.225000000000001,
-                "CI Lower": 3.5,
-                "CI Upper": 6.0
             }
         },
-        "reliability_score": 0.8481961312645367
+        "reliability_score": 0.8987974208430245
     },
     {
         "substance": "GHB",
@@ -7927,32 +6733,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "ml",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 2.0
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 2.0,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.5,
+                "CI Upper": 1.5101259949347507
             },
             "Common": {
-                "value": 2.0,
+                "Lower": 2.0,
+                "Upper": 2.0,
+                "CI Lower": 1.2,
+                "CI Upper": 2.0
+            },
+            "Strong": {
+                "Lower": 2.0,
+                "Upper": 3.722419436489951,
                 "CI Lower": 2.0,
                 "CI Upper": 3.0
             },
-            "Strong": {
-                "value": 3.75,
-                "CI Lower": 2.0,
-                "CI Upper": 5.0
-            },
             "Heavy": {
-                "value": 6.099999999999994,
-                "CI Lower": 5.0,
-                "CI Upper": 8.0
+                "Lower": 3.722419436489951,
+                "Upper": 8.0,
+                "CI Lower": 2.2210246364402533,
+                "CI Upper": 5.0
             }
         },
-        "reliability_score": 0.8097997675368891
+        "reliability_score": 0.8731998450245928
     },
     {
         "substance": "Gabapentin",
@@ -7960,32 +6771,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 0.3,
-                "CI Lower": 0.3,
-                "CI Upper": 3.0
+                "Lower": 0.3,
+                "Upper": 0.3,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 3.0,
+                "Lower": 0.3,
+                "Upper": 3.0,
+                "CI Lower": 0.3,
+                "CI Upper": 1.8
+            },
+            "Common": {
+                "Lower": 3.0,
+                "Upper": 3.0,
                 "CI Lower": 0.6,
                 "CI Upper": 3.0
             },
-            "Common": {
-                "value": 3.0,
+            "Strong": {
+                "Lower": 3.0,
+                "Upper": 4.0,
                 "CI Lower": 3.0,
                 "CI Upper": 4.0
             },
-            "Strong": {
-                "value": 4.0,
-                "CI Lower": 3.0,
-                "CI Upper": 6.0
-            },
             "Heavy": {
-                "value": 7.4,
-                "CI Lower": 4.0,
-                "CI Upper": 8.0
+                "Lower": 4.0,
+                "Upper": 8.0,
+                "CI Lower": 3.0,
+                "CI Upper": 6.000000000000001
             }
         },
-        "reliability_score": 0.8160182334433015
+        "reliability_score": 0.877345488962201
     },
     {
         "substance": "Gabapentin",
@@ -7993,32 +6809,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 300.0,
-                "CI Lower": 100.0,
-                "CI Upper": 300.0
+                "Lower": 10.0,
+                "Upper": 299.99999999999994,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 600.0,
-                "CI Lower": 400.0,
-                "CI Upper": 600.0
+                "Lower": 299.99999999999994,
+                "Upper": 600.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 299.99999999999994
             },
             "Common": {
-                "value": 900.0,
-                "CI Lower": 800.0,
-                "CI Upper": 900.0
+                "Lower": 600.0,
+                "Upper": 900.0000000000001,
+                "CI Lower": 400.00000000000006,
+                "CI Upper": 600.0
             },
             "Strong": {
-                "value": 1200.0,
-                "CI Lower": 1200.0,
-                "CI Upper": 1600.0
+                "Lower": 900.0000000000001,
+                "Upper": 1199.9999999999995,
+                "CI Lower": 800.0,
+                "CI Upper": 900.0000000000001
             },
             "Heavy": {
-                "value": 2400.0,
-                "CI Lower": 2100.0,
-                "CI Upper": 2800.0
+                "Lower": 1199.9999999999995,
+                "Upper": 3200.0,
+                "CI Lower": 1199.9999999999995,
+                "CI Upper": 1524.3982444638484
             }
         },
-        "reliability_score": 0.796466224415926
+        "reliability_score": 0.8643108162772841
     },
     {
         "substance": "Ginkgo biloba",
@@ -8026,131 +6847,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 60.0,
+                "Lower": 40.0,
+                "Upper": 59.999999999999986,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 59.999999999999986,
+                "Upper": 59.999999999999986,
                 "CI Lower": 40.0,
-                "CI Upper": 60.0
-            },
-            "Light": {
-                "value": 60.0,
-                "CI Lower": 60.0,
-                "CI Upper": 120.0
+                "CI Upper": 59.999999999999986
             },
             "Common": {
-                "value": 120.0,
-                "CI Lower": 60.0,
-                "CI Upper": 140.0
+                "Lower": 59.999999999999986,
+                "Upper": 119.99999999999999,
+                "CI Lower": 59.999999999999986,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 150.0,
-                "CI Lower": 120.0,
-                "CI Upper": 240.0
+                "Lower": 119.99999999999999,
+                "Upper": 147.43495216293013,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 119.99999999999999
             },
             "Heavy": {
-                "value": 299.9999999999997,
-                "CI Lower": 160.0,
-                "CI Upper": 400.0
+                "Lower": 147.43495216293013,
+                "Upper": 370.0,
+                "CI Lower": 119.99999999999999,
+                "CI Upper": 159.99999999999997
             }
         },
-        "reliability_score": 0.8077850399440099
-    },
-    {
-        "substance": "Harmala Alkaloids",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 58.5,
-                "CI Lower": 50.0,
-                "CI Upper": 90.0
-            },
-            "Light": {
-                "value": 88.0,
-                "CI Lower": 64.8375,
-                "CI Upper": 100.0
-            },
-            "Common": {
-                "value": 100.0,
-                "CI Lower": 80.0,
-                "CI Upper": 160.0
-            },
-            "Strong": {
-                "value": 150.0,
-                "CI Lower": 100.0,
-                "CI Upper": 225.0
-            },
-            "Heavy": {
-                "value": 225.0,
-                "CI Lower": 130.0,
-                "CI Upper": 250.0
-            }
-        },
-        "reliability_score": 0.8518806087849375
-    },
-    {
-        "substance": "Harmaline",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 75.0,
-                "CI Lower": 75.0,
-                "CI Upper": 150.0
-            },
-            "Light": {
-                "value": 112.5,
-                "CI Lower": 75.0,
-                "CI Upper": 181.25
-            },
-            "Common": {
-                "value": 162.5,
-                "CI Lower": 100.0,
-                "CI Upper": 250.0
-            },
-            "Strong": {
-                "value": 237.5,
-                "CI Lower": 150.0,
-                "CI Upper": 250.0
-            },
-            "Heavy": {
-                "value": 250.0,
-                "CI Lower": 200.0,
-                "CI Upper": 250.0
-            }
-        },
-        "reliability_score": 0.8750362048421823
-    },
-    {
-        "substance": "Harmine",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 29.0,
-                "CI Lower": 20.0,
-                "CI Upper": 150.0
-            },
-            "Light": {
-                "value": 150.0,
-                "CI Lower": 25.0,
-                "CI Upper": 200.0
-            },
-            "Common": {
-                "value": 182.5,
-                "CI Lower": 95.0,
-                "CI Upper": 200.0
-            },
-            "Strong": {
-                "value": 200.0,
-                "CI Lower": 165.0,
-                "CI Upper": 200.0
-            },
-            "Heavy": {
-                "value": 200.0,
-                "CI Lower": 200.0,
-                "CI Upper": 200.0
-            }
-        },
-        "reliability_score": 0.8661547942495069
+        "reliability_score": 0.8862176899692393
     },
     {
         "substance": "Heimia salicifolia",
@@ -8158,32 +6885,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 2.0,
+                "Lower": 2.0,
+                "Upper": 2.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 2.0,
+                "Upper": 5.0,
                 "CI Lower": 2.0,
                 "CI Upper": 5.0
             },
-            "Light": {
-                "value": 5.0,
-                "CI Lower": 4.0,
-                "CI Upper": 10.0
-            },
             "Common": {
-                "value": 10.0,
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
                 "CI Lower": 5.0,
-                "CI Upper": 10.0
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 10.5,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 10.488088481712872,
+                "CI Lower": 6.000000000000001,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 22.399999999999977,
-                "CI Lower": 14.0,
-                "CI Upper": 30.0
+                "Lower": 10.488088481712872,
+                "Upper": 30.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 15.0
             }
         },
-        "reliability_score": 0.8065548522294312
+        "reliability_score": 0.8710365681529542
     },
     {
         "substance": "Heroin",
@@ -8191,32 +6923,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 0.028749999999999998,
-                "CI Lower": 0.025,
-                "CI Upper": 0.1575
+                "Lower": 0.025,
+                "Upper": 0.028663283798280304,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 0.16625,
+                "Lower": 0.028663283798280304,
+                "Upper": 0.1643167673844171,
+                "CI Lower": 0.024999999999999994,
+                "CI Upper": 0.1643167673844171
+            },
+            "Common": {
+                "Lower": 0.1643167673844171,
+                "Upper": 0.25,
                 "CI Lower": 0.03,
                 "CI Upper": 0.25
             },
-            "Common": {
-                "value": 0.25,
-                "CI Lower": 0.18,
-                "CI Upper": 0.41664999999999996
-            },
             "Strong": {
-                "value": 0.42500000000000004,
-                "CI Lower": 0.25,
-                "CI Upper": 0.5
+                "Lower": 0.25,
+                "Upper": 0.4229485054212526,
+                "CI Lower": 0.17677669590323855,
+                "CI Upper": 0.4
             },
             "Heavy": {
-                "value": 0.5,
-                "CI Lower": 0.42500000000000004,
+                "Lower": 0.4229485054212526,
+                "Upper": 0.5,
+                "CI Lower": 0.25,
                 "CI Upper": 0.5
             }
         },
-        "reliability_score": 0.818417803692655
+        "reliability_score": 0.8789452024617701
     },
     {
         "substance": "Heroin",
@@ -8224,32 +6961,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 4.5,
-                "CI Upper": 30.0
+                "Lower": 4.5,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 50.0,
-                "CI Lower": 12.0,
-                "CI Upper": 100.0
+                "Lower": 10.000000000000002,
+                "Upper": 49.99999999999999,
+                "CI Lower": 4.5,
+                "CI Upper": 30.000000000000004
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 200.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 12.0,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 100.0,
-                "CI Upper": 300.0
+                "Lower": 99.99999999999996,
+                "Upper": 199.99999999999991,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 199.99999999999991
             },
             "Heavy": {
-                "value": 500.0,
-                "CI Lower": 200.0,
-                "CI Upper": 500.0
+                "Lower": 199.99999999999991,
+                "Upper": 500.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 299.99999999999994
             }
         },
-        "reliability_score": 0.7
+        "reliability_score": 0.8
     },
     {
         "substance": "Heroin",
@@ -8257,32 +6999,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 7.0,
+                "Lower": 3.0,
+                "Upper": 7.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 7.0,
+                "Upper": 7.0,
                 "CI Lower": 3.0,
                 "CI Upper": 7.0
             },
-            "Light": {
-                "value": 7.0,
-                "CI Lower": 7.0,
-                "CI Upper": 13.0
-            },
             "Common": {
-                "value": 13.0,
+                "Lower": 7.0,
+                "Upper": 13.000000000000002,
                 "CI Lower": 7.0,
-                "CI Upper": 20.0
+                "CI Upper": 13.000000000000002
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 13.0,
-                "CI Upper": 30.0
+                "Lower": 13.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 7.0,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 40.0,
-                "CI Lower": 20.0,
-                "CI Upper": 50.0
+                "Lower": 19.999999999999996,
+                "Upper": 50.0,
+                "CI Lower": 15.0,
+                "CI Upper": 30.000000000000004
             }
         },
-        "reliability_score": 0.7788018007523296
+        "reliability_score": 0.8525345338348864
     },
     {
         "substance": "Heroin",
@@ -8290,98 +7037,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 22.5
+                "Lower": 20.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 30.0,
-                "CI Lower": 20.0,
+                "Lower": 19.999999999999996,
+                "Upper": 30.000000000000004,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 22.499999999999996
+            },
+            "Common": {
+                "Lower": 30.000000000000004,
+                "Upper": 40.0,
+                "CI Lower": 19.999999999999996,
                 "CI Upper": 40.0
             },
-            "Common": {
-                "value": 40.0,
-                "CI Lower": 30.0,
-                "CI Upper": 80.0
-            },
             "Strong": {
-                "value": 80.0,
-                "CI Lower": 40.0,
-                "CI Upper": 80.0
+                "Lower": 40.0,
+                "Upper": 80.00000000000001,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 80.0,
-                "CI Lower": 80.0,
-                "CI Upper": 80.0
+                "Lower": 80.00000000000001,
+                "Upper": 80.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 80.00000000000001
             }
         },
-        "reliability_score": 0.8527142753328683
-    },
-    {
-        "substance": "Heroin",
-        "method": "smoked",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 15.0,
-                "CI Lower": 15.0,
-                "CI Upper": 15.0
-            },
-            "Light": {
-                "value": 15.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
-            },
-            "Common": {
-                "value": 15.0,
-                "CI Lower": 15.0,
-                "CI Upper": 100.0
-            },
-            "Strong": {
-                "value": 65.0,
-                "CI Lower": 15.0,
-                "CI Upper": 325.0
-            },
-            "Heavy": {
-                "value": 325.0,
-                "CI Lower": 57.5,
-                "CI Upper": 400.0
-            }
-        },
-        "reliability_score": 0.7
-    },
-    {
-        "substance": "Hydergine",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 3.825,
-                "CI Lower": 3.0,
-                "CI Upper": 4.5
-            },
-            "Light": {
-                "value": 4.5,
-                "CI Lower": 4.125,
-                "CI Upper": 4.5
-            },
-            "Common": {
-                "value": 4.5,
-                "CI Lower": 4.5,
-                "CI Upper": 4.75
-            },
-            "Strong": {
-                "value": 4.625,
-                "CI Lower": 4.5,
-                "CI Upper": 5.5
-            },
-            "Heavy": {
-                "value": 5.899999999999999,
-                "CI Lower": 4.5,
-                "CI Upper": 7.0
-            }
-        },
-        "reliability_score": 0.9429383694186617
+        "reliability_score": 0.9018095168885789
     },
     {
         "substance": "Hydrocodone",
@@ -8389,32 +7075,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 2.5,
+                "Lower": 2.5,
+                "Upper": 2.5,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 2.5,
+                "Upper": 5.0,
                 "CI Lower": 2.5,
                 "CI Upper": 5.0
             },
-            "Light": {
-                "value": 5.0,
-                "CI Lower": 2.5,
-                "CI Upper": 10.0
-            },
             "Common": {
-                "value": 10.0,
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 2.5,
+                "CI Upper": 10.000000000000002
+            },
+            "Strong": {
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
                 "CI Lower": 5.0,
                 "CI Upper": 15.0
             },
-            "Strong": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
-            },
             "Heavy": {
-                "value": 21.999999999999993,
-                "CI Lower": 11.999999999999993,
-                "CI Upper": 30.0
+                "Lower": 15.0,
+                "Upper": 30.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.7966687636681702
+        "reliability_score": 0.8644458424454469
     },
     {
         "substance": "Hydrocodone",
@@ -8422,32 +7113,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 3.75,
-                "CI Upper": 5.0
+                "Lower": 0.5,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 7.5,
+                "Lower": 5.0,
+                "Upper": 7.5,
+                "CI Lower": 3.7500000000000004,
+                "CI Upper": 5.0
+            },
+            "Common": {
+                "Lower": 7.5,
+                "Upper": 12.500000000000002,
                 "CI Lower": 5.0,
                 "CI Upper": 7.5
             },
-            "Common": {
-                "value": 12.5,
-                "CI Lower": 10.0,
+            "Strong": {
+                "Lower": 12.500000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
                 "CI Upper": 15.0
             },
-            "Strong": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 22.5
-            },
             "Heavy": {
-                "value": 37.5,
-                "CI Lower": 30.0,
-                "CI Upper": 40.0
+                "Lower": 19.999999999999996,
+                "Upper": 52.5,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.7938075874291919
+        "reliability_score": 0.8624599623756015
     },
     {
         "substance": "Hydromorphone",
@@ -8455,32 +7151,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.0750000000000002
+                "Lower": 1.0,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.375,
-                "CI Lower": 1.0,
-                "CI Upper": 3.5
+                "Lower": 0.9999999999999999,
+                "Upper": 1.3554030055802897,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 1.0627073612525229
             },
             "Common": {
-                "value": 4.0,
-                "CI Lower": 2.0,
-                "CI Upper": 4.0
+                "Lower": 1.3554030055802897,
+                "Upper": 4.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 3.3635856615260633
             },
             "Strong": {
-                "value": 4.0,
-                "CI Lower": 4.0,
-                "CI Upper": 7.5
+                "Lower": 4.0,
+                "Upper": 4.0,
+                "CI Lower": 1.732050807672507,
+                "CI Upper": 4.0
             },
             "Heavy": {
-                "value": 7.924999999999999,
+                "Lower": 4.0,
+                "Upper": 10.0,
                 "CI Lower": 4.0,
-                "CI Upper": 10.0
+                "CI Upper": 4.756828460416446
             }
         },
-        "reliability_score": 0.7877604529417752
+        "reliability_score": 0.8585069686278501
     },
     {
         "substance": "Hydromorphone",
@@ -8488,32 +7189,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 2.0,
-                "CI Lower": 2.0,
-                "CI Upper": 2.2
+                "Lower": 4.0,
+                "Upper": 4.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 4.0,
-                "CI Lower": 2.0,
+                "Lower": 4.0,
+                "Upper": 4.0,
+                "CI Lower": 4.0,
                 "CI Upper": 4.0
             },
             "Common": {
-                "value": 4.0,
+                "Lower": 4.0,
+                "Upper": 4.0,
                 "CI Lower": 4.0,
                 "CI Upper": 4.0
             },
             "Strong": {
-                "value": 4.0,
+                "Lower": 4.0,
+                "Upper": 4.0,
                 "CI Lower": 4.0,
-                "CI Upper": 4.25
+                "CI Upper": 4.0
             },
             "Heavy": {
-                "value": 5.849999999999998,
+                "Lower": 4.0,
+                "Upper": 4.5,
                 "CI Lower": 4.0,
-                "CI Upper": 6.0
+                "CI Upper": 4.0
             }
         },
-        "reliability_score": 0.9117370618907017
+        "reliability_score": 0.993798449612403
     },
     {
         "substance": "Hydromorphone",
@@ -8521,32 +7227,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 1.85,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 1.0,
+                "Upper": 1.6245047932717522,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 2.0,
-                "CI Lower": 2.0,
-                "CI Upper": 2.2562499999999943
+                "Lower": 1.6245047932717522,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.0
             },
             "Common": {
-                "value": 2.5,
+                "Lower": 2.0,
+                "Upper": 2.0,
+                "CI Lower": 2.0,
+                "CI Upper": 2.0
+            },
+            "Strong": {
+                "Lower": 2.0,
+                "Upper": 4.0,
                 "CI Lower": 2.0,
                 "CI Upper": 4.0
             },
-            "Strong": {
-                "value": 4.0,
-                "CI Lower": 2.75,
-                "CI Upper": 8.0
-            },
             "Heavy": {
-                "value": 8.0,
-                "CI Lower": 4.599999999999994,
-                "CI Upper": 8.0
+                "Lower": 4.0,
+                "Upper": 5.0,
+                "CI Lower": 2.0,
+                "CI Upper": 4.0
             }
         },
-        "reliability_score": 0.810686476543296
+        "reliability_score": 0.9149083547854235
     },
     {
         "substance": "Hydroxyzine",
@@ -8554,32 +7265,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 7.125000000000001,
-                "CI Lower": 6.25,
-                "CI Upper": 25.0
+                "Lower": 6.25,
+                "Upper": 6.821833910390087,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 25.0,
-                "CI Lower": 17.5,
-                "CI Upper": 30.0
+                "Lower": 6.821833910390087,
+                "Upper": 24.999999999999996,
+                "CI Lower": 6.25,
+                "CI Upper": 24.999999999999996
             },
             "Common": {
-                "value": 30.0,
-                "CI Lower": 25.0,
-                "CI Upper": 75.0
+                "Lower": 24.999999999999996,
+                "Upper": 30.000000000000004,
+                "CI Lower": 15.0,
+                "CI Upper": 27.386127875299884
             },
             "Strong": {
-                "value": 75.0,
-                "CI Lower": 40.0,
-                "CI Upper": 100.0
+                "Lower": 30.000000000000004,
+                "Upper": 74.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 74.99999999999999
             },
             "Heavy": {
-                "value": 100.0,
-                "CI Lower": 94.99999999999993,
-                "CI Upper": 150.0
+                "Lower": 74.99999999999999,
+                "Upper": 150.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             }
         },
-        "reliability_score": 0.7735390829490896
+        "reliability_score": 0.8490260552993929
     },
     {
         "substance": "IAP",
@@ -8587,65 +7303,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 8.0,
+                "Lower": 2.0,
+                "Upper": 6.687403053139027,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 6.687403053139027,
+                "Upper": 16.817928305585493,
                 "CI Lower": 2.0,
-                "CI Upper": 17.5
-            },
-            "Light": {
-                "value": 17.5,
-                "CI Lower": 10.0,
-                "CI Upper": 33.75
+                "CI Upper": 16.817928305585493
             },
             "Common": {
-                "value": 32.5,
-                "CI Lower": 17.437500000000004,
-                "CI Upper": 45.0
+                "Lower": 16.817928305585493,
+                "Upper": 32.40370349206902,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 33.676841036874535
             },
             "Strong": {
-                "value": 46.25,
-                "CI Lower": 32.46875,
-                "CI Upper": 50.0
+                "Lower": 32.40370349206902,
+                "Upper": 46.20105432362557,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 47.43416490253957
             },
             "Heavy": {
-                "value": 50.0,
-                "CI Lower": 46.25,
-                "CI Upper": 50.0
+                "Lower": 46.20105432362557,
+                "Upper": 50.0,
+                "CI Lower": 33.200457591154226,
+                "CI Upper": 49.99999999999999
             }
         },
-        "reliability_score": 0.8389807231892938
-    },
-    {
-        "substance": "Ibogaine",
-        "method": "oral",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.0
-            },
-            "Light": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.0
-            },
-            "Common": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.25
-            },
-            "Strong": {
-                "value": 1.325,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
-            },
-            "Heavy": {
-                "value": 2.1499999999999995,
-                "CI Lower": 1.2949999999999997,
-                "CI Upper": 2.5
-            }
-        },
-        "reliability_score": 0.891660154393126
+        "reliability_score": 0.8926538154595294
     },
     {
         "substance": "Ibogaine",
@@ -8653,32 +7341,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 16.0,
-                "CI Lower": 10.0,
-                "CI Upper": 150.0
+                "Lower": 10.0,
+                "Upper": 16.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 200.0,
-                "CI Lower": 100.0,
-                "CI Upper": 300.0
+                "Lower": 16.0,
+                "Upper": 199.99999999999991,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 99.99999999999996
             },
             "Common": {
-                "value": 320.0,
-                "CI Lower": 220.0,
-                "CI Upper": 454.0
+                "Lower": 199.99999999999991,
+                "Upper": 309.8386676965987,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 292.20112392759955
             },
             "Strong": {
-                "value": 550.0,
-                "CI Lower": 350.0,
-                "CI Upper": 800.0
+                "Lower": 309.8386676965987,
+                "Upper": 512.0568445422308,
+                "CI Lower": 251.99206336708343,
+                "CI Upper": 400.00000000000006
             },
             "Heavy": {
-                "value": 900.0,
-                "CI Lower": 589.0,
-                "CI Upper": 1300.0
+                "Lower": 512.0568445422308,
+                "Upper": 1179.0,
+                "CI Lower": 369.6084345889329,
+                "CI Upper": 656.9999999999997
             }
         },
-        "reliability_score": 0.7714026079408354
+        "reliability_score": 0.8566892491020153
     },
     {
         "substance": "Ibuprofen",
@@ -8686,32 +7379,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 200.0,
-                "CI Lower": 102.0,
-                "CI Upper": 200.0
+                "Lower": 81.0,
+                "Upper": 199.99999999999991,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 400.0,
-                "CI Lower": 200.0,
-                "CI Upper": 400.0
+                "Lower": 199.99999999999991,
+                "Upper": 400.00000000000006,
+                "CI Lower": 162.00000000000006,
+                "CI Upper": 199.99999999999991
             },
             "Common": {
-                "value": 400.0,
-                "CI Lower": 400.0,
-                "CI Upper": 600.0
+                "Lower": 400.00000000000006,
+                "Upper": 400.00000000000006,
+                "CI Lower": 400.00000000000006,
+                "CI Upper": 400.00000000000006
             },
             "Strong": {
-                "value": 600.0,
-                "CI Lower": 600.0,
-                "CI Upper": 800.0
+                "Lower": 400.00000000000006,
+                "Upper": 600.0,
+                "CI Lower": 400.00000000000006,
+                "CI Upper": 600.0
             },
             "Heavy": {
-                "value": 800.0,
-                "CI Lower": 800.0,
-                "CI Upper": 1000.0
+                "Lower": 600.0,
+                "Upper": 1200.0,
+                "CI Lower": 600.0,
+                "CI Upper": 600.0
             }
         },
-        "reliability_score": 0.8722283108384439
+        "reliability_score": 0.914818873892296
     },
     {
         "substance": "Isopropylphenidate",
@@ -8719,32 +7417,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 25.0
+                "Lower": 25.0,
+                "Upper": 24.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 25.0
+                "Lower": 24.999999999999996,
+                "Upper": 24.999999999999996,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 24.999999999999996
             },
             "Common": {
-                "value": 27.5,
-                "CI Lower": 25.0,
-                "CI Upper": 30.0
+                "Lower": 24.999999999999996,
+                "Upper": 27.386127875299884,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 24.999999999999996
             },
             "Strong": {
-                "value": 31.0,
-                "CI Lower": 30.0,
-                "CI Upper": 34.0
+                "Lower": 27.386127875299884,
+                "Upper": 30.953564663236598,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 30.000000000000004
             },
             "Heavy": {
-                "value": 34.0,
-                "CI Lower": 30.200000000000003,
-                "CI Upper": 34.0
+                "Lower": 30.953564663236598,
+                "Upper": 34.0,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 34.00000000000001
             }
         },
-        "reliability_score": 0.9592317542504483
+        "reliability_score": 0.9728211695002988
     },
     {
         "substance": "JWH-018",
@@ -8752,32 +7455,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 1.25,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 1.0,
+                "Upper": 1.1892071154082833,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 2.0,
-                "CI Lower": 2.0,
-                "CI Upper": 4.503124999999997
+                "Lower": 1.1892071154082833,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.0
             },
             "Common": {
-                "value": 5.0,
-                "CI Lower": 3.0,
-                "CI Upper": 8.5
+                "Lower": 2.0,
+                "Upper": 5.0,
+                "CI Lower": 2.0,
+                "CI Upper": 4.502964240377013
             },
             "Strong": {
-                "value": 10.0,
-                "CI Lower": 5.75,
-                "CI Upper": 15.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 2.8284271253527917,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 20.0,
+                "CI Lower": 6.000000000000001,
+                "CI Upper": 15.0
             }
         },
-        "reliability_score": 0.767580579214763
+        "reliability_score": 0.8450537194765086
     },
     {
         "substance": "Kava",
@@ -8785,32 +7493,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 1.53,
-                "CI Lower": 1.0,
-                "CI Upper": 3.0614999999999988
+                "Lower": 1.0,
+                "Upper": 1.5342683009842333,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 3.3,
-                "CI Lower": 2.5,
-                "CI Upper": 6.25
+                "Lower": 1.5342683009842333,
+                "Upper": 3.3488576114405566,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 3.0685366019637588
             },
             "Common": {
-                "value": 6.25,
-                "CI Lower": 3.5,
+                "Lower": 3.3488576114405566,
+                "Upper": 6.25,
+                "CI Lower": 2.23606797770185,
                 "CI Upper": 6.25
             },
             "Strong": {
-                "value": 6.25,
-                "CI Lower": 6.25,
-                "CI Upper": 10.0
+                "Lower": 6.25,
+                "Upper": 6.647869871236139,
+                "CI Lower": 3.5,
+                "CI Upper": 6.25
             },
             "Heavy": {
-                "value": 10.0,
-                "CI Lower": 7.824999999999998,
-                "CI Upper": 15.5
+                "Lower": 6.647869871236139,
+                "Upper": 15.5,
+                "CI Lower": 6.25,
+                "CI Upper": 10.000000000000002
             }
         },
-        "reliability_score": 0.8355878484244608
+        "reliability_score": 0.8918742717416848
     },
     {
         "substance": "Kava",
@@ -8818,32 +7531,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 140.4,
-                "CI Lower": 21.0,
-                "CI Upper": 225.0
+                "Lower": 21.0,
+                "Upper": 139.87804908891425,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 300.0,
-                "CI Lower": 200.0,
-                "CI Upper": 550.0
+                "Lower": 139.87804908891425,
+                "Upper": 293.5446127900743,
+                "CI Lower": 54.77070964785289,
+                "CI Upper": 225.0
             },
             "Common": {
-                "value": 800.0,
-                "CI Lower": 450.0,
-                "CI Upper": 1000.0
+                "Lower": 293.5446127900743,
+                "Upper": 774.5966692414886,
+                "CI Lower": 225.0,
+                "CI Upper": 491.8005006595261
             },
             "Strong": {
-                "value": 1200.0,
-                "CI Lower": 900.0,
-                "CI Upper": 1750.0
+                "Lower": 774.5966692414886,
+                "Upper": 1199.9999999999995,
+                "CI Lower": 483.7354648979185,
+                "CI Upper": 999.9999999999998
             },
             "Heavy": {
-                "value": 2099.9999999999995,
-                "CI Lower": 1500.0,
-                "CI Upper": 3500.0
+                "Lower": 1199.9999999999995,
+                "Upper": 3375.0,
+                "CI Lower": 999.9999999999998,
+                "CI Upper": 1500.0
             }
         },
-        "reliability_score": 0.751039285144232
+        "reliability_score": 0.8448993429822156
     },
     {
         "substance": "Ketamine",
@@ -8851,32 +7569,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 25.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
+                "Lower": 0.37,
+                "Upper": 24.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 50.0
+                "Lower": 24.999999999999996,
+                "Upper": 49.99999999999999,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 40.0
             },
             "Common": {
-                "value": 70.0,
-                "CI Lower": 55.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 69.99999999999999,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 49.99999999999999
             },
             "Strong": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 120.0
+                "Lower": 69.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 55.00000000000001,
+                "CI Upper": 90.0
             },
             "Heavy": {
-                "value": 150.0,
-                "CI Lower": 125.0,
-                "CI Upper": 180.0
+                "Lower": 99.99999999999996,
+                "Upper": 225.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 119.99999999999999
             }
         },
-        "reliability_score": 0.842463945252921
+        "reliability_score": 0.8949759635019472
     },
     {
         "substance": "Ketamine",
@@ -8884,65 +7607,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 12.8,
-                "CI Lower": 8.0,
-                "CI Upper": 42.0
+                "Lower": 8.0,
+                "Upper": 11.541599248222226,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 45.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 11.541599248222226,
+                "Upper": 44.99999999999999,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 38.73327204124241
             },
             "Common": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 75.0
+                "Lower": 44.99999999999999,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Strong": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 74.99999999999999
             },
             "Heavy": {
-                "value": 119.67999999999998,
-                "CI Lower": 100.0,
-                "CI Upper": 150.0
+                "Lower": 99.99999999999996,
+                "Upper": 150.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             }
         },
-        "reliability_score": 0.8370385276590662
-    },
-    {
-        "substance": "Ketamine",
-        "method": "insufflated",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 0.11125,
-                "CI Lower": 0.1,
-                "CI Upper": 0.5
-            },
-            "Light": {
-                "value": 0.3725,
-                "CI Lower": 0.10625000000000001,
-                "CI Upper": 0.625
-            },
-            "Common": {
-                "value": 0.5,
-                "CI Lower": 0.32956250000000004,
-                "CI Upper": 1.0
-            },
-            "Strong": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 1.75
-            },
-            "Heavy": {
-                "value": 1.549999999999999,
-                "CI Lower": 0.7749999999999995,
-                "CI Upper": 2.0
-            }
-        },
-        "reliability_score": 0.7583192180149005
+        "reliability_score": 0.8913590184393774
     },
     {
         "substance": "Ketamine",
@@ -8950,32 +7645,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 1.3,
+                "Upper": 19.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 37.0,
-                "CI Lower": 30.0,
-                "CI Upper": 46.0
+                "Lower": 19.999999999999996,
+                "Upper": 37.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
             },
             "Common": {
-                "value": 70.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 37.0,
+                "Upper": 69.99999999999999,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 40.0
             },
             "Strong": {
-                "value": 150.0,
-                "CI Lower": 100.0,
-                "CI Upper": 180.0
+                "Lower": 69.99999999999999,
+                "Upper": 149.99999999999997,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 97.97958971132917
             },
             "Heavy": {
-                "value": 250.0,
-                "CI Lower": 250.0,
-                "CI Upper": 300.0
+                "Lower": 149.99999999999997,
+                "Upper": 350.0,
+                "CI Lower": 109.1896301366769,
+                "CI Upper": 169.99999999999997
             }
         },
-        "reliability_score": 0.7580803919587977
+        "reliability_score": 0.8387202613058653
     },
     {
         "substance": "Ketamine",
@@ -8983,32 +7683,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 43.0,
-                "CI Lower": 0.88,
-                "CI Upper": 80.0
+                "Lower": 0.88,
+                "Upper": 42.769383999698334,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 112.5
+                "Lower": 42.769383999698334,
+                "Upper": 99.99999999999996,
+                "CI Lower": 0.88,
+                "CI Upper": 85.53876799934585
             },
             "Common": {
-                "value": 200.0,
-                "CI Lower": 100.0,
-                "CI Upper": 320.0
+                "Lower": 99.99999999999996,
+                "Upper": 199.99999999999991,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 111.8033988750517
             },
             "Strong": {
-                "value": 362.5,
-                "CI Lower": 245.0,
-                "CI Upper": 450.0
+                "Lower": 199.99999999999991,
+                "Upper": 362.284418654742,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 320.0000000000001
             },
             "Heavy": {
-                "value": 589.9999999999999,
-                "CI Lower": 375.97499999999997,
-                "CI Upper": 720.0
+                "Lower": 362.284418654742,
+                "Upper": 720.0,
+                "CI Lower": 244.94897427831987,
+                "CI Upper": 450.00000000000006
             }
         },
-        "reliability_score": 0.7598198791325206
+        "reliability_score": 0.8398799194216804
     },
     {
         "substance": "Ketamine",
@@ -9016,32 +7721,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 35.0,
-                "CI Lower": 35.0,
-                "CI Upper": 50.0
+                "Lower": 35.0,
+                "Upper": 35.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 71.25,
+                "Lower": 35.0,
+                "Upper": 70.93062067528666,
                 "CI Lower": 35.0,
-                "CI Upper": 100.0
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 75.0,
-                "CI Upper": 100.0
+                "Lower": 70.93062067528666,
+                "Upper": 99.99999999999996,
+                "CI Lower": 35.0,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 110.0,
-                "CI Lower": 100.0,
-                "CI Upper": 140.0
+                "Lower": 99.99999999999996,
+                "Upper": 108.77573059382827,
+                "CI Lower": 74.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 222.49999999999997,
-                "CI Lower": 140.0,
-                "CI Upper": 300.0
+                "Lower": 108.77573059382827,
+                "Upper": 300.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 140.0
             }
         },
-        "reliability_score": 0.8236000750824444
+        "reliability_score": 0.8824000500549629
     },
     {
         "substance": "Kratom",
@@ -9049,32 +7759,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.0
+                "Lower": 0.25,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 2.0,
-                "CI Lower": 2.0,
-                "CI Upper": 3.0
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 4.0,
-                "CI Lower": 3.5,
-                "CI Upper": 4.5
+                "Lower": 2.0,
+                "Upper": 4.0,
+                "CI Lower": 2.0,
+                "CI Upper": 2.5
             },
             "Strong": {
-                "value": 6.0,
-                "CI Lower": 6.0,
-                "CI Upper": 7.0
+                "Lower": 4.0,
+                "Upper": 6.000000000000001,
+                "CI Lower": 3.9967743752249043,
+                "CI Upper": 4.0
             },
             "Heavy": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 12.5
+                "Lower": 6.000000000000001,
+                "Upper": 14.0,
+                "CI Lower": 6.000000000000001,
+                "CI Upper": 7.0
             }
         },
-        "reliability_score": 0.7986778277993571
+        "reliability_score": 0.8657852185329047
     },
     {
         "substance": "Kratom",
@@ -9082,32 +7797,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 15.0,
-                "CI Lower": 2.5,
-                "CI Upper": 300.0
+                "Lower": 2.5,
+                "Upper": 15.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 500.0,
-                "CI Lower": 50.0,
-                "CI Upper": 750.0
+                "Lower": 15.0,
+                "Upper": 499.99999999999983,
+                "CI Lower": 4.330127020469199,
+                "CI Upper": 244.94897427852393
             },
             "Common": {
-                "value": 1250.0,
-                "CI Lower": 750.0,
-                "CI Upper": 2000.0
+                "Lower": 499.99999999999983,
+                "Upper": 1249.9999999999995,
+                "CI Lower": 244.94897427852393,
+                "CI Upper": 749.9999999999999
             },
             "Strong": {
-                "value": 2000.0,
-                "CI Lower": 1800.0,
-                "CI Upper": 2000.0
+                "Lower": 1249.9999999999995,
+                "Upper": 2000.0000000000007,
+                "CI Lower": 749.9999999999999,
+                "CI Upper": 2000.0000000000007
             },
             "Heavy": {
-                "value": 2000.0,
-                "CI Lower": 2000.0,
-                "CI Upper": 2600.0
+                "Lower": 2000.0000000000007,
+                "Upper": 2600.0,
+                "CI Lower": 1897.3665961010422,
+                "CI Upper": 2000.0000000000007
             }
         },
-        "reliability_score": 0.8024308562292
+        "reliability_score": 0.8682872374861332
     },
     {
         "substance": "L-Ascorbic Acid",
@@ -9115,32 +7835,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 260.0,
-                "CI Lower": 260.0,
-                "CI Upper": 1000.0
+                "Lower": 260.0,
+                "Upper": 260.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1000.0,
+                "Lower": 260.0,
+                "Upper": 999.9999999999998,
                 "CI Lower": 260.0,
-                "CI Upper": 1000.0
+                "CI Upper": 999.9999999999998
             },
             "Common": {
-                "value": 1000.0,
-                "CI Lower": 1000.0,
-                "CI Upper": 1000.0
+                "Lower": 999.9999999999998,
+                "Upper": 999.9999999999998,
+                "CI Lower": 260.0,
+                "CI Upper": 999.9999999999998
             },
             "Strong": {
-                "value": 1000.0,
-                "CI Lower": 1000.0,
-                "CI Upper": 1000.0
+                "Lower": 999.9999999999998,
+                "Upper": 999.9999999999998,
+                "CI Lower": 999.9999999999998,
+                "CI Upper": 999.9999999999998
             },
             "Heavy": {
-                "value": 1000.0,
-                "CI Lower": 1000.0,
-                "CI Upper": 1000.0
+                "Lower": 999.9999999999998,
+                "Upper": 1000.0,
+                "CI Lower": 999.9999999999998,
+                "CI Upper": 999.9999999999998
             }
         },
-        "reliability_score": 0.9040126811742302
+        "reliability_score": 0.9360084541161533
     },
     {
         "substance": "L-Theanine",
@@ -9148,32 +7873,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 400.0,
-                "CI Lower": 400.0,
-                "CI Upper": 400.0
+                "Lower": 400.0,
+                "Upper": 400.00000000000006,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 400.0,
-                "CI Lower": 400.0,
-                "CI Upper": 400.0
+                "Lower": 400.00000000000006,
+                "Upper": 400.00000000000006,
+                "CI Lower": 400.00000000000006,
+                "CI Upper": 400.00000000000006
             },
             "Common": {
-                "value": 400.0,
-                "CI Lower": 400.0,
-                "CI Upper": 400.0
+                "Lower": 400.00000000000006,
+                "Upper": 400.00000000000006,
+                "CI Lower": 400.00000000000006,
+                "CI Upper": 400.00000000000006
             },
             "Strong": {
-                "value": 400.0,
-                "CI Lower": 400.0,
-                "CI Upper": 400.0
+                "Lower": 400.00000000000006,
+                "Upper": 400.00000000000006,
+                "CI Lower": 400.00000000000006,
+                "CI Upper": 400.00000000000006
             },
             "Heavy": {
-                "value": 500.0,
-                "CI Lower": 500.0,
-                "CI Upper": 500.0
+                "Lower": 400.00000000000006,
+                "Upper": 1000.0,
+                "CI Lower": 400.00000000000006,
+                "CI Upper": 400.00000000000006
             }
         },
-        "reliability_score": 0.9481209187951589
+        "reliability_score": 0.9654139458634394
     },
     {
         "substance": "LSD",
@@ -9181,32 +7911,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "\u00b5g",
         "tiers": {
             "Threshold": {
-                "value": 11.9952,
-                "CI Lower": 7.14,
-                "CI Upper": 25.0
+                "Lower": 5.7,
+                "Upper": 11.975101507286306,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 100.0,
-                "CI Lower": 66.0,
-                "CI Upper": 100.0
+                "Lower": 11.975101507286306,
+                "Upper": 99.99999999999996,
+                "CI Lower": 8.568,
+                "CI Upper": 16.86692267048612
             },
             "Common": {
-                "value": 150.0,
-                "CI Lower": 100.0,
-                "CI Upper": 160.0
+                "Lower": 99.99999999999996,
+                "Upper": 149.99999999999997,
+                "CI Lower": 74.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 160.0,
-                "CI Upper": 250.0
+                "Lower": 149.99999999999997,
+                "Upper": 199.99999999999991,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 149.99999999999997
             },
             "Heavy": {
-                "value": 311.9999999999999,
-                "CI Lower": 250.0,
-                "CI Upper": 400.0
+                "Lower": 199.99999999999991,
+                "Upper": 400.0,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 249.9999999999999
             }
         },
-        "reliability_score": 0.807615391014606
+        "reliability_score": 0.8717435940097373
     },
     {
         "substance": "LSD",
@@ -9214,65 +7949,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "\u00b5g",
         "tiers": {
             "Threshold": {
-                "value": 75.0,
-                "CI Lower": 25.0,
-                "CI Upper": 100.0
+                "Lower": 25.0,
+                "Upper": 74.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 105.0,
-                "CI Lower": 75.0,
-                "CI Upper": 150.0
+                "Lower": 74.99999999999999,
+                "Upper": 105.00000000000001,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 100.02439805792685
             },
             "Common": {
-                "value": 150.0,
-                "CI Lower": 112.0,
-                "CI Upper": 220.0
+                "Lower": 105.00000000000001,
+                "Upper": 149.99999999999997,
+                "CI Lower": 74.99999999999999,
+                "CI Upper": 149.99999999999997
             },
             "Strong": {
-                "value": 250.0,
-                "CI Lower": 150.0,
-                "CI Upper": 300.0
+                "Lower": 149.99999999999997,
+                "Upper": 249.9999999999999,
+                "CI Lower": 111.99999999999999,
+                "CI Upper": 220.00000000000003
             },
             "Heavy": {
-                "value": 411.9999999999996,
-                "CI Lower": 289.9999999999999,
-                "CI Upper": 450.0
+                "Lower": 249.9999999999999,
+                "Upper": 450.0,
+                "CI Lower": 155.00000000000006,
+                "CI Upper": 299.99999999999994
             }
         },
-        "reliability_score": 0.8183420348818082
-    },
-    {
-        "substance": "LSZ",
-        "method": "oral",
-        "unit": "\u00b5g",
-        "tiers": {
-            "Threshold": {
-                "value": 150.0,
-                "CI Lower": 150.0,
-                "CI Upper": 150.0
-            },
-            "Light": {
-                "value": 150.0,
-                "CI Lower": 150.0,
-                "CI Upper": 300.0
-            },
-            "Common": {
-                "value": 225.0,
-                "CI Lower": 150.0,
-                "CI Upper": 300.0
-            },
-            "Strong": {
-                "value": 300.0,
-                "CI Lower": 225.0,
-                "CI Upper": 450.0
-            },
-            "Heavy": {
-                "value": 509.9999999999998,
-                "CI Lower": 300.0,
-                "CI Upper": 600.0
-            }
-        },
-        "reliability_score": 0.8393531593606416
+        "reliability_score": 0.8788946899212056
     },
     {
         "substance": "Lamotrigine",
@@ -9280,65 +7987,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 75.0
+                "Lower": 25.0,
+                "Upper": 24.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 150.0
+                "Lower": 24.999999999999996,
+                "Upper": 99.99999999999996,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 65.0772695185396
             },
             "Common": {
-                "value": 150.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 149.99999999999997,
+                "CI Lower": 59.46035575054159,
+                "CI Upper": 124.99999999999994
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 200.0,
-                "CI Upper": 250.0
+                "Lower": 149.99999999999997,
+                "Upper": 199.99999999999991,
+                "CI Lower": 111.8033988750517,
+                "CI Upper": 199.99999999999991
             },
             "Heavy": {
-                "value": 400.0,
-                "CI Lower": 200.0,
-                "CI Upper": 400.0
+                "Lower": 199.99999999999991,
+                "Upper": 400.0,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 236.43540225084226
             }
         },
-        "reliability_score": 0.8208618520284361
-    },
-    {
-        "substance": "Leonotis leonurus",
-        "method": "smoked",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 0.375,
-                "CI Lower": 0.25,
-                "CI Upper": 0.75
-            },
-            "Light": {
-                "value": 0.5,
-                "CI Lower": 0.375,
-                "CI Upper": 1.0
-            },
-            "Common": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 1.5
-            },
-            "Strong": {
-                "value": 1.5,
-                "CI Lower": 1.0,
-                "CI Upper": 2.5
-            },
-            "Heavy": {
-                "value": 2.5,
-                "CI Lower": 1.4937500000000004,
-                "CI Upper": 3.0
-            }
-        },
-        "reliability_score": 0.7907833030143678
+        "reliability_score": 0.8805745680189574
     },
     {
         "substance": "Lisdexamfetamine",
@@ -9346,32 +8025,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 30.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
+                "Lower": 19.999999999999996,
+                "Upper": 30.000000000000004,
+                "CI Lower": 11.486983550308638,
+                "CI Upper": 19.999999999999996
             },
             "Common": {
-                "value": 50.0,
-                "CI Lower": 40.0,
-                "CI Upper": 50.0
+                "Lower": 30.000000000000004,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 40.0
             },
             "Strong": {
-                "value": 60.0,
-                "CI Lower": 50.0,
-                "CI Upper": 70.0
+                "Lower": 49.99999999999999,
+                "Upper": 59.999999999999986,
+                "CI Lower": 40.0,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 80.0,
-                "CI Lower": 70.0,
-                "CI Upper": 100.0
+                "Lower": 59.999999999999986,
+                "Upper": 100.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 59.999999999999986
             }
         },
-        "reliability_score": 0.8739638017656219
+        "reliability_score": 0.915975867843748
     },
     {
         "substance": "Lithium",
@@ -9379,32 +8063,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 142.5,
-                "CI Lower": 90.0,
-                "CI Upper": 300.0
+                "Lower": 90.0,
+                "Upper": 99.99999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 487.5,
-                "CI Lower": 300.0,
-                "CI Upper": 900.0
+                "Lower": 99.99999999999996,
+                "Upper": 367.4234614176831,
+                "CI Lower": 90.0,
+                "CI Upper": 299.99999999999994
             },
             "Common": {
-                "value": 900.0,
-                "CI Lower": 600.0,
-                "CI Upper": 900.0
+                "Lower": 367.4234614176831,
+                "Upper": 900.0000000000001,
+                "CI Lower": 299.99999999999994,
+                "CI Upper": 670.8203932499991
             },
             "Strong": {
-                "value": 900.0,
-                "CI Lower": 900.0,
-                "CI Upper": 1200.0
+                "Lower": 900.0000000000001,
+                "Upper": 900.0000000000001,
+                "CI Lower": 600.0,
+                "CI Upper": 900.0000000000001
             },
             "Heavy": {
-                "value": 1214.9999999999998,
-                "CI Lower": 1200.0,
-                "CI Upper": 1500.0
+                "Lower": 900.0000000000001,
+                "Upper": 1500.0,
+                "CI Lower": 900.0000000000001,
+                "CI Upper": 1199.9999999999995
             }
         },
-        "reliability_score": 0.8547096414166446
+        "reliability_score": 0.8981991055781979
     },
     {
         "substance": "Loperamide",
@@ -9412,65 +8101,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 3.8000000000000003,
+                "Lower": 2.0,
+                "Upper": 3.46572421686605,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 3.46572421686605,
+                "Upper": 12.0,
                 "CI Lower": 2.0,
-                "CI Upper": 10.0
-            },
-            "Light": {
-                "value": 12.0,
-                "CI Lower": 6.0,
-                "CI Upper": 30.0
+                "CI Upper": 9.14610103860724
             },
             "Common": {
-                "value": 30.0,
-                "CI Lower": 12.0,
-                "CI Upper": 40.0
+                "Lower": 12.0,
+                "Upper": 30.000000000000004,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 17.999999999999996
             },
             "Strong": {
-                "value": 40.0,
-                "CI Lower": 30.0,
-                "CI Upper": 80.0
+                "Lower": 30.000000000000004,
+                "Upper": 40.0,
+                "CI Lower": 15.0,
+                "CI Upper": 30.000000000000004
             },
             "Heavy": {
-                "value": 84.8,
-                "CI Lower": 40.0,
-                "CI Upper": 96.0
+                "Lower": 40.0,
+                "Upper": 96.0,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 59.999999999999986
             }
         },
-        "reliability_score": 0.7516713880920054
-    },
-    {
-        "substance": "Loratadine",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 8.0,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
-            },
-            "Common": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
-            },
-            "Strong": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
-            },
-            "Heavy": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
-            }
-        },
-        "reliability_score": 0.8912238872147427
+        "reliability_score": 0.8344475920613368
     },
     {
         "substance": "Lorazepam",
@@ -9478,197 +8139,75 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 0.5,
+                "Lower": 0.3,
+                "Upper": 0.5,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
                 "CI Lower": 0.5,
                 "CI Upper": 0.5
             },
-            "Light": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.0
-            },
             "Common": {
-                "value": 2.0,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 0.9999999999999999
             },
             "Strong": {
-                "value": 3.0,
-                "CI Lower": 2.0,
-                "CI Upper": 3.0
-            },
-            "Heavy": {
-                "value": 5.0,
-                "CI Lower": 4.0,
-                "CI Upper": 6.0
-            }
-        },
-        "reliability_score": 0.7925456546970897
-    },
-    {
-        "substance": "Lorazepam",
-        "method": "sublingual",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 0.5,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
-            },
-            "Light": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 1.1875
-            },
-            "Common": {
-                "value": 1.125,
-                "CI Lower": 1.0,
+                "Lower": 2.0,
+                "Upper": 3.0,
+                "CI Lower": 1.5,
                 "CI Upper": 2.0
             },
-            "Strong": {
-                "value": 2.0,
-                "CI Lower": 1.0625,
-                "CI Upper": 2.25
-            },
             "Heavy": {
-                "value": 2.4499999999999993,
-                "CI Lower": 1.9896875000000005,
-                "CI Upper": 3.0
-            }
-        },
-        "reliability_score": 0.839703505369475
-    },
-    {
-        "substance": "Lotus/Lily - Nymphaea nouchali var caerulea",
-        "method": "oral",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 2.0
-            },
-            "Light": {
-                "value": 2.0,
-                "CI Lower": 1.0,
-                "CI Upper": 4.0
-            },
-            "Common": {
-                "value": 4.0,
+                "Lower": 3.0,
+                "Upper": 7.0,
                 "CI Lower": 2.5,
-                "CI Upper": 7.0
-            },
-            "Strong": {
-                "value": 7.0,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
-            "Heavy": {
-                "value": 12.37499999999999,
-                "CI Lower": 9.0,
-                "CI Upper": 20.0
+                "CI Upper": 3.0
             }
         },
-        "reliability_score": 0.7647049045409657
+        "reliability_score": 0.8616971031313931
     },
     {
         "substance": "Lotus/Lily - Nymphaea nouchali var caerulea",
-        "method": "smoked",
+        "method": "oral",
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 0.4,
-                "CI Lower": 0.25,
-                "CI Upper": 0.9
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 0.75,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0124999999999886
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.5102400768594479,
+                "CI Upper": 1.0352649239352107
             },
             "Common": {
-                "value": 1.0,
-                "CI Lower": 0.75,
-                "CI Upper": 2.0
+                "Lower": 2.0,
+                "Upper": 4.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 3.5
             },
             "Strong": {
-                "value": 2.0,
-                "CI Lower": 1.0,
-                "CI Upper": 4.0
+                "Lower": 4.0,
+                "Upper": 7.0,
+                "CI Lower": 3.2403703492336478,
+                "CI Upper": 5.477225575093241
             },
             "Heavy": {
-                "value": 4.399999999999999,
-                "CI Lower": 2.0,
-                "CI Upper": 5.0
+                "Lower": 7.0,
+                "Upper": 20.0,
+                "CI Lower": 5.0,
+                "CI Upper": 9.003643887892727
             }
         },
-        "reliability_score": 0.7501526427153324
-    },
-    {
-        "substance": "MBDB",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 116.4,
-                "CI Lower": 66.0,
-                "CI Upper": 180.0
-            },
-            "Light": {
-                "value": 180.0,
-                "CI Lower": 150.0,
-                "CI Upper": 185.0
-            },
-            "Common": {
-                "value": 185.0,
-                "CI Lower": 180.0,
-                "CI Upper": 200.0
-            },
-            "Strong": {
-                "value": 200.0,
-                "CI Lower": 185.0,
-                "CI Upper": 250.0
-            },
-            "Heavy": {
-                "value": 269.99999999999994,
-                "CI Lower": 200.0,
-                "CI Upper": 300.0
-            }
-        },
-        "reliability_score": 0.913281650541472
-    },
-    {
-        "substance": "MDA",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 33.5,
-                "CI Lower": 20.0,
-                "CI Upper": 80.0
-            },
-            "Light": {
-                "value": 57.5,
-                "CI Lower": 27.5,
-                "CI Upper": 80.0
-            },
-            "Common": {
-                "value": 80.0,
-                "CI Lower": 50.0,
-                "CI Upper": 90.0
-            },
-            "Strong": {
-                "value": 87.5,
-                "CI Lower": 80.0,
-                "CI Upper": 100.0
-            },
-            "Heavy": {
-                "value": 100.0,
-                "CI Lower": 80.0,
-                "CI Upper": 100.0
-            }
-        },
-        "reliability_score": 0.8955844438347424
+        "reliability_score": 0.8431366030273104
     },
     {
         "substance": "MDA",
@@ -9676,65 +8215,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 32.0,
-                "CI Lower": 15.0,
-                "CI Upper": 50.0
+                "Lower": 15.0,
+                "Upper": 31.776715231526993,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 85.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 31.776715231526993,
+                "Upper": 84.99999999999996,
+                "CI Lower": 24.768456299390188,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 110.0,
-                "CI Lower": 100.0,
-                "CI Upper": 125.0
+                "Lower": 84.99999999999996,
+                "Upper": 109.99999999999999,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 130.0,
-                "CI Lower": 125.0,
-                "CI Upper": 150.0
+                "Lower": 109.99999999999999,
+                "Upper": 130.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 124.99999999999994
             },
             "Heavy": {
-                "value": 197.99999999999997,
-                "CI Lower": 150.0,
-                "CI Upper": 250.0
+                "Lower": 130.0,
+                "Upper": 250.0,
+                "CI Lower": 124.99999999999994,
+                "CI Upper": 149.99999999999997
             }
         },
-        "reliability_score": 0.8630424779346397
-    },
-    {
-        "substance": "MDAI",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 31.0
-            },
-            "Light": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 45.124999999999886
-            },
-            "Common": {
-                "value": 45.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
-            },
-            "Strong": {
-                "value": 50.0,
-                "CI Lower": 45.0,
-                "CI Upper": 100.0
-            },
-            "Heavy": {
-                "value": 100.0,
-                "CI Lower": 59.999999999999964,
-                "CI Upper": 100.0
-            }
-        },
-        "reliability_score": 0.8412549213361247
+        "reliability_score": 0.9086949852897599
     },
     {
         "substance": "MDAI",
@@ -9742,65 +8253,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 44.75000000000001,
-                "CI Lower": 25.0,
-                "CI Upper": 100.0
+                "Lower": 25.0,
+                "Upper": 44.132072030320494,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 124.0
+                "Lower": 44.132072030320494,
+                "Upper": 99.99999999999996,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 99.99999999999996
             },
             "Common": {
-                "value": 145.0,
-                "CI Lower": 100.0,
-                "CI Upper": 185.0
+                "Lower": 99.99999999999996,
+                "Upper": 144.9137674619003,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 150.0,
-                "CI Upper": 220.0
+                "Lower": 144.9137674619003,
+                "Upper": 199.99999999999991,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 175.00000000000003
             },
             "Heavy": {
-                "value": 300.0,
-                "CI Lower": 200.0,
-                "CI Upper": 350.0
+                "Lower": 199.99999999999991,
+                "Upper": 350.0,
+                "CI Lower": 171.8888862266627,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.8572707043739294
-    },
-    {
-        "substance": "MDMA",
-        "method": "IV",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 63.5
-            },
-            "Light": {
-                "value": 52.5,
-                "CI Lower": 20.0,
-                "CI Upper": 101.0
-            },
-            "Common": {
-                "value": 90.0,
-                "CI Lower": 40.0,
-                "CI Upper": 187.5
-            },
-            "Strong": {
-                "value": 157.25,
-                "CI Lower": 75.0,
-                "CI Upper": 200.0
-            },
-            "Heavy": {
-                "value": 200.0,
-                "CI Lower": 143.00499999999994,
-                "CI Upper": 200.0
-            }
-        },
-        "reliability_score": 0.7946456314179691
+        "reliability_score": 0.9048471362492863
     },
     {
         "substance": "MDMA",
@@ -9808,65 +8291,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 25.0
+                "Lower": 5.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 40.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 19.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 17.826024579761448,
+                "CI Upper": 22.865252596427023
             },
             "Common": {
-                "value": 60.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 40.0,
+                "Upper": 59.999999999999986,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Strong": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 100.0
+                "Lower": 59.999999999999986,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 80.00000000000001
             },
             "Heavy": {
-                "value": 200.0,
-                "CI Lower": 125.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 200.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 99.99999999999996
             }
         },
-        "reliability_score": 0.7942591186164536
-    },
-    {
-        "substance": "MDMA",
-        "method": "oral",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 0.07385,
-                "CI Lower": 0.05,
-                "CI Upper": 0.25
-            },
-            "Light": {
-                "value": 0.15625,
-                "CI Lower": 0.06325,
-                "CI Upper": 0.4375
-            },
-            "Common": {
-                "value": 0.25,
-                "CI Lower": 0.125,
-                "CI Upper": 1.0049999999999955
-            },
-            "Strong": {
-                "value": 1.0,
-                "CI Lower": 0.25,
-                "CI Upper": 1.475
-            },
-            "Heavy": {
-                "value": 1.4549999999999998,
-                "CI Lower": 0.8824999999999987,
-                "CI Upper": 1.5
-            }
-        },
-        "reliability_score": 0.7121301970981089
+        "reliability_score": 0.8655101799531517
     },
     {
         "substance": "MDMA",
@@ -9874,98 +8329,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 40.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 0.5,
+                "Upper": 40.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 80.0,
-                "CI Lower": 67.0,
-                "CI Upper": 90.0
+                "Lower": 40.0,
+                "Upper": 80.00000000000001,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 48.99999999999999
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 100.0
+                "Lower": 80.00000000000001,
+                "Upper": 99.99999999999996,
+                "CI Lower": 72.45688373095315,
+                "CI Upper": 84.99999999999996
             },
             "Strong": {
-                "value": 135.0,
-                "CI Lower": 125.0,
-                "CI Upper": 150.0
+                "Lower": 99.99999999999996,
+                "Upper": 135.00000000000003,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 200.0,
-                "CI Lower": 200.0,
-                "CI Upper": 250.0
+                "Lower": 135.00000000000003,
+                "Upper": 250.0,
+                "CI Lower": 128.996123972777,
+                "CI Upper": 149.99999999999997
             }
         },
-        "reliability_score": 0.8586508748747212
-    },
-    {
-        "substance": "MDMA",
-        "method": "rectal",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 87.5,
-                "CI Lower": 75.0,
-                "CI Upper": 100.0
-            },
-            "Light": {
-                "value": 100.0,
-                "CI Lower": 87.5,
-                "CI Upper": 159.0
-            },
-            "Common": {
-                "value": 125.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
-            },
-            "Strong": {
-                "value": 200.0,
-                "CI Lower": 112.5,
-                "CI Upper": 250.0
-            },
-            "Heavy": {
-                "value": 250.0,
-                "CI Lower": 196.5,
-                "CI Upper": 300.0
-            }
-        },
-        "reliability_score": 0.8650525088490764
-    },
-    {
-        "substance": "MDMA",
-        "method": "smoked",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 27.65,
-                "CI Lower": 20.0,
-                "CI Upper": 68.125
-            },
-            "Light": {
-                "value": 53.125,
-                "CI Lower": 24.25,
-                "CI Upper": 100.0
-            },
-            "Common": {
-                "value": 87.5,
-                "CI Lower": 43.5,
-                "CI Upper": 143.75
-            },
-            "Strong": {
-                "value": 100.0,
-                "CI Lower": 71.875,
-                "CI Upper": 215.625
-            },
-            "Heavy": {
-                "value": 208.12499999999997,
-                "CI Lower": 100.0,
-                "CI Upper": 225.0
-            }
-        },
-        "reliability_score": 0.7963143512172342
+        "reliability_score": 0.9058380700424808
     },
     {
         "substance": "MDPHP",
@@ -9973,32 +8367,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 12.0,
+                "Lower": 12.0,
+                "Upper": 12.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 12.0,
+                "Upper": 12.0,
                 "CI Lower": 12.0,
                 "CI Upper": 12.0
             },
-            "Light": {
-                "value": 12.0,
+            "Common": {
+                "Lower": 12.0,
+                "Upper": 15.0,
                 "CI Lower": 12.0,
                 "CI Upper": 15.0
             },
-            "Common": {
-                "value": 15.0,
-                "CI Lower": 12.0,
-                "CI Upper": 20.0
-            },
             "Strong": {
-                "value": 20.0,
+                "Lower": 15.0,
+                "Upper": 19.999999999999996,
                 "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "Lower": 19.999999999999996,
+                "Upper": 20.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.9333169733847009
+        "reliability_score": 0.9555446489231338
     },
     {
         "substance": "MDPV",
@@ -10006,32 +8405,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 4.0
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 4.0,
-                "CI Lower": 3.0,
-                "CI Upper": 6.0
+                "Lower": 0.9999999999999999,
+                "Upper": 4.0,
+                "CI Lower": 0.7845840984886362,
+                "CI Upper": 3.0
             },
             "Common": {
-                "value": 7.25,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
+                "Lower": 4.0,
+                "Upper": 7.245688373100671,
+                "CI Lower": 3.2237097955447185,
+                "CI Upper": 5.0
             },
             "Strong": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 12.0
+                "Lower": 7.245688373100671,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 30.0
+                "Lower": 10.000000000000002,
+                "Upper": 30.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             }
         },
-        "reliability_score": 0.813667896967581
+        "reliability_score": 0.8757785979783874
     },
     {
         "substance": "MDPV",
@@ -10039,32 +8443,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 4.75,
-                "CI Lower": 1.0,
-                "CI Upper": 10.0
+                "Lower": 1.0,
+                "Upper": 3.8336586298538546,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 6.0,
-                "CI Upper": 14.75
+                "Lower": 3.8336586298538546,
+                "Upper": 10.000000000000002,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 14.5,
-                "CI Lower": 10.0,
-                "CI Upper": 17.5
+                "Lower": 10.000000000000002,
+                "Upper": 14.491376746195392,
+                "CI Lower": 6.000000000000001,
+                "CI Upper": 14.0
             },
             "Strong": {
-                "value": 16.25,
-                "CI Lower": 14.25,
-                "CI Upper": 30.0
+                "Lower": 14.491376746195392,
+                "Upper": 16.118548977427217,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 16.747637649731466
             },
             "Heavy": {
-                "value": 30.75,
-                "CI Lower": 18.75,
-                "CI Upper": 33.0
+                "Lower": 16.118548977427217,
+                "Upper": 33.0,
+                "CI Lower": 14.243569582333562,
+                "CI Upper": 30.000000000000004
             }
         },
-        "reliability_score": 0.8292215486975862
+        "reliability_score": 0.8861476991317241
     },
     {
         "substance": "MET",
@@ -10072,65 +8481,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 13.5,
-                "CI Lower": 10.0,
-                "CI Upper": 18.5
+                "Lower": 10.0,
+                "Upper": 13.282012399616217,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 17.5,
-                "CI Lower": 15.0,
-                "CI Upper": 25.0
+                "Lower": 13.282012399616217,
+                "Upper": 17.3205080757924,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 18.346295092938494
             },
             "Common": {
-                "value": 25.0,
+                "Lower": 17.3205080757924,
+                "Upper": 24.999999999999996,
                 "CI Lower": 15.0,
-                "CI Upper": 30.0
+                "CI Upper": 24.999999999999996
             },
             "Strong": {
-                "value": 30.0,
-                "CI Lower": 24.962500000000002,
+                "Lower": 24.999999999999996,
+                "Upper": 30.000000000000004,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 30.000000000000004
+            },
+            "Heavy": {
+                "Lower": 30.000000000000004,
+                "Upper": 50.0,
+                "CI Lower": 24.98724638092051,
                 "CI Upper": 35.0
-            },
-            "Heavy": {
-                "value": 39.499999999999986,
-                "CI Lower": 30.0,
-                "CI Upper": 50.0
             }
         },
-        "reliability_score": 0.8778114596474411
-    },
-    {
-        "substance": "MIPT",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 11.0,
-                "CI Lower": 2.0,
-                "CI Upper": 20.0
-            },
-            "Light": {
-                "value": 20.0,
-                "CI Lower": 11.0,
-                "CI Upper": 24.5
-            },
-            "Common": {
-                "value": 24.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
-            },
-            "Strong": {
-                "value": 39.0,
-                "CI Lower": 22.0,
-                "CI Upper": 57.5
-            },
-            "Heavy": {
-                "value": 57.5,
-                "CI Lower": 37.5,
-                "CI Upper": 65.0
-            }
-        },
-        "reliability_score": 0.8226862730910465
+        "reliability_score": 0.9185409730982941
     },
     {
         "substance": "Magnesium Glycinate",
@@ -10138,65 +8519,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 1600.0,
-                "CI Lower": 1600.0,
-                "CI Upper": 1600.0
+                "Lower": 1600.0,
+                "Upper": 1600.0000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1600.0,
-                "CI Lower": 1600.0,
-                "CI Upper": 1600.0
+                "Lower": 1600.0000000000002,
+                "Upper": 1600.0000000000002,
+                "CI Lower": 1600.0000000000002,
+                "CI Upper": 1600.0000000000002
             },
             "Common": {
-                "value": 1600.0,
-                "CI Lower": 1600.0,
-                "CI Upper": 1600.0
+                "Lower": 1600.0000000000002,
+                "Upper": 1600.0000000000002,
+                "CI Lower": 1600.0000000000002,
+                "CI Upper": 1600.0000000000002
             },
             "Strong": {
-                "value": 1600.0,
-                "CI Lower": 1600.0,
-                "CI Upper": 1600.0
+                "Lower": 1600.0000000000002,
+                "Upper": 1600.0000000000002,
+                "CI Lower": 1600.0000000000002,
+                "CI Upper": 1600.0000000000002
             },
             "Heavy": {
-                "value": 1600.0,
-                "CI Lower": 1600.0,
-                "CI Upper": 1600.0
+                "Lower": 1600.0000000000002,
+                "Upper": 1600.0,
+                "CI Lower": 1600.0000000000002,
+                "CI Upper": 1600.0000000000002
             }
         },
         "reliability_score": 1.0
-    },
-    {
-        "substance": "Magnesium Hydroxide",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 67.0,
-                "CI Lower": 67.0,
-                "CI Upper": 67.0
-            },
-            "Light": {
-                "value": 67.0,
-                "CI Lower": 67.0,
-                "CI Upper": 135.0
-            },
-            "Common": {
-                "value": 101.0,
-                "CI Lower": 67.0,
-                "CI Upper": 135.0
-            },
-            "Strong": {
-                "value": 135.0,
-                "CI Lower": 67.0,
-                "CI Upper": 135.0
-            },
-            "Heavy": {
-                "value": 135.0,
-                "CI Lower": 135.0,
-                "CI Upper": 135.0
-            }
-        },
-        "reliability_score": 0.8935470886675991
     },
     {
         "substance": "Magnesium L-Threonate",
@@ -10204,29 +8557,34 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 96.0,
-                "CI Lower": 96.0,
-                "CI Upper": 96.0
+                "Lower": 96.0,
+                "Upper": 95.99999999999997,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 96.0,
-                "CI Lower": 96.0,
-                "CI Upper": 96.0
+                "Lower": 95.99999999999997,
+                "Upper": 95.99999999999997,
+                "CI Lower": 95.99999999999997,
+                "CI Upper": 95.99999999999997
             },
             "Common": {
-                "value": 96.0,
-                "CI Lower": 96.0,
-                "CI Upper": 96.0
+                "Lower": 95.99999999999997,
+                "Upper": 95.99999999999997,
+                "CI Lower": 95.99999999999997,
+                "CI Upper": 95.99999999999997
             },
             "Strong": {
-                "value": 96.0,
-                "CI Lower": 96.0,
-                "CI Upper": 96.0
+                "Lower": 95.99999999999997,
+                "Upper": 95.99999999999997,
+                "CI Lower": 95.99999999999997,
+                "CI Upper": 95.99999999999997
             },
             "Heavy": {
-                "value": 96.0,
-                "CI Lower": 96.0,
-                "CI Upper": 96.0
+                "Lower": 95.99999999999997,
+                "Upper": 96.0,
+                "CI Lower": 95.99999999999997,
+                "CI Upper": 95.99999999999997
             }
         },
         "reliability_score": 1.0
@@ -10237,32 +8595,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 12.5,
-                "CI Lower": 12.5,
-                "CI Upper": 25.0
+                "Lower": 12.5,
+                "Upper": 12.500000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 25.0,
-                "CI Lower": 12.5,
-                "CI Upper": 50.0
+                "Lower": 12.500000000000002,
+                "Upper": 24.999999999999996,
+                "CI Lower": 12.500000000000002,
+                "CI Upper": 24.999999999999996
             },
             "Common": {
-                "value": 50.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 24.999999999999996,
+                "Upper": 49.99999999999999,
+                "CI Lower": 12.500000000000002,
+                "CI Upper": 49.99999999999999
             },
             "Strong": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 109.99999999999997,
-                "CI Lower": 50.0,
-                "CI Upper": 150.0
+                "Lower": 49.99999999999999,
+                "Upper": 150.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             }
         },
-        "reliability_score": 0.7864979248469126
+        "reliability_score": 0.8576652832312752
     },
     {
         "substance": "Melatonin",
@@ -10270,32 +8633,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 1.3650000000000002,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 1.0,
+                "Upper": 1.3566935279506023,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 3.0,
+                "Lower": 1.3566935279506023,
+                "Upper": 3.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.0
+            },
+            "Common": {
+                "Lower": 3.0,
+                "Upper": 3.0,
                 "CI Lower": 3.0,
                 "CI Upper": 3.0
             },
-            "Common": {
-                "value": 3.0,
+            "Strong": {
+                "Lower": 3.0,
+                "Upper": 6.000000000000001,
                 "CI Lower": 3.0,
                 "CI Upper": 5.0
             },
-            "Strong": {
-                "value": 6.0,
-                "CI Lower": 5.0,
-                "CI Upper": 9.0
-            },
             "Heavy": {
-                "value": 12.0,
-                "CI Lower": 10.0,
-                "CI Upper": 12.0
+                "Lower": 6.000000000000001,
+                "Upper": 12.0,
+                "CI Lower": 5.0,
+                "CI Upper": 7.005844436887987
             }
         },
-        "reliability_score": 0.8132401438710108
+        "reliability_score": 0.8754934292473406
     },
     {
         "substance": "Memantine",
@@ -10303,65 +8671,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 11.5,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.0,
+                "Upper": 11.095694720941971,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 47.5,
-                "CI Lower": 20.0,
-                "CI Upper": 50.0
+                "Lower": 11.095694720941971,
+                "Upper": 47.28708045020729,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
             },
             "Common": {
-                "value": 62.5,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 47.28708045020729,
+                "Upper": 62.44997998399199,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Strong": {
-                "value": 100.0,
-                "CI Lower": 75.0,
-                "CI Upper": 150.0
+                "Lower": 62.44997998399199,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 150.0,
-                "CI Lower": 120.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 200.0,
+                "CI Lower": 86.22333597076998,
+                "CI Upper": 134.73496968829096
             }
         },
-        "reliability_score": 0.8042757635813296
-    },
-    {
-        "substance": "Meperidine",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 33.5,
-                "CI Lower": 20.0,
-                "CI Upper": 122.52499999999998
-            },
-            "Light": {
-                "value": 112.5,
-                "CI Lower": 27.5,
-                "CI Upper": 200.0
-            },
-            "Common": {
-                "value": 175.0,
-                "CI Lower": 75.0,
-                "CI Upper": 250.0
-            },
-            "Strong": {
-                "value": 250.0,
-                "CI Lower": 150.0,
-                "CI Upper": 500.0
-            },
-            "Heavy": {
-                "value": 500.0,
-                "CI Lower": 250.0,
-                "CI Upper": 500.0
-            }
-        },
-        "reliability_score": 0.7686608405253241
+        "reliability_score": 0.8695171757208864
     },
     {
         "substance": "Mescaline",
@@ -10369,32 +8709,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 90.2,
-                "CI Lower": 20.0,
-                "CI Upper": 100.0
+                "Lower": 20.0,
+                "Upper": 89.84926640417626,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 200.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "Lower": 89.84926640417626,
+                "Upper": 199.99999999999991,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.0047663160795
             },
             "Common": {
-                "value": 250.0,
-                "CI Lower": 200.0,
-                "CI Upper": 300.0
+                "Lower": 199.99999999999991,
+                "Upper": 249.9999999999999,
+                "CI Lower": 130.0,
+                "CI Upper": 199.99999999999991
             },
             "Strong": {
-                "value": 400.0,
-                "CI Lower": 300.0,
-                "CI Upper": 506.0
+                "Lower": 249.9999999999999,
+                "Upper": 400.00000000000006,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 299.99999999999994
             },
             "Heavy": {
-                "value": 672.8000000000001,
-                "CI Lower": 510.0,
-                "CI Upper": 750.0
+                "Lower": 400.00000000000006,
+                "Upper": 750.0,
+                "CI Lower": 299.99999999999994,
+                "CI Upper": 499.99999999999983
             }
         },
-        "reliability_score": 0.8178564539560709
+        "reliability_score": 0.8785709693040471
     },
     {
         "substance": "Metaxalone",
@@ -10402,65 +8747,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 400.0,
-                "CI Lower": 400.0,
-                "CI Upper": 800.0
+                "Lower": 400.0,
+                "Upper": 400.00000000000006,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 800.0,
-                "CI Lower": 400.0,
+                "Lower": 400.00000000000006,
+                "Upper": 800.0,
+                "CI Lower": 400.00000000000006,
                 "CI Upper": 800.0
             },
             "Common": {
-                "value": 800.0,
-                "CI Lower": 800.0,
-                "CI Upper": 1200.0
+                "Lower": 800.0,
+                "Upper": 800.0,
+                "CI Lower": 400.00000000000006,
+                "CI Upper": 800.0
             },
             "Strong": {
-                "value": 1500.0,
+                "Lower": 800.0,
+                "Upper": 1488.9677745634408,
                 "CI Lower": 800.0,
-                "CI Upper": 3200.0
+                "CI Upper": 800.0
             },
             "Heavy": {
-                "value": 3200.0,
-                "CI Lower": 1600.0,
-                "CI Upper": 3600.0
+                "Lower": 1488.9677745634408,
+                "Upper": 3600.0,
+                "CI Lower": 800.0,
+                "CI Upper": 2401.837692960178
             }
         },
-        "reliability_score": 0.7750524661038265
-    },
-    {
-        "substance": "Methadone",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 4.5,
-                "CI Lower": 4.0,
-                "CI Upper": 7.5
-            },
-            "Light": {
-                "value": 5.5,
-                "CI Lower": 4.5,
-                "CI Upper": 10.0
-            },
-            "Common": {
-                "value": 10.0,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
-            "Strong": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 32.5
-            },
-            "Heavy": {
-                "value": 32.5,
-                "CI Lower": 10.0,
-                "CI Upper": 35.0
-            }
-        },
-        "reliability_score": 0.747123218411285
+        "reliability_score": 0.8500349774025511
     },
     {
         "substance": "Methadone",
@@ -10468,32 +8785,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 3.0,
-                "CI Upper": 8.0
+                "Lower": 1.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 5.0
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 40.0,
-                "CI Lower": 25.0,
-                "CI Upper": 60.0
+                "Lower": 19.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 80.0,
-                "CI Lower": 70.0,
-                "CI Upper": 90.0
+                "Lower": 40.0,
+                "Upper": 90.0,
+                "CI Lower": 27.0,
+                "CI Upper": 55.95696431672097
             }
         },
-        "reliability_score": 0.7396860619277403
+        "reliability_score": 0.8252036955492514
     },
     {
         "substance": "Methallylescaline",
@@ -10501,32 +8823,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 6.2,
-                "CI Lower": 5.0,
-                "CI Upper": 12.0
+                "Lower": 5.0,
+                "Upper": 6.155221527290491,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 12.75,
-                "CI Lower": 10.0,
-                "CI Upper": 22.5
+                "Lower": 6.155221527290491,
+                "Upper": 12.688455161331794,
+                "CI Lower": 5.0,
+                "CI Upper": 12.134635811981473
             },
             "Common": {
-                "value": 30.0,
-                "CI Lower": 15.0,
-                "CI Upper": 43.5
+                "Lower": 12.688455161331794,
+                "Upper": 30.000000000000004,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 30.000000000000004
             },
             "Strong": {
-                "value": 48.75,
-                "CI Lower": 30.0,
-                "CI Upper": 52.0
+                "Lower": 30.000000000000004,
+                "Upper": 48.70018732127542,
+                "CI Lower": 15.0,
+                "CI Upper": 44.99999999999999
             },
             "Heavy": {
-                "value": 64.35,
-                "CI Lower": 50.0,
-                "CI Upper": 65.0
+                "Lower": 48.70018732127542,
+                "Upper": 65.0,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 52.0
             }
         },
-        "reliability_score": 0.8084151313261878
+        "reliability_score": 0.8722767542174585
     },
     {
         "substance": "Methamphetamine",
@@ -10534,32 +8861,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 12.0,
-                "CI Lower": 5.0,
-                "CI Upper": 97.0
+                "Lower": 5.0,
+                "Upper": 10.788346401380535,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 95.0,
-                "CI Lower": 15.0,
-                "CI Upper": 180.0
+                "Lower": 10.788346401380535,
+                "Upper": 94.86832980506529,
+                "CI Lower": 5.0,
+                "CI Upper": 90.0
             },
             "Common": {
-                "value": 164.0,
-                "CI Lower": 99.75000000000001,
-                "CI Upper": 250.0
+                "Lower": 94.86832980506529,
+                "Upper": 163.99999999999997,
+                "CI Lower": 15.0,
+                "CI Upper": 163.99999999999997
             },
             "Strong": {
-                "value": 250.0,
-                "CI Lower": 164.0,
-                "CI Upper": 500.0
+                "Lower": 163.99999999999997,
+                "Upper": 249.9999999999999,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 249.9999999999999
             },
             "Heavy": {
-                "value": 500.0,
-                "CI Lower": 250.0,
-                "CI Upper": 500.0
+                "Lower": 249.9999999999999,
+                "Upper": 500.0,
+                "CI Lower": 163.99999999999997,
+                "CI Upper": 499.99999999999983
             }
         },
-        "reliability_score": 0.7623921851433919
+        "reliability_score": 0.8415947900955947
     },
     {
         "substance": "Methamphetamine",
@@ -10567,32 +8899,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 21.25,
-                "CI Lower": 10.0,
-                "CI Upper": 30.0
+                "Lower": 10.0,
+                "Upper": 11.892071150432775,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 30.0,
-                "CI Lower": 29.906250000000007,
-                "CI Upper": 41.25
+                "Lower": 11.892071150432775,
+                "Upper": 30.000000000000004,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 30.000000000000004
             },
             "Common": {
-                "value": 55.0,
-                "CI Lower": 30.0,
-                "CI Upper": 150.0
+                "Lower": 30.000000000000004,
+                "Upper": 42.426406871210204,
+                "CI Lower": 22.13363839415101,
+                "CI Upper": 30.000000000000004
             },
             "Strong": {
-                "value": 187.5,
-                "CI Lower": 91.125,
-                "CI Upper": 200.0
+                "Lower": 42.426406871210204,
+                "Upper": 149.99999999999997,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 122.47448713936502
             },
             "Heavy": {
-                "value": 237.5,
-                "CI Lower": 200.0,
-                "CI Upper": 450.0
+                "Lower": 149.99999999999997,
+                "Upper": 250.0,
+                "CI Lower": 57.57050185523007,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.7066933387807188
+        "reliability_score": 0.8255872483880153
     },
     {
         "substance": "Methamphetamine",
@@ -10600,32 +8937,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "Lower": 10.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "Lower": 10.000000000000002,
+                "Upper": 10.000000000000002,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 12.5,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 12.247448714122097,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 30.0
+                "Lower": 12.247448714122097,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 15.0
             },
             "Heavy": {
-                "value": 30.900000000000006,
-                "CI Lower": 30.0,
-                "CI Upper": 40.0
+                "Lower": 19.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 30.000000000000004
             }
         },
-        "reliability_score": 0.8454408755128027
+        "reliability_score": 0.8969605836752017
     },
     {
         "substance": "Methamphetamine",
@@ -10633,65 +8975,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
+                "Lower": 5.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 5.0,
+                "Upper": 5.0,
                 "CI Lower": 5.0,
                 "CI Upper": 5.0
             },
-            "Light": {
-                "value": 5.0,
+            "Common": {
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
                 "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
-            "Common": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 34.0,
-                "CI Lower": 30.0,
-                "CI Upper": 35.0
+                "Lower": 19.999999999999996,
+                "Upper": 35.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.8027839140708848
-    },
-    {
-        "substance": "Methamphetamine",
-        "method": "smoked",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 0.27749999999999997,
-                "CI Lower": 0.25,
-                "CI Upper": 0.5
-            },
-            "Light": {
-                "value": 0.5,
-                "CI Lower": 0.2875,
-                "CI Upper": 0.75
-            },
-            "Common": {
-                "value": 0.675,
-                "CI Lower": 0.5,
-                "CI Upper": 1.25
-            },
-            "Strong": {
-                "value": 1.125,
-                "CI Lower": 0.6,
-                "CI Upper": 1.625
-            },
-            "Heavy": {
-                "value": 1.7249999999999996,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
-            }
-        },
-        "reliability_score": 0.8100688808643046
+        "reliability_score": 0.8685226093805898
     },
     {
         "substance": "Methamphetamine",
@@ -10699,65 +9013,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 13.5,
-                "CI Lower": 10.0,
-                "CI Upper": 50.0
+                "Lower": 10.0,
+                "Upper": 13.282012399616217,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 50.0,
+                "Lower": 13.282012399616217,
+                "Upper": 49.99999999999999,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 49.99999999999999
+            },
+            "Common": {
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
                 "CI Lower": 15.0,
-                "CI Upper": 125.0
-            },
-            "Common": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 250.0
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 225.0,
-                "CI Lower": 100.0,
-                "CI Upper": 250.0
+                "Lower": 99.99999999999996,
+                "Upper": 223.60679775004118,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 249.9999999999999
             },
             "Heavy": {
-                "value": 264.99999999999994,
-                "CI Lower": 214.99999999999994,
-                "CI Upper": 300.0
+                "Lower": 223.60679775004118,
+                "Upper": 300.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 249.9999999999999
             }
         },
-        "reliability_score": 0.7903926072183425
-    },
-    {
-        "substance": "Methaqualone",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 182.5,
-                "CI Lower": 150.0,
-                "CI Upper": 293.0
-            },
-            "Light": {
-                "value": 294.75,
-                "CI Lower": 200.0,
-                "CI Upper": 300.0
-            },
-            "Common": {
-                "value": 300.0,
-                "CI Lower": 293.0,
-                "CI Upper": 300.0
-            },
-            "Strong": {
-                "value": 300.0,
-                "CI Lower": 300.0,
-                "CI Upper": 375.0
-            },
-            "Heavy": {
-                "value": 401.25,
-                "CI Lower": 300.0,
-                "CI Upper": 450.0
-            }
-        },
-        "reliability_score": 0.9291722783043743
+        "reliability_score": 0.8602617381455617
     },
     {
         "substance": "Methiopropamine",
@@ -10765,65 +9051,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 15.0,
-                "CI Lower": 15.0,
-                "CI Upper": 22.5
+                "Lower": 15.0,
+                "Upper": 15.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 22.5,
+                "Lower": 15.0,
+                "Upper": 22.0027934201028,
                 "CI Lower": 15.0,
-                "CI Upper": 28.78124999999997
+                "CI Upper": 22.0027934201028
             },
             "Common": {
-                "value": 27.5,
-                "CI Lower": 25.0,
-                "CI Upper": 75.0
+                "Lower": 22.0027934201028,
+                "Upper": 27.386127875299884,
+                "CI Lower": 15.0,
+                "CI Upper": 28.663283766163154
             },
             "Strong": {
-                "value": 75.0,
-                "CI Lower": 30.0,
-                "CI Upper": 100.0
+                "Lower": 27.386127875299884,
+                "Upper": 74.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 74.99999999999999
             },
             "Heavy": {
-                "value": 100.0,
-                "CI Lower": 75.0,
-                "CI Upper": 100.0
+                "Lower": 74.99999999999999,
+                "Upper": 100.0,
+                "CI Lower": 29.730177875473583,
+                "CI Upper": 99.99999999999996
             }
         },
-        "reliability_score": 0.7881578451963844
-    },
-    {
-        "substance": "Methocarbamol",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 500.0,
-                "CI Lower": 500.0,
-                "CI Upper": 750.0
-            },
-            "Light": {
-                "value": 750.0,
-                "CI Lower": 500.0,
-                "CI Upper": 1500.0
-            },
-            "Common": {
-                "value": 1125.0,
-                "CI Lower": 750.0,
-                "CI Upper": 2500.0
-            },
-            "Strong": {
-                "value": 2437.5,
-                "CI Lower": 750.0,
-                "CI Upper": 3000.0
-            },
-            "Heavy": {
-                "value": 3524.9999999999995,
-                "CI Lower": 2337.5,
-                "CI Upper": 4500.0
-            }
-        },
-        "reliability_score": 0.7759583560665841
+        "reliability_score": 0.8587718967975895
     },
     {
         "substance": "Methoxetamine",
@@ -10831,32 +9089,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 13.6,
-                "CI Lower": 8.0,
-                "CI Upper": 19.0
+                "Lower": 8.0,
+                "Upper": 13.227903093687665,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "Lower": 13.227903093687665,
+                "Upper": 19.999999999999996,
+                "CI Lower": 7.999999999999999,
+                "CI Upper": 18.881750225968307
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
+                "Lower": 19.999999999999996,
+                "Upper": 19.999999999999996,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
             },
             "Strong": {
-                "value": 30.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
+                "Lower": 19.999999999999996,
+                "Upper": 30.000000000000004,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 30.000000000000004
             },
             "Heavy": {
-                "value": 41.99999999999999,
-                "CI Lower": 30.0,
-                "CI Upper": 50.0
+                "Lower": 30.000000000000004,
+                "Upper": 50.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 40.0
             }
         },
-        "reliability_score": 0.8726227539167606
+        "reliability_score": 0.915081835944507
     },
     {
         "substance": "Methoxetamine",
@@ -10864,32 +9127,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 9.8,
-                "CI Lower": 7.0,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 9.779327685453099,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.5,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "Lower": 9.779327685453099,
+                "Upper": 15.491933384834871,
+                "CI Lower": 7.448433437196906,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 40.0
+                "Lower": 15.491933384834871,
+                "Upper": 24.999999999999996,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
             },
             "Strong": {
-                "value": 50.0,
-                "CI Lower": 44.0,
-                "CI Upper": 50.0
+                "Lower": 24.999999999999996,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 35.0
             },
             "Heavy": {
-                "value": 100.0,
-                "CI Lower": 75.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 124.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 49.99999999999999
             }
         },
-        "reliability_score": 0.786567459701953
+        "reliability_score": 0.857711639801302
     },
     {
         "substance": "Methoxetamine",
@@ -10897,32 +9165,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 11.100000000000001,
-                "CI Lower": 1.0,
-                "CI Upper": 20.0
+                "Lower": 1.0,
+                "Upper": 11.054769339002899,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
+                "Lower": 11.054769339002899,
+                "Upper": 19.999999999999996,
+                "CI Lower": 2.423446870213957,
+                "CI Upper": 19.999999999999996
             },
             "Common": {
-                "value": 35.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 19.999999999999996,
+                "Upper": 35.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 24.999999999999996
             },
             "Strong": {
-                "value": 50.0,
-                "CI Lower": 38.0,
-                "CI Upper": 55.0
+                "Lower": 35.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 75.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 100.0,
+                "CI Lower": 42.29485053766759,
+                "CI Upper": 49.99999999999999
             }
         },
-        "reliability_score": 0.8400548309692453
+        "reliability_score": 0.8933698873128302
     },
     {
         "substance": "Methoxetamine",
@@ -10930,65 +9203,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 13.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.0,
+                "Upper": 12.964216116733763,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.0,
-                "CI Lower": 15.0,
+                "Lower": 12.964216116733763,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
+            },
+            "Common": {
+                "Lower": 19.999999999999996,
+                "Upper": 49.99999999999999,
+                "CI Lower": 19.999999999999996,
                 "CI Upper": 35.0
             },
-            "Common": {
-                "value": 50.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
-            },
             "Strong": {
-                "value": 60.0,
-                "CI Lower": 50.0,
-                "CI Upper": 65.74999999999932
+                "Lower": 49.99999999999999,
+                "Upper": 59.999999999999986,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 98.99999999999999,
-                "CI Lower": 60.0,
-                "CI Upper": 150.0
+                "Lower": 59.999999999999986,
+                "Upper": 150.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 65.00000000000003
             }
         },
-        "reliability_score": 0.7907005514910397
-    },
-    {
-        "substance": "Methoxphenidine",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 24.5,
-                "CI Lower": 20.0,
-                "CI Upper": 39.0
-            },
-            "Light": {
-                "value": 30.0,
-                "CI Lower": 22.5,
-                "CI Upper": 50.0
-            },
-            "Common": {
-                "value": 50.0,
-                "CI Lower": 30.0,
-                "CI Upper": 50.0
-            },
-            "Strong": {
-                "value": 50.0,
-                "CI Lower": 45.0,
-                "CI Upper": 72.5
-            },
-            "Heavy": {
-                "value": 66.49999999999997,
-                "CI Lower": 50.0,
-                "CI Upper": 80.0
-            }
-        },
-        "reliability_score": 0.8832251583757715
+        "reliability_score": 0.8604670343273597
     },
     {
         "substance": "Methoxphenidine",
@@ -10996,131 +9241,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 23.5,
-                "CI Lower": 10.0,
-                "CI Upper": 40.0
+                "Lower": 10.0,
+                "Upper": 19.235384063888414,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 45.0,
-                "CI Lower": 37.0,
-                "CI Upper": 80.0
-            },
-            "Common": {
-                "value": 85.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
-            },
-            "Strong": {
-                "value": 100.0,
-                "CI Lower": 90.0,
-                "CI Upper": 150.0
-            },
-            "Heavy": {
-                "value": 150.0,
-                "CI Lower": 110.0,
-                "CI Upper": 150.0
-            }
-        },
-        "reliability_score": 0.8506432983514041
-    },
-    {
-        "substance": "Methoxpropamine",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 34.5,
-                "CI Lower": 30.0,
-                "CI Upper": 40.0
-            },
-            "Light": {
-                "value": 40.0,
-                "CI Lower": 32.5,
+                "Lower": 19.235384063888414,
+                "Upper": 44.7213595500581,
+                "CI Lower": 10.000000000000002,
                 "CI Upper": 40.0
             },
             "Common": {
-                "value": 40.0,
-                "CI Lower": 40.0,
-                "CI Upper": 60.0
+                "Lower": 44.7213595500581,
+                "Upper": 84.99999999999996,
+                "CI Lower": 38.98717737923914,
+                "CI Upper": 80.00000000000001
             },
             "Strong": {
-                "value": 55.0,
-                "CI Lower": 40.0,
-                "CI Upper": 2295.0
+                "Lower": 84.99999999999996,
+                "Upper": 99.99999999999996,
+                "CI Lower": 59.999999999999986,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 1698.9999999999968,
-                "CI Lower": 40.0,
-                "CI Upper": 3040.0
+                "Lower": 99.99999999999996,
+                "Upper": 150.0,
+                "CI Lower": 98.45108660524805,
+                "CI Upper": 149.99999999999997
             }
         },
-        "reliability_score": 0.7
-    },
-    {
-        "substance": "Methyl-B12",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 16.0,
-                "CI Lower": 16.0,
-                "CI Upper": 16.0
-            },
-            "Light": {
-                "value": 16.0,
-                "CI Lower": 16.0,
-                "CI Upper": 30.66
-            },
-            "Common": {
-                "value": 23.33,
-                "CI Lower": 16.0,
-                "CI Upper": 30.66
-            },
-            "Strong": {
-                "value": 30.66,
-                "CI Lower": 16.0,
-                "CI Upper": 30.66
-            },
-            "Heavy": {
-                "value": 30.66,
-                "CI Lower": 30.66,
-                "CI Upper": 30.66
-            }
-        },
-        "reliability_score": 0.9006451125202133
-    },
-    {
-        "substance": "Methylone",
-        "method": "IV",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 35.0,
-                "CI Lower": 20.0,
-                "CI Upper": 87.5
-            },
-            "Light": {
-                "value": 87.5,
-                "CI Lower": 35.0,
-                "CI Upper": 127.81249999999972
-            },
-            "Common": {
-                "value": 100.0,
-                "CI Lower": 75.0,
-                "CI Upper": 200.0
-            },
-            "Strong": {
-                "value": 190.0,
-                "CI Lower": 100.0,
-                "CI Upper": 250.0
-            },
-            "Heavy": {
-                "value": 250.0,
-                "CI Lower": 175.0,
-                "CI Upper": 250.0
-            }
-        },
-        "reliability_score": 0.8257772874262415
+        "reliability_score": 0.9004288655676027
     },
     {
         "substance": "Methylone",
@@ -11128,32 +9279,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 21.25,
-                "CI Lower": 5.0,
-                "CI Upper": 30.0
+                "Lower": 5.0,
+                "Upper": 21.147425268856303,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 31.875,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 21.147425268856303,
+                "Upper": 31.72113790326196,
+                "CI Lower": 7.0710678133559615,
+                "CI Upper": 26.165878484832888
             },
             "Common": {
-                "value": 55.0,
-                "CI Lower": 50.0,
+                "Lower": 31.72113790326196,
+                "Upper": 54.772255750558166,
+                "CI Lower": 26.165878484832888,
+                "CI Upper": 49.99999999999999
+            },
+            "Strong": {
+                "Lower": 54.772255750558166,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
                 "CI Upper": 90.0
             },
-            "Strong": {
-                "value": 100.0,
-                "CI Lower": 75.0,
-                "CI Upper": 125.0
-            },
             "Heavy": {
-                "value": 150.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 200.0,
+                "CI Lower": 74.99999999999999,
+                "CI Upper": 114.65313506455612
             }
         },
-        "reliability_score": 0.8171030637782564
+        "reliability_score": 0.8780687091855042
     },
     {
         "substance": "Methylone",
@@ -11161,32 +9317,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 34.050000000000004,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 20.0,
+                "Upper": 33.96611280404785,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 87.5,
-                "CI Lower": 60.0,
-                "CI Upper": 100.0
+                "Lower": 33.96611280404785,
+                "Upper": 87.38851890733145,
+                "CI Lower": 26.29063346788646,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 148.5,
-                "CI Lower": 125.0,
-                "CI Upper": 150.0
+                "Lower": 87.38851890733145,
+                "Upper": 148.49242404917547,
+                "CI Lower": 69.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 175.0,
-                "CI Upper": 200.0
+                "Lower": 148.49242404917547,
+                "Upper": 199.99999999999991,
+                "CI Lower": 124.99999999999994,
+                "CI Upper": 149.99999999999997
             },
             "Heavy": {
-                "value": 250.0,
-                "CI Lower": 250.0,
-                "CI Upper": 300.0
+                "Lower": 199.99999999999991,
+                "Upper": 330.0,
+                "CI Lower": 180.0,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.8512160016672286
+        "reliability_score": 0.9008106677781522
     },
     {
         "substance": "Methylphenidate",
@@ -11194,32 +9355,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 7.750000000000002,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 7.718895067270269,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 7.718895067270269,
+                "Upper": 15.0,
+                "CI Lower": 5.0,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 25.0,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
+                "Lower": 15.0,
+                "Upper": 24.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
             },
             "Strong": {
-                "value": 40.0,
-                "CI Lower": 30.0,
-                "CI Upper": 54.0
+                "Lower": 24.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 30.000000000000004
             },
             "Heavy": {
-                "value": 73.99999999999991,
-                "CI Lower": 54.0,
-                "CI Upper": 80.0
+                "Lower": 40.0,
+                "Upper": 81.0,
+                "CI Lower": 36.0,
+                "CI Upper": 49.99999999999999
             }
         },
-        "reliability_score": 0.8085749624573446
+        "reliability_score": 0.8723833083048964
     },
     {
         "substance": "Methylphenidate",
@@ -11227,32 +9393,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
+                "Lower": 2.5,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.0,
-                "CI Lower": 18.0,
-                "CI Upper": 27.0
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 7.845840979559395,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 40.0,
-                "CI Lower": 30.0,
-                "CI Upper": 40.0
+                "Lower": 19.999999999999996,
+                "Upper": 37.94733192203442,
+                "CI Lower": 17.999999999999996,
+                "CI Upper": 19.999999999999996
             },
             "Strong": {
-                "value": 60.0,
-                "CI Lower": 54.0,
-                "CI Upper": 72.0
+                "Lower": 37.94733192203442,
+                "Upper": 59.999999999999986,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 40.0
             },
             "Heavy": {
-                "value": 108.0,
-                "CI Lower": 90.0,
-                "CI Upper": 120.0
+                "Lower": 59.999999999999986,
+                "Upper": 140.0,
+                "CI Lower": 54.00000000000001,
+                "CI Upper": 64.14149582723107
             }
         },
-        "reliability_score": 0.7918499211029248
+        "reliability_score": 0.8601493863304537
     },
     {
         "substance": "Mimosa tenuiflora",
@@ -11260,32 +9431,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 3.0,
-                "CI Lower": 2.0,
-                "CI Upper": 5.0
+                "Lower": 1.25,
+                "Upper": 3.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 7.0,
-                "CI Lower": 5.0,
-                "CI Upper": 8.0
+                "Lower": 3.0,
+                "Upper": 7.0,
+                "CI Lower": 2.5,
+                "CI Upper": 3.89718983998459
             },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 9.0,
-                "CI Upper": 11.5
+                "Lower": 7.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 7.999999999999999
             },
             "Strong": {
-                "value": 15.0,
-                "CI Lower": 12.0,
-                "CI Upper": 18.0
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 11.000000000000002
             },
             "Heavy": {
-                "value": 24.19999999999999,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
+                "Lower": 15.0,
+                "Upper": 30.0,
+                "CI Lower": 12.500000000000002,
+                "CI Upper": 17.0
             }
         },
-        "reliability_score": 0.8333290525008674
+        "reliability_score": 0.8888860350005783
     },
     {
         "substance": "Mirtazapine",
@@ -11293,32 +9469,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 7.5,
-                "CI Lower": 3.75,
-                "CI Upper": 15.0
+                "Lower": 3.5,
+                "Upper": 7.5,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.0,
-                "CI Lower": 15.0,
+                "Lower": 7.5,
+                "Upper": 15.0,
+                "CI Lower": 3.8356707524535216,
                 "CI Upper": 15.0
             },
             "Common": {
-                "value": 30.0,
+                "Lower": 15.0,
+                "Upper": 30.000000000000004,
                 "CI Lower": 15.0,
-                "CI Upper": 30.0
+                "CI Upper": 15.0
             },
             "Strong": {
-                "value": 45.0,
-                "CI Lower": 30.0,
-                "CI Upper": 45.0
+                "Lower": 30.000000000000004,
+                "Upper": 44.99999999999999,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 30.000000000000004
             },
             "Heavy": {
-                "value": 48.500000000000014,
-                "CI Lower": 45.0,
-                "CI Upper": 60.0
+                "Lower": 44.99999999999999,
+                "Upper": 60.0,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 44.99999999999999
             }
         },
-        "reliability_score": 0.8446697303985815
+        "reliability_score": 0.8960244572891332
     },
     {
         "substance": "Moclobemide",
@@ -11326,65 +9507,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 73.75,
-                "CI Lower": 20.0,
-                "CI Upper": 75.0
+                "Lower": 20.0,
+                "Upper": 73.49481489848608,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 100.0,
-                "CI Lower": 75.0,
-                "CI Upper": 150.0
+                "Lower": 73.49481489848608,
+                "Upper": 99.99999999999996,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 74.99999999999999
             },
             "Common": {
-                "value": 150.0,
-                "CI Lower": 150.0,
-                "CI Upper": 150.0
+                "Lower": 99.99999999999996,
+                "Upper": 149.99999999999997,
+                "CI Lower": 74.99999999999999,
+                "CI Upper": 149.99999999999997
             },
             "Strong": {
-                "value": 150.0,
-                "CI Lower": 150.0,
-                "CI Upper": 300.0
+                "Lower": 149.99999999999997,
+                "Upper": 149.99999999999997,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 149.99999999999997
             },
             "Heavy": {
-                "value": 300.0,
-                "CI Lower": 200.0,
-                "CI Upper": 300.0
+                "Lower": 149.99999999999997,
+                "Upper": 300.0,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 299.99999999999994
             }
         },
-        "reliability_score": 0.8531872342022724
-    },
-    {
-        "substance": "Modafinil",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 39.0,
-                "CI Lower": 30.0,
-                "CI Upper": 146.37499999999875
-            },
-            "Light": {
-                "value": 125.0,
-                "CI Lower": 35.0,
-                "CI Upper": 200.0
-            },
-            "Common": {
-                "value": 200.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
-            },
-            "Strong": {
-                "value": 200.0,
-                "CI Lower": 200.0,
-                "CI Upper": 350.0
-            },
-            "Heavy": {
-                "value": 309.9999999999998,
-                "CI Lower": 200.0,
-                "CI Upper": 400.0
-            }
-        },
-        "reliability_score": 0.8254263765447016
+        "reliability_score": 0.9021248228015148
     },
     {
         "substance": "Modafinil",
@@ -11392,32 +9545,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 20.0,
+                "Upper": 99.99999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 100.0
+                "Lower": 99.99999999999996,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Common": {
-                "value": 200.0,
-                "CI Lower": 125.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 199.99999999999991,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 200.0,
-                "CI Upper": 200.0
+                "Lower": 199.99999999999991,
+                "Upper": 199.99999999999991,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 199.99999999999991
             },
             "Heavy": {
-                "value": 400.0,
-                "CI Lower": 400.0,
-                "CI Upper": 500.0
+                "Lower": 199.99999999999991,
+                "Upper": 600.0,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.8250123160967826
+        "reliability_score": 0.883641239588095
     },
     {
         "substance": "Morning Glory",
@@ -11425,32 +9583,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 2.0,
-                "CI Lower": 1.0,
-                "CI Upper": 3.0
+                "Lower": 0.6,
+                "Upper": 2.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 6.0,
-                "CI Lower": 5.0,
-                "CI Upper": 6.0
+                "Lower": 2.0,
+                "Upper": 6.000000000000001,
+                "CI Lower": 1.5,
+                "CI Upper": 3.0
             },
             "Common": {
-                "value": 7.5,
-                "CI Lower": 7.0,
-                "CI Upper": 9.0
+                "Lower": 6.000000000000001,
+                "Upper": 7.5,
+                "CI Lower": 5.4,
+                "CI Upper": 6.000000000000001
             },
             "Strong": {
-                "value": 10.0,
-                "CI Lower": 9.0,
-                "CI Upper": 12.0
+                "Lower": 7.5,
+                "Upper": 10.000000000000002,
+                "CI Lower": 7.0,
+                "CI Upper": 9.000000000000002
             },
             "Heavy": {
-                "value": 15.0,
-                "CI Lower": 14.0,
-                "CI Upper": 16.5
+                "Lower": 10.000000000000002,
+                "Upper": 18.0,
+                "CI Lower": 9.438295645132127,
+                "CI Upper": 10.802477417824885
             }
         },
-        "reliability_score": 0.8598870166407733
+        "reliability_score": 0.9065913444271823
     },
     {
         "substance": "Morning Glory",
@@ -11458,32 +9621,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 3.16,
-                "CI Lower": 1.0,
-                "CI Upper": 72.0
+                "Lower": 1.0,
+                "Upper": 2.8481403039715247,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 80.0,
-                "CI Lower": 3.7,
-                "CI Upper": 150.0
+                "Lower": 2.8481403039715247,
+                "Upper": 80.00000000000001,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 63.25168504543104
             },
             "Common": {
-                "value": 150.0,
-                "CI Lower": 80.0,
-                "CI Upper": 350.0
+                "Lower": 80.00000000000001,
+                "Upper": 149.99999999999997,
+                "CI Lower": 3.6999999999999997,
+                "CI Upper": 149.99999999999997
             },
             "Strong": {
-                "value": 350.0,
-                "CI Lower": 150.0,
-                "CI Upper": 450.0
+                "Lower": 149.99999999999997,
+                "Upper": 350.0,
+                "CI Lower": 80.00000000000001,
+                "CI Upper": 350.0
             },
             "Heavy": {
-                "value": 479.9999999999999,
-                "CI Lower": 350.0,
-                "CI Upper": 600.0
+                "Lower": 350.0,
+                "Upper": 600.0,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 450.00000000000006
             }
         },
-        "reliability_score": 0.734409397815889
+        "reliability_score": 0.8229395985439261
     },
     {
         "substance": "Morphine",
@@ -11491,32 +9659,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 4.8,
-                "CI Lower": 4.0,
-                "CI Upper": 13.200000000000001
+                "Lower": 4.0,
+                "Upper": 4.7817624989918865,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.0,
+                "Lower": 4.7817624989918865,
+                "Upper": 15.0,
+                "CI Lower": 4.0,
+                "CI Upper": 12.488298111851291
+            },
+            "Common": {
+                "Lower": 15.0,
+                "Upper": 16.0,
                 "CI Lower": 5.0,
                 "CI Upper": 16.0
             },
-            "Common": {
-                "value": 16.0,
-                "CI Lower": 15.0,
-                "CI Upper": 30.0
-            },
             "Strong": {
-                "value": 30.0,
-                "CI Lower": 16.0,
-                "CI Upper": 30.0
+                "Lower": 16.0,
+                "Upper": 30.000000000000004,
+                "CI Lower": 15.0,
+                "CI Upper": 30.000000000000004
             },
             "Heavy": {
-                "value": 35.99999999999998,
-                "CI Lower": 30.0,
-                "CI Upper": 60.0
+                "Lower": 30.000000000000004,
+                "Upper": 60.0,
+                "CI Lower": 16.0,
+                "CI Upper": 30.000000000000004
             }
         },
-        "reliability_score": 0.8024169682659072
+        "reliability_score": 0.8682779788439381
     },
     {
         "substance": "Morphine",
@@ -11524,32 +9697,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 9.0,
-                "CI Lower": 5.0,
-                "CI Upper": 12.5
+                "Lower": 5.0,
+                "Upper": 8.944271910061467,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.0,
-                "CI Lower": 12.5,
-                "CI Upper": 30.0
+                "Lower": 8.944271910061467,
+                "Upper": 15.0,
+                "CI Lower": 6.123724357164152,
+                "CI Upper": 12.500000000000002
             },
             "Common": {
-                "value": 30.0,
-                "CI Lower": 20.0,
-                "CI Upper": 45.0
+                "Lower": 15.0,
+                "Upper": 30.000000000000004,
+                "CI Lower": 12.500000000000002,
+                "CI Upper": 30.000000000000004
             },
             "Strong": {
-                "value": 50.0,
-                "CI Lower": 30.0,
-                "CI Upper": 90.0
+                "Lower": 30.000000000000004,
+                "Upper": 49.99999999999999,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 30.000000000000004
             },
             "Heavy": {
-                "value": 100.0,
-                "CI Lower": 60.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 100.0,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 59.999999999999986
             }
         },
-        "reliability_score": 0.7826109524331384
+        "reliability_score": 0.8550739682887589
     },
     {
         "substance": "Morphine",
@@ -11557,65 +9735,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 7.5,
+                "Lower": 7.5,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 10.000000000000002,
+                "Upper": 30.000000000000004,
+                "CI Lower": 10.000000000000002,
                 "CI Upper": 15.0
             },
-            "Light": {
-                "value": 30.0,
-                "CI Lower": 15.0,
-                "CI Upper": 30.0
-            },
             "Common": {
-                "value": 60.0,
-                "CI Lower": 30.0,
-                "CI Upper": 60.0
+                "Lower": 30.000000000000004,
+                "Upper": 59.999999999999986,
+                "CI Lower": 22.3606797750602,
+                "CI Upper": 30.000000000000004
             },
             "Strong": {
-                "value": 82.5,
-                "CI Lower": 60.0,
-                "CI Upper": 110.0
+                "Lower": 59.999999999999986,
+                "Upper": 82.15838362581648,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 59.999999999999986
             },
             "Heavy": {
-                "value": 180.0,
-                "CI Lower": 110.0,
-                "CI Upper": 200.0
+                "Lower": 82.15838362581648,
+                "Upper": 200.0,
+                "CI Lower": 59.999999999999986,
+                "CI Upper": 99.99999999999996
             }
         },
-        "reliability_score": 0.7743912685529715
-    },
-    {
-        "substance": "Mugwort",
-        "method": "oral",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 1.775,
-                "CI Lower": 1.5,
-                "CI Upper": 2.5
-            },
-            "Light": {
-                "value": 2.5,
-                "CI Lower": 1.875,
-                "CI Upper": 2.5
-            },
-            "Common": {
-                "value": 2.5,
-                "CI Lower": 2.5,
-                "CI Upper": 2.75
-            },
-            "Strong": {
-                "value": 2.625,
-                "CI Lower": 2.5,
-                "CI Upper": 7.0
-            },
-            "Heavy": {
-                "value": 7.0,
-                "CI Lower": 2.5,
-                "CI Upper": 7.0
-            }
-        },
-        "reliability_score": 0.8270349818404739
+        "reliability_score": 0.8495941790353143
     },
     {
         "substance": "Mushrooms",
@@ -11623,32 +9773,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 0.9,
-                "CI Upper": 1.0
+                "Lower": 0.1,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.75,
-                "CI Lower": 1.75,
-                "CI Upper": 2.0
+                "Lower": 0.9999999999999999,
+                "Upper": 1.75,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 3.0,
-                "CI Lower": 2.5,
-                "CI Upper": 3.0
+                "Lower": 1.75,
+                "Upper": 3.0,
+                "CI Lower": 1.75,
+                "CI Upper": 1.8
             },
             "Strong": {
-                "value": 3.5,
-                "CI Lower": 3.5,
-                "CI Upper": 3.75
+                "Lower": 3.0,
+                "Upper": 3.5,
+                "CI Lower": 2.75,
+                "CI Upper": 3.0
             },
             "Heavy": {
-                "value": 6.5,
-                "CI Lower": 6.0,
-                "CI Upper": 7.0
+                "Lower": 3.5,
+                "Upper": 8.0,
+                "CI Lower": 3.5,
+                "CI Upper": 3.5
             }
         },
-        "reliability_score": 0.841609601219083
+        "reliability_score": 0.8944239323280723
     },
     {
         "substance": "Mushrooms",
@@ -11656,65 +9811,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 0.21875,
-                "CI Lower": 0.1,
+                "Lower": 0.1,
+                "Upper": 0.21022410432463381,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.21022410432463381,
+                "Upper": 0.5,
+                "CI Lower": 0.10000000000000002,
                 "CI Upper": 0.5
             },
-            "Light": {
-                "value": 0.5,
-                "CI Lower": 0.3333,
-                "CI Upper": 1.0
-            },
             "Common": {
-                "value": 1.0,
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
                 "CI Lower": 0.5,
-                "CI Upper": 1.0
+                "CI Upper": 0.9999999999999999
             },
             "Strong": {
-                "value": 1.5,
-                "CI Lower": 1.0,
-                "CI Upper": 3.0
+                "Lower": 0.9999999999999999,
+                "Upper": 1.5,
+                "CI Lower": 0.5916079784518127,
+                "CI Upper": 0.9999999999999999
             },
             "Heavy": {
-                "value": 3.0,
-                "CI Lower": 2.0,
-                "CI Upper": 3.5
+                "Lower": 1.5,
+                "Upper": 3.5,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.2302549993798193
             }
         },
-        "reliability_score": 0.771365841182964
-    },
-    {
-        "substance": "Mushrooms - P. azurescens",
-        "method": "oral",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 1.0825,
-                "CI Lower": 1.0,
-                "CI Upper": 2.1675
-            },
-            "Light": {
-                "value": 1.925,
-                "CI Lower": 1.1124999999999998,
-                "CI Upper": 3.375
-            },
-            "Common": {
-                "value": 3.25,
-                "CI Lower": 1.85,
-                "CI Upper": 3.5
-            },
-            "Strong": {
-                "value": 3.5,
-                "CI Lower": 3.125,
-                "CI Upper": 3.5
-            },
-            "Heavy": {
-                "value": 3.5,
-                "CI Lower": 3.5,
-                "CI Upper": 3.5
-            }
-        },
-        "reliability_score": 0.8914840835488338
+        "reliability_score": 0.8475772274553093
     },
     {
         "substance": "Mushrooms - P. cubensis",
@@ -11722,32 +9849,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.0
+                "Lower": 0.3,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 2.0,
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 0.9999999999999999
+            },
+            "Common": {
+                "Lower": 2.0,
+                "Upper": 3.0,
                 "CI Lower": 2.0,
                 "CI Upper": 2.0
             },
-            "Common": {
-                "value": 3.0,
+            "Strong": {
+                "Lower": 3.0,
+                "Upper": 4.0,
                 "CI Lower": 3.0,
                 "CI Upper": 3.5
             },
-            "Strong": {
-                "value": 4.0,
+            "Heavy": {
+                "Lower": 4.0,
+                "Upper": 11.2,
                 "CI Lower": 4.0,
                 "CI Upper": 4.5
-            },
-            "Heavy": {
-                "value": 7.925000000000011,
-                "CI Lower": 7.0,
-                "CI Upper": 9.0
             }
         },
-        "reliability_score": 0.8213324319653748
+        "reliability_score": 0.880811165935214
     },
     {
         "substance": "Mushrooms - P. cyanescens",
@@ -11755,32 +9887,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 0.7875000000000001,
-                "CI Lower": 0.25,
-                "CI Upper": 1.0
+                "Lower": 0.25,
+                "Upper": 0.7871958685101197,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.15,
-                "CI Lower": 0.95,
-                "CI Upper": 2.0
+                "Lower": 0.7871958685101197,
+                "Upper": 1.1465313506773895,
+                "CI Lower": 0.25,
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 2.45,
-                "CI Lower": 1.45,
-                "CI Upper": 3.5
+                "Lower": 1.1465313506773895,
+                "Upper": 2.449489742785261,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.0
             },
             "Strong": {
-                "value": 4.0,
-                "CI Lower": 2.5,
-                "CI Upper": 5.0
+                "Lower": 2.449489742785261,
+                "Upper": 4.0,
+                "CI Lower": 1.5,
+                "CI Upper": 3.5
             },
             "Heavy": {
-                "value": 6.0,
-                "CI Lower": 4.0,
-                "CI Upper": 10.0
+                "Lower": 4.0,
+                "Upper": 10.0,
+                "CI Lower": 3.5,
+                "CI Upper": 4.620105432371763
             }
         },
-        "reliability_score": 0.7896631047267018
+        "reliability_score": 0.8597754031511344
     },
     {
         "substance": "Mushrooms - P. mexicana",
@@ -11788,32 +9925,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.9999999999999999,
+                "Upper": 3.0,
                 "CI Lower": 0.5,
                 "CI Upper": 2.0
             },
-            "Light": {
-                "value": 3.0,
-                "CI Lower": 1.5,
-                "CI Upper": 5.0
-            },
             "Common": {
-                "value": 5.0,
-                "CI Lower": 3.3,
-                "CI Upper": 7.0
+                "Lower": 3.0,
+                "Upper": 5.0,
+                "CI Lower": 2.0,
+                "CI Upper": 3.8264278988645293
             },
             "Strong": {
-                "value": 9.5,
-                "CI Lower": 5.0,
-                "CI Upper": 13.6
+                "Lower": 5.0,
+                "Upper": 9.457416090080265,
+                "CI Lower": 3.3,
+                "CI Upper": 6.13240542492805
             },
             "Heavy": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "Lower": 9.457416090080265,
+                "Upper": 15.0,
+                "CI Lower": 5.73265675325835,
+                "CI Upper": 10.000000000000002
             }
         },
-        "reliability_score": 0.7859535428533122
+        "reliability_score": 0.857302361902208
     },
     {
         "substance": "Mushrooms - P. semilanceata",
@@ -11821,32 +9963,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 0.8300000000000001,
-                "CI Lower": 0.3,
-                "CI Upper": 1.0
+                "Lower": 0.3,
+                "Upper": 0.8365116421111584,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.475,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 0.8365116421111584,
+                "Upper": 1.5,
+                "CI Lower": 0.34460950683739566,
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 2.0,
-                "CI Lower": 1.5,
-                "CI Upper": 3.0
+                "Lower": 1.5,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.0
             },
             "Strong": {
-                "value": 3.5,
-                "CI Lower": 2.5,
-                "CI Upper": 5.0
+                "Lower": 2.0,
+                "Upper": 3.5,
+                "CI Lower": 1.75,
+                "CI Upper": 3.0
             },
             "Heavy": {
-                "value": 5.850000000000001,
-                "CI Lower": 3.5,
-                "CI Upper": 7.0
+                "Lower": 3.5,
+                "Upper": 8.0,
+                "CI Lower": 3.0,
+                "CI Upper": 5.0
             }
         },
-        "reliability_score": 0.8100661555727597
+        "reliability_score": 0.8661852979435423
     },
     {
         "substance": "Mushrooms - P. subaeruginosa",
@@ -11854,32 +10001,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 0.4,
-                "CI Lower": 0.4,
-                "CI Upper": 1.5
+                "Lower": 0.4,
+                "Upper": 0.4,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.5,
+                "Lower": 0.4,
+                "Upper": 1.5,
                 "CI Lower": 0.4,
-                "CI Upper": 2.8
+                "CI Upper": 1.4507994333848104
             },
             "Common": {
-                "value": 2.8,
-                "CI Lower": 1.5,
-                "CI Upper": 3.5
+                "Lower": 1.5,
+                "Upper": 2.7999999999999994,
+                "CI Lower": 0.4,
+                "CI Upper": 2.7999999999999994
             },
             "Strong": {
-                "value": 3.5,
-                "CI Lower": 2.780000000000001,
-                "CI Upper": 4.0
+                "Lower": 2.7999999999999994,
+                "Upper": 3.5,
+                "CI Lower": 1.5,
+                "CI Upper": 3.0
             },
             "Heavy": {
-                "value": 4.199999999999999,
-                "CI Lower": 3.1999999999999993,
-                "CI Upper": 5.0
+                "Lower": 3.5,
+                "Upper": 5.0,
+                "CI Lower": 2.7999999999999994,
+                "CI Upper": 4.0
             }
         },
-        "reliability_score": 0.836935614668608
+        "reliability_score": 0.8912904097790719
     },
     {
         "substance": "Mushrooms - P. tampanensis",
@@ -11887,32 +10039,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 2.8000000000000003,
-                "CI Lower": 2.5,
-                "CI Upper": 6.4
+                "Lower": 2.5,
+                "Upper": 2.7464013584269797,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 8.0,
-                "CI Lower": 4.975000000000001,
-                "CI Upper": 10.0
+                "Lower": 2.7464013584269797,
+                "Upper": 7.999999999999999,
+                "CI Lower": 2.5,
+                "CI Upper": 6.000000000000001
             },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 9.975000000000001,
-                "CI Upper": 15.0
+                "Lower": 7.999999999999999,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 15.0,
-                "CI Lower": 12.0,
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 9.000000000000002,
                 "CI Upper": 15.0
             },
             "Heavy": {
-                "value": 17.39999999999999,
-                "CI Lower": 15.0,
-                "CI Upper": 25.0
+                "Lower": 15.0,
+                "Upper": 25.0,
+                "CI Lower": 12.0,
+                "CI Upper": 15.0
             }
         },
-        "reliability_score": 0.8585514171620678
+        "reliability_score": 0.905700944774712
     },
     {
         "substance": "Mushrooms - Panaeolus cyanescens",
@@ -11920,65 +10077,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 0.6000000000000001,
-                "CI Lower": 0.07,
-                "CI Upper": 1.168
+                "Lower": 0.07,
+                "Upper": 0.5743491778368028,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.2,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 0.5743491778368028,
+                "Upper": 1.2,
+                "CI Lower": 0.06999999999999999,
+                "CI Upper": 1.1678918844683943
             },
             "Common": {
-                "value": 2.1,
+                "Lower": 1.2,
+                "Upper": 2.1,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.0
+            },
+            "Strong": {
+                "Lower": 2.1,
+                "Upper": 3.5,
                 "CI Lower": 2.0,
                 "CI Upper": 3.5
             },
-            "Strong": {
-                "value": 3.5,
+            "Heavy": {
+                "Lower": 3.5,
+                "Upper": 7.0,
                 "CI Lower": 2.5,
-                "CI Upper": 6.0
-            },
-            "Heavy": {
-                "value": 6.0,
-                "CI Lower": 3.6,
-                "CI Upper": 7.0
+                "CI Upper": 6.000000000000001
             }
         },
-        "reliability_score": 0.8021903670647832
-    },
-    {
-        "substance": "N-Ethylhexedrone",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 7.5,
-                "CI Lower": 5.0,
-                "CI Upper": 12.5
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 7.5,
-                "CI Upper": 20.0
-            },
-            "Common": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 25.0
-            },
-            "Strong": {
-                "value": 22.5,
-                "CI Lower": 17.5,
-                "CI Upper": 43.5
-            },
-            "Heavy": {
-                "value": 43.5,
-                "CI Lower": 20.0,
-                "CI Upper": 50.0
-            }
-        },
-        "reliability_score": 0.8025916639748634
+        "reliability_score": 0.8681269113765222
     },
     {
         "substance": "N-Ethylpentedrone",
@@ -11986,32 +10115,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 13.0,
+                "Lower": 5.0,
+                "Upper": 12.04112342764184,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 12.04112342764184,
+                "Upper": 15.0,
                 "CI Lower": 5.0,
                 "CI Upper": 15.0
             },
-            "Light": {
-                "value": 15.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
-            },
             "Common": {
-                "value": 20.0,
+                "Lower": 15.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
+            },
+            "Strong": {
+                "Lower": 19.999999999999996,
+                "Upper": 22.0,
                 "CI Lower": 15.0,
                 "CI Upper": 22.0
             },
-            "Strong": {
-                "value": 22.0,
-                "CI Lower": 20.0,
-                "CI Upper": 27.0
-            },
             "Heavy": {
-                "value": 27.599999999999998,
-                "CI Lower": 22.999999999999996,
-                "CI Upper": 30.0
+                "Lower": 22.0,
+                "Upper": 30.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 27.0
             }
         },
-        "reliability_score": 0.9063604626370241
+        "reliability_score": 0.937573641758016
     },
     {
         "substance": "N-acetylcysteine",
@@ -12019,65 +10153,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 600.0,
-                "CI Lower": 600.0,
-                "CI Upper": 600.0
+                "Lower": 600.0,
+                "Upper": 600.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 600.0,
+                "Lower": 600.0,
+                "Upper": 600.0,
                 "CI Lower": 600.0,
                 "CI Upper": 600.0
             },
             "Common": {
-                "value": 600.0,
+                "Lower": 600.0,
+                "Upper": 600.0,
                 "CI Lower": 600.0,
                 "CI Upper": 600.0
             },
             "Strong": {
-                "value": 600.0,
+                "Lower": 600.0,
+                "Upper": 600.0,
                 "CI Lower": 600.0,
                 "CI Upper": 600.0
             },
             "Heavy": {
-                "value": 600.0,
+                "Lower": 600.0,
+                "Upper": 1200.0,
                 "CI Lower": 600.0,
-                "CI Upper": 1200.0
+                "CI Upper": 600.0
             }
         },
-        "reliability_score": 0.9515237081316803
-    },
-    {
-        "substance": "Naloxone",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 0.725,
-                "CI Lower": 0.5,
-                "CI Upper": 2.0
-            },
-            "Light": {
-                "value": 1.25,
-                "CI Lower": 0.625,
-                "CI Upper": 6.5
-            },
-            "Common": {
-                "value": 4.0,
-                "CI Lower": 1.0,
-                "CI Upper": 8.0
-            },
-            "Strong": {
-                "value": 8.0,
-                "CI Lower": 2.0,
-                "CI Upper": 14.0
-            },
-            "Heavy": {
-                "value": 12.399999999999991,
-                "CI Lower": 7.099999999999998,
-                "CI Upper": 16.0
-            }
-        },
-        "reliability_score": 0.718362417473881
+        "reliability_score": 0.9676824720877868
     },
     {
         "substance": "Naloxone",
@@ -12085,65 +10191,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 0.25,
-                "CI Lower": 0.125,
+                "Lower": 0.125,
+                "Upper": 0.25,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.25,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.12499999999999997,
                 "CI Upper": 0.5
             },
-            "Light": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 2.0
-            },
             "Common": {
-                "value": 2.0,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.5,
+                "CI Upper": 0.9999999999999999
             },
             "Strong": {
-                "value": 2.0,
+                "Lower": 2.0,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.0
+            },
+            "Heavy": {
+                "Lower": 2.0,
+                "Upper": 6.0,
                 "CI Lower": 2.0,
                 "CI Upper": 3.0
-            },
-            "Heavy": {
-                "value": 5.0,
-                "CI Lower": 3.0,
-                "CI Upper": 6.0
             }
         },
-        "reliability_score": 0.7798105167592517
-    },
-    {
-        "substance": "Naltrexone",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 3.66,
-                "CI Lower": 2.4,
-                "CI Upper": 13.0
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 4.447500000000003,
-                "CI Upper": 50.0
-            },
-            "Common": {
-                "value": 50.0,
-                "CI Lower": 10.0,
-                "CI Upper": 50.0
-            },
-            "Strong": {
-                "value": 50.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
-            },
-            "Heavy": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 50.0
-            }
-        },
-        "reliability_score": 0.7982167550684434
+        "reliability_score": 0.8532070111728345
     },
     {
         "substance": "Naproxen",
@@ -12151,65 +10229,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 500.0,
+                "Lower": 440.0,
+                "Upper": 499.99999999999983,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 499.99999999999983,
+                "Upper": 499.99999999999983,
                 "CI Lower": 440.0,
-                "CI Upper": 500.0
-            },
-            "Light": {
-                "value": 500.0,
-                "CI Lower": 500.0,
-                "CI Upper": 500.0
+                "CI Upper": 499.99999999999983
             },
             "Common": {
-                "value": 500.0,
-                "CI Lower": 500.0,
-                "CI Upper": 500.0
+                "Lower": 499.99999999999983,
+                "Upper": 499.99999999999983,
+                "CI Lower": 499.99999999999983,
+                "CI Upper": 499.99999999999983
             },
             "Strong": {
-                "value": 500.0,
-                "CI Lower": 500.0,
-                "CI Upper": 500.0
+                "Lower": 499.99999999999983,
+                "Upper": 499.99999999999983,
+                "CI Lower": 499.99999999999983,
+                "CI Upper": 499.99999999999983
             },
             "Heavy": {
-                "value": 774.9999999999986,
-                "CI Lower": 500.0,
-                "CI Upper": 1000.0
+                "Lower": 499.99999999999983,
+                "Upper": 1000.0,
+                "CI Lower": 499.99999999999983,
+                "CI Upper": 499.99999999999983
             }
         },
-        "reliability_score": 0.9278042646440279
-    },
-    {
-        "substance": "Noopept",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 1.25,
-                "CI Lower": 1.0,
-                "CI Upper": 10.0
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 1.25,
-                "CI Upper": 20.0
-            },
-            "Common": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 30.0
-            },
-            "Strong": {
-                "value": 27.5,
-                "CI Lower": 15.0,
-                "CI Upper": 45.0
-            },
-            "Heavy": {
-                "value": 45.0,
-                "CI Lower": 25.0,
-                "CI Upper": 60.0
-            }
-        },
-        "reliability_score": 0.7448650540089148
+        "reliability_score": 0.9518695097626853
     },
     {
         "substance": "Nutmeg",
@@ -12217,32 +10267,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
-                "CI Lower": 2.0,
-                "CI Upper": 8.0
+                "Lower": 1.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 10.0,
-                "CI Lower": 9.5,
-                "CI Upper": 15.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 2.0827594880514924,
+                "CI Upper": 7.0
             },
             "Common": {
-                "value": 16.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 16.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 14.0
             },
             "Strong": {
-                "value": 22.0,
-                "CI Lower": 20.0,
-                "CI Upper": 28.0
+                "Lower": 16.0,
+                "Upper": 22.0,
+                "CI Lower": 15.0,
+                "CI Upper": 17.999999999999996
             },
             "Heavy": {
-                "value": 35.0,
-                "CI Lower": 30.0,
-                "CI Upper": 40.0
+                "Lower": 22.0,
+                "Upper": 47.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 24.999999999999996
             }
         },
-        "reliability_score": 0.8459317750589728
+        "reliability_score": 0.8972878500393151
     },
     {
         "substance": "O-Desmethyltramadol",
@@ -12250,32 +10305,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 15.0,
-                "CI Lower": 15.0,
-                "CI Upper": 15.0
+                "Lower": 15.0,
+                "Upper": 15.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 15.0,
+                "Lower": 15.0,
+                "Upper": 15.0,
                 "CI Lower": 15.0,
                 "CI Upper": 15.0
             },
             "Common": {
-                "value": 15.0,
+                "Lower": 15.0,
+                "Upper": 15.0,
                 "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "CI Upper": 15.0
             },
             "Strong": {
-                "value": 27.5,
-                "CI Lower": 20.0,
-                "CI Upper": 50.0
+                "Lower": 15.0,
+                "Upper": 27.108060108460876,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 72.5,
-                "CI Lower": 40.0,
-                "CI Upper": 80.0
+                "Lower": 27.108060108460876,
+                "Upper": 80.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 40.0
             }
         },
-        "reliability_score": 0.7884083111183429
+        "reliability_score": 0.8589388740788952
     },
     {
         "substance": "O-Desmethyltramadol",
@@ -12283,32 +10343,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 19.1,
-                "CI Lower": 17.0,
-                "CI Upper": 20.0
+                "Lower": 10.0,
+                "Upper": 19.048275922213595,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 30.0,
-                "CI Lower": 30.0,
-                "CI Upper": 42.0
+                "Lower": 19.048275922213595,
+                "Upper": 30.000000000000004,
+                "CI Lower": 17.0,
+                "CI Upper": 19.999999999999996
             },
             "Common": {
-                "value": 50.0,
-                "CI Lower": 42.0,
-                "CI Upper": 50.0
+                "Lower": 30.000000000000004,
+                "Upper": 49.99999999999999,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 39.01096201616477
             },
             "Strong": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 60.0
+                "Lower": 49.99999999999999,
+                "Upper": 49.99999999999999,
+                "CI Lower": 44.99999999999999,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 92.99999999999997,
-                "CI Lower": 90.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 110.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 54.89722513701912
             }
         },
-        "reliability_score": 0.8631214970738248
+        "reliability_score": 0.9087476647158832
     },
     {
         "substance": "O-Desmethyltramadol",
@@ -12316,32 +10381,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
+                "Lower": 15.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 35.0,
-                "CI Lower": 30.0,
-                "CI Upper": 40.0
+                "Lower": 19.999999999999996,
+                "Upper": 35.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             },
             "Common": {
-                "value": 50.0,
-                "CI Lower": 45.0,
-                "CI Upper": 50.0
+                "Lower": 35.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 40.0
             },
             "Strong": {
-                "value": 65.0,
-                "CI Lower": 60.0,
-                "CI Upper": 70.0
+                "Lower": 49.99999999999999,
+                "Upper": 65.00000000000003,
+                "CI Lower": 44.99999999999999,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 90.0,
-                "CI Lower": 90.0,
-                "CI Upper": 100.0
+                "Lower": 65.00000000000003,
+                "Upper": 100.0,
+                "CI Lower": 59.999999999999986,
+                "CI Upper": 69.99999999999999
             }
         },
-        "reliability_score": 0.872856274136772
+        "reliability_score": 0.9152375160911812
     },
     {
         "substance": "Olanzapine",
@@ -12349,65 +10419,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
+                "Lower": 2.5,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 5.0,
+                "Upper": 5.233175696990782,
                 "CI Lower": 2.5,
                 "CI Upper": 5.0
             },
-            "Light": {
-                "value": 5.25,
+            "Common": {
+                "Lower": 5.233175696990782,
+                "Upper": 10.000000000000002,
                 "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
-            "Common": {
-                "value": 10.0,
-                "CI Lower": 7.5,
-                "CI Upper": 10.0
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 15.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
+                "Lower": 15.0,
+                "Upper": 30.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.8333380298198294
-    },
-    {
-        "substance": "Omeprazole",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
-            },
-            "Light": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
-            },
-            "Common": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
-            },
-            "Strong": {
-                "value": 25.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
-            },
-            "Heavy": {
-                "value": 40.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
-            }
-        },
-        "reliability_score": 0.891455915952005
+        "reliability_score": 0.8888920198798864
     },
     {
         "substance": "Ondansetron",
@@ -12415,131 +10457,113 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 2.0,
-                "CI Lower": 2.0,
-                "CI Upper": 3.4000000000000004
+                "Lower": 2.0,
+                "Upper": 2.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 2.0,
+                "Lower": 2.0,
+                "Upper": 2.0,
                 "CI Lower": 2.0,
-                "CI Upper": 4.0
+                "CI Upper": 2.0
             },
             "Common": {
-                "value": 4.0,
+                "Lower": 2.0,
+                "Upper": 4.0,
                 "CI Lower": 2.0,
                 "CI Upper": 4.0
             },
             "Strong": {
-                "value": 4.0,
-                "CI Lower": 4.0,
-                "CI Upper": 8.0
+                "Lower": 4.0,
+                "Upper": 4.0,
+                "CI Lower": 2.0,
+                "CI Upper": 4.0
             },
             "Heavy": {
-                "value": 8.0,
+                "Lower": 4.0,
+                "Upper": 8.0,
                 "CI Lower": 4.0,
-                "CI Upper": 8.0
+                "CI Upper": 7.999999999999999
             }
         },
-        "reliability_score": 0.8508560182325984
+        "reliability_score": 0.9005706788217323
     },
     {
         "substance": "Oxycodone",
-        "method": "IV",
+        "method": "insufflated",
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 17.5,
+                "Lower": 2.5,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 5.0
+            },
+            "Common": {
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
+            },
+            "Strong": {
+                "Lower": 19.999999999999996,
+                "Upper": 30.000000000000004,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
+            },
+            "Heavy": {
+                "Lower": 30.000000000000004,
+                "Upper": 60.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 40.0
+            }
+        },
+        "reliability_score": 0.8716042443193444
+    },
+    {
+        "substance": "Oxycodone",
+        "method": "oral",
+        "unit": "mg",
+        "tiers": {
+            "Threshold": {
+                "Lower": 2.5,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 5.0
+            },
+            "Common": {
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
+            },
+            "Strong": {
+                "Lower": 15.0,
+                "Upper": 26.220221204265137,
                 "CI Lower": 15.0,
-                "CI Upper": 20.0
-            },
-            "Light": {
-                "value": 20.0,
-                "CI Lower": 17.5,
-                "CI Upper": 22.5
-            },
-            "Common": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
-            },
-            "Strong": {
-                "value": 35.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 40.0,
-                "CI Lower": 30.0,
-                "CI Upper": 40.0
+                "Lower": 26.220221204265137,
+                "Upper": 60.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 30.000000000000004
             }
         },
-        "reliability_score": 0.8900813154997367
-    },
-    {
-        "substance": "Oxycodone",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 5.0
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
-            },
-            "Common": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 20.0
-            },
-            "Strong": {
-                "value": 30.0,
-                "CI Lower": 20.0,
-                "CI Upper": 40.0
-            },
-            "Heavy": {
-                "value": 40.0,
-                "CI Lower": 40.0,
-                "CI Upper": 60.0
-            }
-        },
-        "reliability_score": 0.8069442984835413
-    },
-    {
-        "substance": "Oxycodone",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 5.0
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 7.5,
-                "CI Upper": 10.0
-            },
-            "Common": {
-                "value": 15.0,
-                "CI Lower": 11.25,
-                "CI Upper": 20.0
-            },
-            "Strong": {
-                "value": 26.25,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
-            },
-            "Heavy": {
-                "value": 40.0,
-                "CI Lower": 40.0,
-                "CI Upper": 50.0
-            }
-        },
-        "reliability_score": 0.7923347271923364
+        "reliability_score": 0.8615564847948911
     },
     {
         "substance": "Oxymorphone",
@@ -12547,65 +10571,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 4.625,
+                "Lower": 2.5,
+                "Upper": 4.506252313418532,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 4.506252313418532,
+                "Upper": 10.000000000000002,
                 "CI Lower": 2.5,
-                "CI Upper": 7.0
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 6.0,
-                "CI Upper": 10.0
+                "CI Upper": 6.655471601501032
             },
             "Common": {
-                "value": 12.75,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 12.74754878398389,
+                "CI Lower": 7.0,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
+                "Lower": 12.74754878398389,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
             },
             "Heavy": {
-                "value": 40.0,
-                "CI Lower": 30.0,
-                "CI Upper": 40.0
+                "Lower": 19.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 30.000000000000004
             }
         },
-        "reliability_score": 0.8146838742051892
-    },
-    {
-        "substance": "Oxymorphone",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 8.25,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
-            },
-            "Common": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 30.0
-            },
-            "Strong": {
-                "value": 30.0,
-                "CI Lower": 18.125,
-                "CI Upper": 30.0
-            },
-            "Heavy": {
-                "value": 33.5,
-                "CI Lower": 26.912499999999998,
-                "CI Upper": 40.0
-            }
-        },
-        "reliability_score": 0.838466220966519
+        "reliability_score": 0.8764559161367929
     },
     {
         "substance": "Paracetamol",
@@ -12613,32 +10609,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 500.0,
-                "CI Lower": 500.0,
-                "CI Upper": 500.0
+                "Lower": 500.0,
+                "Upper": 499.99999999999983,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 500.0,
-                "CI Lower": 500.0,
-                "CI Upper": 600.0
+                "Lower": 499.99999999999983,
+                "Upper": 499.99999999999983,
+                "CI Lower": 499.99999999999983,
+                "CI Upper": 499.99999999999983
             },
             "Common": {
-                "value": 600.0,
-                "CI Lower": 500.0,
-                "CI Upper": 900.0
+                "Lower": 499.99999999999983,
+                "Upper": 600.0,
+                "CI Lower": 499.99999999999983,
+                "CI Upper": 600.0
             },
             "Strong": {
-                "value": 900.0,
+                "Lower": 600.0,
+                "Upper": 900.0000000000001,
                 "CI Lower": 600.0,
-                "CI Upper": 1000.0
+                "CI Upper": 900.0000000000001
             },
             "Heavy": {
-                "value": 1000.0,
-                "CI Lower": 900.0,
-                "CI Upper": 1000.0
+                "Lower": 900.0000000000001,
+                "Upper": 1000.0,
+                "CI Lower": 600.0,
+                "CI Upper": 999.9999999999998
             }
         },
-        "reliability_score": 0.912778639564624
+        "reliability_score": 0.9418524263764161
     },
     {
         "substance": "Paroxetine",
@@ -12646,131 +10647,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Common": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 25.0
+                "Lower": 19.999999999999996,
+                "Upper": 19.999999999999996,
+                "CI Lower": 15.0,
+                "CI Upper": 19.999999999999996
             },
             "Strong": {
-                "value": 30.0,
-                "CI Lower": 25.0,
+                "Lower": 19.999999999999996,
+                "Upper": 30.000000000000004,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 24.999999999999996
+            },
+            "Heavy": {
+                "Lower": 30.000000000000004,
+                "Upper": 60.0,
+                "CI Lower": 30.000000000000004,
                 "CI Upper": 40.0
-            },
-            "Heavy": {
-                "value": 60.0,
-                "CI Lower": 40.0,
-                "CI Upper": 60.0
             }
         },
-        "reliability_score": 0.8450322771087633
-    },
-    {
-        "substance": "Pentedrone",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 6.35,
-                "CI Lower": 5.0,
-                "CI Upper": 8.9
-            },
-            "Light": {
-                "value": 8.0,
-                "CI Lower": 5.75,
-                "CI Upper": 10.0
-            },
-            "Common": {
-                "value": 10.0,
-                "CI Lower": 8.0,
-                "CI Upper": 10.0
-            },
-            "Strong": {
-                "value": 10.0,
-                "CI Lower": 9.5,
-                "CI Upper": 17.5
-            },
-            "Heavy": {
-                "value": 15.49999999999999,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
-            }
-        },
-        "reliability_score": 0.8818138652260303
-    },
-    {
-        "substance": "Pharmaceuticals",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 2.375,
-                "CI Lower": 0.75,
-                "CI Upper": 10.0
-            },
-            "Light": {
-                "value": 9.0,
-                "CI Lower": 2.375,
-                "CI Upper": 10.018749999999983
-            },
-            "Common": {
-                "value": 10.0,
-                "CI Lower": 8.0,
-                "CI Upper": 13.5
-            },
-            "Strong": {
-                "value": 13.5,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
-            },
-            "Heavy": {
-                "value": 20.0,
-                "CI Lower": 11.75,
-                "CI Upper": 25.0
-            }
-        },
-        "reliability_score": 0.8275909033823603
-    },
-    {
-        "substance": "Phenazepam",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 0.75,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
-            },
-            "Light": {
-                "value": 1.0,
-                "CI Lower": 0.75,
-                "CI Upper": 2.0
-            },
-            "Common": {
-                "value": 2.0,
-                "CI Lower": 1.0,
-                "CI Upper": 4.0
-            },
-            "Strong": {
-                "value": 3.25,
-                "CI Lower": 1.5,
-                "CI Upper": 5.0
-            },
-            "Heavy": {
-                "value": 5.0,
-                "CI Lower": 2.5,
-                "CI Upper": 5.0
-            }
-        },
-        "reliability_score": 0.7803803287499045
+        "reliability_score": 0.8966881847391754
     },
     {
         "substance": "Phenibut",
@@ -12778,32 +10685,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.5
+                "Lower": 0.9999999999999999,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 2.0,
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 1.25
+            },
+            "Strong": {
+                "Lower": 2.0,
+                "Upper": 3.0,
                 "CI Lower": 1.5,
                 "CI Upper": 2.0
             },
-            "Strong": {
-                "value": 3.0,
+            "Heavy": {
+                "Lower": 3.0,
+                "Upper": 6.0,
                 "CI Lower": 2.0,
                 "CI Upper": 3.0
-            },
-            "Heavy": {
-                "value": 4.0,
-                "CI Lower": 3.0,
-                "CI Upper": 5.0
             }
         },
-        "reliability_score": 0.8420190113134798
+        "reliability_score": 0.8946793408756533
     },
     {
         "substance": "Phenibut",
@@ -12811,32 +10723,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 200.0,
-                "CI Lower": 150.0,
-                "CI Upper": 250.0
+                "Lower": 150.0,
+                "Upper": 199.99999999999991,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 425.0,
-                "CI Lower": 250.0,
-                "CI Upper": 500.0
+                "Lower": 199.99999999999991,
+                "Upper": 422.94850537627076,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 249.9999999999999
             },
             "Common": {
-                "value": 500.0,
-                "CI Lower": 500.0,
-                "CI Upper": 500.0
+                "Lower": 422.94850537627076,
+                "Upper": 499.99999999999983,
+                "CI Lower": 249.9999999999999,
+                "CI Upper": 499.99999999999983
             },
             "Strong": {
-                "value": 500.0,
-                "CI Lower": 500.0,
-                "CI Upper": 650.0
+                "Lower": 499.99999999999983,
+                "Upper": 499.99999999999983,
+                "CI Lower": 499.99999999999983,
+                "CI Upper": 499.99999999999983
             },
             "Heavy": {
-                "value": 750.0,
-                "CI Lower": 600.0,
-                "CI Upper": 800.0
+                "Lower": 499.99999999999983,
+                "Upper": 800.0,
+                "CI Lower": 499.99999999999983,
+                "CI Upper": 600.0
             }
         },
-        "reliability_score": 0.8989395225455075
+        "reliability_score": 0.9326263483636716
     },
     {
         "substance": "Phentermine",
@@ -12844,32 +10761,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 30.0,
-                "CI Lower": 30.0,
-                "CI Upper": 35.625
+                "Lower": 30.0,
+                "Upper": 30.000000000000004,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 35.625,
-                "CI Lower": 30.0,
-                "CI Upper": 37.5
+                "Lower": 30.000000000000004,
+                "Upper": 35.46531033766759,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 35.46531033766759
             },
             "Common": {
-                "value": 37.5,
-                "CI Lower": 37.40625000000001,
-                "CI Upper": 57.5
+                "Lower": 35.46531033766759,
+                "Upper": 37.5,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 37.5
             },
             "Strong": {
-                "value": 48.75,
+                "Lower": 37.5,
+                "Upper": 46.806946386750845,
                 "CI Lower": 37.5,
-                "CI Upper": 75.0
+                "CI Upper": 53.03300858959765
             },
             "Heavy": {
-                "value": 75.0,
-                "CI Lower": 48.75,
-                "CI Upper": 75.0
+                "Lower": 46.806946386750845,
+                "Upper": 75.0,
+                "CI Lower": 37.5,
+                "CI Upper": 74.99999999999999
             }
         },
-        "reliability_score": 0.8796993744224011
+        "reliability_score": 0.9197995829482672
     },
     {
         "substance": "Phenylpiracetam",
@@ -12877,32 +10799,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 50.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 100.0,
-                "CI Lower": 75.0,
-                "CI Upper": 200.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Common": {
-                "value": 200.0,
-                "CI Lower": 100.0,
-                "CI Upper": 300.0
+                "Lower": 99.99999999999996,
+                "Upper": 199.99999999999991,
+                "CI Lower": 70.71067811926133,
+                "CI Upper": 199.99999999999991
             },
             "Strong": {
-                "value": 300.0,
-                "CI Lower": 200.0,
-                "CI Upper": 350.0
+                "Lower": 199.99999999999991,
+                "Upper": 299.99999999999994,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 299.99999999999994
             },
             "Heavy": {
-                "value": 409.9999999999998,
-                "CI Lower": 300.0,
-                "CI Upper": 500.0
+                "Lower": 299.99999999999994,
+                "Upper": 500.0,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 346.41016151387925
             }
         },
-        "reliability_score": 0.8203816451550867
+        "reliability_score": 0.8802544301033912
     },
     {
         "substance": "Piperazines - BZP",
@@ -12910,32 +10837,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 75.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 50.0,
+                "Upper": 74.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 100.0,
-                "CI Lower": 85.0,
-                "CI Upper": 110.0
+                "Lower": 74.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Common": {
-                "value": 125.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 124.99999999999994,
+                "CI Lower": 90.0,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 140.0,
-                "CI Upper": 225.0
+                "Lower": 124.99999999999994,
+                "Upper": 199.99999999999991,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 149.99999999999997
             },
             "Heavy": {
-                "value": 300.0,
-                "CI Lower": 200.0,
-                "CI Upper": 300.0
+                "Lower": 199.99999999999991,
+                "Upper": 300.0,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.8655731119790453
+        "reliability_score": 0.9103820746526969
     },
     {
         "substance": "Piperazines - TFMPP",
@@ -12943,32 +10875,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 20.0,
-                "CI Lower": 12.0,
-                "CI Upper": 50.0
+                "Lower": 12.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 50.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 19.999999999999996,
+                "Upper": 49.99999999999999,
+                "CI Lower": 12.0,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 60.0,
-                "CI Lower": 50.0,
-                "CI Upper": 75.0
+                "Lower": 49.99999999999999,
+                "Upper": 59.999999999999986,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Strong": {
-                "value": 90.0,
-                "CI Lower": 60.0,
-                "CI Upper": 100.0
+                "Lower": 59.999999999999986,
+                "Upper": 90.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 74.99999999999999
             },
             "Heavy": {
-                "value": 100.0,
-                "CI Lower": 90.0,
-                "CI Upper": 100.0
+                "Lower": 90.0,
+                "Upper": 100.0,
+                "CI Lower": 59.999999999999986,
+                "CI Upper": 99.99999999999996
             }
         },
-        "reliability_score": 0.8675414207767149
+        "reliability_score": 0.9116942805178099
     },
     {
         "substance": "Piracetam",
@@ -12976,32 +10913,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.6,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 0.9999999999999999,
+                "Upper": 1.6,
+                "CI Lower": 0.5,
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 2.4,
+                "Lower": 1.6,
+                "Upper": 2.4,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.0
+            },
+            "Strong": {
+                "Lower": 2.4,
+                "Upper": 3.0,
                 "CI Lower": 2.0,
                 "CI Upper": 2.5
             },
-            "Strong": {
-                "value": 3.0,
+            "Heavy": {
+                "Lower": 3.0,
+                "Upper": 5.0,
                 "CI Lower": 2.5,
                 "CI Upper": 3.0
-            },
-            "Heavy": {
-                "value": 4.949999999999996,
-                "CI Lower": 3.0,
-                "CI Upper": 5.0
             }
         },
-        "reliability_score": 0.8556206614101816
+        "reliability_score": 0.9037471076067878
     },
     {
         "substance": "Piracetam",
@@ -13009,32 +10951,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 500.0,
-                "CI Lower": 400.0,
-                "CI Upper": 800.0
+                "Lower": 4.8,
+                "Upper": 499.99999999999983,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 800.0,
-                "CI Lower": 800.0,
+                "Lower": 499.99999999999983,
+                "Upper": 800.0,
+                "CI Lower": 400.00000000000006,
                 "CI Upper": 800.0
             },
             "Common": {
-                "value": 1550.0,
+                "Lower": 800.0,
+                "Upper": 1549.1933384829713,
                 "CI Lower": 800.0,
-                "CI Upper": 1600.0
+                "CI Upper": 800.0
             },
             "Strong": {
-                "value": 2400.0,
-                "CI Lower": 1600.0,
-                "CI Upper": 2400.0
+                "Lower": 1549.1933384829713,
+                "Upper": 2400.0,
+                "CI Lower": 924.66210044535,
+                "CI Upper": 1600.0000000000002
             },
             "Heavy": {
-                "value": 4694.999999999997,
-                "CI Lower": 2500.0,
-                "CI Upper": 5333.0
+                "Lower": 2400.0,
+                "Upper": 5600.0,
+                "CI Lower": 1600.0000000000002,
+                "CI Upper": 2400.0
             }
         },
-        "reliability_score": 0.7839936089202246
+        "reliability_score": 0.8559957392801498
     },
     {
         "substance": "Poppies - Opium",
@@ -13042,32 +10989,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 2.35,
-                "CI Lower": 2.0,
-                "CI Upper": 7.119374999999983
+                "Lower": 2.0,
+                "Upper": 2.3049522686173063,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 9.875,
-                "CI Lower": 4.5,
-                "CI Upper": 107.5
+                "Lower": 2.3049522686173063,
+                "Upper": 9.87258544901683,
+                "CI Lower": 2.0,
+                "CI Upper": 7.789632838912247
             },
             "Common": {
-                "value": 125.0,
-                "CI Lower": 11.5,
-                "CI Upper": 300.0
+                "Lower": 9.87258544901683,
+                "Upper": 124.99999999999994,
+                "CI Lower": 5.0,
+                "CI Upper": 101.80595498304825
             },
             "Strong": {
-                "value": 350.0,
-                "CI Lower": 262.5,
-                "CI Upper": 437.5
+                "Lower": 124.99999999999994,
+                "Upper": 350.0,
+                "CI Lower": 11.489125293085523,
+                "CI Upper": 299.99999999999994
             },
             "Heavy": {
-                "value": 532.4999999999999,
-                "CI Lower": 389.8125,
-                "CI Upper": 700.0
+                "Lower": 350.0,
+                "Upper": 700.0,
+                "CI Lower": 261.6587848480564,
+                "CI Upper": 437.49999999999983
             }
         },
-        "reliability_score": 0.7
+        "reliability_score": 0.8
     },
     {
         "substance": "Prednisone",
@@ -13075,32 +11027,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 8.0,
-                "CI Lower": 2.0,
-                "CI Upper": 20.074999999999932
+                "Lower": 2.0,
+                "Upper": 6.687403053139027,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 20.0,
-                "CI Lower": 10.0,
-                "CI Upper": 40.0
+                "Lower": 6.687403053139027,
+                "Upper": 19.999999999999996,
+                "CI Lower": 2.0,
+                "CI Upper": 19.999999999999996
             },
             "Common": {
-                "value": 40.0,
-                "CI Lower": 20.0,
-                "CI Upper": 60.0
+                "Lower": 19.999999999999996,
+                "Upper": 40.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 40.0
             },
             "Strong": {
-                "value": 60.0,
-                "CI Lower": 40.0,
-                "CI Upper": 60.0
+                "Lower": 40.0,
+                "Upper": 59.999999999999986,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 59.999999999999986
             },
             "Heavy": {
-                "value": 67.5,
-                "CI Lower": 60.0,
-                "CI Upper": 90.0
+                "Lower": 59.999999999999986,
+                "Upper": 90.0,
+                "CI Lower": 40.0,
+                "CI Upper": 59.999999999999986
             }
         },
-        "reliability_score": 0.8223441688565569
+        "reliability_score": 0.8815627792377045
     },
     {
         "substance": "Pregabalin",
@@ -13108,32 +11065,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 50.0,
-                "CI Lower": 25.0,
-                "CI Upper": 100.0
+                "Lower": 25.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 150.0,
-                "CI Lower": 150.0,
-                "CI Upper": 200.0
+                "Lower": 49.99999999999999,
+                "Upper": 149.99999999999997,
+                "CI Lower": 43.527528165252825,
+                "CI Upper": 99.99999999999996
             },
             "Common": {
-                "value": 300.0,
-                "CI Lower": 200.0,
-                "CI Upper": 300.0
+                "Lower": 149.99999999999997,
+                "Upper": 299.99999999999994,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 199.99999999999991
             },
             "Strong": {
-                "value": 600.0,
-                "CI Lower": 400.0,
-                "CI Upper": 600.0
+                "Lower": 299.99999999999994,
+                "Upper": 600.0,
+                "CI Lower": 225.0,
+                "CI Upper": 299.99999999999994
             },
             "Heavy": {
-                "value": 839.9999999999991,
-                "CI Lower": 750.0,
-                "CI Upper": 975.0
+                "Lower": 600.0,
+                "Upper": 1050.0,
+                "CI Lower": 450.00000000000006,
+                "CI Upper": 600.0
             }
         },
-        "reliability_score": 0.785195566997108
+        "reliability_score": 0.8567970446647386
     },
     {
         "substance": "Promethazine",
@@ -13141,32 +11103,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 20.0,
-                "CI Lower": 6.25,
-                "CI Upper": 25.0
+                "Lower": 6.25,
+                "Upper": 19.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 19.999999999999996,
+                "Upper": 24.999999999999996,
+                "CI Lower": 6.934809200687549,
+                "CI Upper": 24.999999999999996
             },
             "Common": {
-                "value": 50.0,
-                "CI Lower": 35.0,
-                "CI Upper": 80.0
+                "Lower": 24.999999999999996,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Strong": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 75.06052927572101
             },
             "Heavy": {
-                "value": 143.37500000000003,
-                "CI Lower": 100.0,
-                "CI Upper": 150.0
+                "Lower": 99.99999999999996,
+                "Upper": 150.0,
+                "CI Lower": 65.41469621203689,
+                "CI Upper": 99.99999999999996
             }
         },
-        "reliability_score": 0.8151714671340875
+        "reliability_score": 0.8767809780893916
     },
     {
         "substance": "Propoxyphene",
@@ -13174,32 +11141,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 49.875,
-                "CI Lower": 48.75,
-                "CI Upper": 100.0
+                "Lower": 48.75,
+                "Upper": 49.87357107277721,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 100.0,
-                "CI Lower": 75.0,
-                "CI Upper": 130.0
+                "Lower": 49.87357107277721,
+                "Upper": 99.99999999999996,
+                "CI Lower": 48.75,
+                "CI Upper": 99.99999999999996
             },
             "Common": {
-                "value": 130.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 130.0,
+                "CI Lower": 70.71067811926133,
+                "CI Upper": 127.47548784011573
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 146.25,
-                "CI Upper": 350.0
+                "Lower": 130.0,
+                "Upper": 199.99999999999991,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 199.99999999999991
             },
             "Heavy": {
-                "value": 400.0,
-                "CI Lower": 209.99999999999977,
-                "CI Upper": 400.0
+                "Lower": 199.99999999999991,
+                "Upper": 400.0,
+                "CI Lower": 142.52192813747834,
+                "CI Upper": 346.41016151387925
             }
         },
-        "reliability_score": 0.8147383204901861
+        "reliability_score": 0.8764922136601241
     },
     {
         "substance": "Propranolol",
@@ -13207,32 +11179,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 13.5,
-                "CI Lower": 10.0,
-                "CI Upper": 27.0
+                "Lower": 10.0,
+                "Upper": 12.74560627370775,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 40.0,
-                "CI Lower": 20.0,
-                "CI Upper": 47.5
+                "Lower": 12.74560627370775,
+                "Upper": 40.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 25.49121254690037
             },
             "Common": {
-                "value": 50.0,
-                "CI Lower": 40.0,
-                "CI Upper": 50.0
+                "Lower": 40.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 47.28708045020729
             },
             "Strong": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 60.0
+                "Lower": 49.99999999999999,
+                "Upper": 49.99999999999999,
+                "CI Lower": 40.0,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 72.99999999999997,
-                "CI Lower": 50.0,
-                "CI Upper": 80.0
+                "Lower": 49.99999999999999,
+                "Upper": 80.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 59.999999999999986
             }
         },
-        "reliability_score": 0.8810873899805018
+        "reliability_score": 0.9207249266536679
     },
     {
         "substance": "Propylhexedrine",
@@ -13240,32 +11217,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 125.0,
-                "CI Lower": 25.0,
-                "CI Upper": 125.0
+                "Lower": 25.0,
+                "Upper": 124.99999999999994,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 250.0,
-                "CI Lower": 125.0,
-                "CI Upper": 250.0
+                "Lower": 124.99999999999994,
+                "Upper": 249.9999999999999,
+                "CI Lower": 31.372774571177892,
+                "CI Upper": 124.99999999999994
             },
             "Common": {
-                "value": 250.0,
-                "CI Lower": 250.0,
-                "CI Upper": 250.0
+                "Lower": 249.9999999999999,
+                "Upper": 249.9999999999999,
+                "CI Lower": 124.99999999999994,
+                "CI Upper": 249.9999999999999
             },
             "Strong": {
-                "value": 250.0,
-                "CI Lower": 250.0,
-                "CI Upper": 500.0
+                "Lower": 249.9999999999999,
+                "Upper": 249.9999999999999,
+                "CI Lower": 249.9999999999999,
+                "CI Upper": 249.9999999999999
             },
             "Heavy": {
-                "value": 500.0,
-                "CI Lower": 250.0,
-                "CI Upper": 1000.0
+                "Lower": 249.9999999999999,
+                "Upper": 1000.0,
+                "CI Lower": 249.9999999999999,
+                "CI Upper": 499.99999999999983
             }
         },
-        "reliability_score": 0.8229292726895905
+        "reliability_score": 0.881952848459727
     },
     {
         "substance": "Pseudoephedrine",
@@ -13273,65 +11255,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 60.0,
-                "CI Lower": 30.0,
-                "CI Upper": 90.0
+                "Lower": 30.0,
+                "Upper": 59.999999999999986,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 120.0,
-                "CI Lower": 60.0,
-                "CI Upper": 120.0
+                "Lower": 59.999999999999986,
+                "Upper": 119.99999999999999,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 78.09272342220848
             },
             "Common": {
-                "value": 120.0,
-                "CI Lower": 120.0,
-                "CI Upper": 120.0
+                "Lower": 119.99999999999999,
+                "Upper": 119.99999999999999,
+                "CI Lower": 63.44227580647887,
+                "CI Upper": 119.99999999999999
             },
             "Strong": {
-                "value": 120.0,
-                "CI Lower": 120.0,
+                "Lower": 119.99999999999999,
+                "Upper": 119.99999999999999,
+                "CI Lower": 119.99999999999999,
+                "CI Upper": 119.99999999999999
+            },
+            "Heavy": {
+                "Lower": 119.99999999999999,
+                "Upper": 240.0,
+                "CI Lower": 119.99999999999999,
                 "CI Upper": 180.0
-            },
-            "Heavy": {
-                "value": 213.99999999999991,
-                "CI Lower": 150.0,
-                "CI Upper": 240.0
             }
         },
-        "reliability_score": 0.8868023920235102
-    },
-    {
-        "substance": "Psilocin",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 11.60999999999999
-            },
-            "Light": {
-                "value": 11.0,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
-            },
-            "Common": {
-                "value": 15.0,
-                "CI Lower": 11.0,
-                "CI Upper": 20.0
-            },
-            "Strong": {
-                "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 26.0
-            },
-            "Heavy": {
-                "value": 27.599999999999994,
-                "CI Lower": 18.999999999999986,
-                "CI Upper": 30.0
-            }
-        },
-        "reliability_score": 0.8773825186648658
+        "reliability_score": 0.9245349280156734
     },
     {
         "substance": "Psychotria viridis",
@@ -13339,32 +11293,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 3.5500000000000003,
+                "Lower": 0.5,
+                "Upper": 3.249009587202602,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 3.249009587202602,
+                "Upper": 19.24521200462169,
                 "CI Lower": 0.5,
                 "CI Upper": 7.0
             },
-            "Light": {
-                "value": 19.25,
-                "CI Lower": 6.0,
-                "CI Upper": 30.0
-            },
             "Common": {
-                "value": 32.5,
-                "CI Lower": 20.0,
-                "CI Upper": 45.0
+                "Lower": 19.24521200462169,
+                "Upper": 32.40370349206902,
+                "CI Lower": 7.0,
+                "CI Upper": 24.999999999999996
             },
             "Strong": {
-                "value": 50.0,
-                "CI Lower": 37.0,
-                "CI Upper": 50.0
+                "Lower": 32.40370349206902,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 40.98780306384138
             },
             "Heavy": {
-                "value": 62.24999999999998,
-                "CI Lower": 50.0,
-                "CI Upper": 85.0
+                "Lower": 49.99999999999999,
+                "Upper": 85.0,
+                "CI Lower": 40.0,
+                "CI Upper": 49.99999999999999
             }
         },
-        "reliability_score": 0.8110683420968878
+        "reliability_score": 0.8740455613979252
     },
     {
         "substance": "Pyrazolam",
@@ -13372,32 +11331,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 0.375,
+                "Lower": 0.375,
+                "Upper": 0.375,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.375,
+                "Upper": 0.75,
                 "CI Lower": 0.375,
                 "CI Upper": 0.375
             },
-            "Light": {
-                "value": 0.75,
+            "Common": {
+                "Lower": 0.75,
+                "Upper": 0.75,
                 "CI Lower": 0.375,
                 "CI Upper": 0.75
             },
-            "Common": {
-                "value": 0.75,
-                "CI Lower": 0.75,
-                "CI Upper": 0.75
-            },
             "Strong": {
-                "value": 0.75,
+                "Lower": 0.75,
+                "Upper": 0.75,
                 "CI Lower": 0.75,
                 "CI Upper": 0.75
             },
             "Heavy": {
-                "value": 1.5,
-                "CI Lower": 1.5,
-                "CI Upper": 3.0
+                "Lower": 0.75,
+                "Upper": 3.0,
+                "CI Lower": 0.75,
+                "CI Upper": 0.75
             }
         },
-        "reliability_score": 0.7999986910686634
+        "reliability_score": 0.8666657940457756
     },
     {
         "substance": "Quetiapine",
@@ -13405,32 +11369,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 25.0,
-                "CI Lower": 12.5,
-                "CI Upper": 25.0
+                "Lower": 2.0,
+                "Upper": 24.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 27.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 24.999999999999996,
+                "Upper": 28.722813232786645,
+                "CI Lower": 12.500000000000002,
+                "CI Upper": 24.999999999999996
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 28.722813232786645,
+                "Upper": 99.99999999999996,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 150.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 199.99999999999991,
+                "CI Lower": 74.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 300.0,
-                "CI Lower": 225.0,
-                "CI Upper": 400.0
+                "Lower": 199.99999999999991,
+                "Upper": 450.0,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.7448698739440662
+        "reliability_score": 0.8289606774848686
     },
     {
         "substance": "Risperidone",
@@ -13438,32 +11407,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 0.5,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
+                "Lower": 0.5,
+                "Upper": 0.5,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.0,
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
                 "CI Lower": 0.5,
-                "CI Upper": 1.0
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 2.0,
-                "CI Lower": 1.0,
-                "CI Upper": 3.0
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.5,
+                "CI Upper": 0.9999999999999999
             },
             "Strong": {
-                "value": 3.0,
-                "CI Lower": 2.0,
-                "CI Upper": 4.0
+                "Lower": 2.0,
+                "Upper": 3.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 3.0
             },
             "Heavy": {
-                "value": 4.0,
-                "CI Lower": 3.0,
-                "CI Upper": 5.0
+                "Lower": 3.0,
+                "Upper": 5.0,
+                "CI Lower": 2.0,
+                "CI Upper": 3.0
             }
         },
-        "reliability_score": 0.8068785265639087
+        "reliability_score": 0.8712523510426058
     },
     {
         "substance": "S-Ketamine",
@@ -13471,32 +11445,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 13.15,
-                "CI Lower": 11.0,
-                "CI Upper": 23.3
+                "Lower": 11.0,
+                "Upper": 13.096698226722454,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 25.0,
-                "CI Lower": 20.75,
-                "CI Upper": 33.0
+                "Lower": 13.096698226722454,
+                "Upper": 24.999999999999996,
+                "CI Lower": 11.000000000000002,
+                "CI Upper": 24.999999999999996
             },
             "Common": {
-                "value": 34.5,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 24.999999999999996,
+                "Upper": 34.00000000000001,
+                "CI Lower": 17.94435844523601,
+                "CI Upper": 33.00000000000001
             },
             "Strong": {
-                "value": 51.5,
-                "CI Lower": 38.712500000000006,
-                "CI Upper": 69.25
+                "Lower": 34.00000000000001,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Heavy": {
-                "value": 95.49999999999994,
-                "CI Lower": 56.0,
-                "CI Upper": 111.0
+                "Lower": 49.99999999999999,
+                "Upper": 100.0,
+                "CI Lower": 35.0,
+                "CI Upper": 65.40642170308564
             }
         },
-        "reliability_score": 0.8177757102527345
+        "reliability_score": 0.8900155423992187
     },
     {
         "substance": "Salvia divinorum",
@@ -13504,32 +11483,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 0.1,
-                "CI Lower": 0.05,
-                "CI Upper": 0.125
+                "Lower": 0.0333,
+                "Upper": 0.10000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 0.2,
-                "CI Lower": 0.2,
-                "CI Upper": 0.25
+                "Lower": 0.10000000000000002,
+                "Upper": 0.19999999999999998,
+                "CI Lower": 0.08856002920067296,
+                "CI Upper": 0.10039126466821914
             },
             "Common": {
-                "value": 0.5,
-                "CI Lower": 0.3,
-                "CI Upper": 0.5
+                "Lower": 0.19999999999999998,
+                "Upper": 0.5,
+                "CI Lower": 0.19999999999999998,
+                "CI Upper": 0.25
             },
             "Strong": {
-                "value": 0.75,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
+                "Lower": 0.5,
+                "Upper": 0.75,
+                "CI Lower": 0.3292146270647837,
+                "CI Upper": 0.5
             },
             "Heavy": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 0.75,
+                "Upper": 2.0,
+                "CI Lower": 0.5,
+                "CI Upper": 0.9999999999999999
             }
         },
-        "reliability_score": 0.75715725968114
+        "reliability_score": 0.8381048397874267
     },
     {
         "substance": "Salvia divinorum",
@@ -13537,32 +11521,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 24.400000000000002,
-                "CI Lower": 12.5,
-                "CI Upper": 30.0
+                "Lower": 0.3,
+                "Upper": 24.368934638283214,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 60.0,
-                "CI Lower": 50.0,
-                "CI Upper": 80.0
+                "Lower": 24.368934638283214,
+                "Upper": 59.999999999999986,
+                "CI Lower": 14.462887560067012,
+                "CI Upper": 24.999999999999996
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 125.0
+                "Lower": 59.999999999999986,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 80.00000000000001
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 150.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 199.99999999999991,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 300.0,
-                "CI Lower": 250.0,
-                "CI Upper": 330.0
+                "Lower": 199.99999999999991,
+                "Upper": 350.0,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.8057452841986996
+        "reliability_score": 0.8704968561324664
     },
     {
         "substance": "Salvia divinorum",
@@ -13570,32 +11559,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 0.515,
+                "Lower": 0.3,
+                "Upper": 0.5138628145047109,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 0.5138628145047109,
+                "Upper": 2.264339283757215,
                 "CI Lower": 0.3,
                 "CI Upper": 2.0
             },
-            "Light": {
-                "value": 2.27,
-                "CI Lower": 0.9750000000000001,
-                "CI Upper": 3.0
-            },
             "Common": {
-                "value": 3.435,
-                "CI Lower": 2.5,
-                "CI Upper": 4.85
+                "Lower": 2.264339283757215,
+                "Upper": 3.434384952216671,
+                "CI Lower": 0.9453275756247127,
+                "CI Upper": 3.087462804506286
             },
             "Strong": {
-                "value": 5.25,
-                "CI Lower": 4.0375,
-                "CI Upper": 7.0
+                "Lower": 3.434384952216671,
+                "Upper": 5.233175696990782,
+                "CI Lower": 2.5,
+                "CI Upper": 4.851187657738387
             },
             "Heavy": {
-                "value": 10.0,
-                "CI Lower": 5.849999999999998,
-                "CI Upper": 11.0
+                "Lower": 5.233175696990782,
+                "Upper": 11.0,
+                "CI Lower": 3.7193318294709146,
+                "CI Upper": 10.000000000000002
             }
         },
-        "reliability_score": 0.7869943408352336
+        "reliability_score": 0.8579962272234889
     },
     {
         "substance": "Salvia divinorum",
@@ -13603,65 +11597,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "ml",
         "tiers": {
             "Threshold": {
-                "value": 0.75,
-                "CI Lower": 0.75,
-                "CI Upper": 1.0
+                "Lower": 0.75,
+                "Upper": 0.75,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.0,
+                "Lower": 0.75,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.75,
+                "CI Upper": 0.9999999999999999
+            },
+            "Common": {
+                "Lower": 0.9999999999999999,
+                "Upper": 1.5,
                 "CI Lower": 0.75,
                 "CI Upper": 1.5
             },
-            "Common": {
-                "value": 1.5,
-                "CI Lower": 1.0,
+            "Strong": {
+                "Lower": 1.5,
+                "Upper": 3.0,
+                "CI Lower": 0.9999999999999999,
                 "CI Upper": 3.0
             },
-            "Strong": {
-                "value": 3.0,
-                "CI Lower": 1.5,
-                "CI Upper": 5.0
-            },
             "Heavy": {
-                "value": 5.0,
-                "CI Lower": 3.0,
+                "Lower": 3.0,
+                "Upper": 5.0,
+                "CI Lower": 1.5699527091184118,
                 "CI Upper": 5.0
             }
         },
-        "reliability_score": 0.7947738149467061
-    },
-    {
-        "substance": "Sceletium tortuosum",
-        "method": "insufflated",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 41.0,
-                "CI Lower": 30.0,
-                "CI Upper": 100.0
-            },
-            "Light": {
-                "value": 87.5,
-                "CI Lower": 45.0,
-                "CI Upper": 100.0
-            },
-            "Common": {
-                "value": 100.0,
-                "CI Lower": 75.0,
-                "CI Upper": 225.0
-            },
-            "Strong": {
-                "value": 212.5,
-                "CI Lower": 100.0,
-                "CI Upper": 275.0
-            },
-            "Heavy": {
-                "value": 294.99999999999994,
-                "CI Lower": 167.4999999999999,
-                "CI Upper": 350.0
-            }
-        },
-        "reliability_score": 0.7874747641307942
+        "reliability_score": 0.863182543297804
     },
     {
         "substance": "Sceletium tortuosum",
@@ -13669,65 +11635,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 48.0
+                "Lower": 10.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 43.75,
-                "CI Lower": 13.75,
-                "CI Upper": 250.0
+                "Lower": 10.000000000000002,
+                "Upper": 42.044820763196924,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 24.999999999999996
             },
             "Common": {
-                "value": 275.0,
-                "CI Lower": 50.0,
-                "CI Upper": 500.0
+                "Lower": 42.044820763196924,
+                "Upper": 273.86127875262457,
+                "CI Lower": 13.554030054313197,
+                "CI Upper": 198.8176821926976
             },
             "Strong": {
-                "value": 500.0,
-                "CI Lower": 312.1875,
-                "CI Upper": 500.0
+                "Lower": 273.86127875262457,
+                "Upper": 499.99999999999983,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 499.99999999999983
             },
             "Heavy": {
-                "value": 502.50000000000006,
-                "CI Lower": 500.0,
-                "CI Upper": 550.0
+                "Lower": 499.99999999999983,
+                "Upper": 550.0,
+                "CI Lower": 322.3709795471367,
+                "CI Upper": 499.99999999999983
             }
         },
-        "reliability_score": 0.7508205604386449
-    },
-    {
-        "substance": "Sceletium tortuosum",
-        "method": "smoked",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 21.25,
-                "CI Lower": 15.0,
-                "CI Upper": 135.0
-            },
-            "Light": {
-                "value": 110.0,
-                "CI Lower": 21.25,
-                "CI Upper": 200.0
-            },
-            "Common": {
-                "value": 200.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
-            },
-            "Strong": {
-                "value": 200.0,
-                "CI Lower": 174.62500000000003,
-                "CI Upper": 250.0
-            },
-            "Heavy": {
-                "value": 250.0,
-                "CI Lower": 200.0,
-                "CI Upper": 250.0
-            }
-        },
-        "reliability_score": 0.8431220335387379
+        "reliability_score": 0.8338803736257632
     },
     {
         "substance": "Selegeline",
@@ -13735,32 +11673,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 1.275,
-                "CI Lower": 1.25,
-                "CI Upper": 2.525
+                "Lower": 2.5,
+                "Upper": 2.5,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 2.625,
-                "CI Lower": 1.9375,
-                "CI Upper": 5.0
+                "Lower": 2.5,
+                "Upper": 4.2294850538072835,
+                "CI Lower": 2.5,
+                "CI Upper": 4.0
             },
             "Common": {
-                "value": 5.0,
-                "CI Lower": 3.4937500000000004,
+                "Lower": 4.2294850538072835,
+                "Upper": 5.0,
+                "CI Lower": 2.5,
                 "CI Upper": 5.0
             },
             "Strong": {
-                "value": 5.0,
-                "CI Lower": 5.0,
+                "Lower": 5.0,
+                "Upper": 5.0,
+                "CI Lower": 4.472135955061885,
                 "CI Upper": 5.0
             },
             "Heavy": {
-                "value": 5.0,
+                "Lower": 5.0,
+                "Upper": 5.0,
                 "CI Lower": 5.0,
-                "CI Upper": 10.0
+                "CI Upper": 5.0
             }
         },
-        "reliability_score": 0.8665715386968946
+        "reliability_score": 0.9538920860205626
     },
     {
         "substance": "Sertraline",
@@ -13768,32 +11711,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 25.0,
-                "CI Lower": 12.0,
-                "CI Upper": 50.0
+                "Lower": 10.0,
+                "Upper": 24.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 24.999999999999996,
+                "Upper": 49.99999999999999,
+                "CI Lower": 13.082939242431577,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 150.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 149.99999999999997,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 239.99999999999915,
-                "CI Lower": 200.0,
-                "CI Upper": 300.0
+                "Lower": 149.99999999999997,
+                "Upper": 300.0,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.8251588187431145
+        "reliability_score": 0.8830009535030638
     },
     {
         "substance": "Sildenafil",
@@ -13801,65 +11749,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 25.0,
+                "Upper": 24.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 50.0,
-                "CI Lower": 49.750000000000014,
-                "CI Upper": 50.0
+                "Lower": 24.999999999999996,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 49.99999999999999,
+                "CI Lower": 40.0,
+                "CI Upper": 49.99999999999999
             },
             "Strong": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 100.0
+                "Lower": 99.99999999999996,
+                "Upper": 100.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             }
         },
-        "reliability_score": 0.8735775861642621
-    },
-    {
-        "substance": "Spice and Synthetic Cannabinoids",
-        "method": "smoked",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 0.375,
-                "CI Lower": 0.25,
-                "CI Upper": 0.5
-            },
-            "Light": {
-                "value": 0.5,
-                "CI Lower": 0.375,
-                "CI Upper": 0.5
-            },
-            "Common": {
-                "value": 0.5,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
-            },
-            "Strong": {
-                "value": 0.8,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
-            },
-            "Heavy": {
-                "value": 1.0,
-                "CI Lower": 0.6,
-                "CI Upper": 1.0
-            }
-        },
-        "reliability_score": 0.876534405614507
+        "reliability_score": 0.9157183907761746
     },
     {
         "substance": "Spice and Synthetic Cannabinoids",
@@ -13867,32 +11787,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 73.75,
-                "CI Lower": 50.0,
-                "CI Upper": 123.75
+                "Lower": 50.0,
+                "Upper": 73.49481489848608,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 143.75,
-                "CI Lower": 93.75,
-                "CI Upper": 200.0
+                "Lower": 73.49481489848608,
+                "Upper": 143.31641883068713,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 123.64758825603995
             },
             "Common": {
-                "value": 200.0,
-                "CI Lower": 150.0,
-                "CI Upper": 300.0
+                "Lower": 143.31641883068713,
+                "Upper": 199.99999999999991,
+                "CI Lower": 93.06048591029146,
+                "CI Upper": 199.99999999999991
             },
             "Strong": {
-                "value": 300.0,
-                "CI Lower": 200.0,
-                "CI Upper": 400.62499999999943
+                "Lower": 199.99999999999991,
+                "Upper": 299.99999999999994,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 299.99999999999994
             },
             "Heavy": {
-                "value": 500.0,
-                "CI Lower": 304.87500000000006,
-                "CI Upper": 500.0
+                "Lower": 299.99999999999994,
+                "Upper": 500.0,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 422.94850537627076
             }
         },
-        "reliability_score": 0.8280652196835974
+        "reliability_score": 0.8853768131223982
     },
     {
         "substance": "St. John's Wort",
@@ -13900,32 +11825,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 300.0,
-                "CI Lower": 20.0,
-                "CI Upper": 300.0
+                "Lower": 20.0,
+                "Upper": 299.99999999999994,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 300.0,
-                "CI Lower": 300.0,
-                "CI Upper": 463.43749999999915
+                "Lower": 299.99999999999994,
+                "Upper": 299.99999999999994,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 299.99999999999994
             },
             "Common": {
-                "value": 600.0,
-                "CI Lower": 316.5,
-                "CI Upper": 700.0
+                "Lower": 299.99999999999994,
+                "Upper": 600.0,
+                "CI Lower": 299.99999999999994,
+                "CI Upper": 517.8744632282021
             },
             "Strong": {
-                "value": 900.0,
-                "CI Lower": 600.0,
-                "CI Upper": 1200.0
+                "Lower": 600.0,
+                "Upper": 900.0000000000001,
+                "CI Lower": 316.0696125855957,
+                "CI Upper": 700.0000000000002
             },
             "Heavy": {
-                "value": 1400.0,
-                "CI Lower": 900.0,
-                "CI Upper": 1800.0
+                "Lower": 900.0000000000001,
+                "Upper": 1800.0,
+                "CI Lower": 600.0,
+                "CI Upper": 1199.9999999999995
             }
         },
-        "reliability_score": 0.8023943407851344
+        "reliability_score": 0.8682628938567563
     },
     {
         "substance": "Syrian Rue",
@@ -13933,32 +11863,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.0
+                "Lower": 0.5,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 2.0,
-                "CI Lower": 2.0,
-                "CI Upper": 2.5
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 3.0,
+                "Lower": 2.0,
+                "Upper": 3.0,
+                "CI Lower": 2.0,
+                "CI Upper": 2.4
+            },
+            "Strong": {
+                "Lower": 3.0,
+                "Upper": 4.0,
                 "CI Lower": 3.0,
                 "CI Upper": 3.0
             },
-            "Strong": {
-                "value": 4.0,
-                "CI Lower": 3.5,
-                "CI Upper": 4.0
-            },
             "Heavy": {
-                "value": 6.0,
-                "CI Lower": 5.0,
-                "CI Upper": 6.66
+                "Lower": 4.0,
+                "Upper": 8.0,
+                "CI Lower": 3.5999999999999996,
+                "CI Upper": 4.0
             }
         },
-        "reliability_score": 0.8602864272871147
+        "reliability_score": 0.9068576181914099
     },
     {
         "substance": "Syrian Rue",
@@ -13966,32 +11901,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 20.0,
-                "CI Lower": 5.0,
-                "CI Upper": 150.0
+                "Lower": 5.0,
+                "Upper": 19.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 150.0,
-                "CI Lower": 100.0,
-                "CI Upper": 201.24999999999886
+                "Lower": 19.999999999999996,
+                "Upper": 149.99999999999997,
+                "CI Lower": 5.0,
+                "CI Upper": 149.99999999999997
             },
             "Common": {
-                "value": 250.0,
-                "CI Lower": 150.0,
-                "CI Upper": 333.0
+                "Lower": 149.99999999999997,
+                "Upper": 249.9999999999999,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 249.9999999999999
             },
             "Strong": {
-                "value": 400.0,
-                "CI Lower": 250.0,
-                "CI Upper": 500.0
+                "Lower": 249.9999999999999,
+                "Upper": 400.00000000000006,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 333.00000000000006
             },
             "Heavy": {
-                "value": 500.0,
-                "CI Lower": 400.0,
-                "CI Upper": 800.0
+                "Lower": 400.00000000000006,
+                "Upper": 800.0,
+                "CI Lower": 249.9999999999999,
+                "CI Upper": 499.99999999999983
             }
         },
-        "reliability_score": 0.7912425747372345
+        "reliability_score": 0.8608283831581562
     },
     {
         "substance": "TMA-2",
@@ -13999,32 +11939,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 11.875,
-                "CI Lower": 10.0,
-                "CI Upper": 23.3
+                "Lower": 10.0,
+                "Upper": 11.821770112588206,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 25.0,
-                "CI Lower": 13.0,
-                "CI Upper": 33.0
+                "Lower": 11.821770112588206,
+                "Upper": 24.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 21.248548524546628
             },
             "Common": {
-                "value": 35.0,
-                "CI Lower": 25.0,
-                "CI Upper": 40.0
+                "Lower": 24.999999999999996,
+                "Upper": 35.0,
+                "CI Lower": 18.612097182123545,
+                "CI Upper": 32.2229849593269
             },
             "Strong": {
-                "value": 41.25,
-                "CI Lower": 35.0,
-                "CI Upper": 55.0
+                "Lower": 35.0,
+                "Upper": 41.1953428781551,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 40.0
             },
             "Heavy": {
-                "value": 76.25,
-                "CI Lower": 50.0,
-                "CI Upper": 80.0
+                "Lower": 41.1953428781551,
+                "Upper": 80.0,
+                "CI Lower": 40.0,
+                "CI Upper": 52.33175696963553
             }
         },
-        "reliability_score": 0.8549319481196267
+        "reliability_score": 0.9032879654130843
     },
     {
         "substance": "Tabernanthe iboga",
@@ -14032,32 +11977,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 0.41000000000000003,
-                "CI Lower": 0.2,
-                "CI Upper": 1.0
+                "Lower": 0.2,
+                "Upper": 0.379828897481225,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.4
+                "Lower": 0.379828897481225,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.19999999999999998,
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 2.0,
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 1.25
+            },
+            "Strong": {
+                "Lower": 2.0,
+                "Upper": 2.0,
                 "CI Lower": 1.25,
                 "CI Upper": 2.0
             },
-            "Strong": {
-                "value": 2.0,
+            "Heavy": {
+                "Lower": 2.0,
+                "Upper": 6.0,
                 "CI Lower": 2.0,
                 "CI Upper": 3.0
-            },
-            "Heavy": {
-                "value": 4.299999999999997,
-                "CI Lower": 3.0,
-                "CI Upper": 6.0
             }
         },
-        "reliability_score": 0.8103986876154166
+        "reliability_score": 0.8735991250769444
     },
     {
         "substance": "Tabernanthe iboga",
@@ -14065,32 +12015,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 150.0,
-                "CI Lower": 80.0,
-                "CI Upper": 200.0
+                "Lower": 80.0,
+                "Upper": 149.99999999999997,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 200.0,
-                "CI Lower": 200.0,
-                "CI Upper": 200.0
+                "Lower": 149.99999999999997,
+                "Upper": 199.99999999999991,
+                "CI Lower": 80.00000000000001,
+                "CI Upper": 199.99999999999991
             },
             "Common": {
-                "value": 300.0,
-                "CI Lower": 200.0,
-                "CI Upper": 500.0
+                "Lower": 199.99999999999991,
+                "Upper": 299.99999999999994,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 199.99999999999991
             },
             "Strong": {
-                "value": 500.0,
-                "CI Lower": 500.0,
-                "CI Upper": 750.0
+                "Lower": 299.99999999999994,
+                "Upper": 499.99999999999983,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 499.99999999999983
             },
             "Heavy": {
-                "value": 800.0,
-                "CI Lower": 500.0,
-                "CI Upper": 1300.0
+                "Lower": 499.99999999999983,
+                "Upper": 1300.0,
+                "CI Lower": 499.99999999999983,
+                "CI Upper": 749.9999999999999
             }
         },
-        "reliability_score": 0.7989825345602792
+        "reliability_score": 0.8659883563735196
     },
     {
         "substance": "Tadalafil",
@@ -14098,32 +12053,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
+                "Lower": 5.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 5.0,
+                "Upper": 7.5,
                 "CI Lower": 5.0,
                 "CI Upper": 7.5
             },
-            "Light": {
-                "value": 7.5,
+            "Common": {
+                "Lower": 7.5,
+                "Upper": 10.000000000000002,
                 "CI Lower": 7.5,
                 "CI Upper": 7.5
             },
-            "Common": {
-                "value": 10.0,
+            "Strong": {
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
                 "CI Lower": 7.5,
                 "CI Upper": 15.0
             },
-            "Strong": {
-                "value": 15.0,
-                "CI Lower": 15.0,
-                "CI Upper": 15.0
-            },
             "Heavy": {
-                "value": 15.0,
+                "Lower": 15.0,
+                "Upper": 15.0,
                 "CI Lower": 15.0,
                 "CI Upper": 15.0
             }
         },
-        "reliability_score": 0.8885767135126372
+        "reliability_score": 0.9257178090084248
     },
     {
         "substance": "Tapentadol",
@@ -14131,32 +12091,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 40.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 25.0,
+                "Upper": 39.72089403939308,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 39.72089403939308,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 150.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 100.0,
-                "CI Upper": 250.0
+                "Lower": 99.99999999999996,
+                "Upper": 199.99999999999991,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 149.99999999999997
             },
             "Heavy": {
-                "value": 289.9999999999999,
-                "CI Lower": 200.0,
-                "CI Upper": 300.0
+                "Lower": 199.99999999999991,
+                "Upper": 300.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 249.9999999999999
             }
         },
-        "reliability_score": 0.8147721328672466
+        "reliability_score": 0.8765147552448311
     },
     {
         "substance": "Temazepam",
@@ -14164,32 +12129,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 13.0,
-                "CI Lower": 1.0,
-                "CI Upper": 30.0
+                "Lower": 1.0,
+                "Upper": 12.311444133913893,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 30.0,
-                "CI Lower": 20.0,
-                "CI Upper": 35.0
+                "Lower": 12.311444133913893,
+                "Upper": 30.000000000000004,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 30.000000000000004
             },
             "Common": {
-                "value": 40.0,
-                "CI Lower": 30.0,
-                "CI Upper": 60.0
+                "Lower": 30.000000000000004,
+                "Upper": 40.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 34.641016151481175
             },
             "Strong": {
-                "value": 60.0,
-                "CI Lower": 44.9375,
-                "CI Upper": 60.0
+                "Lower": 40.0,
+                "Upper": 59.999999999999986,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 59.999999999999986
             },
             "Heavy": {
-                "value": 70.49999999999999,
-                "CI Lower": 60.0,
-                "CI Upper": 120.0
+                "Lower": 59.999999999999986,
+                "Upper": 120.0,
+                "CI Lower": 44.7213595500581,
+                "CI Upper": 59.999999999999986
             }
         },
-        "reliability_score": 0.8375111765319039
+        "reliability_score": 0.8916741176879359
     },
     {
         "substance": "Theanine",
@@ -14197,32 +12167,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 100.0,
-                "CI Lower": 25.0,
-                "CI Upper": 115.00000000000001
+                "Lower": 25.0,
+                "Upper": 99.99999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 175.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 168.179283051254,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 110.95694720704795
             },
             "Common": {
-                "value": 200.0,
-                "CI Lower": 200.0,
-                "CI Upper": 350.0
+                "Lower": 168.179283051254,
+                "Upper": 199.99999999999991,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 199.99999999999991
             },
             "Strong": {
-                "value": 425.0,
-                "CI Lower": 206.25,
-                "CI Upper": 600.0
+                "Lower": 199.99999999999991,
+                "Upper": 422.94850537627076,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 400.00000000000006
             },
             "Heavy": {
-                "value": 600.0,
-                "CI Lower": 484.9999999999998,
-                "CI Upper": 700.0
+                "Lower": 422.94850537627076,
+                "Upper": 700.0,
+                "CI Lower": 205.97671439072442,
+                "CI Upper": 600.0
             }
         },
-        "reliability_score": 0.7995901689579992
+        "reliability_score": 0.8663934459719995
     },
     {
         "substance": "Tianeptine",
@@ -14230,32 +12205,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 25.625,
-                "CI Lower": 12.5,
-                "CI Upper": 43.17187499999996
+                "Lower": 12.5,
+                "Upper": 24.102852569185835,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 43.125,
-                "CI Lower": 30.0,
-                "CI Upper": 50.0
+                "Lower": 24.102852569185835,
+                "Upper": 42.99492564922865,
+                "CI Lower": 12.500000000000002,
+                "CI Upper": 40.66209016260854
             },
             "Common": {
-                "value": 50.0,
-                "CI Lower": 43.75,
-                "CI Upper": 126.25
+                "Lower": 42.99492564922865,
+                "Upper": 49.99999999999999,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 49.99999999999999
             },
             "Strong": {
-                "value": 121.875,
-                "CI Lower": 50.0,
-                "CI Upper": 200.0
+                "Lower": 49.99999999999999,
+                "Upper": 117.0173659663723,
+                "CI Lower": 43.301270189325564,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 200.0,
-                "CI Lower": 98.75,
-                "CI Upper": 200.0
+                "Lower": 117.0173659663723,
+                "Upper": 200.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.7634337059509639
+        "reliability_score": 0.8422891373006427
     },
     {
         "substance": "Topiramate",
@@ -14263,32 +12243,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 51.25
+                "Lower": 25.0,
+                "Upper": 24.999999999999996,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 56.25,
-                "CI Lower": 31.25,
-                "CI Upper": 106.25
+                "Lower": 24.999999999999996,
+                "Upper": 55.33409598516067,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 51.02400768250736
             },
             "Common": {
-                "value": 125.0,
-                "CI Lower": 87.5,
-                "CI Upper": 200.0
+                "Lower": 55.33409598516067,
+                "Upper": 124.99999999999994,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 124.99999999999994
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 125.0,
-                "CI Upper": 200.0
+                "Lower": 124.99999999999994,
+                "Upper": 199.99999999999991,
+                "CI Lower": 86.29167467540631,
+                "CI Upper": 199.99999999999991
             },
             "Heavy": {
-                "value": 247.49999999999997,
-                "CI Lower": 200.0,
-                "CI Upper": 400.0
+                "Lower": 199.99999999999991,
+                "Upper": 400.0,
+                "CI Lower": 143.31641883068713,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.8005459134031312
+        "reliability_score": 0.8670306089354209
     },
     {
         "substance": "Tramadol",
@@ -14296,32 +12281,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 37.5,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 10.0,
+                "Upper": 37.5,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 37.5,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 150.0,
-                "CI Lower": 100.0,
-                "CI Upper": 150.0
+                "Lower": 49.99999999999999,
+                "Upper": 149.99999999999997,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 200.0,
-                "CI Upper": 225.0
+                "Lower": 149.99999999999997,
+                "Upper": 199.99999999999991,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 149.99999999999997
             },
             "Heavy": {
-                "value": 400.0,
-                "CI Lower": 350.0,
-                "CI Upper": 500.0
+                "Lower": 199.99999999999991,
+                "Upper": 500.0,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.7841101174659222
+        "reliability_score": 0.8560737587076814
     },
     {
         "substance": "Trazodone",
@@ -14329,65 +12319,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 50.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 25.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 49.99999999999999,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 75.0,
-                "CI Upper": 150.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 74.99999999999999
             },
             "Strong": {
-                "value": 150.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 149.99999999999997,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 250.0,
-                "CI Lower": 200.0,
-                "CI Upper": 300.0
+                "Lower": 149.99999999999997,
+                "Upper": 300.0,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.8170449382209031
-    },
-    {
-        "substance": "Triazolam",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 0.25,
-                "CI Lower": 0.25,
-                "CI Upper": 0.25
-            },
-            "Light": {
-                "value": 0.25,
-                "CI Lower": 0.25,
-                "CI Upper": 0.3125
-            },
-            "Common": {
-                "value": 0.25,
-                "CI Lower": 0.25,
-                "CI Upper": 0.5
-            },
-            "Strong": {
-                "value": 0.5,
-                "CI Lower": 0.25,
-                "CI Upper": 1.0
-            },
-            "Heavy": {
-                "value": 1.0,
-                "CI Lower": 0.5,
-                "CI Upper": 1.0
-            }
-        },
-        "reliability_score": 0.8115520884047387
+        "reliability_score": 0.8780299588139355
     },
     {
         "substance": "Tryptophan",
@@ -14395,32 +12357,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 50.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 50.22842212900377
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 100.0,
-                "CI Upper": 250.0
+                "Lower": 99.99999999999996,
+                "Upper": 199.99999999999991,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 250.0,
-                "CI Lower": 200.0,
-                "CI Upper": 300.0
+                "Lower": 199.99999999999991,
+                "Upper": 300.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 249.9999999999999
             }
         },
-        "reliability_score": 0.8342185727860758
+        "reliability_score": 0.8894790485240507
     },
     {
         "substance": "Tryptophan - 5-HTP",
@@ -14428,32 +12395,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 50.0,
-                "CI Lower": 25.0,
-                "CI Upper": 50.0
+                "Lower": 15.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 50.0,
-                "CI Lower": 50.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 49.99999999999999,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 100.0,
-                "CI Upper": 100.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 200.0,
-                "CI Lower": 100.0,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 199.99999999999991,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 300.0,
-                "CI Lower": 200.0,
-                "CI Upper": 300.0
+                "Lower": 199.99999999999991,
+                "Upper": 350.0,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.8240864518391631
+        "reliability_score": 0.8827243012261088
     },
     {
         "substance": "Tyrosine",
@@ -14461,98 +12433,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 500.0,
-                "CI Lower": 500.0,
-                "CI Upper": 500.0
+                "Lower": 500.0,
+                "Upper": 499.99999999999983,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 500.0,
-                "CI Lower": 500.0,
-                "CI Upper": 800.6249999999994
+                "Lower": 499.99999999999983,
+                "Upper": 499.99999999999983,
+                "CI Lower": 499.99999999999983,
+                "CI Upper": 499.99999999999983
             },
             "Common": {
-                "value": 950.0,
-                "CI Lower": 500.0,
-                "CI Upper": 1175.0
+                "Lower": 499.99999999999983,
+                "Upper": 948.6832980505277,
+                "CI Lower": 499.99999999999983,
+                "CI Upper": 777.0060192337658
             },
             "Strong": {
-                "value": 1387.5,
-                "CI Lower": 1000.0,
+                "Lower": 948.6832980505277,
+                "Upper": 1386.03162970847,
+                "CI Lower": 499.99999999999983,
+                "CI Upper": 1161.8950038623375
+            },
+            "Heavy": {
+                "Lower": 1386.03162970847,
+                "Upper": 3000.0,
+                "CI Lower": 999.9999999999998,
                 "CI Upper": 1500.0
-            },
-            "Heavy": {
-                "value": 1924.9999999999989,
-                "CI Lower": 1477.4999999999998,
-                "CI Upper": 3000.0
             }
         },
-        "reliability_score": 0.8158627638441089
-    },
-    {
-        "substance": "Unknown",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 6.825,
-                "CI Lower": 0.5,
-                "CI Upper": 18.65
-            },
-            "Light": {
-                "value": 16.5,
-                "CI Lower": 9.125,
-                "CI Upper": 52.0
-            },
-            "Common": {
-                "value": 51.0,
-                "CI Lower": 16.975,
-                "CI Upper": 202.5
-            },
-            "Strong": {
-                "value": 201.25,
-                "CI Lower": 50.4875,
-                "CI Upper": 281.25
-            },
-            "Heavy": {
-                "value": 286.25,
-                "CI Lower": 181.05249999999992,
-                "CI Upper": 300.0
-            }
-        },
-        "reliability_score": 0.7
-    },
-    {
-        "substance": "Valerian",
-        "method": "oral",
-        "unit": "g",
-        "tiers": {
-            "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.0
-            },
-            "Light": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.2
-            },
-            "Common": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.5
-            },
-            "Strong": {
-                "value": 1.5,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
-            },
-            "Heavy": {
-                "value": 2.048,
-                "CI Lower": 1.41,
-                "CI Upper": 2.12
-            }
-        },
-        "reliability_score": 0.8999272844004926
+        "reliability_score": 0.8772418425627393
     },
     {
         "substance": "Valerian",
@@ -14560,32 +12471,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 240.00000000000003,
-                "CI Lower": 3.6,
-                "CI Upper": 400.0
+                "Lower": 3.6,
+                "Upper": 215.76692799896685,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 500.0,
-                "CI Lower": 400.0,
-                "CI Upper": 625.0
+                "Lower": 215.76692799896685,
+                "Upper": 499.99999999999983,
+                "CI Lower": 22.70752251624682,
+                "CI Upper": 400.00000000000006
             },
             "Common": {
-                "value": 840.0,
-                "CI Lower": 500.0,
-                "CI Upper": 1200.0
+                "Lower": 499.99999999999983,
+                "Upper": 840.0000000000002,
+                "CI Lower": 424.2640687119459,
+                "CI Upper": 563.914887194887
             },
             "Strong": {
-                "value": 1515.0,
-                "CI Lower": 1060.0,
-                "CI Upper": 2400.0
+                "Lower": 840.0000000000002,
+                "Upper": 1513.142425550231,
+                "CI Lower": 530.0000000000002,
+                "CI Upper": 1070.0000000000005
             },
             "Heavy": {
-                "value": 2700.0,
-                "CI Lower": 2250.0,
-                "CI Upper": 3150.0
+                "Lower": 1513.142425550231,
+                "Upper": 3150.0,
+                "CI Lower": 1070.0000000000005,
+                "CI Upper": 2250.0000000000005
             }
         },
-        "reliability_score": 0.7793099448791772
+        "reliability_score": 0.8528732965861181
     },
     {
         "substance": "Venlafaxine",
@@ -14593,32 +12509,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 37.5,
-                "CI Lower": 37.5,
-                "CI Upper": 75.0
+                "Lower": 20.0,
+                "Upper": 37.5,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 75.0,
-                "CI Lower": 75.0,
-                "CI Upper": 100.0
+                "Lower": 37.5,
+                "Upper": 74.99999999999999,
+                "CI Lower": 37.5,
+                "CI Upper": 74.99999999999999
             },
             "Common": {
-                "value": 150.0,
-                "CI Lower": 150.0,
-                "CI Upper": 150.0
+                "Lower": 74.99999999999999,
+                "Upper": 149.99999999999997,
+                "CI Lower": 74.99999999999999,
+                "CI Upper": 74.99999999999999
             },
             "Strong": {
-                "value": 225.0,
-                "CI Lower": 150.0,
-                "CI Upper": 225.0
+                "Lower": 149.99999999999997,
+                "Upper": 225.0,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 149.99999999999997
             },
             "Heavy": {
-                "value": 300.0,
-                "CI Lower": 300.0,
-                "CI Upper": 300.0
+                "Lower": 225.0,
+                "Upper": 450.0,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 225.0
             }
         },
-        "reliability_score": 0.832518036338755
+        "reliability_score": 0.88834535755917
     },
     {
         "substance": "Vinpocetine",
@@ -14626,32 +12547,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
+                "Lower": 5.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 5.0,
+                "Upper": 5.9460355754191685,
                 "CI Lower": 5.0,
                 "CI Upper": 5.0
             },
-            "Light": {
-                "value": 6.25,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 7.5,
-                "CI Upper": 12.5
+                "Lower": 5.9460355754191685,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 13.75,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 13.554030054313197,
+                "CI Lower": 7.071067812472079,
+                "CI Upper": 12.247448714122097
             },
             "Heavy": {
-                "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "Lower": 13.554030054313197,
+                "Upper": 20.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.8555589767794445
+        "reliability_score": 0.9037059845196296
     },
     {
         "substance": "Vitamin B-6",
@@ -14659,32 +12585,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.200000000000001,
-                "CI Lower": 1.0,
-                "CI Upper": 25.024999999999977
+                "Lower": 1.0,
+                "Upper": 4.8044977364956205,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 30.0,
-                "CI Lower": 21.0,
-                "CI Upper": 50.0
+                "Lower": 4.8044977364956205,
+                "Upper": 30.000000000000004,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 24.999999999999996
             },
             "Common": {
-                "value": 50.0,
-                "CI Lower": 30.0,
-                "CI Upper": 100.0
+                "Lower": 30.000000000000004,
+                "Upper": 49.99999999999999,
+                "CI Lower": 21.000000000000004,
+                "CI Upper": 49.99999999999999
             },
             "Strong": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 200.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 30.000000000000004,
+                "CI Upper": 99.99999999999996
             },
             "Heavy": {
-                "value": 200.0,
-                "CI Lower": 138.99999999999991,
-                "CI Upper": 200.0
+                "Lower": 99.99999999999996,
+                "Upper": 200.0,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 149.99999999999997
             }
         },
-        "reliability_score": 0.7546894037252205
+        "reliability_score": 0.8364596024834803
     },
     {
         "substance": "Vitamin C",
@@ -14692,32 +12623,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.0
+                "Lower": 1.0,
+                "Upper": 0.9999999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 1.0
+                "Lower": 0.9999999999999999,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 0.9999999999999999
             },
             "Common": {
-                "value": 1.0,
-                "CI Lower": 1.0,
-                "CI Upper": 2.0
+                "Lower": 0.9999999999999999,
+                "Upper": 0.9999999999999999,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 0.9999999999999999
             },
             "Strong": {
-                "value": 2.0,
-                "CI Lower": 1.0,
-                "CI Upper": 3.0
+                "Lower": 0.9999999999999999,
+                "Upper": 2.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.0
             },
             "Heavy": {
-                "value": 4.699999999999985,
-                "CI Lower": 2.0,
-                "CI Upper": 11.0
+                "Lower": 2.0,
+                "Upper": 11.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 2.8284271253527917
             }
         },
-        "reliability_score": 0.7
+        "reliability_score": 0.8
     },
     {
         "substance": "Vitamin C",
@@ -14725,32 +12661,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 205.0,
-                "CI Lower": 100.0,
-                "CI Upper": 500.0
+                "Lower": 100.0,
+                "Upper": 204.93901531919494,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 500.0,
-                "CI Lower": 210.0,
-                "CI Upper": 500.0
+                "Lower": 204.93901531919494,
+                "Upper": 499.99999999999983,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 448.4627471897348
             },
             "Common": {
-                "value": 1000.0,
-                "CI Lower": 500.0,
-                "CI Upper": 1000.0
+                "Lower": 499.99999999999983,
+                "Upper": 999.9999999999998,
+                "CI Lower": 400.00000000000006,
+                "CI Upper": 499.99999999999983
             },
             "Strong": {
-                "value": 1000.0,
-                "CI Lower": 1000.0,
-                "CI Upper": 2000.0
+                "Lower": 999.9999999999998,
+                "Upper": 999.9999999999998,
+                "CI Lower": 499.99999999999983,
+                "CI Upper": 999.9999999999998
             },
             "Heavy": {
-                "value": 2500.0,
-                "CI Lower": 1500.0,
-                "CI Upper": 3000.0
+                "Lower": 999.9999999999998,
+                "Upper": 3000.0,
+                "CI Lower": 999.9999999999998,
+                "CI Upper": 2000.0000000000007
             }
         },
-        "reliability_score": 0.7691755783974752
+        "reliability_score": 0.8461170522649835
     },
     {
         "substance": "Vitamins - Choline",
@@ -14758,65 +12699,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 250.0,
-                "CI Lower": 200.0,
-                "CI Upper": 250.0
+                "Lower": 200.0,
+                "Upper": 249.9999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 250.0,
-                "CI Lower": 250.0,
-                "CI Upper": 500.0
+                "Lower": 249.9999999999999,
+                "Upper": 249.9999999999999,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 249.9999999999999
             },
             "Common": {
-                "value": 500.0,
-                "CI Lower": 250.0,
-                "CI Upper": 725.0
+                "Lower": 249.9999999999999,
+                "Upper": 499.99999999999983,
+                "CI Lower": 249.9999999999999,
+                "CI Upper": 499.99999999999983
             },
             "Strong": {
-                "value": 750.0,
-                "CI Lower": 650.0,
-                "CI Upper": 840.0
+                "Lower": 499.99999999999983,
+                "Upper": 749.9999999999999,
+                "CI Lower": 249.9999999999999,
+                "CI Upper": 724.5688373094782
             },
             "Heavy": {
-                "value": 991.9999999999999,
-                "CI Lower": 835.4999999999999,
-                "CI Upper": 1000.0
+                "Lower": 749.9999999999999,
+                "Upper": 1000.0,
+                "CI Lower": 499.99999999999983,
+                "CI Upper": 840.0000000000002
             }
         },
-        "reliability_score": 0.8407939051752336
-    },
-    {
-        "substance": "Vitamins - Niacin",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 123.0,
-                "CI Lower": 60.0,
-                "CI Upper": 317.5
-            },
-            "Light": {
-                "value": 262.5,
-                "CI Lower": 95.0,
-                "CI Upper": 500.0
-            },
-            "Common": {
-                "value": 450.0,
-                "CI Lower": 249.37500000000003,
-                "CI Upper": 651.2499999999989
-            },
-            "Strong": {
-                "value": 500.0,
-                "CI Lower": 400.0,
-                "CI Upper": 1375.0
-            },
-            "Heavy": {
-                "value": 1274.9999999999995,
-                "CI Lower": 500.0,
-                "CI Upper": 1500.0
-            }
-        },
-        "reliability_score": 0.7540720706851596
+        "reliability_score": 0.8938626034501558
     },
     {
         "substance": "Vitamins / Supplements",
@@ -14824,32 +12737,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 90.0,
-                "CI Lower": 50.0,
-                "CI Upper": 196.0
+                "Lower": 50.0,
+                "Upper": 87.05505633005899,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 200.0,
-                "CI Lower": 100.0,
-                "CI Upper": 500.0
+                "Lower": 87.05505633005899,
+                "Upper": 199.99999999999991,
+                "CI Lower": 49.99999999999999,
+                "CI Upper": 199.99999999999991
             },
             "Common": {
-                "value": 500.0,
-                "CI Lower": 200.0,
-                "CI Upper": 1000.0
+                "Lower": 199.99999999999991,
+                "Upper": 499.99999999999983,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 499.99999999999983
             },
             "Strong": {
-                "value": 1000.0,
-                "CI Lower": 500.0,
-                "CI Upper": 2000.0
+                "Lower": 499.99999999999983,
+                "Upper": 999.9999999999998,
+                "CI Lower": 199.99999999999991,
+                "CI Upper": 999.9999999999998
             },
             "Heavy": {
-                "value": 2000.0,
-                "CI Lower": 1000.0,
-                "CI Upper": 2000.0
+                "Lower": 999.9999999999998,
+                "Upper": 2000.0,
+                "CI Lower": 499.99999999999983,
+                "CI Upper": 2000.0000000000007
             }
         },
-        "reliability_score": 0.7115735349106318
+        "reliability_score": 0.8077156899404212
     },
     {
         "substance": "Voacanga africana",
@@ -14857,32 +12775,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "g",
         "tiers": {
             "Threshold": {
-                "value": 1.0225,
-                "CI Lower": 1.0,
-                "CI Upper": 3.05
+                "Lower": 1.0,
+                "Upper": 1.018751825884424,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 4.0,
-                "CI Lower": 1.45,
-                "CI Upper": 7.0
+                "Lower": 1.018751825884424,
+                "Upper": 4.0,
+                "CI Lower": 0.9999999999999999,
+                "CI Upper": 4.0
             },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 4.0,
-                "CI Upper": 10.0
+                "Lower": 4.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 1.45,
+                "CI Upper": 6.817316199030971
             },
             "Strong": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "Lower": 10.000000000000002,
+                "Upper": 10.000000000000002,
+                "CI Lower": 4.0,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 15.0
+                "Lower": 10.000000000000002,
+                "Upper": 15.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             }
         },
-        "reliability_score": 0.8306219679488629
+        "reliability_score": 0.8870813119659084
     },
     {
         "substance": "Yohimbe",
@@ -14890,98 +12813,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 46.35000000000001,
+                "Lower": 5.0,
+                "Upper": 22.716998212027466,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 22.716998212027466,
+                "Upper": 360.00000000000006,
                 "CI Lower": 5.0,
-                "CI Upper": 360.0
-            },
-            "Light": {
-                "value": 380.0,
-                "CI Lower": 225.0,
-                "CI Upper": 475.0
+                "CI Upper": 265.47577058569556
             },
             "Common": {
-                "value": 500.0,
-                "CI Lower": 400.0,
-                "CI Upper": 750.0
+                "Lower": 360.00000000000006,
+                "Upper": 499.99999999999983,
+                "CI Lower": 112.5,
+                "CI Upper": 450.00000000000006
             },
             "Strong": {
-                "value": 788.0,
-                "CI Lower": 500.0,
-                "CI Upper": 1350.0
+                "Lower": 499.99999999999983,
+                "Upper": 781.9316417280377,
+                "CI Lower": 400.00000000000006,
+                "CI Upper": 670.8203932499991
             },
             "Heavy": {
-                "value": 1500.0,
-                "CI Lower": 800.0,
-                "CI Upper": 1500.0
+                "Lower": 781.9316417280377,
+                "Upper": 1500.0,
+                "CI Lower": 499.99999999999983,
+                "CI Upper": 1349.9999999999995
             }
         },
-        "reliability_score": 0.7913483596877378
-    },
-    {
-        "substance": "Zinc",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 25.0
-            },
-            "Light": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 25.0
-            },
-            "Common": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 25.0
-            },
-            "Strong": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 25.0
-            },
-            "Heavy": {
-                "value": 25.0,
-                "CI Lower": 25.0,
-                "CI Upper": 25.0
-            }
-        },
-        "reliability_score": 1.0
-    },
-    {
-        "substance": "Ziprasidone",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
-            },
-            "Light": {
-                "value": 20.0,
-                "CI Lower": 20.0,
-                "CI Upper": 50.0
-            },
-            "Common": {
-                "value": 40.0,
-                "CI Lower": 20.0,
-                "CI Upper": 80.0
-            },
-            "Strong": {
-                "value": 70.0,
-                "CI Lower": 40.0,
-                "CI Upper": 110.0
-            },
-            "Heavy": {
-                "value": 110.0,
-                "CI Lower": 60.0,
-                "CI Upper": 120.0
-            }
-        },
-        "reliability_score": 0.801120857809138
+        "reliability_score": 0.8539888309154748
     },
     {
         "substance": "Zolpidem",
@@ -14989,32 +12851,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
+                "Lower": 3.0,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 5.0,
+                "Upper": 5.0,
                 "CI Lower": 3.0,
                 "CI Upper": 5.0
             },
-            "Light": {
-                "value": 5.0,
-                "CI Lower": 5.0,
-                "CI Upper": 10.0
-            },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
+                "CI Lower": 5.0,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 10.000000000000002,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 25.500000000000007,
-                "CI Lower": 20.0,
-                "CI Upper": 30.0
+                "Lower": 10.000000000000002,
+                "Upper": 30.0,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.8191853576551797
+        "reliability_score": 0.8794569051034531
     },
     {
         "substance": "Zolpidem",
@@ -15022,32 +12889,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 5.0,
+                "Lower": 2.5,
+                "Upper": 5.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
+            },
+            "Light": {
+                "Lower": 5.0,
+                "Upper": 10.000000000000002,
                 "CI Lower": 5.0,
                 "CI Upper": 5.0
             },
-            "Light": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
-            },
             "Common": {
-                "value": 10.0,
-                "CI Lower": 10.0,
-                "CI Upper": 10.0
+                "Lower": 10.000000000000002,
+                "Upper": 10.000000000000002,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Strong": {
-                "value": 20.0,
-                "CI Lower": 15.0,
-                "CI Upper": 20.0
+                "Lower": 10.000000000000002,
+                "Upper": 19.999999999999996,
+                "CI Lower": 10.000000000000002,
+                "CI Upper": 10.000000000000002
             },
             "Heavy": {
-                "value": 30.0,
-                "CI Lower": 25.0,
-                "CI Upper": 30.0
+                "Lower": 19.999999999999996,
+                "Upper": 35.0,
+                "CI Lower": 19.999999999999996,
+                "CI Upper": 19.999999999999996
             }
         },
-        "reliability_score": 0.8450056128617458
+        "reliability_score": 0.8966704085744972
     },
     {
         "substance": "Zopiclone",
@@ -15055,65 +12927,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 3.8125,
-                "CI Lower": 3.75,
-                "CI Upper": 7.5
+                "Lower": 3.75,
+                "Upper": 3.810995611163474,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 7.5,
-                "CI Lower": 7.0,
+                "Lower": 3.810995611163474,
+                "Upper": 7.5,
+                "CI Lower": 3.7500000000000004,
                 "CI Upper": 7.5
             },
             "Common": {
-                "value": 7.5,
+                "Lower": 7.5,
+                "Upper": 7.5,
+                "CI Lower": 7.5,
+                "CI Upper": 7.5
+            },
+            "Strong": {
+                "Lower": 7.5,
+                "Upper": 15.0,
                 "CI Lower": 7.5,
                 "CI Upper": 15.0
             },
-            "Strong": {
-                "value": 15.0,
-                "CI Lower": 11.25,
-                "CI Upper": 22.5
-            },
             "Heavy": {
-                "value": 28.75,
-                "CI Lower": 15.0,
-                "CI Upper": 30.0
+                "Lower": 15.0,
+                "Upper": 30.0,
+                "CI Lower": 12.500000000000002,
+                "CI Upper": 15.0
             }
         },
-        "reliability_score": 0.8209512777371499
-    },
-    {
-        "substance": "alpha-GPC",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 195.0,
-                "CI Lower": 150.0,
-                "CI Upper": 300.0
-            },
-            "Light": {
-                "value": 300.0,
-                "CI Lower": 175.0,
-                "CI Upper": 525.0
-            },
-            "Common": {
-                "value": 400.0,
-                "CI Lower": 275.0,
-                "CI Upper": 600.0
-            },
-            "Strong": {
-                "value": 600.0,
-                "CI Lower": 300.0,
-                "CI Upper": 600.0
-            },
-            "Heavy": {
-                "value": 600.0,
-                "CI Lower": 554.9999999999999,
-                "CI Upper": 600.0
-            }
-        },
-        "reliability_score": 0.8737870639933469
+        "reliability_score": 0.8806341851581001
     },
     {
         "substance": "bk-2C-B",
@@ -15121,32 +12965,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 35.0,
-                "CI Lower": 35.0,
-                "CI Upper": 80.0
+                "Lower": 35.0,
+                "Upper": 35.0,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 85.0,
+                "Lower": 35.0,
+                "Upper": 84.58970107529014,
                 "CI Lower": 35.0,
-                "CI Upper": 100.0
+                "CI Upper": 80.00000000000001
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 90.0,
-                "CI Upper": 140.0
+                "Lower": 84.58970107529014,
+                "Upper": 99.99999999999996,
+                "CI Lower": 35.0,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 140.0,
-                "CI Lower": 100.0,
-                "CI Upper": 172.5
+                "Lower": 99.99999999999996,
+                "Upper": 140.0,
+                "CI Lower": 89.44271910005384,
+                "CI Upper": 140.0
             },
             "Heavy": {
-                "value": 185.99999999999994,
-                "CI Lower": 141.5,
-                "CI Upper": 220.0
+                "Lower": 140.0,
+                "Upper": 220.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 171.9797025968181
             }
         },
-        "reliability_score": 0.8657944420230983
+        "reliability_score": 0.9105296280153987
     },
     {
         "substance": "bk-MBDB",
@@ -15154,65 +13003,37 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 50.0,
-                "CI Lower": 42.0,
-                "CI Upper": 100.0
+                "Lower": 42.0,
+                "Upper": 49.99999999999999,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 100.0,
-                "CI Lower": 75.0,
-                "CI Upper": 125.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 42.00000000000001,
+                "CI Upper": 99.99999999999996
             },
             "Common": {
-                "value": 130.0,
-                "CI Lower": 100.0,
-                "CI Upper": 150.0
+                "Lower": 99.99999999999996,
+                "Upper": 130.0,
+                "CI Lower": 70.71067811926133,
+                "CI Upper": 124.99999999999994
             },
             "Strong": {
-                "value": 167.5,
-                "CI Lower": 150.0,
-                "CI Upper": 200.0
+                "Lower": 130.0,
+                "Upper": 167.33200530682515,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 149.99999999999997
             },
             "Heavy": {
-                "value": 240.99999999999997,
-                "CI Lower": 187.99999999999997,
-                "CI Upper": 250.0
+                "Lower": 167.33200530682515,
+                "Upper": 250.0,
+                "CI Lower": 149.99999999999997,
+                "CI Upper": 199.99999999999991
             }
         },
-        "reliability_score": 0.8758843292429797
-    },
-    {
-        "substance": "bk-MDDMA",
-        "method": "oral",
-        "unit": "mg",
-        "tiers": {
-            "Threshold": {
-                "value": 90.8,
-                "CI Lower": 80.0,
-                "CI Upper": 150.0
-            },
-            "Light": {
-                "value": 150.0,
-                "CI Lower": 86.0,
-                "CI Upper": 215.09374999999991
-            },
-            "Common": {
-                "value": 207.5,
-                "CI Lower": 150.0,
-                "CI Upper": 400.0
-            },
-            "Strong": {
-                "value": 357.5,
-                "CI Lower": 198.46875000000003,
-                "CI Upper": 550.0
-            },
-            "Heavy": {
-                "value": 509.9999999999998,
-                "CI Lower": 230.0,
-                "CI Upper": 600.0
-            }
-        },
-        "reliability_score": 0.805580147309175
+        "reliability_score": 0.9172562194953198
     },
     {
         "substance": "bk-MDEA",
@@ -15220,31 +13041,36 @@ export const substanceData: SubstanceData[] = [
         "unit": "mg",
         "tiers": {
             "Threshold": {
-                "value": 22.5,
-                "CI Lower": 15.0,
-                "CI Upper": 50.0
+                "Lower": 15.0,
+                "Upper": 22.0027934201028,
+                "CI Lower": NaN,
+                "CI Upper": NaN
             },
             "Light": {
-                "value": 50.0,
-                "CI Lower": 25.0,
-                "CI Upper": 100.0
+                "Lower": 22.0027934201028,
+                "Upper": 49.99999999999999,
+                "CI Lower": 15.0,
+                "CI Upper": 49.99999999999999
             },
             "Common": {
-                "value": 100.0,
-                "CI Lower": 50.0,
-                "CI Upper": 125.0
+                "Lower": 49.99999999999999,
+                "Upper": 99.99999999999996,
+                "CI Lower": 24.999999999999996,
+                "CI Upper": 99.99999999999996
             },
             "Strong": {
-                "value": 150.0,
-                "CI Lower": 100.0,
-                "CI Upper": 180.0
+                "Lower": 99.99999999999996,
+                "Upper": 149.99999999999997,
+                "CI Lower": 63.245553203645,
+                "CI Upper": 149.99999999999997
             },
             "Heavy": {
-                "value": 185.0,
-                "CI Lower": 150.0,
-                "CI Upper": 200.0
+                "Lower": 149.99999999999997,
+                "Upper": 200.0,
+                "CI Lower": 99.99999999999996,
+                "CI Upper": 180.0
             }
         },
-        "reliability_score": 0.8311164407645304
+        "reliability_score": 0.8874109605096869
     }
 ]

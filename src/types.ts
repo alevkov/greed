@@ -1,5 +1,7 @@
 export interface SubstanceTier {
-  value: number;
+
+  'Lower': number;
+  'Upper': number;
   'CI Lower': number;
   'CI Upper': number;
 }
