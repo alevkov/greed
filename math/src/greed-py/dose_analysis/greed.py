@@ -25,7 +25,7 @@ filtered_df = clean_dfl[clean_dfl["units"].isin(valid_units)].copy()
 
 def calculate_reliability_score(group):
     sample_size = len(group)
-    max_sample_size = 10
+    max_sample_size = 30
     size_score = min(1, sample_size / max_sample_size)
 
     # rel score based on coefficient of variation
@@ -81,7 +81,7 @@ def calculate_percentile_confidence_interval(data, percentile, alpha=0.05):  # 9
 
 def compute_dose_tiers(group):
     amounts = group["amount_standard"].dropna().values
-    if len(amounts) < 10:
+    if len(amounts) < 30:
         return pd.Series(dtype="float64")
     percentiles = [0.05, 0.25, 0.50, 0.75, 0.95]
     labels = ["Threshold", "Light", "Common", "Strong", "Heavy"]

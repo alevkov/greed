@@ -1,8 +1,7 @@
 import pandas as pd
 import numpy as np
-from scipy.stats import beta
 import json
-from .dose_analysis_cy import detect_outliers_modified_zscore_cy, calculate_percentile_confidence_interval_cy, compute_dose_tiers_cy
+from .dose_analysis_cy import detect_outliers_modified_zscore_cy, compute_dose_tiers_cy
 
 DATASET_CSV_PATH = "data/DATASET.CSV"
 valid_units = ["mg", "µg", "g", "ml"]
@@ -15,12 +14,14 @@ def load_and_preprocess_data(file_path):
 
 def calculate_reliability_score(group):
     sample_size = len(group)
-    max_sample_size = 10
+    max_sample_size = 15
     size_score = min(1, sample_size / max_sample_size)
-    cv = group["amount"].std() / group["amount"].mean() if group["amount"].mean() != 0 else 0
+    mean_amount = group["amount"].mean()
+    std_amount = group["amount"].std()
+    cv = std_amount / mean_amount if mean_amount != 0 else np.inf
     consistency_score = max(0, 1 - cv)
     completeness = group["amount"].notna().mean()
-    reliability_score = (size_score * 0.5) + (consistency_score * 0.3) + (completeness * 0.2)
+    reliability_score = (size_score * 0.6) + (consistency_score * 0.2) + (completeness * 0.2)
     return reliability_score
 
 def detect_outliers_modified_zscore(group):
@@ -31,17 +32,29 @@ def detect_outliers_modified_zscore(group):
 
 def compute_dose_tiers(group):
     amounts = group['amount_standard'].dropna().values
-    if len(amounts) < 10:
+    if len(amounts) < 15:
         return pd.Series(dtype='float64')
     
     results = compute_dose_tiers_cy(amounts)
     
+    # Extract minimum and maximum amounts
+    min_amount = amounts.min()
+    max_amount = amounts.max()
+    
+    # Labels for the tiers
     labels = ['Threshold', 'Light', 'Common', 'Strong', 'Heavy']
     result = {}
+    
+    # Define the boundaries for each tier
+    thresholds = [min_amount, results[0], results[3], results[6], results[9], max_amount]
+    ci_lowers = [np.nan, results[1], results[4], results[7], results[10], np.nan]
+    ci_uppers = [np.nan, results[2], results[5], results[8], results[11], np.nan]
+    
     for i, label in enumerate(labels):
-        result[label] = results[i * 3]
-        result[f'{label} CI Lower'] = results[i * 3 + 1]
-        result[f'{label} CI Upper'] = results[i * 3 + 2]
+        result[f'{label} Lower'] = thresholds[i]
+        result[f'{label} Upper'] = thresholds[i+1]
+        result[f'{label} CI Lower'] = ci_lowers[i]
+        result[f'{label} CI Upper'] = ci_uppers[i]
     
     reliability_score = calculate_reliability_score(group)
     result['Reliability Score (0 to 1)'] = reliability_score
@@ -52,17 +65,20 @@ def dose_tiers_to_json(df):
     json_data = []
     for (substance, method, units), group in df.groupby(level=[0, 1, 2]):
         group = group.droplevel([0, 1, 2])
+        tiers = {}
+        labels = ['Threshold', 'Light', 'Common', 'Strong', 'Heavy']
+        for label in labels:
+            tiers[label] = {
+                "Lower": group.get(f"{label} Lower"),
+                "Upper": group.get(f"{label} Upper"),
+                "CI Lower": group.get(f"{label} CI Lower"),
+                "CI Upper": group.get(f"{label} CI Upper"),
+            }
         tier_data = {
             "substance": substance,
             "method": method,
             "unit": units,
-            "tiers": {
-                label: {
-                    "value": group.get(label),
-                    "CI Lower": group.get(f"{label} CI Lower"),
-                    "CI Upper": group.get(f"{label} CI Upper"),
-                } for label in ['Threshold', 'Light', 'Common', 'Strong', 'Heavy']
-            },
+            "tiers": tiers,
             "reliability_score": group.get("Reliability Score (0 to 1)"),
         }
         json_data.append(tier_data)
