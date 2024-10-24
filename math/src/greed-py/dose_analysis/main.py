@@ -21,7 +21,7 @@ def calculate_reliability_score(group):
     cv = std_amount / mean_amount if mean_amount != 0 else np.inf
     consistency_score = max(0, 1 - cv)
     completeness = group["amount"].notna().mean()
-    reliability_score = (size_score * 0.6) + (consistency_score * 0.2) + (completeness * 0.2)
+    reliability_score = (size_score * 0.6) + (consistency_score * 0.3) + (completeness * 0.1)
     return reliability_score
 
 def detect_outliers_modified_zscore(group):
@@ -37,15 +37,12 @@ def compute_dose_tiers(group):
     
     results = compute_dose_tiers_cy(amounts)
     
-    # Extract minimum and maximum amounts
     min_amount = amounts.min()
     max_amount = amounts.max()
     
-    # Labels for the tiers
     labels = ['Threshold', 'Light', 'Common', 'Strong', 'Heavy']
     result = {}
     
-    # Define the boundaries for each tier
     thresholds = [min_amount, results[0], results[3], results[6], results[9], max_amount]
     ci_lowers = [np.nan, results[1], results[4], results[7], results[10], np.nan]
     ci_uppers = [np.nan, results[2], results[5], results[8], results[11], np.nan]
@@ -85,22 +82,16 @@ def dose_tiers_to_json(df):
     return json.dumps(json_data, indent=4)
 
 def main():
-    # Load and preprocess data
     filtered_df = load_and_preprocess_data(DATASET_CSV_PATH)
 
     # Remove outliers
     filtered_df_no_outliers = filtered_df.groupby(["substance", "method", "units"]).apply(detect_outliers_modified_zscore).reset_index(drop=True)
 
-    # Compute dose tiers
     dose_tiers_with_reliability = filtered_df_no_outliers.groupby(["substance", "method", "units"]).apply(compute_dose_tiers)
 
-    # Convert to JSON
     dose_tiers_json = dose_tiers_to_json(dose_tiers_with_reliability)
 
-    # Print or save the JSON output
     print(dose_tiers_json)
-    
-    # Optionally, save to a file
     with open('dose_tiers_output.json', 'w') as f:
         f.write(dose_tiers_json)
 

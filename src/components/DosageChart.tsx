@@ -48,7 +48,7 @@ const DosageChart: React.FC<DosageChartProps> = ({ data }) => {
               // Define custom range display for "Heavy" and "Threshold"
               let doseRange;
               if (tier === 'Heavy') {
-                doseRange = `${formatDose(Number.parseFloat(data.tiers[tier]['Upper']))}+`;
+                doseRange = `${formatDose(Number.parseFloat(data.tiers[tier]['Upper']))} (max. recommended)`;
               } else if (tier === 'Threshold') {
                 doseRange = `< ${formatDose(Number.parseFloat(data.tiers[tier]['Lower']))}`;
               } else {
