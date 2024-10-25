@@ -75,7 +75,7 @@ function App() {
         <h1 className="text-2xl font-bold text-center">drug · dose · tips</h1>
         <br />
         <h2 className="text-lg text-center">
-          Github: <a href={"https://github.com/alevkov/greed"}>greed</a> ("Towards A[gree]d-upon [D]osing Tiers for Recreational Drugs")
+          Github: <a href={"https://github.com/alevkov/greed"}>greed</a> ("Towards More Transparent A[gree]d-upon [D]osing Tiers for Recreational Drugs")
         </h2>
       </header>
       <main className="flex-grow">

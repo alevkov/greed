@@ -88,7 +88,7 @@ const DosageChart: React.FC<DosageChartProps> = ({ data }) => {
     Dosage Tier and Confidence Interval Calculation Method
   </h3>
   <p>
-    Dosage tiers are established using specific percentiles of the data collected from erowid.org (N=62018). Confidence intervals (CIs) for these percentiles are calculated to account for variability and uncertainty in the estimates, rendering statistically transparent and robust tiers.
+    The table above is derived from doses manually entered and included with (nearly) every report on erowid.org (N=62018). (To access the data, please check out: <a href='http://erowid.io'>erowid.io</a>.) Each dose level/tier (Low, Common, ...) is anchored on a specific pair of percentiles. Confidence intervals (CIs) for these percentiles are calculated to account for variability and uncertainty in the estimates, visualized on the radar chart.
   </p>
   <div className="mt-4 overflow-x-auto">
     <p>Method breakdown:</p>
@@ -122,7 +122,7 @@ const DosageChart: React.FC<DosageChartProps> = ({ data }) => {
         <br />
       </li>
       <li>
-        Establish dosage tiers using the percentile values and the minimum and maximum dosages:
+        Derive [Threshold, Low, Commmon...] using the percentile values and the minimum and maximum dosages:
         <br />
         <br />
         - **Threshold**: {`\\( [X_{\\text{min}}, \\theta_{5\\%}] \\)`}.
@@ -140,7 +140,7 @@ const DosageChart: React.FC<DosageChartProps> = ({ data }) => {
     </ol>
   </div>
   <p className="mt-4">
-  This method provides a data-driven approach to nonmedical dosing suggestions for recreational drugs, with confidence intervals reflecting the uncertainty due to sample size and data variability.
+  This is a novel data-driven approach to nonmedical dosing suggestions for recreational drugs; any and all feedback is welcome. Feel free to open a pull request if you'd like to contribute/suggest fixes.
   </p>
 </div>
 </div>
