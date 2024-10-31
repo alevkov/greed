@@ -1,94 +1,160 @@
-import React from 'react';
-import {
-  ResponsiveContainer,
-  RadarChart,
-  PolarGrid,
-  PolarAngleAxis,
-  PolarRadiusAxis,
-  Radar,
-  Legend,
-  Tooltip,
-} from 'recharts';
-import { SubstanceData } from '../types';
+import React, { useState } from 'react';
+import { AlertTriangle } from 'lucide-react';
 
-interface DosageChartProps {
-  data: SubstanceData;
-}
-export const formatDose = (dose: number): string => {
-  if (dose < 1) {
-    return dose.toFixed(2); // Two decimal places for doses < 1
-  } else if (dose < 10) {
-    return dose.toFixed(1); // One decimal place for doses < 10
-  } else {
-    return dose.toFixed(0); // No decimal places for doses >= 10
-  }
+const formatDose = (dose) => {
+  return dose.toFixed(1);
 };
-const DosageChart: React.FC<DosageChartProps> = ({ data }) => {
+
+export default function DosageChart({ data }) {
+  const [showCI, setShowCI] = useState(true);
+
   const tiers = ['Threshold', 'Light', 'Common', 'Strong', 'Heavy'];
-  const chartData = tiers.map((tier) => ({
-    tier,
-    value: (data.tiers[tier]['Lower'] + data.tiers[tier]['Upper']) /2,
-    ciLower: data.tiers[tier]['Lower'],
-    ciUpper: data.tiers[tier]['Upper'],
-  }));
+  const minDose = 0;
+  const maxDose = Math.max(...Object.values(data.tiers).map(t => t.Upper));
+  const range = maxDose;
+
+  // Generate evenly spaced tick marks
+  const tickCount = 8;
+  const tickStep = range / (tickCount - 1);
+  const axisTicks = Array.from(
+    { length: tickCount },
+    (_, i) => minDose + (i * tickStep)
+  );
+
+  const colors = {
+    Threshold: '#94a3b8',
+    Light: '#22c55e',
+    Common: '#3b82f6',
+    Strong: '#f97316',
+    Heavy: '#ef4444'
+  };
+
+  const getPosition = (value) => (value / range) * 100;
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg">
-      <div className="mr-8">
-        <h3 className="font-bold mb-4 text-lg">Dosage Ranges</h3>
-        <table className="table-auto border-collapse border border-gray-400 w-full">
-          <thead>
-            <tr>
-              <th className="border border-gray-300 px-4 py-2">Tier</th>
-              <th className="border border-gray-300 px-4 py-2">Dose Range ({data.unit})</th>
-            </tr>
-          </thead>
-          <tbody>
-            {tiers.map((tier, index) => {
-              // Define custom range display for "Heavy" and "Threshold"
-              let doseRange;
-              if (tier === 'Heavy') {
-                doseRange = `${formatDose(Number.parseFloat(data.tiers[tier]['CI Upper']))} (max. recommended)`;
-              } else if (tier === 'Threshold') {
-                doseRange = `< ${formatDose(Number.parseFloat(data.tiers[tier]['Lower']))}`;
-              } else {
-                doseRange = `${formatDose(Number.parseFloat(data.tiers[tier]['Lower']))} - ${formatDose(Number.parseFloat(data.tiers[tier]['Upper']))}`;
-              }
+    <div className="w-full p-6 bg-white rounded-lg shadow-lg">
+      <div className="flex justify-end mb-4">
+        <label className="flex items-center gap-2">
+          <input
+            type="checkbox"
+            checked={showCI}
+            onChange={(e) => setShowCI(e.target.checked)}
+          />
+          Show Confidence Intervals
+        </label>
+      </div>
 
-              // Conditionally apply red background color to the "Heavy" row
-              const rowClass = tier === 'Heavy' ? 'bg-red-100' : '';
+      <div className="mb-16">
+        {/* Tier labels */}
+        <div className="relative h-6">
+          {tiers.map((tier) => {
+            const { Lower, Upper } = data.tiers[tier];
+            const width = getPosition(Upper) - getPosition(Lower);
+            const left = getPosition(Lower);
+            
+            return (
+              <div
+                key={`label-${tier}`}
+                className="absolute text-sm"
+                style={{
+                  left: `${left}%`,
+                  width: `${width}%`,
+                  textAlign: 'center'
+                }}
+              >
+                {tier}
+              </div>
+            );
+          })}
+        </div>
 
+        {/* Main chart area with confidence intervals */}
+        <div className="relative h-12 mt-2">
+          {/* Confidence interval backgrounds */}
+          {showCI && tiers.map((tier) => {
+            const { 'CI Lower': ciLower, 'CI Upper': ciUpper } = data.tiers[tier];
+            if (!isNaN(ciLower) && !isNaN(ciUpper)) {
+              const left = getPosition(ciLower);
+              const width = getPosition(ciUpper) - left;
+              
               return (
-                <tr key={`tier-row-${index}`} className={rowClass}>
-                  <td className="border border-gray-300 px-4 py-2 text-center">{tier}</td>
-                  <td className="border border-gray-300 px-4 py-2 text-center">{doseRange}</td>
-                </tr>
+                <div
+                  key={`ci-${tier}`}
+                  className="absolute h-full"
+                  style={{
+                    left: `${left}%`,
+                    width: `${width}%`,
+                    backgroundColor: colors[tier],
+                    opacity: 0.15,
+                    borderRadius: '4px'
+                  }}
+                />
+              );
+            }
+            return null;
+          })}
+
+          {/* Main dose bars */}
+          <div className="absolute top-1/2 transform -translate-y-1/2 w-full h-4">
+            {tiers.map((tier) => {
+              const { Lower, Upper } = data.tiers[tier];
+              const width = getPosition(Upper) - getPosition(Lower);
+              const left = getPosition(Lower);
+              
+              return (
+                <div
+                  key={tier}
+                  className="absolute h-full"
+                  style={{
+                    left: `${left}%`,
+                    width: `${width}%`,
+                    backgroundColor: colors[tier],
+                    borderRadius: '4px',
+                    border: '1px solid rgba(0,0,0,0.1)'
+                  }}
+                />
               );
             })}
-          </tbody>
-        </table>
+          </div>
+        </div>
+
+        {/* Range labels */}
+        <div className="relative h-6">
+          {tiers.map((tier) => {
+            const { Lower, Upper } = data.tiers[tier];
+            const width = getPosition(Upper) - getPosition(Lower);
+            const left = getPosition(Lower);
+            
+            return (
+              <div
+                key={`range-${tier}`}
+                className="absolute text-sm font-mono"
+                style={{
+                  left: `${left}%`,
+                  width: `${width}%`,
+                  textAlign: 'center'
+                }}
+              >
+                {formatDose(Lower)} - {formatDose(Upper)}{data.unit}
+              </div>
+            );
+          })}
+        </div>
+
       </div>
-      <ResponsiveContainer width="100%" height={800}>
-        <RadarChart cx="50%" cy="50%" outerRadius="80%" data={chartData}>
-          <PolarGrid />
-          <PolarAngleAxis dataKey="tier" tick={{ fontSize: 14 }} />
-          <PolarRadiusAxis angle={30} domain={[0, Math.max(...chartData.map(d => d.ciUpper)) * 1.1]} tick={{ fontSize: 12 }} />
-          <Radar name="Dosage Value" dataKey="value" stroke="#ff7300" fill="#ff7300" fillOpacity={0.6} />
-          <Radar name="CI Lower" dataKey="ciLower" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.1} />
-          <Radar name="CI Upper" dataKey="ciUpper" stroke="#8884d8" fill="#8884d8" fillOpacity={0.1} />
-          <Legend />
-          <Tooltip formatter={(value: number, name: string) => [`${value} ${data.unit}`, name]} />
-        </RadarChart>
-      </ResponsiveContainer>
-      <div className="mt-4 text-sm text-gray-600">
-        Reliability Score: {(data.reliability_score * 100).toFixed(2)}%
+
+      <div className="bg-red-50 border-l-4 border-red-500 p-4 flex items-start">
+        <AlertTriangle className="h-5 w-5 text-red-500 mr-3 mt-0.5" />
+        <div className="text-red-700">
+          Heavy doses carry significant risks. The upper range represents the maximum reported doses, not recommendations.
+        </div>
       </div>
-      <div className="mt-6 text-sm text-gray-800">
-  <h3 className="font-bold mb-2">
+
+      <h3 className="font-bold mb-2">
     Dosage Tier and Confidence Interval Calculation Method
   </h3>
   <p>
-    The table above is derived from doses manually entered and included with (nearly) every report on erowid.org (N=62018). (To access the data, please check out: <a href='http://erowid.io'>erowid.io</a>.) Each dose level/tier (Low, Common, ...) is anchored on a specific pair of percentiles. Confidence intervals (CIs) for these percentiles are calculated to account for variability and uncertainty in the estimates, visualized on the radar chart.
+    The bar chart above is derived from doses manually entered and included with (nearly) every report on erowid.org (N=62018). (To access the data, please check out: <a href='http://erowid.io'>erowid.io</a>.) Each dose level/tier (Low, Common, ...) is anchored on a specific pair of percentiles. Confidence intervals (CIs) for these percentiles are calculated to account for variability and uncertainty in the estimates, visualized on the radar chart.
   </p>
   <div className="mt-4 overflow-x-auto">
     <p>Method breakdown:</p>
@@ -142,9 +208,6 @@ const DosageChart: React.FC<DosageChartProps> = ({ data }) => {
   <p className="mt-4">
   This is a novel data-driven approach to nonmedical dosing suggestions for recreational drugs; any and all feedback is welcome. Feel free to open a pull request if you'd like to contribute/suggest fixes.
   </p>
-</div>
-</div>
+    </div>
   );
-};
-
-export default DosageChart;
+}

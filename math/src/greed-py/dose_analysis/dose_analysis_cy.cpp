@@ -5483,9 +5483,9 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
  */
   __pyx_v_threshold = 3.5;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":29
+  /* "dose_analysis/dose_analysis_cy.pyx":28
+ *     cdef vector[DTYPE_t] positive_amounts
  * 
- *     # Remove non-positive values and store positive values in vector
  *     for i in range(n):             # <<<<<<<<<<<<<<
  *         if amounts[i] > 0:
  *             positive_amounts.push_back(amounts[i])
@@ -5495,8 +5495,8 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "dose_analysis/dose_analysis_cy.pyx":30
- *     # Remove non-positive values and store positive values in vector
+    /* "dose_analysis/dose_analysis_cy.pyx":29
+ * 
  *     for i in range(n):
  *         if amounts[i] > 0:             # <<<<<<<<<<<<<<
  *             positive_amounts.push_back(amounts[i])
@@ -5506,23 +5506,23 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
     __pyx_t_5 = ((*__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_amounts.rcbuffer->pybuffer.buf, __pyx_t_4, __pyx_pybuffernd_amounts.diminfo[0].strides)) > 0.0);
     if (__pyx_t_5) {
 
-      /* "dose_analysis/dose_analysis_cy.pyx":31
+      /* "dose_analysis/dose_analysis_cy.pyx":30
  *     for i in range(n):
  *         if amounts[i] > 0:
  *             positive_amounts.push_back(amounts[i])             # <<<<<<<<<<<<<<
  * 
- *     # Return empty array if there are no positive values
+ *     if positive_amounts.size() == 0:
  */
       __pyx_t_4 = __pyx_v_i;
       try {
         __pyx_v_positive_amounts.push_back((*__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_amounts.rcbuffer->pybuffer.buf, __pyx_t_4, __pyx_pybuffernd_amounts.diminfo[0].strides)));
       } catch(...) {
         __Pyx_CppExn2PyErr();
-        __PYX_ERR(0, 31, __pyx_L1_error)
+        __PYX_ERR(0, 30, __pyx_L1_error)
       }
 
-      /* "dose_analysis/dose_analysis_cy.pyx":30
- *     # Remove non-positive values and store positive values in vector
+      /* "dose_analysis/dose_analysis_cy.pyx":29
+ * 
  *     for i in range(n):
  *         if amounts[i] > 0:             # <<<<<<<<<<<<<<
  *             positive_amounts.push_back(amounts[i])
@@ -5531,9 +5531,9 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
     }
   }
 
-  /* "dose_analysis/dose_analysis_cy.pyx":34
+  /* "dose_analysis/dose_analysis_cy.pyx":32
+ *             positive_amounts.push_back(amounts[i])
  * 
- *     # Return empty array if there are no positive values
  *     if positive_amounts.size() == 0:             # <<<<<<<<<<<<<<
  *         return np.array([], dtype=np.float64)
  * 
@@ -5541,36 +5541,36 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
   __pyx_t_5 = (__pyx_v_positive_amounts.size() == 0);
   if (__pyx_t_5) {
 
-    /* "dose_analysis/dose_analysis_cy.pyx":35
- *     # Return empty array if there are no positive values
+    /* "dose_analysis/dose_analysis_cy.pyx":33
+ * 
  *     if positive_amounts.size() == 0:
  *         return np.array([], dtype=np.float64)             # <<<<<<<<<<<<<<
  * 
- *     sort(positive_amounts.begin(), positive_amounts.end())  # C++ std::sort
+ *     sort(positive_amounts.begin(), positive_amounts.end())
  */
     __Pyx_XDECREF(__pyx_r);
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 35, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 33, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_array); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 35, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_array); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 33, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 35, __pyx_L1_error)
+    __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 33, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_8 = PyTuple_New(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 35, __pyx_L1_error)
+    __pyx_t_8 = PyTuple_New(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 33, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_GIVEREF(__pyx_t_6);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_6)) __PYX_ERR(0, 35, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_6)) __PYX_ERR(0, 33, __pyx_L1_error);
     __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 35, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 33, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_np); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 35, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_np); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 33, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_float64); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 35, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_float64); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 33, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_dtype, __pyx_t_10) < 0) __PYX_ERR(0, 35, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_dtype, __pyx_t_10) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_8, __pyx_t_6); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 35, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_8, __pyx_t_6); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 33, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -5579,19 +5579,19 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
     __pyx_t_10 = 0;
     goto __pyx_L0;
 
-    /* "dose_analysis/dose_analysis_cy.pyx":34
+    /* "dose_analysis/dose_analysis_cy.pyx":32
+ *             positive_amounts.push_back(amounts[i])
  * 
- *     # Return empty array if there are no positive values
  *     if positive_amounts.size() == 0:             # <<<<<<<<<<<<<<
  *         return np.array([], dtype=np.float64)
  * 
  */
   }
 
-  /* "dose_analysis/dose_analysis_cy.pyx":37
+  /* "dose_analysis/dose_analysis_cy.pyx":35
  *         return np.array([], dtype=np.float64)
  * 
- *     sort(positive_amounts.begin(), positive_amounts.end())  # C++ std::sort             # <<<<<<<<<<<<<<
+ *     sort(positive_amounts.begin(), positive_amounts.end())             # <<<<<<<<<<<<<<
  * 
  *     cdef int m = positive_amounts.size()
  */
@@ -5599,11 +5599,11 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
     std::sort<std::vector<__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t> ::iterator>(__pyx_v_positive_amounts.begin(), __pyx_v_positive_amounts.end());
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(0, 37, __pyx_L1_error)
+    __PYX_ERR(0, 35, __pyx_L1_error)
   }
 
-  /* "dose_analysis/dose_analysis_cy.pyx":39
- *     sort(positive_amounts.begin(), positive_amounts.end())  # C++ std::sort
+  /* "dose_analysis/dose_analysis_cy.pyx":37
+ *     sort(positive_amounts.begin(), positive_amounts.end())
  * 
  *     cdef int m = positive_amounts.size()             # <<<<<<<<<<<<<<
  *     if m % 2 == 0:
@@ -5611,7 +5611,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
  */
   __pyx_v_m = __pyx_v_positive_amounts.size();
 
-  /* "dose_analysis/dose_analysis_cy.pyx":40
+  /* "dose_analysis/dose_analysis_cy.pyx":38
  * 
  *     cdef int m = positive_amounts.size()
  *     if m % 2 == 0:             # <<<<<<<<<<<<<<
@@ -5621,7 +5621,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
   __pyx_t_5 = (__Pyx_mod_long(__pyx_v_m, 2) == 0);
   if (__pyx_t_5) {
 
-    /* "dose_analysis/dose_analysis_cy.pyx":41
+    /* "dose_analysis/dose_analysis_cy.pyx":39
  *     cdef int m = positive_amounts.size()
  *     if m % 2 == 0:
  *         median = (positive_amounts[m // 2 - 1] + positive_amounts[m // 2]) / 2.0             # <<<<<<<<<<<<<<
@@ -5630,7 +5630,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
  */
     __pyx_v_median = (((__pyx_v_positive_amounts[(__Pyx_div_long(__pyx_v_m, 2) - 1)]) + (__pyx_v_positive_amounts[__Pyx_div_long(__pyx_v_m, 2)])) / ((__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t)2.0));
 
-    /* "dose_analysis/dose_analysis_cy.pyx":40
+    /* "dose_analysis/dose_analysis_cy.pyx":38
  * 
  *     cdef int m = positive_amounts.size()
  *     if m % 2 == 0:             # <<<<<<<<<<<<<<
@@ -5640,7 +5640,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
     goto __pyx_L7;
   }
 
-  /* "dose_analysis/dose_analysis_cy.pyx":43
+  /* "dose_analysis/dose_analysis_cy.pyx":41
  *         median = (positive_amounts[m // 2 - 1] + positive_amounts[m // 2]) / 2.0
  *     else:
  *         median = positive_amounts[m // 2]             # <<<<<<<<<<<<<<
@@ -5652,37 +5652,37 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
   }
   __pyx_L7:;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":47
+  /* "dose_analysis/dose_analysis_cy.pyx":45
  *     # Calculate MAD (Median Absolute Deviation)
  *     cdef vector[DTYPE_t] abs_deviations
  *     for i in range(m):             # <<<<<<<<<<<<<<
  *         abs_deviations.push_back(fabs(positive_amounts[i] - median))
- *     sort(abs_deviations.begin(), abs_deviations.end())  # C++ std::sort
+ *     sort(abs_deviations.begin(), abs_deviations.end())
  */
   __pyx_t_1 = __pyx_v_m;
   __pyx_t_2 = __pyx_t_1;
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "dose_analysis/dose_analysis_cy.pyx":48
+    /* "dose_analysis/dose_analysis_cy.pyx":46
  *     cdef vector[DTYPE_t] abs_deviations
  *     for i in range(m):
  *         abs_deviations.push_back(fabs(positive_amounts[i] - median))             # <<<<<<<<<<<<<<
- *     sort(abs_deviations.begin(), abs_deviations.end())  # C++ std::sort
+ *     sort(abs_deviations.begin(), abs_deviations.end())
  *     if m % 2 == 0:
  */
     try {
       __pyx_v_abs_deviations.push_back(fabs(((__pyx_v_positive_amounts[__pyx_v_i]) - __pyx_v_median)));
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(0, 48, __pyx_L1_error)
+      __PYX_ERR(0, 46, __pyx_L1_error)
     }
   }
 
-  /* "dose_analysis/dose_analysis_cy.pyx":49
+  /* "dose_analysis/dose_analysis_cy.pyx":47
  *     for i in range(m):
  *         abs_deviations.push_back(fabs(positive_amounts[i] - median))
- *     sort(abs_deviations.begin(), abs_deviations.end())  # C++ std::sort             # <<<<<<<<<<<<<<
+ *     sort(abs_deviations.begin(), abs_deviations.end())             # <<<<<<<<<<<<<<
  *     if m % 2 == 0:
  *         mad = (abs_deviations[m // 2 - 1] + abs_deviations[m // 2]) / 2.0
  */
@@ -5690,12 +5690,12 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
     std::sort<std::vector<__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t> ::iterator>(__pyx_v_abs_deviations.begin(), __pyx_v_abs_deviations.end());
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(0, 49, __pyx_L1_error)
+    __PYX_ERR(0, 47, __pyx_L1_error)
   }
 
-  /* "dose_analysis/dose_analysis_cy.pyx":50
+  /* "dose_analysis/dose_analysis_cy.pyx":48
  *         abs_deviations.push_back(fabs(positive_amounts[i] - median))
- *     sort(abs_deviations.begin(), abs_deviations.end())  # C++ std::sort
+ *     sort(abs_deviations.begin(), abs_deviations.end())
  *     if m % 2 == 0:             # <<<<<<<<<<<<<<
  *         mad = (abs_deviations[m // 2 - 1] + abs_deviations[m // 2]) / 2.0
  *     else:
@@ -5703,8 +5703,8 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
   __pyx_t_5 = (__Pyx_mod_long(__pyx_v_m, 2) == 0);
   if (__pyx_t_5) {
 
-    /* "dose_analysis/dose_analysis_cy.pyx":51
- *     sort(abs_deviations.begin(), abs_deviations.end())  # C++ std::sort
+    /* "dose_analysis/dose_analysis_cy.pyx":49
+ *     sort(abs_deviations.begin(), abs_deviations.end())
  *     if m % 2 == 0:
  *         mad = (abs_deviations[m // 2 - 1] + abs_deviations[m // 2]) / 2.0             # <<<<<<<<<<<<<<
  *     else:
@@ -5712,9 +5712,9 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
  */
     __pyx_v_mad = (((__pyx_v_abs_deviations[(__Pyx_div_long(__pyx_v_m, 2) - 1)]) + (__pyx_v_abs_deviations[__Pyx_div_long(__pyx_v_m, 2)])) / ((__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t)2.0));
 
-    /* "dose_analysis/dose_analysis_cy.pyx":50
+    /* "dose_analysis/dose_analysis_cy.pyx":48
  *         abs_deviations.push_back(fabs(positive_amounts[i] - median))
- *     sort(abs_deviations.begin(), abs_deviations.end())  # C++ std::sort
+ *     sort(abs_deviations.begin(), abs_deviations.end())
  *     if m % 2 == 0:             # <<<<<<<<<<<<<<
  *         mad = (abs_deviations[m // 2 - 1] + abs_deviations[m // 2]) / 2.0
  *     else:
@@ -5722,7 +5722,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
     goto __pyx_L10;
   }
 
-  /* "dose_analysis/dose_analysis_cy.pyx":53
+  /* "dose_analysis/dose_analysis_cy.pyx":51
  *         mad = (abs_deviations[m // 2 - 1] + abs_deviations[m // 2]) / 2.0
  *     else:
  *         mad = abs_deviations[m // 2]             # <<<<<<<<<<<<<<
@@ -5734,7 +5734,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
   }
   __pyx_L10:;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":54
+  /* "dose_analysis/dose_analysis_cy.pyx":52
  *     else:
  *         mad = abs_deviations[m // 2]
  *     if mad == 0:             # <<<<<<<<<<<<<<
@@ -5744,7 +5744,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
   __pyx_t_5 = (__pyx_v_mad == 0.0);
   if (__pyx_t_5) {
 
-    /* "dose_analysis/dose_analysis_cy.pyx":55
+    /* "dose_analysis/dose_analysis_cy.pyx":53
  *         mad = abs_deviations[m // 2]
  *     if mad == 0:
  *         return np.array(positive_amounts, dtype=np.float64)  # No outliers if MAD is 0             # <<<<<<<<<<<<<<
@@ -5752,28 +5752,28 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
  *     cdef vector[DTYPE_t] filtered
  */
     __Pyx_XDECREF(__pyx_r);
-    __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 55, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 53, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_array); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 55, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_array); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 53, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-    __pyx_t_10 = __pyx_convert_vector_to_py___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t(__pyx_v_positive_amounts); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 55, __pyx_L1_error)
+    __pyx_t_10 = __pyx_convert_vector_to_py___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t(__pyx_v_positive_amounts); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 53, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_8 = PyTuple_New(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 55, __pyx_L1_error)
+    __pyx_t_8 = PyTuple_New(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 53, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_GIVEREF(__pyx_t_10);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_10)) __PYX_ERR(0, 55, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_10)) __PYX_ERR(0, 53, __pyx_L1_error);
     __pyx_t_10 = 0;
-    __pyx_t_10 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 55, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 53, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 55, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 53, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_float64); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 55, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_float64); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 53, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (PyDict_SetItem(__pyx_t_10, __pyx_n_s_dtype, __pyx_t_9) < 0) __PYX_ERR(0, 55, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_10, __pyx_n_s_dtype, __pyx_t_9) < 0) __PYX_ERR(0, 53, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, __pyx_t_10); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 55, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, __pyx_t_10); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 53, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -5782,7 +5782,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
     __pyx_t_9 = 0;
     goto __pyx_L0;
 
-    /* "dose_analysis/dose_analysis_cy.pyx":54
+    /* "dose_analysis/dose_analysis_cy.pyx":52
  *     else:
  *         mad = abs_deviations[m // 2]
  *     if mad == 0:             # <<<<<<<<<<<<<<
@@ -5791,7 +5791,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
  */
   }
 
-  /* "dose_analysis/dose_analysis_cy.pyx":59
+  /* "dose_analysis/dose_analysis_cy.pyx":57
  *     cdef vector[DTYPE_t] filtered
  * 
  *     for i in range(m):             # <<<<<<<<<<<<<<
@@ -5803,7 +5803,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "dose_analysis/dose_analysis_cy.pyx":60
+    /* "dose_analysis/dose_analysis_cy.pyx":58
  * 
  *     for i in range(m):
  *         modified_z_score = 0.6745 * (positive_amounts[i] - median) / mad             # <<<<<<<<<<<<<<
@@ -5813,11 +5813,11 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
     __pyx_t_11 = (0.6745 * ((__pyx_v_positive_amounts[__pyx_v_i]) - __pyx_v_median));
     if (unlikely(__pyx_v_mad == 0)) {
       PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-      __PYX_ERR(0, 60, __pyx_L1_error)
+      __PYX_ERR(0, 58, __pyx_L1_error)
     }
     __pyx_v_modified_z_score = (__pyx_t_11 / __pyx_v_mad);
 
-    /* "dose_analysis/dose_analysis_cy.pyx":61
+    /* "dose_analysis/dose_analysis_cy.pyx":59
  *     for i in range(m):
  *         modified_z_score = 0.6745 * (positive_amounts[i] - median) / mad
  *         if fabs(modified_z_score) <= threshold:             # <<<<<<<<<<<<<<
@@ -5827,7 +5827,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
     __pyx_t_5 = (fabs(__pyx_v_modified_z_score) <= __pyx_v_threshold);
     if (__pyx_t_5) {
 
-      /* "dose_analysis/dose_analysis_cy.pyx":62
+      /* "dose_analysis/dose_analysis_cy.pyx":60
  *         modified_z_score = 0.6745 * (positive_amounts[i] - median) / mad
  *         if fabs(modified_z_score) <= threshold:
  *             filtered.push_back(positive_amounts[i])             # <<<<<<<<<<<<<<
@@ -5838,10 +5838,10 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
         __pyx_v_filtered.push_back((__pyx_v_positive_amounts[__pyx_v_i]));
       } catch(...) {
         __Pyx_CppExn2PyErr();
-        __PYX_ERR(0, 62, __pyx_L1_error)
+        __PYX_ERR(0, 60, __pyx_L1_error)
       }
 
-      /* "dose_analysis/dose_analysis_cy.pyx":61
+      /* "dose_analysis/dose_analysis_cy.pyx":59
  *     for i in range(m):
  *         modified_z_score = 0.6745 * (positive_amounts[i] - median) / mad
  *         if fabs(modified_z_score) <= threshold:             # <<<<<<<<<<<<<<
@@ -5851,7 +5851,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
     }
   }
 
-  /* "dose_analysis/dose_analysis_cy.pyx":64
+  /* "dose_analysis/dose_analysis_cy.pyx":62
  *             filtered.push_back(positive_amounts[i])
  * 
  *     return np.array(filtered, dtype=np.float64)             # <<<<<<<<<<<<<<
@@ -5859,28 +5859,28 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
  * @cython.boundscheck(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_np); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 64, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_np); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_array); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 64, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_array); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-  __pyx_t_9 = __pyx_convert_vector_to_py___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t(__pyx_v_filtered); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 64, __pyx_L1_error)
+  __pyx_t_9 = __pyx_convert_vector_to_py___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t(__pyx_v_filtered); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_8 = PyTuple_New(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 64, __pyx_L1_error)
+  __pyx_t_8 = PyTuple_New(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_GIVEREF(__pyx_t_9);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_9)) __PYX_ERR(0, 64, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_9)) __PYX_ERR(0, 62, __pyx_L1_error);
   __pyx_t_9 = 0;
-  __pyx_t_9 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 64, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 64, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_float64); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 64, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_float64); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_dtype, __pyx_t_7) < 0) __PYX_ERR(0, 64, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_dtype, __pyx_t_7) < 0) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_8, __pyx_t_9); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 64, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_8, __pyx_t_9); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -5921,7 +5921,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_detect_outliers_mod
   return __pyx_r;
 }
 
-/* "dose_analysis/dose_analysis_cy.pyx":66
+/* "dose_analysis/dose_analysis_cy.pyx":64
  *     return np.array(filtered, dtype=np.float64)
  * 
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
@@ -5989,7 +5989,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 66, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -5997,21 +5997,21 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 66, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("calculate_percentile_confidence_interval_cy", 0, 2, 3, 1); __PYX_ERR(0, 66, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("calculate_percentile_confidence_interval_cy", 0, 2, 3, 1); __PYX_ERR(0, 64, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (kw_args > 0) {
           PyObject* value = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_alpha);
           if (value) { values[2] = __Pyx_Arg_NewRef_FASTCALL(value); kw_args--; }
-          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 66, __pyx_L3_error)
+          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 64, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "calculate_percentile_confidence_interval_cy") < 0)) __PYX_ERR(0, 66, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "calculate_percentile_confidence_interval_cy") < 0)) __PYX_ERR(0, 64, __pyx_L3_error)
       }
     } else {
       switch (__pyx_nargs) {
@@ -6024,16 +6024,16 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       }
     }
     __pyx_v_data = ((PyArrayObject *)values[0]);
-    __pyx_v_percentile = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_percentile == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 68, __pyx_L3_error)
+    __pyx_v_percentile = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_percentile == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 66, __pyx_L3_error)
     if (values[2]) {
-      __pyx_v_alpha = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_alpha == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 68, __pyx_L3_error)
+      __pyx_v_alpha = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_alpha == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 66, __pyx_L3_error)
     } else {
       __pyx_v_alpha = ((__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t)((double)0.05));
     }
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("calculate_percentile_confidence_interval_cy", 0, 2, 3, __pyx_nargs); __PYX_ERR(0, 66, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("calculate_percentile_confidence_interval_cy", 0, 2, 3, __pyx_nargs); __PYX_ERR(0, 64, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -6047,7 +6047,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_data), __pyx_ptype_5numpy_ndarray, 1, "data", 0))) __PYX_ERR(0, 68, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_data), __pyx_ptype_5numpy_ndarray, 1, "data", 0))) __PYX_ERR(0, 66, __pyx_L1_error)
   __pyx_r = __pyx_pf_13dose_analysis_16dose_analysis_cy_2calculate_percentile_confidence_interval_cy(__pyx_self, __pyx_v_data, __pyx_v_percentile, __pyx_v_alpha);
 
   /* function exit code */
@@ -6099,11 +6099,11 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_2calculate_percenti
   __pyx_pybuffernd_data.rcbuffer = &__pyx_pybuffer_data;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_data.rcbuffer->pybuffer, (PyObject*)__pyx_v_data, &__Pyx_TypeInfo_nn___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(0, 66, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_data.rcbuffer->pybuffer, (PyObject*)__pyx_v_data, &__Pyx_TypeInfo_nn___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(0, 64, __pyx_L1_error)
   }
   __pyx_pybuffernd_data.diminfo[0].strides = __pyx_pybuffernd_data.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_data.diminfo[0].shape = __pyx_pybuffernd_data.rcbuffer->pybuffer.shape[0];
 
-  /* "dose_analysis/dose_analysis_cy.pyx":72
+  /* "dose_analysis/dose_analysis_cy.pyx":70
  *     Calculates confidence intervals for a percentile using the beta distribution method.
  *     """
  *     cdef int n = data.shape[0]             # <<<<<<<<<<<<<<
@@ -6112,7 +6112,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_2calculate_percenti
  */
   __pyx_v_n = (__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_data))[0]);
 
-  /* "dose_analysis/dose_analysis_cy.pyx":77
+  /* "dose_analysis/dose_analysis_cy.pyx":75
  *     cdef int lower_index, upper_index
  * 
  *     if n == 0:             # <<<<<<<<<<<<<<
@@ -6122,37 +6122,37 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_2calculate_percenti
   __pyx_t_1 = (__pyx_v_n == 0);
   if (__pyx_t_1) {
 
-    /* "dose_analysis/dose_analysis_cy.pyx":78
+    /* "dose_analysis/dose_analysis_cy.pyx":76
  * 
  *     if n == 0:
  *         return np.nan, np.nan             # <<<<<<<<<<<<<<
  * 
- *     data.sort()  # In-place sort
+ *     data.sort()
  */
     __Pyx_XDECREF(__pyx_r);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 78, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_nan); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_nan); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 78, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_nan); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 78, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_nan); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 76, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 78, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 76, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_3);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error);
     __Pyx_GIVEREF(__pyx_t_4);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_4)) __PYX_ERR(0, 78, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_4)) __PYX_ERR(0, 76, __pyx_L1_error);
     __pyx_t_3 = 0;
     __pyx_t_4 = 0;
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "dose_analysis/dose_analysis_cy.pyx":77
+    /* "dose_analysis/dose_analysis_cy.pyx":75
  *     cdef int lower_index, upper_index
  * 
  *     if n == 0:             # <<<<<<<<<<<<<<
@@ -6161,14 +6161,14 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_2calculate_percenti
  */
   }
 
-  /* "dose_analysis/dose_analysis_cy.pyx":80
+  /* "dose_analysis/dose_analysis_cy.pyx":78
  *         return np.nan, np.nan
  * 
- *     data.sort()  # In-place sort             # <<<<<<<<<<<<<<
+ *     data.sort()             # <<<<<<<<<<<<<<
  * 
  *     k = int(np.ceil((n + 1) * percentile))
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_data), __pyx_n_s_sort); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 80, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_data), __pyx_n_s_sort); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_3 = NULL;
   __pyx_t_5 = 0;
@@ -6188,25 +6188,25 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_2calculate_percenti
     PyObject *__pyx_callargs[2] = {__pyx_t_3, NULL};
     __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_5, 0+__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 80, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 78, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":82
- *     data.sort()  # In-place sort
+  /* "dose_analysis/dose_analysis_cy.pyx":80
+ *     data.sort()
  * 
  *     k = int(np.ceil((n + 1) * percentile))             # <<<<<<<<<<<<<<
  * 
  *     from scipy.stats import beta
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 80, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_ceil); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_ceil); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 80, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = PyFloat_FromDouble(((__pyx_v_n + 1) * __pyx_v_percentile)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble(((__pyx_v_n + 1) * __pyx_v_percentile)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 80, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_6 = NULL;
   __pyx_t_5 = 0;
@@ -6227,53 +6227,53 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_2calculate_percenti
     __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 82, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 80, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
-  __pyx_t_3 = __Pyx_PyNumber_Int(__pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyNumber_Int(__pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 80, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_3); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 80, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_k = __pyx_t_7;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":84
+  /* "dose_analysis/dose_analysis_cy.pyx":82
  *     k = int(np.ceil((n + 1) * percentile))
  * 
  *     from scipy.stats import beta             # <<<<<<<<<<<<<<
  *     lower_bound = beta.ppf(alpha / 2, k, n - k + 1)
  *     upper_bound = beta.ppf(1 - alpha / 2, k, n - k + 1)
  */
-  __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 84, __pyx_L1_error)
+  __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_n_s_beta);
   __Pyx_GIVEREF(__pyx_n_s_beta);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_3, 0, __pyx_n_s_beta)) __PYX_ERR(0, 84, __pyx_L1_error);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_scipy_stats, __pyx_t_3, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 84, __pyx_L1_error)
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_3, 0, __pyx_n_s_beta)) __PYX_ERR(0, 82, __pyx_L1_error);
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_scipy_stats, __pyx_t_3, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_beta); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 84, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_beta); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_t_3);
   __pyx_v_beta = __pyx_t_3;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":85
+  /* "dose_analysis/dose_analysis_cy.pyx":83
  * 
  *     from scipy.stats import beta
  *     lower_bound = beta.ppf(alpha / 2, k, n - k + 1)             # <<<<<<<<<<<<<<
  *     upper_bound = beta.ppf(1 - alpha / 2, k, n - k + 1)
  * 
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_beta, __pyx_n_s_ppf); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 85, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_beta, __pyx_n_s_ppf); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyFloat_FromDouble((__pyx_v_alpha / 2.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((__pyx_v_alpha / 2.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_k); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 85, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_k); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_8 = __Pyx_PyInt_From_long(((__pyx_v_n - __pyx_v_k) + 1)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 85, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyInt_From_long(((__pyx_v_n - __pyx_v_k) + 1)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __pyx_t_9 = NULL;
   __pyx_t_5 = 0;
@@ -6296,28 +6296,28 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_2calculate_percenti
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 85, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 83, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
-  __pyx_t_10 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_10 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 85, __pyx_L1_error)
+  __pyx_t_10 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_10 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_lower_bound = __pyx_t_10;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":86
+  /* "dose_analysis/dose_analysis_cy.pyx":84
  *     from scipy.stats import beta
  *     lower_bound = beta.ppf(alpha / 2, k, n - k + 1)
  *     upper_bound = beta.ppf(1 - alpha / 2, k, n - k + 1)             # <<<<<<<<<<<<<<
  * 
  *     lower_index = max(0, int(np.floor(lower_bound * n)) - 1)
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_beta, __pyx_n_s_ppf); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_beta, __pyx_n_s_ppf); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_8 = PyFloat_FromDouble((1.0 - (__pyx_v_alpha / 2.0))); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_8 = PyFloat_FromDouble((1.0 - (__pyx_v_alpha / 2.0))); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_k); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_k); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_4 = __Pyx_PyInt_From_long(((__pyx_v_n - __pyx_v_k) + 1)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_long(((__pyx_v_n - __pyx_v_k) + 1)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_9 = NULL;
   __pyx_t_5 = 0;
@@ -6340,27 +6340,27 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_2calculate_percenti
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 86, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 84, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
-  __pyx_t_10 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_10 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_10 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_10 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_upper_bound = __pyx_t_10;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":88
+  /* "dose_analysis/dose_analysis_cy.pyx":86
  *     upper_bound = beta.ppf(1 - alpha / 2, k, n - k + 1)
  * 
  *     lower_index = max(0, int(np.floor(lower_bound * n)) - 1)             # <<<<<<<<<<<<<<
  *     upper_index = min(n - 1, int(np.ceil(upper_bound * n)) - 1)
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_floor); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_floor); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyFloat_FromDouble((__pyx_v_lower_bound * __pyx_v_n)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((__pyx_v_lower_bound * __pyx_v_n)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_6 = NULL;
   __pyx_t_5 = 0;
@@ -6381,50 +6381,50 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_2calculate_percenti
     __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 88, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 86, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
-  __pyx_t_4 = __Pyx_PyNumber_Int(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyNumber_Int(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_SubtractObjC(__pyx_t_4, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_SubtractObjC(__pyx_t_4, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_11 = 0;
-  __pyx_t_3 = __Pyx_PyInt_From_long(__pyx_t_11); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_long(__pyx_t_11); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_6 = PyObject_RichCompare(__pyx_t_2, __pyx_t_3, Py_GT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_t_6 = PyObject_RichCompare(__pyx_t_2, __pyx_t_3, Py_GT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely((__pyx_t_1 < 0))) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely((__pyx_t_1 < 0))) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   if (__pyx_t_1) {
     __Pyx_INCREF(__pyx_t_2);
     __pyx_t_4 = __pyx_t_2;
   } else {
-    __pyx_t_6 = __Pyx_PyInt_From_long(__pyx_t_11); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 88, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_From_long(__pyx_t_11); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 86, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_4 = __pyx_t_6;
     __pyx_t_6 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_4); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_lower_index = __pyx_t_7;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":89
+  /* "dose_analysis/dose_analysis_cy.pyx":87
  * 
  *     lower_index = max(0, int(np.floor(lower_bound * n)) - 1)
  *     upper_index = min(n - 1, int(np.ceil(upper_bound * n)) - 1)             # <<<<<<<<<<<<<<
  * 
  *     return data[lower_index], data[upper_index]
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ceil); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ceil); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyFloat_FromDouble((__pyx_v_upper_bound * __pyx_v_n)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_2 = PyFloat_FromDouble((__pyx_v_upper_bound * __pyx_v_n)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   __pyx_t_5 = 0;
@@ -6445,38 +6445,38 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_2calculate_percenti
     __pyx_t_4 = __Pyx_PyObject_FastCall(__pyx_t_6, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 89, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   }
-  __pyx_t_6 = __Pyx_PyNumber_Int(__pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyNumber_Int(__pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyInt_SubtractObjC(__pyx_t_6, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_SubtractObjC(__pyx_t_6, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_11 = (__pyx_v_n - 1);
-  __pyx_t_2 = __Pyx_PyInt_From_long(__pyx_t_11); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_long(__pyx_t_11); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyObject_RichCompare(__pyx_t_4, __pyx_t_2, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(__pyx_t_4, __pyx_t_2, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely((__pyx_t_1 < 0))) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely((__pyx_t_1 < 0))) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_1) {
     __Pyx_INCREF(__pyx_t_4);
     __pyx_t_6 = __pyx_t_4;
   } else {
-    __pyx_t_3 = __Pyx_PyInt_From_long(__pyx_t_11); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 89, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_long(__pyx_t_11); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 87, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_6 = __pyx_t_3;
     __pyx_t_3 = 0;
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_6); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_As_int(__pyx_t_6); if (unlikely((__pyx_t_7 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_upper_index = __pyx_t_7;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":91
+  /* "dose_analysis/dose_analysis_cy.pyx":89
  *     upper_index = min(n - 1, int(np.ceil(upper_bound * n)) - 1)
  * 
  *     return data[lower_index], data[upper_index]             # <<<<<<<<<<<<<<
@@ -6485,24 +6485,24 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_2calculate_percenti
  */
   __Pyx_XDECREF(__pyx_r);
   __pyx_t_12 = __pyx_v_lower_index;
-  __pyx_t_6 = PyFloat_FromDouble((*__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_data.rcbuffer->pybuffer.buf, __pyx_t_12, __pyx_pybuffernd_data.diminfo[0].strides))); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_6 = PyFloat_FromDouble((*__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_data.rcbuffer->pybuffer.buf, __pyx_t_12, __pyx_pybuffernd_data.diminfo[0].strides))); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_12 = __pyx_v_upper_index;
-  __pyx_t_4 = PyFloat_FromDouble((*__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_data.rcbuffer->pybuffer.buf, __pyx_t_12, __pyx_pybuffernd_data.diminfo[0].strides))); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((*__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_data.rcbuffer->pybuffer.buf, __pyx_t_12, __pyx_pybuffernd_data.diminfo[0].strides))); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_6);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_6)) __PYX_ERR(0, 91, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_6)) __PYX_ERR(0, 89, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_4);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_4)) __PYX_ERR(0, 91, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_4)) __PYX_ERR(0, 89, __pyx_L1_error);
   __pyx_t_6 = 0;
   __pyx_t_4 = 0;
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":66
+  /* "dose_analysis/dose_analysis_cy.pyx":64
  *     return np.array(filtered, dtype=np.float64)
  * 
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
@@ -6536,7 +6536,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_2calculate_percenti
   return __pyx_r;
 }
 
-/* "dose_analysis/dose_analysis_cy.pyx":94
+/* "dose_analysis/dose_analysis_cy.pyx":92
  * 
  * 
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
@@ -6601,7 +6601,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 94, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 92, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -6609,14 +6609,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 94, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 92, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("bootstrap_percentiles", 1, 2, 2, 1); __PYX_ERR(0, 94, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("bootstrap_percentiles", 1, 2, 2, 1); __PYX_ERR(0, 92, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "bootstrap_percentiles") < 0)) __PYX_ERR(0, 94, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "bootstrap_percentiles") < 0)) __PYX_ERR(0, 92, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -6629,7 +6629,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("bootstrap_percentiles", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 94, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("bootstrap_percentiles", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 92, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -6643,8 +6643,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_amounts), __pyx_ptype_5numpy_ndarray, 1, "amounts", 0))) __PYX_ERR(0, 96, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_percentiles), __pyx_ptype_5numpy_ndarray, 1, "percentiles", 0))) __PYX_ERR(0, 96, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_amounts), __pyx_ptype_5numpy_ndarray, 1, "amounts", 0))) __PYX_ERR(0, 94, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_percentiles), __pyx_ptype_5numpy_ndarray, 1, "percentiles", 0))) __PYX_ERR(0, 94, __pyx_L1_error)
   __pyx_r = __pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percentiles(__pyx_self, __pyx_v_amounts, __pyx_v_percentiles);
 
   /* function exit code */
@@ -6735,16 +6735,16 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
   __pyx_pybuffernd_percentiles.rcbuffer = &__pyx_pybuffer_percentiles;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_amounts.rcbuffer->pybuffer, (PyObject*)__pyx_v_amounts, &__Pyx_TypeInfo_nn___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(0, 94, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_amounts.rcbuffer->pybuffer, (PyObject*)__pyx_v_amounts, &__Pyx_TypeInfo_nn___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(0, 92, __pyx_L1_error)
   }
   __pyx_pybuffernd_amounts.diminfo[0].strides = __pyx_pybuffernd_amounts.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_amounts.diminfo[0].shape = __pyx_pybuffernd_amounts.rcbuffer->pybuffer.shape[0];
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_percentiles.rcbuffer->pybuffer, (PyObject*)__pyx_v_percentiles, &__Pyx_TypeInfo_nn___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(0, 94, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_percentiles.rcbuffer->pybuffer, (PyObject*)__pyx_v_percentiles, &__Pyx_TypeInfo_nn___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(0, 92, __pyx_L1_error)
   }
   __pyx_pybuffernd_percentiles.diminfo[0].strides = __pyx_pybuffernd_percentiles.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_percentiles.diminfo[0].shape = __pyx_pybuffernd_percentiles.rcbuffer->pybuffer.shape[0];
 
-  /* "dose_analysis/dose_analysis_cy.pyx":100
+  /* "dose_analysis/dose_analysis_cy.pyx":98
  *     Bootstrapping for percentile calculations and confidence intervals.
  *     """
  *     cdef int n = amounts.shape[0]             # <<<<<<<<<<<<<<
@@ -6753,7 +6753,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
  */
   __pyx_v_n = (__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_amounts))[0]);
 
-  /* "dose_analysis/dose_analysis_cy.pyx":101
+  /* "dose_analysis/dose_analysis_cy.pyx":99
  *     """
  *     cdef int n = amounts.shape[0]
  *     cdef int p = percentiles.shape[0]  # Number of percentiles             # <<<<<<<<<<<<<<
@@ -6762,56 +6762,56 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
  */
   __pyx_v_p = (__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_percentiles))[0]);
 
-  /* "dose_analysis/dose_analysis_cy.pyx":102
+  /* "dose_analysis/dose_analysis_cy.pyx":100
  *     cdef int n = amounts.shape[0]
  *     cdef int p = percentiles.shape[0]  # Number of percentiles
  *     cdef np.ndarray[DTYPE_t, ndim=2] bootstrapped_percentiles = np.zeros((BOOTSTRAP_SAMPLES, p), dtype=np.float64)             # <<<<<<<<<<<<<<
  *     cdef int i, j
  *     np.random.seed(42)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_13dose_analysis_16dose_analysis_cy_BOOTSTRAP_SAMPLES); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_13dose_analysis_16dose_analysis_cy_BOOTSTRAP_SAMPLES); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1)) __PYX_ERR(0, 100, __pyx_L1_error);
   __Pyx_GIVEREF(__pyx_t_3);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_3)) __PYX_ERR(0, 102, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_3)) __PYX_ERR(0, 100, __pyx_L1_error);
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_4);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4)) __PYX_ERR(0, 102, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4)) __PYX_ERR(0, 100, __pyx_L1_error);
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_float64); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_float64); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 102, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 102, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 100, __pyx_L1_error)
   __pyx_t_6 = ((PyArrayObject *)__pyx_t_5);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_bootstrapped_percentiles.rcbuffer->pybuffer, (PyObject*)__pyx_t_6, &__Pyx_TypeInfo_nn___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 2, 0, __pyx_stack) == -1)) {
       __pyx_v_bootstrapped_percentiles = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_bootstrapped_percentiles.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 102, __pyx_L1_error)
+      __PYX_ERR(0, 100, __pyx_L1_error)
     } else {__pyx_pybuffernd_bootstrapped_percentiles.diminfo[0].strides = __pyx_pybuffernd_bootstrapped_percentiles.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_bootstrapped_percentiles.diminfo[0].shape = __pyx_pybuffernd_bootstrapped_percentiles.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_bootstrapped_percentiles.diminfo[1].strides = __pyx_pybuffernd_bootstrapped_percentiles.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_bootstrapped_percentiles.diminfo[1].shape = __pyx_pybuffernd_bootstrapped_percentiles.rcbuffer->pybuffer.shape[1];
     }
   }
@@ -6819,19 +6819,19 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
   __pyx_v_bootstrapped_percentiles = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":104
+  /* "dose_analysis/dose_analysis_cy.pyx":102
  *     cdef np.ndarray[DTYPE_t, ndim=2] bootstrapped_percentiles = np.zeros((BOOTSTRAP_SAMPLES, p), dtype=np.float64)
  *     cdef int i, j
  *     np.random.seed(42)             # <<<<<<<<<<<<<<
  * 
  *     for i in range(BOOTSTRAP_SAMPLES):
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 104, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 102, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_random); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 104, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_random); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 102, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_seed); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 104, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_seed); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 102, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -6852,13 +6852,13 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
     PyObject *__pyx_callargs[2] = {__pyx_t_3, __pyx_int_42};
     __pyx_t_5 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_7, 1+__pyx_t_7);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 104, __pyx_L1_error)
+    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 102, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":106
+  /* "dose_analysis/dose_analysis_cy.pyx":104
  *     np.random.seed(42)
  * 
  *     for i in range(BOOTSTRAP_SAMPLES):             # <<<<<<<<<<<<<<
@@ -6870,34 +6870,34 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
   for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
     __pyx_v_i = __pyx_t_10;
 
-    /* "dose_analysis/dose_analysis_cy.pyx":107
+    /* "dose_analysis/dose_analysis_cy.pyx":105
  * 
  *     for i in range(BOOTSTRAP_SAMPLES):
  *         resampled = np.random.choice(amounts, size=n, replace=True)             # <<<<<<<<<<<<<<
  *         for j in range(p):
  *             bootstrapped_percentiles[i, j] = np.percentile(resampled, percentiles[j] * 100)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 105, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_random); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_random); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 105, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_choice); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_choice); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 105, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 105, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF((PyObject *)__pyx_v_amounts);
     __Pyx_GIVEREF((PyObject *)__pyx_v_amounts);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, ((PyObject *)__pyx_v_amounts))) __PYX_ERR(0, 107, __pyx_L1_error);
-    __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 107, __pyx_L1_error)
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, ((PyObject *)__pyx_v_amounts))) __PYX_ERR(0, 105, __pyx_L1_error);
+    __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 105, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_n); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_n); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 105, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_size, __pyx_t_2) < 0) __PYX_ERR(0, 107, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_size, __pyx_t_2) < 0) __PYX_ERR(0, 105, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_replace, Py_True) < 0) __PYX_ERR(0, 107, __pyx_L1_error)
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_replace, Py_True) < 0) __PYX_ERR(0, 105, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 105, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -6905,7 +6905,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
     __Pyx_XDECREF_SET(__pyx_v_resampled, __pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "dose_analysis/dose_analysis_cy.pyx":108
+    /* "dose_analysis/dose_analysis_cy.pyx":106
  *     for i in range(BOOTSTRAP_SAMPLES):
  *         resampled = np.random.choice(amounts, size=n, replace=True)
  *         for j in range(p):             # <<<<<<<<<<<<<<
@@ -6917,20 +6917,20 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
     for (__pyx_t_13 = 0; __pyx_t_13 < __pyx_t_12; __pyx_t_13+=1) {
       __pyx_v_j = __pyx_t_13;
 
-      /* "dose_analysis/dose_analysis_cy.pyx":109
+      /* "dose_analysis/dose_analysis_cy.pyx":107
  *         resampled = np.random.choice(amounts, size=n, replace=True)
  *         for j in range(p):
  *             bootstrapped_percentiles[i, j] = np.percentile(resampled, percentiles[j] * 100)             # <<<<<<<<<<<<<<
  * 
- *     # Compute confidence intervals (2.5th and 97.5th percentiles) for each target percentile
+ *     cdef np.ndarray[DTYPE_t, ndim=1] ci_lower = np.zeros(p, dtype=np.float64)
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 109, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 107, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_percentile); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 109, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_percentile); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 107, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __pyx_t_14 = __pyx_v_j;
-      __pyx_t_3 = PyFloat_FromDouble(((*__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_percentiles.rcbuffer->pybuffer.buf, __pyx_t_14, __pyx_pybuffernd_percentiles.diminfo[0].strides)) * 100.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 109, __pyx_L1_error)
+      __pyx_t_3 = PyFloat_FromDouble(((*__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_percentiles.rcbuffer->pybuffer.buf, __pyx_t_14, __pyx_pybuffernd_percentiles.diminfo[0].strides)) * 100.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 107, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __pyx_t_5 = NULL;
       __pyx_t_7 = 0;
@@ -6951,11 +6951,11 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
         __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_7, 2+__pyx_t_7);
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       }
-      __pyx_t_15 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_15 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 109, __pyx_L1_error)
+      __pyx_t_15 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_15 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 107, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_t_14 = __pyx_v_i;
       __pyx_t_16 = __pyx_v_j;
@@ -6963,46 +6963,46 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
     }
   }
 
-  /* "dose_analysis/dose_analysis_cy.pyx":112
+  /* "dose_analysis/dose_analysis_cy.pyx":109
+ *             bootstrapped_percentiles[i, j] = np.percentile(resampled, percentiles[j] * 100)
  * 
- *     # Compute confidence intervals (2.5th and 97.5th percentiles) for each target percentile
  *     cdef np.ndarray[DTYPE_t, ndim=1] ci_lower = np.zeros(p, dtype=np.float64)             # <<<<<<<<<<<<<<
  *     cdef np.ndarray[DTYPE_t, ndim=1] ci_upper = np.zeros(p, dtype=np.float64)
  *     for j in range(p):
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 112, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 112, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 112, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_float64); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_float64); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 112, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 112, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 109, __pyx_L1_error)
   __pyx_t_17 = ((PyArrayObject *)__pyx_t_1);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_ci_lower.rcbuffer->pybuffer, (PyObject*)__pyx_t_17, &__Pyx_TypeInfo_nn___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_ci_lower = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_ci_lower.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 112, __pyx_L1_error)
+      __PYX_ERR(0, 109, __pyx_L1_error)
     } else {__pyx_pybuffernd_ci_lower.diminfo[0].strides = __pyx_pybuffernd_ci_lower.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_ci_lower.diminfo[0].shape = __pyx_pybuffernd_ci_lower.rcbuffer->pybuffer.shape[0];
     }
   }
@@ -7010,46 +7010,46 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
   __pyx_v_ci_lower = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":113
- *     # Compute confidence intervals (2.5th and 97.5th percentiles) for each target percentile
+  /* "dose_analysis/dose_analysis_cy.pyx":110
+ * 
  *     cdef np.ndarray[DTYPE_t, ndim=1] ci_lower = np.zeros(p, dtype=np.float64)
  *     cdef np.ndarray[DTYPE_t, ndim=1] ci_upper = np.zeros(p, dtype=np.float64)             # <<<<<<<<<<<<<<
  *     for j in range(p):
  *         ci_lower[j] = np.percentile(bootstrapped_percentiles[:, j], 2.5)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 113, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 113, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 113, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_p); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 113, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(0, 113, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 113, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 113, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_float64); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 113, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_float64); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 113, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 113, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 113, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 110, __pyx_L1_error)
   __pyx_t_18 = ((PyArrayObject *)__pyx_t_5);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_ci_upper.rcbuffer->pybuffer, (PyObject*)__pyx_t_18, &__Pyx_TypeInfo_nn___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_ci_upper = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_ci_upper.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 113, __pyx_L1_error)
+      __PYX_ERR(0, 110, __pyx_L1_error)
     } else {__pyx_pybuffernd_ci_upper.diminfo[0].strides = __pyx_pybuffernd_ci_upper.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_ci_upper.diminfo[0].shape = __pyx_pybuffernd_ci_upper.rcbuffer->pybuffer.shape[0];
     }
   }
@@ -7057,7 +7057,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
   __pyx_v_ci_upper = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":114
+  /* "dose_analysis/dose_analysis_cy.pyx":111
  *     cdef np.ndarray[DTYPE_t, ndim=1] ci_lower = np.zeros(p, dtype=np.float64)
  *     cdef np.ndarray[DTYPE_t, ndim=1] ci_upper = np.zeros(p, dtype=np.float64)
  *     for j in range(p):             # <<<<<<<<<<<<<<
@@ -7069,29 +7069,29 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
   for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
     __pyx_v_j = __pyx_t_10;
 
-    /* "dose_analysis/dose_analysis_cy.pyx":115
+    /* "dose_analysis/dose_analysis_cy.pyx":112
  *     cdef np.ndarray[DTYPE_t, ndim=1] ci_upper = np.zeros(p, dtype=np.float64)
  *     for j in range(p):
  *         ci_lower[j] = np.percentile(bootstrapped_percentiles[:, j], 2.5)             # <<<<<<<<<<<<<<
  *         ci_upper[j] = np.percentile(bootstrapped_percentiles[:, j], 97.5)
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 115, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_percentile); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 115, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_percentile); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 112, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_j); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 115, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_v_j); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 115, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_slice__4);
     __Pyx_GIVEREF(__pyx_slice__4);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_slice__4)) __PYX_ERR(0, 115, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_slice__4)) __PYX_ERR(0, 112, __pyx_L1_error);
     __Pyx_GIVEREF(__pyx_t_1);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_1)) __PYX_ERR(0, 115, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetItem(((PyObject *)__pyx_v_bootstrapped_percentiles), __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 115, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetItem(((PyObject *)__pyx_v_bootstrapped_percentiles), __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_t_2 = NULL;
@@ -7113,38 +7113,38 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
       __pyx_t_5 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_7, 2+__pyx_t_7);
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 115, __pyx_L1_error)
+      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 112, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     }
-    __pyx_t_15 = __pyx_PyFloat_AsDouble(__pyx_t_5); if (unlikely((__pyx_t_15 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 115, __pyx_L1_error)
+    __pyx_t_15 = __pyx_PyFloat_AsDouble(__pyx_t_5); if (unlikely((__pyx_t_15 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 112, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_16 = __pyx_v_j;
     *__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_ci_lower.rcbuffer->pybuffer.buf, __pyx_t_16, __pyx_pybuffernd_ci_lower.diminfo[0].strides) = __pyx_t_15;
 
-    /* "dose_analysis/dose_analysis_cy.pyx":116
+    /* "dose_analysis/dose_analysis_cy.pyx":113
  *     for j in range(p):
  *         ci_lower[j] = np.percentile(bootstrapped_percentiles[:, j], 2.5)
  *         ci_upper[j] = np.percentile(bootstrapped_percentiles[:, j], 97.5)             # <<<<<<<<<<<<<<
  * 
- *     # Calculate the original percentiles (without bootstrapping) from the original amounts
+ *     cdef np.ndarray[DTYPE_t, ndim=1] original_percentiles = np.percentile(amounts, percentiles * 100)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 113, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_percentile); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_percentile); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 113, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_j); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_j); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 113, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 113, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_slice__4);
     __Pyx_GIVEREF(__pyx_slice__4);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_slice__4)) __PYX_ERR(0, 116, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_slice__4)) __PYX_ERR(0, 113, __pyx_L1_error);
     __Pyx_GIVEREF(__pyx_t_3);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_3)) __PYX_ERR(0, 116, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_3)) __PYX_ERR(0, 113, __pyx_L1_error);
     __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_GetItem(((PyObject *)__pyx_v_bootstrapped_percentiles), __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetItem(((PyObject *)__pyx_v_bootstrapped_percentiles), __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 113, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_t_2 = NULL;
@@ -7166,29 +7166,29 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
       __pyx_t_5 = __Pyx_PyObject_FastCall(__pyx_t_1, __pyx_callargs+1-__pyx_t_7, 2+__pyx_t_7);
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 116, __pyx_L1_error)
+      if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     }
-    __pyx_t_15 = __pyx_PyFloat_AsDouble(__pyx_t_5); if (unlikely((__pyx_t_15 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_15 = __pyx_PyFloat_AsDouble(__pyx_t_5); if (unlikely((__pyx_t_15 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 113, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_16 = __pyx_v_j;
     *__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_ci_upper.rcbuffer->pybuffer.buf, __pyx_t_16, __pyx_pybuffernd_ci_upper.diminfo[0].strides) = __pyx_t_15;
   }
 
-  /* "dose_analysis/dose_analysis_cy.pyx":119
+  /* "dose_analysis/dose_analysis_cy.pyx":115
+ *         ci_upper[j] = np.percentile(bootstrapped_percentiles[:, j], 97.5)
  * 
- *     # Calculate the original percentiles (without bootstrapping) from the original amounts
  *     cdef np.ndarray[DTYPE_t, ndim=1] original_percentiles = np.percentile(amounts, percentiles * 100)             # <<<<<<<<<<<<<<
  * 
  *     return original_percentiles, ci_lower, ci_upper
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 115, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_percentile); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_percentile); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 115, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyNumber_Multiply(((PyObject *)__pyx_v_percentiles), __pyx_int_100); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_t_1 = PyNumber_Multiply(((PyObject *)__pyx_v_percentiles), __pyx_int_100); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 115, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = NULL;
   __pyx_t_7 = 0;
@@ -7209,17 +7209,17 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
     __pyx_t_5 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_7, 2+__pyx_t_7);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 119, __pyx_L1_error)
+    if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 115, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 119, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 115, __pyx_L1_error)
   __pyx_t_19 = ((PyArrayObject *)__pyx_t_5);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_original_percentiles.rcbuffer->pybuffer, (PyObject*)__pyx_t_19, &__Pyx_TypeInfo_nn___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_original_percentiles = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_original_percentiles.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 119, __pyx_L1_error)
+      __PYX_ERR(0, 115, __pyx_L1_error)
     } else {__pyx_pybuffernd_original_percentiles.diminfo[0].strides = __pyx_pybuffernd_original_percentiles.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_original_percentiles.diminfo[0].shape = __pyx_pybuffernd_original_percentiles.rcbuffer->pybuffer.shape[0];
     }
   }
@@ -7227,7 +7227,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
   __pyx_v_original_percentiles = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":121
+  /* "dose_analysis/dose_analysis_cy.pyx":117
  *     cdef np.ndarray[DTYPE_t, ndim=1] original_percentiles = np.percentile(amounts, percentiles * 100)
  * 
  *     return original_percentiles, ci_lower, ci_upper             # <<<<<<<<<<<<<<
@@ -7235,22 +7235,22 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
  * @cython.boundscheck(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 121, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 117, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_INCREF((PyObject *)__pyx_v_original_percentiles);
   __Pyx_GIVEREF((PyObject *)__pyx_v_original_percentiles);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 0, ((PyObject *)__pyx_v_original_percentiles))) __PYX_ERR(0, 121, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 0, ((PyObject *)__pyx_v_original_percentiles))) __PYX_ERR(0, 117, __pyx_L1_error);
   __Pyx_INCREF((PyObject *)__pyx_v_ci_lower);
   __Pyx_GIVEREF((PyObject *)__pyx_v_ci_lower);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 1, ((PyObject *)__pyx_v_ci_lower))) __PYX_ERR(0, 121, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 1, ((PyObject *)__pyx_v_ci_lower))) __PYX_ERR(0, 117, __pyx_L1_error);
   __Pyx_INCREF((PyObject *)__pyx_v_ci_upper);
   __Pyx_GIVEREF((PyObject *)__pyx_v_ci_upper);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 2, ((PyObject *)__pyx_v_ci_upper))) __PYX_ERR(0, 121, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_5, 2, ((PyObject *)__pyx_v_ci_upper))) __PYX_ERR(0, 117, __pyx_L1_error);
   __pyx_r = __pyx_t_5;
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":94
+  /* "dose_analysis/dose_analysis_cy.pyx":92
  * 
  * 
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
@@ -7297,7 +7297,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_4bootstrap_percenti
   return __pyx_r;
 }
 
-/* "dose_analysis/dose_analysis_cy.pyx":123
+/* "dose_analysis/dose_analysis_cy.pyx":119
  *     return original_percentiles, ci_lower, ci_upper
  * 
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
@@ -7359,12 +7359,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 123, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 119, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "compute_dose_tiers_cy") < 0)) __PYX_ERR(0, 123, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "compute_dose_tiers_cy") < 0)) __PYX_ERR(0, 119, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 1)) {
       goto __pyx_L5_argtuple_error;
@@ -7375,7 +7375,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("compute_dose_tiers_cy", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 123, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("compute_dose_tiers_cy", 1, 1, 1, __pyx_nargs); __PYX_ERR(0, 119, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -7389,7 +7389,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_amounts), __pyx_ptype_5numpy_ndarray, 1, "amounts", 0))) __PYX_ERR(0, 125, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_amounts), __pyx_ptype_5numpy_ndarray, 1, "amounts", 0))) __PYX_ERR(0, 121, __pyx_L1_error)
   __pyx_r = __pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers_cy(__pyx_self, __pyx_v_amounts);
 
   /* function exit code */
@@ -7484,74 +7484,74 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
   __pyx_pybuffernd_amounts.rcbuffer = &__pyx_pybuffer_amounts;
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
-    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_amounts.rcbuffer->pybuffer, (PyObject*)__pyx_v_amounts, &__Pyx_TypeInfo_nn___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(0, 123, __pyx_L1_error)
+    if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_amounts.rcbuffer->pybuffer, (PyObject*)__pyx_v_amounts, &__Pyx_TypeInfo_nn___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) __PYX_ERR(0, 119, __pyx_L1_error)
   }
   __pyx_pybuffernd_amounts.diminfo[0].strides = __pyx_pybuffernd_amounts.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_amounts.diminfo[0].shape = __pyx_pybuffernd_amounts.rcbuffer->pybuffer.shape[0];
 
-  /* "dose_analysis/dose_analysis_cy.pyx":130
+  /* "dose_analysis/dose_analysis_cy.pyx":126
  *     Uses bootstrapping for small samples and the Beta distribution method for larger samples.
  *     """
  *     cdef int n = amounts.shape[0]             # <<<<<<<<<<<<<<
  *     cdef np.ndarray[DTYPE_t, ndim=1] percentiles = np.array([0.05, 0.25, 0.50, 0.75, 0.95], dtype=np.float64)
- *     cdef int num_percentiles = percentiles.shape[0]  # num_percentiles = 5
+ *     cdef int num_percentiles = percentiles.shape[0]
  */
   __pyx_v_n = (__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_amounts))[0]);
 
-  /* "dose_analysis/dose_analysis_cy.pyx":131
+  /* "dose_analysis/dose_analysis_cy.pyx":127
  *     """
  *     cdef int n = amounts.shape[0]
  *     cdef np.ndarray[DTYPE_t, ndim=1] percentiles = np.array([0.05, 0.25, 0.50, 0.75, 0.95], dtype=np.float64)             # <<<<<<<<<<<<<<
- *     cdef int num_percentiles = percentiles.shape[0]  # num_percentiles = 5
- *     cdef np.ndarray[DTYPE_t, ndim=1] results = np.zeros(num_percentiles * 3, dtype=np.float64)  # Size 15
+ *     cdef int num_percentiles = percentiles.shape[0]
+ *     cdef np.ndarray[DTYPE_t, ndim=1] results = np.zeros(num_percentiles * 3, dtype=np.float64)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_array); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_array); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyList_New(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_float_0_05);
   __Pyx_GIVEREF(__pyx_float_0_05);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_1, 0, __pyx_float_0_05)) __PYX_ERR(0, 131, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_1, 0, __pyx_float_0_05)) __PYX_ERR(0, 127, __pyx_L1_error);
   __Pyx_INCREF(__pyx_float_0_25);
   __Pyx_GIVEREF(__pyx_float_0_25);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_1, 1, __pyx_float_0_25)) __PYX_ERR(0, 131, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_1, 1, __pyx_float_0_25)) __PYX_ERR(0, 127, __pyx_L1_error);
   __Pyx_INCREF(__pyx_float_0_50);
   __Pyx_GIVEREF(__pyx_float_0_50);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_1, 2, __pyx_float_0_50)) __PYX_ERR(0, 131, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_1, 2, __pyx_float_0_50)) __PYX_ERR(0, 127, __pyx_L1_error);
   __Pyx_INCREF(__pyx_float_0_75);
   __Pyx_GIVEREF(__pyx_float_0_75);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_1, 3, __pyx_float_0_75)) __PYX_ERR(0, 131, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_1, 3, __pyx_float_0_75)) __PYX_ERR(0, 127, __pyx_L1_error);
   __Pyx_INCREF(__pyx_float_0_95);
   __Pyx_GIVEREF(__pyx_float_0_95);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_1, 4, __pyx_float_0_95)) __PYX_ERR(0, 131, __pyx_L1_error);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 131, __pyx_L1_error)
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_1, 4, __pyx_float_0_95)) __PYX_ERR(0, 127, __pyx_L1_error);
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(0, 131, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_float64); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_float64); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 131, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 131, __pyx_L1_error)
+  if (!(likely(((__pyx_t_5) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_5, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 127, __pyx_L1_error)
   __pyx_t_6 = ((PyArrayObject *)__pyx_t_5);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_percentiles.rcbuffer->pybuffer, (PyObject*)__pyx_t_6, &__Pyx_TypeInfo_nn___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_percentiles = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_percentiles.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 131, __pyx_L1_error)
+      __PYX_ERR(0, 127, __pyx_L1_error)
     } else {__pyx_pybuffernd_percentiles.diminfo[0].strides = __pyx_pybuffernd_percentiles.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_percentiles.diminfo[0].shape = __pyx_pybuffernd_percentiles.rcbuffer->pybuffer.shape[0];
     }
   }
@@ -7559,55 +7559,55 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
   __pyx_v_percentiles = ((PyArrayObject *)__pyx_t_5);
   __pyx_t_5 = 0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":132
+  /* "dose_analysis/dose_analysis_cy.pyx":128
  *     cdef int n = amounts.shape[0]
  *     cdef np.ndarray[DTYPE_t, ndim=1] percentiles = np.array([0.05, 0.25, 0.50, 0.75, 0.95], dtype=np.float64)
- *     cdef int num_percentiles = percentiles.shape[0]  # num_percentiles = 5             # <<<<<<<<<<<<<<
- *     cdef np.ndarray[DTYPE_t, ndim=1] results = np.zeros(num_percentiles * 3, dtype=np.float64)  # Size 15
+ *     cdef int num_percentiles = percentiles.shape[0]             # <<<<<<<<<<<<<<
+ *     cdef np.ndarray[DTYPE_t, ndim=1] results = np.zeros(num_percentiles * 3, dtype=np.float64)
  *     cdef int i
  */
   __pyx_v_num_percentiles = (__pyx_f_5numpy_7ndarray_5shape_shape(((PyArrayObject *)__pyx_v_percentiles))[0]);
 
-  /* "dose_analysis/dose_analysis_cy.pyx":133
+  /* "dose_analysis/dose_analysis_cy.pyx":129
  *     cdef np.ndarray[DTYPE_t, ndim=1] percentiles = np.array([0.05, 0.25, 0.50, 0.75, 0.95], dtype=np.float64)
- *     cdef int num_percentiles = percentiles.shape[0]  # num_percentiles = 5
- *     cdef np.ndarray[DTYPE_t, ndim=1] results = np.zeros(num_percentiles * 3, dtype=np.float64)  # Size 15             # <<<<<<<<<<<<<<
+ *     cdef int num_percentiles = percentiles.shape[0]
+ *     cdef np.ndarray[DTYPE_t, ndim=1] results = np.zeros(num_percentiles * 3, dtype=np.float64)             # <<<<<<<<<<<<<<
  *     cdef int i
  *     cdef np.ndarray[DTYPE_t, ndim=1] ci_lower = np.zeros(num_percentiles, dtype=np.float64)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyInt_From_long((__pyx_v_num_percentiles * 3)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_long((__pyx_v_num_percentiles * 3)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_5);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error);
   __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_float64); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_float64); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 133, __pyx_L1_error)
+  if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 129, __pyx_L1_error)
   __pyx_t_7 = ((PyArrayObject *)__pyx_t_4);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_results.rcbuffer->pybuffer, (PyObject*)__pyx_t_7, &__Pyx_TypeInfo_nn___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_results = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_results.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 133, __pyx_L1_error)
+      __PYX_ERR(0, 129, __pyx_L1_error)
     } else {__pyx_pybuffernd_results.diminfo[0].strides = __pyx_pybuffernd_results.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_results.diminfo[0].shape = __pyx_pybuffernd_results.rcbuffer->pybuffer.shape[0];
     }
   }
@@ -7615,46 +7615,46 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
   __pyx_v_results = ((PyArrayObject *)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":135
- *     cdef np.ndarray[DTYPE_t, ndim=1] results = np.zeros(num_percentiles * 3, dtype=np.float64)  # Size 15
+  /* "dose_analysis/dose_analysis_cy.pyx":131
+ *     cdef np.ndarray[DTYPE_t, ndim=1] results = np.zeros(num_percentiles * 3, dtype=np.float64)
  *     cdef int i
  *     cdef np.ndarray[DTYPE_t, ndim=1] ci_lower = np.zeros(num_percentiles, dtype=np.float64)             # <<<<<<<<<<<<<<
  *     cdef np.ndarray[DTYPE_t, ndim=1] ci_upper = np.zeros(num_percentiles, dtype=np.float64)
  *     cdef np.ndarray[DTYPE_t, ndim=1] original_percentiles
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_zeros); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_num_percentiles); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_From_int(__pyx_v_num_percentiles); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_4);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4)) __PYX_ERR(0, 135, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4)) __PYX_ERR(0, 131, __pyx_L1_error);
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_float64); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_float64); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_2) < 0) __PYX_ERR(0, 135, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_2) < 0) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 135, __pyx_L1_error)
+  if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 131, __pyx_L1_error)
   __pyx_t_8 = ((PyArrayObject *)__pyx_t_2);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_ci_lower.rcbuffer->pybuffer, (PyObject*)__pyx_t_8, &__Pyx_TypeInfo_nn___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_ci_lower = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_ci_lower.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 135, __pyx_L1_error)
+      __PYX_ERR(0, 131, __pyx_L1_error)
     } else {__pyx_pybuffernd_ci_lower.diminfo[0].strides = __pyx_pybuffernd_ci_lower.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_ci_lower.diminfo[0].shape = __pyx_pybuffernd_ci_lower.rcbuffer->pybuffer.shape[0];
     }
   }
@@ -7662,46 +7662,46 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
   __pyx_v_ci_lower = ((PyArrayObject *)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":136
+  /* "dose_analysis/dose_analysis_cy.pyx":132
  *     cdef int i
  *     cdef np.ndarray[DTYPE_t, ndim=1] ci_lower = np.zeros(num_percentiles, dtype=np.float64)
  *     cdef np.ndarray[DTYPE_t, ndim=1] ci_upper = np.zeros(num_percentiles, dtype=np.float64)             # <<<<<<<<<<<<<<
  *     cdef np.ndarray[DTYPE_t, ndim=1] original_percentiles
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_num_percentiles); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_num_percentiles); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2)) __PYX_ERR(0, 136, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_float64); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_float64); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 136, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dtype, __pyx_t_1) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 136, __pyx_L1_error)
+  if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 132, __pyx_L1_error)
   __pyx_t_9 = ((PyArrayObject *)__pyx_t_1);
   {
     __Pyx_BufFmt_StackElem __pyx_stack[1];
     if (unlikely(__Pyx_GetBufferAndValidate(&__pyx_pybuffernd_ci_upper.rcbuffer->pybuffer, (PyObject*)__pyx_t_9, &__Pyx_TypeInfo_nn___pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t, PyBUF_FORMAT| PyBUF_STRIDES| PyBUF_WRITABLE, 1, 0, __pyx_stack) == -1)) {
       __pyx_v_ci_upper = ((PyArrayObject *)Py_None); __Pyx_INCREF(Py_None); __pyx_pybuffernd_ci_upper.rcbuffer->pybuffer.buf = NULL;
-      __PYX_ERR(0, 136, __pyx_L1_error)
+      __PYX_ERR(0, 132, __pyx_L1_error)
     } else {__pyx_pybuffernd_ci_upper.diminfo[0].strides = __pyx_pybuffernd_ci_upper.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_ci_upper.diminfo[0].shape = __pyx_pybuffernd_ci_upper.rcbuffer->pybuffer.shape[0];
     }
   }
@@ -7709,7 +7709,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
   __pyx_v_ci_upper = ((PyArrayObject *)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":139
+  /* "dose_analysis/dose_analysis_cy.pyx":135
  *     cdef np.ndarray[DTYPE_t, ndim=1] original_percentiles
  * 
  *     if n < 15:             # <<<<<<<<<<<<<<
@@ -7719,32 +7719,32 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
   __pyx_t_10 = (__pyx_v_n < 15);
   if (__pyx_t_10) {
 
-    /* "dose_analysis/dose_analysis_cy.pyx":140
+    /* "dose_analysis/dose_analysis_cy.pyx":136
  * 
  *     if n < 15:
  *         return np.array([np.nan] * (num_percentiles * 3))             # <<<<<<<<<<<<<<
  * 
- *     amounts.sort()  # Sort in-place
+ *     amounts.sort()
  */
     __Pyx_XDECREF(__pyx_r);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 140, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 136, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 140, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 136, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 140, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 136, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_nan); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 140, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_nan); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 136, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_t_11 = (__pyx_v_num_percentiles * 3);
-    __pyx_t_2 = PyList_New(1 * ((__pyx_t_11<0) ? 0:__pyx_t_11)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 140, __pyx_L1_error)
+    __pyx_t_2 = PyList_New(1 * ((__pyx_t_11<0) ? 0:__pyx_t_11)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 136, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     { Py_ssize_t __pyx_temp;
       for (__pyx_temp=0; __pyx_temp < __pyx_t_11; __pyx_temp++) {
         __Pyx_INCREF(__pyx_t_4);
         __Pyx_GIVEREF(__pyx_t_4);
-        if (__Pyx_PyList_SET_ITEM(__pyx_t_2, __pyx_temp, __pyx_t_4)) __PYX_ERR(0, 140, __pyx_L1_error);
+        if (__Pyx_PyList_SET_ITEM(__pyx_t_2, __pyx_temp, __pyx_t_4)) __PYX_ERR(0, 136, __pyx_L1_error);
       }
     }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -7767,7 +7767,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
       __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_12, 1+__pyx_t_12);
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     }
@@ -7775,7 +7775,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
     __pyx_t_1 = 0;
     goto __pyx_L0;
 
-    /* "dose_analysis/dose_analysis_cy.pyx":139
+    /* "dose_analysis/dose_analysis_cy.pyx":135
  *     cdef np.ndarray[DTYPE_t, ndim=1] original_percentiles
  * 
  *     if n < 15:             # <<<<<<<<<<<<<<
@@ -7784,14 +7784,14 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
  */
   }
 
-  /* "dose_analysis/dose_analysis_cy.pyx":142
+  /* "dose_analysis/dose_analysis_cy.pyx":138
  *         return np.array([np.nan] * (num_percentiles * 3))
  * 
- *     amounts.sort()  # Sort in-place             # <<<<<<<<<<<<<<
+ *     amounts.sort()             # <<<<<<<<<<<<<<
  * 
  *     if n < 75:
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_amounts), __pyx_n_s_sort); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_amounts), __pyx_n_s_sort); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_2 = NULL;
   __pyx_t_12 = 0;
@@ -7811,30 +7811,30 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
     PyObject *__pyx_callargs[2] = {__pyx_t_2, NULL};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_12, 0+__pyx_t_12);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":144
- *     amounts.sort()  # Sort in-place
+  /* "dose_analysis/dose_analysis_cy.pyx":140
+ *     amounts.sort()
  * 
  *     if n < 75:             # <<<<<<<<<<<<<<
- *         # Use bootstrapping for confidence intervals
  *         original_percentiles, ci_lower, ci_upper = bootstrap_percentiles(amounts, percentiles)
+ *     else:
  */
   __pyx_t_10 = (__pyx_v_n < 75);
   if (__pyx_t_10) {
 
-    /* "dose_analysis/dose_analysis_cy.pyx":146
+    /* "dose_analysis/dose_analysis_cy.pyx":141
+ * 
  *     if n < 75:
- *         # Use bootstrapping for confidence intervals
  *         original_percentiles, ci_lower, ci_upper = bootstrap_percentiles(amounts, percentiles)             # <<<<<<<<<<<<<<
  *     else:
  *         # Use Beta distribution method for confidence intervals
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_bootstrap_percentiles); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 146, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_bootstrap_percentiles); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 141, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_2 = NULL;
     __pyx_t_12 = 0;
@@ -7854,7 +7854,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
       PyObject *__pyx_callargs[3] = {__pyx_t_2, ((PyObject *)__pyx_v_amounts), ((PyObject *)__pyx_v_percentiles)};
       __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_12, 2+__pyx_t_12);
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 146, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 141, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     }
@@ -7864,7 +7864,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
       if (unlikely(size != 3)) {
         if (size > 3) __Pyx_RaiseTooManyValuesError(3);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 146, __pyx_L1_error)
+        __PYX_ERR(0, 141, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -7880,17 +7880,17 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_4);
       #else
-      __pyx_t_3 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 146, __pyx_L1_error)
+      __pyx_t_3 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 141, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_2 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 146, __pyx_L1_error)
+      __pyx_t_2 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 141, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_4 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 146, __pyx_L1_error)
+      __pyx_t_4 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 141, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       #endif
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_5 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 146, __pyx_L1_error)
+      __pyx_t_5 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 141, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_13 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_5);
@@ -7900,7 +7900,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
       __Pyx_GOTREF(__pyx_t_2);
       index = 2; __pyx_t_4 = __pyx_t_13(__pyx_t_5); if (unlikely(!__pyx_t_4)) goto __pyx_L5_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_4);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_5), 3) < 0) __PYX_ERR(0, 146, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_5), 3) < 0) __PYX_ERR(0, 141, __pyx_L1_error)
       __pyx_t_13 = NULL;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       goto __pyx_L6_unpacking_done;
@@ -7908,12 +7908,12 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_t_13 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 146, __pyx_L1_error)
+      __PYX_ERR(0, 141, __pyx_L1_error)
       __pyx_L6_unpacking_done:;
     }
-    if (!(likely(((__pyx_t_3) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_3, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 146, __pyx_L1_error)
-    if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 146, __pyx_L1_error)
-    if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 146, __pyx_L1_error)
+    if (!(likely(((__pyx_t_3) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_3, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 141, __pyx_L1_error)
+    if (!(likely(((__pyx_t_2) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_2, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 141, __pyx_L1_error)
+    if (!(likely(((__pyx_t_4) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_4, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 141, __pyx_L1_error)
     __pyx_t_14 = ((PyArrayObject *)__pyx_t_3);
     {
       __Pyx_BufFmt_StackElem __pyx_stack[1];
@@ -7930,7 +7930,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
         __pyx_t_16 = __pyx_t_17 = __pyx_t_18 = 0;
       }
       __pyx_pybuffernd_original_percentiles.diminfo[0].strides = __pyx_pybuffernd_original_percentiles.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_original_percentiles.diminfo[0].shape = __pyx_pybuffernd_original_percentiles.rcbuffer->pybuffer.shape[0];
-      if (unlikely((__pyx_t_15 < 0))) __PYX_ERR(0, 146, __pyx_L1_error)
+      if (unlikely((__pyx_t_15 < 0))) __PYX_ERR(0, 141, __pyx_L1_error)
     }
     __pyx_t_14 = 0;
     __pyx_v_original_percentiles = ((PyArrayObject *)__pyx_t_3);
@@ -7951,7 +7951,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
         __pyx_t_18 = __pyx_t_17 = __pyx_t_16 = 0;
       }
       __pyx_pybuffernd_ci_lower.diminfo[0].strides = __pyx_pybuffernd_ci_lower.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_ci_lower.diminfo[0].shape = __pyx_pybuffernd_ci_lower.rcbuffer->pybuffer.shape[0];
-      if (unlikely((__pyx_t_15 < 0))) __PYX_ERR(0, 146, __pyx_L1_error)
+      if (unlikely((__pyx_t_15 < 0))) __PYX_ERR(0, 141, __pyx_L1_error)
     }
     __pyx_t_8 = 0;
     __Pyx_DECREF_SET(__pyx_v_ci_lower, ((PyArrayObject *)__pyx_t_2));
@@ -7972,23 +7972,23 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
         __pyx_t_16 = __pyx_t_17 = __pyx_t_18 = 0;
       }
       __pyx_pybuffernd_ci_upper.diminfo[0].strides = __pyx_pybuffernd_ci_upper.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_ci_upper.diminfo[0].shape = __pyx_pybuffernd_ci_upper.rcbuffer->pybuffer.shape[0];
-      if (unlikely((__pyx_t_15 < 0))) __PYX_ERR(0, 146, __pyx_L1_error)
+      if (unlikely((__pyx_t_15 < 0))) __PYX_ERR(0, 141, __pyx_L1_error)
     }
     __pyx_t_9 = 0;
     __Pyx_DECREF_SET(__pyx_v_ci_upper, ((PyArrayObject *)__pyx_t_4));
     __pyx_t_4 = 0;
 
-    /* "dose_analysis/dose_analysis_cy.pyx":144
- *     amounts.sort()  # Sort in-place
+    /* "dose_analysis/dose_analysis_cy.pyx":140
+ *     amounts.sort()
  * 
  *     if n < 75:             # <<<<<<<<<<<<<<
- *         # Use bootstrapping for confidence intervals
  *         original_percentiles, ci_lower, ci_upper = bootstrap_percentiles(amounts, percentiles)
+ *     else:
  */
     goto __pyx_L4;
   }
 
-  /* "dose_analysis/dose_analysis_cy.pyx":149
+  /* "dose_analysis/dose_analysis_cy.pyx":144
  *     else:
  *         # Use Beta distribution method for confidence intervals
  *         original_percentiles = np.percentile(amounts, percentiles * 100)             # <<<<<<<<<<<<<<
@@ -7996,12 +7996,12 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
  *             ci_lower[i], ci_upper[i] = calculate_percentile_confidence_interval_cy(amounts, percentiles[i])
  */
   /*else*/ {
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 149, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 144, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_percentile); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 149, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_percentile); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 144, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = PyNumber_Multiply(((PyObject *)__pyx_v_percentiles), __pyx_int_100); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 149, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_Multiply(((PyObject *)__pyx_v_percentiles), __pyx_int_100); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 144, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_3 = NULL;
     __pyx_t_12 = 0;
@@ -8022,11 +8022,11 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
       __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_12, 2+__pyx_t_12);
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 149, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 144, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     }
-    if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 149, __pyx_L1_error)
+    if (!(likely(((__pyx_t_1) == Py_None) || likely(__Pyx_TypeTest(__pyx_t_1, __pyx_ptype_5numpy_ndarray))))) __PYX_ERR(0, 144, __pyx_L1_error)
     __pyx_t_14 = ((PyArrayObject *)__pyx_t_1);
     {
       __Pyx_BufFmt_StackElem __pyx_stack[1];
@@ -8043,13 +8043,13 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
         __pyx_t_18 = __pyx_t_17 = __pyx_t_16 = 0;
       }
       __pyx_pybuffernd_original_percentiles.diminfo[0].strides = __pyx_pybuffernd_original_percentiles.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_original_percentiles.diminfo[0].shape = __pyx_pybuffernd_original_percentiles.rcbuffer->pybuffer.shape[0];
-      if (unlikely((__pyx_t_15 < 0))) __PYX_ERR(0, 149, __pyx_L1_error)
+      if (unlikely((__pyx_t_15 < 0))) __PYX_ERR(0, 144, __pyx_L1_error)
     }
     __pyx_t_14 = 0;
     __pyx_v_original_percentiles = ((PyArrayObject *)__pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "dose_analysis/dose_analysis_cy.pyx":150
+    /* "dose_analysis/dose_analysis_cy.pyx":145
  *         # Use Beta distribution method for confidence intervals
  *         original_percentiles = np.percentile(amounts, percentiles * 100)
  *         for i in range(num_percentiles):             # <<<<<<<<<<<<<<
@@ -8061,17 +8061,17 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
     for (__pyx_t_20 = 0; __pyx_t_20 < __pyx_t_19; __pyx_t_20+=1) {
       __pyx_v_i = __pyx_t_20;
 
-      /* "dose_analysis/dose_analysis_cy.pyx":151
+      /* "dose_analysis/dose_analysis_cy.pyx":146
  *         original_percentiles = np.percentile(amounts, percentiles * 100)
  *         for i in range(num_percentiles):
  *             ci_lower[i], ci_upper[i] = calculate_percentile_confidence_interval_cy(amounts, percentiles[i])             # <<<<<<<<<<<<<<
  * 
- *     # Populate the results array with the percentile boundaries and confidence intervals
+ *     for i in range(num_percentiles):
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_calculate_percentile_confidence); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_calculate_percentile_confidence); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 146, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __pyx_t_21 = __pyx_v_i;
-      __pyx_t_4 = PyFloat_FromDouble((*__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_percentiles.rcbuffer->pybuffer.buf, __pyx_t_21, __pyx_pybuffernd_percentiles.diminfo[0].strides))); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 151, __pyx_L1_error)
+      __pyx_t_4 = PyFloat_FromDouble((*__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_percentiles.rcbuffer->pybuffer.buf, __pyx_t_21, __pyx_pybuffernd_percentiles.diminfo[0].strides))); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 146, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __pyx_t_3 = NULL;
       __pyx_t_12 = 0;
@@ -8092,7 +8092,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
         __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_12, 2+__pyx_t_12);
         __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
+        if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 146, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       }
@@ -8102,7 +8102,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
         if (unlikely(size != 2)) {
           if (size > 2) __Pyx_RaiseTooManyValuesError(2);
           else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-          __PYX_ERR(0, 151, __pyx_L1_error)
+          __PYX_ERR(0, 146, __pyx_L1_error)
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
@@ -8115,15 +8115,15 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
         __Pyx_INCREF(__pyx_t_2);
         __Pyx_INCREF(__pyx_t_4);
         #else
-        __pyx_t_2 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
+        __pyx_t_2 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 146, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_4 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 151, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 146, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       } else {
         Py_ssize_t index = -1;
-        __pyx_t_3 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 151, __pyx_L1_error)
+        __pyx_t_3 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 146, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_t_13 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_3);
@@ -8131,7 +8131,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
         __Pyx_GOTREF(__pyx_t_2);
         index = 1; __pyx_t_4 = __pyx_t_13(__pyx_t_3); if (unlikely(!__pyx_t_4)) goto __pyx_L9_unpacking_failed;
         __Pyx_GOTREF(__pyx_t_4);
-        if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_3), 2) < 0) __PYX_ERR(0, 151, __pyx_L1_error)
+        if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_3), 2) < 0) __PYX_ERR(0, 146, __pyx_L1_error)
         __pyx_t_13 = NULL;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         goto __pyx_L10_unpacking_done;
@@ -8139,12 +8139,12 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __pyx_t_13 = NULL;
         if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-        __PYX_ERR(0, 151, __pyx_L1_error)
+        __PYX_ERR(0, 146, __pyx_L1_error)
         __pyx_L10_unpacking_done:;
       }
-      __pyx_t_22 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_22 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 151, __pyx_L1_error)
+      __pyx_t_22 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_22 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 146, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_23 = __pyx_PyFloat_AsDouble(__pyx_t_4); if (unlikely((__pyx_t_23 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 151, __pyx_L1_error)
+      __pyx_t_23 = __pyx_PyFloat_AsDouble(__pyx_t_4); if (unlikely((__pyx_t_23 == ((npy_float64)-1)) && PyErr_Occurred())) __PYX_ERR(0, 146, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_21 = __pyx_v_i;
       *__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_ci_lower.rcbuffer->pybuffer.buf, __pyx_t_21, __pyx_pybuffernd_ci_lower.diminfo[0].strides) = __pyx_t_22;
@@ -8154,9 +8154,9 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
   }
   __pyx_L4:;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":154
+  /* "dose_analysis/dose_analysis_cy.pyx":148
+ *             ci_lower[i], ci_upper[i] = calculate_percentile_confidence_interval_cy(amounts, percentiles[i])
  * 
- *     # Populate the results array with the percentile boundaries and confidence intervals
  *     for i in range(num_percentiles):             # <<<<<<<<<<<<<<
  *         results[i * 3] = original_percentiles[i]
  *         results[i * 3 + 1] = ci_lower[i]
@@ -8166,8 +8166,8 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
   for (__pyx_t_20 = 0; __pyx_t_20 < __pyx_t_19; __pyx_t_20+=1) {
     __pyx_v_i = __pyx_t_20;
 
-    /* "dose_analysis/dose_analysis_cy.pyx":155
- *     # Populate the results array with the percentile boundaries and confidence intervals
+    /* "dose_analysis/dose_analysis_cy.pyx":149
+ * 
  *     for i in range(num_percentiles):
  *         results[i * 3] = original_percentiles[i]             # <<<<<<<<<<<<<<
  *         results[i * 3 + 1] = ci_lower[i]
@@ -8177,7 +8177,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
     __pyx_t_24 = (__pyx_v_i * 3);
     *__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_results.rcbuffer->pybuffer.buf, __pyx_t_24, __pyx_pybuffernd_results.diminfo[0].strides) = (*__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_original_percentiles.rcbuffer->pybuffer.buf, __pyx_t_21, __pyx_pybuffernd_original_percentiles.diminfo[0].strides));
 
-    /* "dose_analysis/dose_analysis_cy.pyx":156
+    /* "dose_analysis/dose_analysis_cy.pyx":150
  *     for i in range(num_percentiles):
  *         results[i * 3] = original_percentiles[i]
  *         results[i * 3 + 1] = ci_lower[i]             # <<<<<<<<<<<<<<
@@ -8188,7 +8188,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
     __pyx_t_24 = ((__pyx_v_i * 3) + 1);
     *__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_results.rcbuffer->pybuffer.buf, __pyx_t_24, __pyx_pybuffernd_results.diminfo[0].strides) = (*__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_ci_lower.rcbuffer->pybuffer.buf, __pyx_t_21, __pyx_pybuffernd_ci_lower.diminfo[0].strides));
 
-    /* "dose_analysis/dose_analysis_cy.pyx":157
+    /* "dose_analysis/dose_analysis_cy.pyx":151
  *         results[i * 3] = original_percentiles[i]
  *         results[i * 3 + 1] = ci_lower[i]
  *         results[i * 3 + 2] = ci_upper[i]             # <<<<<<<<<<<<<<
@@ -8200,7 +8200,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
     *__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_results.rcbuffer->pybuffer.buf, __pyx_t_24, __pyx_pybuffernd_results.diminfo[0].strides) = (*__Pyx_BufPtrStrided1d(__pyx_t_13dose_analysis_16dose_analysis_cy_DTYPE_t *, __pyx_pybuffernd_ci_upper.rcbuffer->pybuffer.buf, __pyx_t_21, __pyx_pybuffernd_ci_upper.diminfo[0].strides));
   }
 
-  /* "dose_analysis/dose_analysis_cy.pyx":159
+  /* "dose_analysis/dose_analysis_cy.pyx":153
  *         results[i * 3 + 2] = ci_upper[i]
  * 
  *     return results             # <<<<<<<<<<<<<<
@@ -8210,7 +8210,7 @@ static PyObject *__pyx_pf_13dose_analysis_16dose_analysis_cy_6compute_dose_tiers
   __pyx_r = ((PyObject *)__pyx_v_results);
   goto __pyx_L0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":123
+  /* "dose_analysis/dose_analysis_cy.pyx":119
  *     return original_percentiles, ci_lower, ci_upper
  * 
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
@@ -8350,7 +8350,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
 }
 /* #### Code section: cached_builtins ### */
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 28, __pyx_L1_error)
   __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_n_s_MemoryError); if (!__pyx_builtin_MemoryError) __PYX_ERR(1, 68, __pyx_L1_error)
   __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) __PYX_ERR(2, 1025, __pyx_L1_error)
   return 0;
@@ -8385,14 +8385,14 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "dose_analysis/dose_analysis_cy.pyx":115
+  /* "dose_analysis/dose_analysis_cy.pyx":112
  *     cdef np.ndarray[DTYPE_t, ndim=1] ci_upper = np.zeros(p, dtype=np.float64)
  *     for j in range(p):
  *         ci_lower[j] = np.percentile(bootstrapped_percentiles[:, j], 2.5)             # <<<<<<<<<<<<<<
  *         ci_upper[j] = np.percentile(bootstrapped_percentiles[:, j], 97.5)
  * 
  */
-  __pyx_slice__4 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__4)) __PYX_ERR(0, 115, __pyx_L1_error)
+  __pyx_slice__4 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__4)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__4);
   __Pyx_GIVEREF(__pyx_slice__4);
 
@@ -8408,41 +8408,41 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__6);
   __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__6, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dose_analysis_dose_analysis_cy_p, __pyx_n_s_detect_outliers_modified_zscore, 15, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 15, __pyx_L1_error)
 
-  /* "dose_analysis/dose_analysis_cy.pyx":66
+  /* "dose_analysis/dose_analysis_cy.pyx":64
  *     return np.array(filtered, dtype=np.float64)
  * 
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
  * @cython.wraparound(False)
  * def calculate_percentile_confidence_interval_cy(np.ndarray[DTYPE_t, ndim=1] data, DTYPE_t percentile, DTYPE_t alpha=0.05):
  */
-  __pyx_tuple__8 = PyTuple_Pack(10, __pyx_n_s_data, __pyx_n_s_percentile, __pyx_n_s_alpha, __pyx_n_s_n, __pyx_n_s_k, __pyx_n_s_lower_bound, __pyx_n_s_upper_bound, __pyx_n_s_lower_index, __pyx_n_s_upper_index, __pyx_n_s_beta); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_tuple__8 = PyTuple_Pack(10, __pyx_n_s_data, __pyx_n_s_percentile, __pyx_n_s_alpha, __pyx_n_s_n, __pyx_n_s_k, __pyx_n_s_lower_bound, __pyx_n_s_upper_bound, __pyx_n_s_lower_index, __pyx_n_s_upper_index, __pyx_n_s_beta); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
-  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 10, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dose_analysis_dose_analysis_cy_p, __pyx_n_s_calculate_percentile_confidence, 66, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 10, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dose_analysis_dose_analysis_cy_p, __pyx_n_s_calculate_percentile_confidence, 64, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 64, __pyx_L1_error)
 
-  /* "dose_analysis/dose_analysis_cy.pyx":94
+  /* "dose_analysis/dose_analysis_cy.pyx":92
  * 
  * 
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
  * @cython.wraparound(False)
  * def bootstrap_percentiles(np.ndarray[DTYPE_t, ndim=1] amounts, np.ndarray[DTYPE_t, ndim=1] percentiles):
  */
-  __pyx_tuple__10 = PyTuple_Pack(11, __pyx_n_s_amounts, __pyx_n_s_percentiles, __pyx_n_s_n, __pyx_n_s_p, __pyx_n_s_bootstrapped_percentiles, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_resampled, __pyx_n_s_ci_lower, __pyx_n_s_ci_upper, __pyx_n_s_original_percentiles); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 94, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(11, __pyx_n_s_amounts, __pyx_n_s_percentiles, __pyx_n_s_n, __pyx_n_s_p, __pyx_n_s_bootstrapped_percentiles, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_resampled, __pyx_n_s_ci_lower, __pyx_n_s_ci_upper, __pyx_n_s_original_percentiles); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
-  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dose_analysis_dose_analysis_cy_p, __pyx_n_s_bootstrap_percentiles, 94, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 94, __pyx_L1_error)
+  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dose_analysis_dose_analysis_cy_p, __pyx_n_s_bootstrap_percentiles, 92, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 92, __pyx_L1_error)
 
-  /* "dose_analysis/dose_analysis_cy.pyx":123
+  /* "dose_analysis/dose_analysis_cy.pyx":119
  *     return original_percentiles, ci_lower, ci_upper
  * 
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
  * @cython.wraparound(False)
  * def compute_dose_tiers_cy(np.ndarray[DTYPE_t, ndim=1] amounts):
  */
-  __pyx_tuple__12 = PyTuple_Pack(9, __pyx_n_s_amounts, __pyx_n_s_n, __pyx_n_s_percentiles, __pyx_n_s_num_percentiles, __pyx_n_s_results, __pyx_n_s_i, __pyx_n_s_ci_lower, __pyx_n_s_ci_upper, __pyx_n_s_original_percentiles); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 123, __pyx_L1_error)
+  __pyx_tuple__12 = PyTuple_Pack(9, __pyx_n_s_amounts, __pyx_n_s_n, __pyx_n_s_percentiles, __pyx_n_s_num_percentiles, __pyx_n_s_results, __pyx_n_s_i, __pyx_n_s_ci_lower, __pyx_n_s_ci_upper, __pyx_n_s_original_percentiles); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
-  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dose_analysis_dose_analysis_cy_p, __pyx_n_s_compute_dose_tiers_cy, 123, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 123, __pyx_L1_error)
+  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_dose_analysis_dose_analysis_cy_p, __pyx_n_s_compute_dose_tiers_cy, 119, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -8909,57 +8909,57 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_detect_outliers_modified_zscore, __pyx_t_2) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":68
+  /* "dose_analysis/dose_analysis_cy.pyx":66
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * def calculate_percentile_confidence_interval_cy(np.ndarray[DTYPE_t, ndim=1] data, DTYPE_t percentile, DTYPE_t alpha=0.05):             # <<<<<<<<<<<<<<
  *     """
  *     Calculates confidence intervals for a percentile using the beta distribution method.
  */
-  __pyx_t_2 = PyFloat_FromDouble(((double)0.05)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_2 = PyFloat_FromDouble(((double)0.05)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "dose_analysis/dose_analysis_cy.pyx":66
+  /* "dose_analysis/dose_analysis_cy.pyx":64
  *     return np.array(filtered, dtype=np.float64)
  * 
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
  * @cython.wraparound(False)
  * def calculate_percentile_confidence_interval_cy(np.ndarray[DTYPE_t, ndim=1] data, DTYPE_t percentile, DTYPE_t alpha=0.05):
  */
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2)) __PYX_ERR(0, 66, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2)) __PYX_ERR(0, 64, __pyx_L1_error);
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_13dose_analysis_16dose_analysis_cy_3calculate_percentile_confidence_interval_cy, 0, __pyx_n_s_calculate_percentile_confidence, NULL, __pyx_n_s_dose_analysis_dose_analysis_cy, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_13dose_analysis_16dose_analysis_cy_3calculate_percentile_confidence_interval_cy, 0, __pyx_n_s_calculate_percentile_confidence, NULL, __pyx_n_s_dose_analysis_dose_analysis_cy, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_t_3);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_calculate_percentile_confidence, __pyx_t_2) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_calculate_percentile_confidence, __pyx_t_2) < 0) __PYX_ERR(0, 64, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":94
+  /* "dose_analysis/dose_analysis_cy.pyx":92
  * 
  * 
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
  * @cython.wraparound(False)
  * def bootstrap_percentiles(np.ndarray[DTYPE_t, ndim=1] amounts, np.ndarray[DTYPE_t, ndim=1] percentiles):
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_13dose_analysis_16dose_analysis_cy_5bootstrap_percentiles, 0, __pyx_n_s_bootstrap_percentiles, NULL, __pyx_n_s_dose_analysis_dose_analysis_cy, __pyx_d, ((PyObject *)__pyx_codeobj__11)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 94, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_13dose_analysis_16dose_analysis_cy_5bootstrap_percentiles, 0, __pyx_n_s_bootstrap_percentiles, NULL, __pyx_n_s_dose_analysis_dose_analysis_cy, __pyx_d, ((PyObject *)__pyx_codeobj__11)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_bootstrap_percentiles, __pyx_t_2) < 0) __PYX_ERR(0, 94, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_bootstrap_percentiles, __pyx_t_2) < 0) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "dose_analysis/dose_analysis_cy.pyx":123
+  /* "dose_analysis/dose_analysis_cy.pyx":119
  *     return original_percentiles, ci_lower, ci_upper
  * 
  * @cython.boundscheck(False)             # <<<<<<<<<<<<<<
  * @cython.wraparound(False)
  * def compute_dose_tiers_cy(np.ndarray[DTYPE_t, ndim=1] amounts):
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_13dose_analysis_16dose_analysis_cy_7compute_dose_tiers_cy, 0, __pyx_n_s_compute_dose_tiers_cy, NULL, __pyx_n_s_dose_analysis_dose_analysis_cy, __pyx_d, ((PyObject *)__pyx_codeobj__13)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 123, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_13dose_analysis_16dose_analysis_cy_7compute_dose_tiers_cy, 0, __pyx_n_s_compute_dose_tiers_cy, NULL, __pyx_n_s_dose_analysis_dose_analysis_cy, __pyx_d, ((PyObject *)__pyx_codeobj__13)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_compute_dose_tiers_cy, __pyx_t_2) < 0) __PYX_ERR(0, 123, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_compute_dose_tiers_cy, __pyx_t_2) < 0) __PYX_ERR(0, 119, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "dose_analysis/dose_analysis_cy.pyx":1

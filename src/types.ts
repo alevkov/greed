@@ -18,6 +18,8 @@ export interface SubstanceData {
     Heavy: SubstanceTier;
   };
   reliability_score: number;
+  distribution_type: string;
+  sample_size: number;
 }
 
 export interface ChartData {
